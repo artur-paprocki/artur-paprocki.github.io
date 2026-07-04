@@ -1,0 +1,16 @@
+{
+  "name": "arturpaprocki.com",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal essay site of Artur Paprocki, built with Eleventy.",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "roughjs": "^4.6.6"
+  }
+}
