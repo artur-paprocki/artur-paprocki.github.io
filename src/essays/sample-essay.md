@@ -2,7 +2,7 @@
 title: "Sample essay (mockup demo)"
 description: "A demonstration note showing the essay page layout — placeholder content, not Artur's voice."
 date: 2026-07-04
-pair: przykladowy-esej
+pair: /eseje/przykladowy-esej/
 heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "A hand drawing a line finished by a robot arm — pencil and watercolor"

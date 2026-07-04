@@ -13,8 +13,8 @@ layout: layouts/base.njk
 {%- if featured %}
 <div class="featured">
   <div class="kicker">{{ featuredKicker }}</div>
-  <span class="only-light">{% img "src/assets/ill/light/" + featured.data.heroLight + ".jpg", featured.data.heroAlt, [480, 800, 1400], true, "cover" %}</span>
-  <span class="only-dark">{% img "src/assets/ill/dark/" + featured.data.heroDark + ".jpg", featured.data.heroAlt, [480, 800, 1400], true, "cover" %}</span>
+  <span class="only-light">{% heroimg "src/assets/ill/light/" + featured.data.heroLight + ".jpg", featured.data.heroAlt, "cover" %}</span>
+  <span class="only-dark">{% heroimg "src/assets/ill/dark/" + featured.data.heroDark + ".jpg", featured.data.heroAlt, "cover" %}</span>
   <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
   <p>{{ featured.data.description }}</p>
   <div class="essay-meta">{{ (featured.data.date | pldate) if lang == "pl" else (featured.data.date | endate) }} · {{ featured.data.readingTime }} {{ minLabel }}</div>

@@ -2,7 +2,7 @@
 title: "Przykładowy esej (demo makiety)"
 description: "Notatka demonstracyjna pokazująca układ strony eseju — treść tymczasowa, nie głos Artura."
 date: 2026-07-04
-pair: sample-essay
+pair: /essays/sample-essay/
 heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "Dłoń rysująca linię, którą kończy ramię robota — ołówek i akwarela"

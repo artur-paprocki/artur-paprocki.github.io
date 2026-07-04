@@ -15,7 +15,6 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--text);
-  transition: background .3s ease, color .3s ease;
 }
 
 img,
@@ -103,12 +102,6 @@ a {
   color: var(--muted);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  body {
-    transition: none;
-  }
-}
-
 /* Page structure — values match `design/makiety/makieta-{jasna,ciemna}.html` 1:1. */
 
 .wrap {
@@ -186,6 +179,7 @@ nav.top a:hover {
 
 .featured .cover {
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -301,9 +295,12 @@ footer.site a {
   color: var(--muted);
 }
 
-.essay-head .meta a {
+.essay-head .meta a,
+.essay-head .meta a.gesture-link {
   color: var(--accent);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--rule);
 }
 
 .hero-ill {
@@ -312,6 +309,7 @@ footer.site a {
 
 .hero-ill img {
   width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 
@@ -346,7 +344,9 @@ footer.site a {
   margin: 40px 0 24px;
 }
 
-.subscribe h3 {
+.subscribe h2 {
+  font-size: 23px;
+  line-height: 1.28;
   margin: 0 0 8px;
 }
 

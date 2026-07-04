@@ -4,7 +4,6 @@ layout: layouts/base.njk
 {%- set dateDisplay = date | pldate if lang == "pl" else date | endate -%}
 {%- set readingLabel = (readingTime | string) + " minut czytania" if lang == "pl" else (readingTime | string) + " min read" -%}
 {%- set pairLabel = "Read in English →" if lang == "pl" else "Czytaj po polsku →" -%}
-{%- set pairHref = "/essays/" + pair + "/" if lang == "pl" else "/eseje/" + pair + "/" -%}
 {%- set listenLabel = ("Posłuchaj — " + (readingTime | string) + " min · głos autora") if lang == "pl" else ("Listen — " + (readingTime | string) + " min · author's voice") -%}
 {%- set subscribeTitle = "Nowe eseje co dwa tygodnie" if lang == "pl" else "New essays every two weeks" -%}
 {%- set subscribeBody = "Bez spamu — tylko kolejny esej, prosto do skrzynki. Po polsku lub po angielsku, jak wolisz." if lang == "pl" else "No spam — just the next essay, straight to your inbox. In Polish or English, your choice." -%}
@@ -13,7 +12,7 @@ layout: layouts/base.njk
 <div class="essay-head">
   <h1>{{ title }}</h1>
   <div class="meta">
-    <time datetime="{{ date | isodate }}">{{ dateDisplay }}</time> · {{ readingLabel }}{% if pair %} · <a href="{{ pairHref }}">{{ pairLabel }}</a>{% endif %}
+    <time datetime="{{ date | isodate }}">{{ dateDisplay }}</time> · {{ readingLabel }}{% if pair %} · <a class="gesture-link" href="{{ pair }}">{{ pairLabel }}{% gesture "underline", 120, 10 %}</a>{% endif %}
   </div>
 </div>
 
@@ -31,8 +30,8 @@ layout: layouts/base.njk
 {%- endif %}
 
 <figure class="hero-ill">
-  <span class="only-light">{% img "src/assets/ill/light/" + heroLight + ".jpg", heroAlt, [480, 800, 1400], true %}</span>
-  <span class="only-dark">{% img "src/assets/ill/dark/" + heroDark + ".jpg", heroAlt, [480, 800, 1400], true %}</span>
+  <span class="only-light">{% heroimg "src/assets/ill/light/" + heroLight + ".jpg", heroAlt %}</span>
+  <span class="only-dark">{% heroimg "src/assets/ill/dark/" + heroDark + ".jpg", heroAlt %}</span>
 </figure>
 
 <article>
@@ -46,7 +45,7 @@ layout: layouts/base.njk
 </div>
 
 <div class="subscribe">
-  <h3>{{ subscribeTitle }}</h3>
+  <h2>{{ subscribeTitle }}</h2>
   <p>{{ subscribeBody }}</p>
   <a class="btn" href="{{ site.links.substack }}">
     <span class="flourish">{% gesture "frame", 240, 60 %}</span>

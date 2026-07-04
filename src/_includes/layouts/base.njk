@@ -7,10 +7,12 @@
 {%- set feedHref = "/en/feed.xml" if lang == "en" else "/feed.xml" -%}
 {%- set copyrightLine = "© 2026 " + site.author -%}
 
-{%- if lang == "en" -%}
-  {%- set otherLangHref = "/eseje/" + pair + "/" if pair else "/" -%}
+{%- if pair -%}
+  {%- set otherLangHref = pair -%}
+{%- elif lang == "en" -%}
+  {%- set otherLangHref = "/" -%}
 {%- else -%}
-  {%- set otherLangHref = "/essays/" + pair + "/" if pair else "/en/" -%}
+  {%- set otherLangHref = "/en/" -%}
 {%- endif -%}
 
 <!doctype html>
@@ -43,7 +45,9 @@
       </nav>
     </header>
 
-    {{ content | safe }}
+    <main>
+      {{ content | safe }}
+    </main>
 
     <div class="footer-zone">
       <img class="stroke-sep only-light" src="/assets/ill/light/ill-stroke-600.jpg" alt="">

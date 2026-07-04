@@ -91,7 +91,10 @@
   }
 }
 
-/* 4 · View Transitions — cross-fade between pages/theme changes. */
+/* 4 · View Transitions — cross-fade between pages/theme changes. The body
+   background/color transition below is the theme-toggle half of this same
+   catalog entry: it softens the flip between light and dark palettes,
+   independent of the page-navigation cross-fade above. */
 @view-transition {
   navigation: auto;
 }
@@ -99,6 +102,10 @@
 ::view-transition-old(root),
 ::view-transition-new(root) {
   animation-duration: 250ms;
+}
+
+body {
+  transition: background .3s ease, color .3s ease;
 }
 
 /* 5 · Button: clean solid design at rest; fleeting rough.js outline on
@@ -344,7 +351,7 @@
   width: calc(50% - 3px);
   height: calc(100% - 6px);
   border-radius: 999px;
-  background: var(--accent);
+  background: var(--btn-accent);
   transition: transform .55s var(--ease-spring-fallback);
   transition-timing-function: var(--ease-spring);
 }

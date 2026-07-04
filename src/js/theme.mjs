@@ -3,14 +3,6 @@
 const STORAGE_KEY = "theme";
 const root = document.documentElement;
 
-function apply(theme) {
-  if (theme === "light" || theme === "dark") {
-    root.setAttribute("data-theme", theme);
-  } else {
-    root.removeAttribute("data-theme");
-  }
-}
-
 function current() {
   return (
     root.getAttribute("data-theme") ||
@@ -21,7 +13,7 @@ function current() {
 document.querySelectorAll("[data-theme-toggle]").forEach((toggle) => {
   toggle.addEventListener("click", () => {
     const next = current() === "dark" ? "light" : "dark";
-    apply(next);
+    root.setAttribute("data-theme", next);
     localStorage.setItem(STORAGE_KEY, next);
   });
 });

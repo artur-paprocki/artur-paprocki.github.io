@@ -8,6 +8,8 @@
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
 <link rel="canonical" href="{{ canonical }}">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 {%- if site.noindex %}
 <meta name="robots" content="noindex, nofollow">
@@ -16,23 +18,11 @@
 {%- endif %}
 
 {%- if pair %}
-  {%- if lang == "pl" %}
-<link rel="alternate" hreflang="pl" href="{{ site.url }}/eseje/{{ page.fileSlug }}/">
-<link rel="alternate" hreflang="en" href="{{ site.url }}/essays/{{ pair }}/">
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/eseje/{{ page.fileSlug }}/">
-  {%- elif lang == "en" %}
-<link rel="alternate" hreflang="en" href="{{ site.url }}/essays/{{ page.fileSlug }}/">
-<link rel="alternate" hreflang="pl" href="{{ site.url }}/eseje/{{ pair }}/">
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/eseje/{{ pair }}/">
-  {%- endif %}
-{%- elif page.url == "/" %}
-<link rel="alternate" hreflang="pl" href="{{ site.url }}/">
-<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
-{%- elif page.url == "/en/" %}
-<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
-<link rel="alternate" hreflang="pl" href="{{ site.url }}/">
-<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+  {%- set plHref = site.url + (page.url if lang == "pl" else pair) -%}
+  {%- set enHref = site.url + (pair if lang == "pl" else page.url) -%}
+<link rel="alternate" hreflang="pl" href="{{ plHref }}">
+<link rel="alternate" hreflang="en" href="{{ enHref }}">
+<link rel="alternate" hreflang="x-default" href="{{ plHref }}">
 {%- endif %}
 
 <meta property="og:title" content="{{ title }}">
