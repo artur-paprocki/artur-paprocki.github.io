@@ -1,0 +1,428 @@
+/* Motion catalog — the closed set of 8 microinteractions from the design
+   spec (§4). Statics stay clean; sketch-sentiment lives only in transitions.
+   Nothing outside this catalog animates. Fully disabled under
+   prefers-reduced-motion (end states apply immediately). */
+
+/* 1 · Underline-gesture: link underline draws in on hover/focus. */
+.gesture-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.gesture-link svg {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 100%;
+  height: 10px;
+  overflow: visible;
+}
+
+.gesture-link path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset .55s var(--ease-gesture-fallback);
+  transition-timing-function: var(--ease-gesture);
+}
+
+.gesture-link:hover path,
+.gesture-link:focus-visible path {
+  stroke-dashoffset: 0;
+}
+
+/* 2 · Essay card: thumbnail lift + rotate on hover, title turns accent,
+   press "sits down" before navigation, release hands off to a View
+   Transition. */
+.essay-item {
+  transition: transform .15s var(--ease-gesture-fallback);
+}
+
+.essay-item h3 {
+  transition: color .25s ease;
+}
+
+.essay-item .thumb {
+  transition: transform .35s var(--ease-gesture-fallback), box-shadow .35s ease;
+}
+
+.essay-item:hover h3 {
+  color: var(--accent);
+}
+
+.essay-item:hover .thumb {
+  transform: translateY(-4px) rotate(-1deg) scale(1.03);
+  box-shadow: 0 12px 28px rgba(33, 31, 28, .18);
+}
+
+.essay-item:active {
+  transform: scale(.985);
+}
+
+/* 3 · Stamp (monogram AP): scale-in with overshoot, once, on viewport
+   entry (class toggled by observe.mjs). */
+.stamp {
+  display: inline-block;
+}
+
+[data-awake].stamp {
+  transform: scale(.9);
+  opacity: 0;
+}
+
+.stamp.awake {
+  animation: stamp-in .5s var(--ease-spring-fallback) forwards;
+  animation-timing-function: var(--ease-spring);
+}
+
+@keyframes stamp-in {
+  0% {
+    transform: scale(.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 4 · View Transitions — cross-fade between pages/theme changes. */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 250ms;
+}
+
+/* 5 · Button: clean solid design at rest; fleeting rough.js outline on
+   hover, drawn and dissolved in a single gesture. */
+.btn {
+  position: relative;
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: 14px;
+  padding: 12px 26px;
+  border-radius: 7px;
+  transition: background .3s ease, transform .25s var(--ease-gesture-fallback);
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.btn .flourish,
+.btn .gesture-path {
+  position: absolute;
+  inset: -9px -11px;
+  width: calc(100% + 22px);
+  height: calc(100% + 18px);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.btn .flourish path,
+.btn .gesture-path path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+
+.btn:hover .flourish path,
+.btn:focus-visible .flourish path,
+.btn:hover .gesture-path path,
+.btn:focus-visible .gesture-path path {
+  animation: flourish .9s var(--ease-gesture-fallback) forwards;
+  animation-timing-function: var(--ease-gesture);
+}
+
+@keyframes flourish {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  12% {
+    opacity: .9;
+  }
+  62% {
+    stroke-dashoffset: 0;
+    opacity: .85;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* 6 · Draw-in: a loose stroke sketches an element's place on first
+   viewport entry, content fades in, the stroke dissolves (once). */
+.arrive {
+  position: relative;
+}
+
+.arrive .draw,
+.arrive .gesture-path {
+  position: absolute;
+  inset: -6px -14px;
+  width: calc(100% + 28px);
+  height: calc(100% + 12px);
+  overflow: visible;
+  pointer-events: none;
+}
+
+.arrive .draw path,
+.arrive .gesture-path path {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  opacity: 0;
+}
+
+.arrive .content {
+  opacity: 0;
+}
+
+.arrive.awake .content {
+  animation: content-in 1.5s ease forwards;
+}
+
+.arrive.awake .draw path,
+.arrive.awake .gesture-path path {
+  animation: draw-in 1.5s var(--ease-gesture-fallback) forwards;
+  animation-timing-function: var(--ease-gesture);
+}
+
+@keyframes draw-in {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  8% {
+    opacity: .85;
+  }
+  45% {
+    stroke-dashoffset: 0;
+    opacity: .8;
+  }
+  75% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes content-in {
+  0%, 30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 7 · Toy switches — the only springs on the page: theme toggle
+   (sun → moon wind-up) and language pill (sliding thumb). */
+.theme-toggle {
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  cursor: pointer;
+  position: relative;
+  outline-offset: 3px;
+  transition: background .4s ease, border-color .4s ease;
+}
+
+.theme-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 11px;
+  border-radius: 50%;
+  background: #E8B84B;
+  transition: all .5s var(--ease-spring-fallback);
+  transition-timing-function: var(--ease-spring);
+}
+
+.theme-toggle:active::before {
+  transform: scale(.8);
+  transition-duration: .07s;
+}
+
+[data-theme="dark"] .theme-toggle {
+  background: #16181D;
+  border-color: #2A2D35;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle {
+    background: #16181D;
+    border-color: #2A2D35;
+  }
+}
+
+[data-theme="dark"] .theme-toggle::before {
+  background: #E8E4DA;
+  clip-path: circle(50% at 35% 50%);
+  animation: windup .6s var(--ease-spring-fallback);
+  animation-timing-function: var(--ease-spring);
+}
+
+@keyframes windup {
+  0% {
+    rotate: 0deg;
+    scale: 1;
+  }
+  22% {
+    rotate: -28deg;
+    scale: .86;
+  }
+  100% {
+    rotate: 180deg;
+    scale: 1;
+  }
+}
+
+.lang-pill {
+  position: relative;
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  cursor: pointer;
+  user-select: none;
+  padding: 3px;
+}
+
+.lang-pill input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lang-pill .opt {
+  position: relative;
+  z-index: 1;
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 16px;
+  color: var(--muted);
+  transition: color .35s ease;
+}
+
+.lang-pill .thumb-slide {
+  position: absolute;
+  z-index: 0;
+  top: 3px;
+  left: 3px;
+  width: calc(50% - 3px);
+  height: calc(100% - 6px);
+  border-radius: 999px;
+  background: var(--accent);
+  transition: transform .55s var(--ease-spring-fallback);
+  transition-timing-function: var(--ease-spring);
+}
+
+.lang-pill input:checked ~ .thumb-slide {
+  transform: translateX(100%);
+}
+
+.lang-pill .opt.pl {
+  color: #fff;
+}
+
+.lang-pill input:checked ~ .opt.pl {
+  color: var(--muted);
+}
+
+.lang-pill input:checked ~ .opt.en {
+  color: #fff;
+}
+
+/* 8 · Living element — the bird: true frame-by-frame animation, paused
+   until it wakes (viewport entry), then a quiet idle loop. Light sprite
+   is the shared default; a dark sprite (once produced) overrides it.
+   Sprite is 50 frames x 200px = 10000px total width (verified against
+   the actual asset); steps(50) walks one frame per step. */
+.bird {
+  width: 200px;
+  height: 200px;
+  background: url("/assets/ill/light/bird-sprite-50f-200px.webp") 0 0/10000px 200px no-repeat;
+  animation: bird-live 5s steps(50) infinite paused;
+}
+
+[data-theme="dark"] .bird {
+  background-image: url("/assets/ill/dark/bird-sprite-50f-200px.webp");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bird {
+    background-image: url("/assets/ill/dark/bird-sprite-50f-200px.webp");
+  }
+}
+
+.bird.awake {
+  animation-play-state: running;
+}
+
+@keyframes bird-live {
+  to {
+    background-position-x: -10000px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .gesture-link path {
+    stroke-dashoffset: 0;
+  }
+
+  .arrive .content {
+    opacity: 1;
+  }
+
+  .stamp {
+    transform: none;
+    opacity: 1;
+  }
+
+  .bird {
+    animation: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

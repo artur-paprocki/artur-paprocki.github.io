@@ -1,0 +1,82 @@
+/* Typography — Fraunces (display) + Newsreader (text) + system sans (meta).
+   Values match `design/makiety/makieta-{jasna,ciemna}.html` 1:1. */
+
+:root {
+  --display: 'Fraunces', Georgia, serif;
+  --text: 'Newsreader', Georgia, serif;
+  --sans: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-size: 19px;
+  line-height: 1.75;
+}
+
+.wrap,
+article {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--display);
+  font-weight: 600;
+  margin: 0;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 1.14;
+  letter-spacing: -.005em;
+}
+
+h2 {
+  font-size: 31px;
+  line-height: 1.22;
+}
+
+h3 {
+  font-size: 23px;
+  line-height: 1.28;
+}
+
+.meta,
+.essay-meta,
+nav.top,
+footer.site {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+article p {
+  font-size: 19px;
+  line-height: 1.75;
+  margin: 0 0 27px;
+  color: var(--ink-article);
+}
+
+article p:first-of-type::first-letter {
+  font-family: var(--display);
+  font-size: 58px;
+  line-height: .86;
+  float: left;
+  padding: 8px 12px 0 0;
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.pull {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.45;
+  color: var(--ink-pull);
+  text-align: center;
+  margin: 42px 0;
+  padding: 0 34px;
+  border: none;
+}
