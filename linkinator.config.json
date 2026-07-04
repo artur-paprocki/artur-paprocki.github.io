@@ -1,0 +1,5 @@
+{
+  "recurse": true,
+  "silent": true,
+  "skip": ["https://arturpaprocki.com"]
+}
