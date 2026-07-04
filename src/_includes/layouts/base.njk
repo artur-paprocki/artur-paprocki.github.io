@@ -1,0 +1,62 @@
+{%- set homeHref = "/en/" if lang == "en" else "/" -%}
+{%- set aboutHref = "/en/about/" if lang == "en" else "/o-mnie/" -%}
+{%- set navEssays = "Essays" if lang == "en" else "Eseje" -%}
+{%- set navAbout = "About" if lang == "en" else "O mnie" -%}
+{%- set newsletterLabel = "Newsletter" -%}
+{%- set rssLabel = "RSS" -%}
+{%- set feedHref = "/en/feed.xml" if lang == "en" else "/feed.xml" -%}
+{%- set copyrightLine = "© 2026 " + site.author -%}
+
+{%- if lang == "en" -%}
+  {%- set otherLangHref = "/eseje/" + pair + "/" if pair else "/" -%}
+{%- else -%}
+  {%- set otherLangHref = "/essays/" + pair + "/" if pair else "/en/" -%}
+{%- endif -%}
+
+<!doctype html>
+<html lang="{{ lang or 'pl' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- include "components/theme-head.njk" %}
+  {%- include "components/head.njk" %}
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/typography.css">
+  <link rel="stylesheet" href="/css/motion.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.author }}" href="{{ feedHref }}">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="brand" href="{{ homeHref }}">{{ site.author }}</a>
+      <nav class="top">
+        <a href="{{ homeHref }}">{{ navEssays }}</a>
+        <a href="{{ aboutHref }}">{{ navAbout }}</a>
+        <a class="lang-pill" data-active="{{ lang }}" href="{{ otherLangHref }}" aria-label="{{ 'Switch to English' if lang == 'pl' else 'Przełącz na polski' }}">
+          <span class="thumb-slide" aria-hidden="true"></span>
+          <span class="opt pl">PL</span>
+          <span class="opt en">EN</span>
+        </a>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="{{ 'Przełącz motyw' if lang == 'pl' else 'Toggle theme' }}"></button>
+      </nav>
+    </header>
+
+    {{ content | safe }}
+
+    <div class="footer-zone">
+      <img class="stroke-sep only-light" src="/assets/ill/light/ill-stroke-600.jpg" alt="">
+      <img class="stroke-sep only-dark" src="/assets/ill/dark/dill-stroke-600.jpg" alt="">
+    </div>
+    <footer class="site">
+      <span>{{ copyrightLine }}</span>
+      <span><a href="{{ site.links.substack }}">{{ newsletterLabel }}</a> · <a href="{{ site.links.linkedin }}">LinkedIn</a> · <a href="{{ feedHref }}">{{ rssLabel }}</a></span>
+    </footer>
+  </div>
+
+  <script type="module" src="/js/theme.mjs" defer></script>
+  <script type="module" src="/js/observe.mjs" defer></script>
+  <script type="module" src="/js/player.mjs" defer></script>
+</body>
+</html>

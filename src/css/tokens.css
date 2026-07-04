@@ -17,6 +17,11 @@
   --ink-pull: #33313C;
   --ink-watermark: #8B867C;
 
+  /* subtle panel background (subscribe box) + its own button accent,
+     distinct from --accent in the dark palette (makiety) */
+  --panel: #F5F2EB;
+  --btn-accent: var(--accent);
+
   --ease-gesture: linear(0, 0.04 6%, 0.38 26%, 0.41 31%, 0.87 68%, 0.96 84%, 1);
   --ease-gesture-fallback: cubic-bezier(.3, .7, .2, 1);
 
@@ -42,6 +47,9 @@
     --ink-article: #D6D2C8;
     --ink-pull: #C6C2B8;
     --ink-watermark: #8B867C;
+
+    --panel: #1E2128;
+    --btn-accent: #4A5C94;
   }
 }
 
@@ -57,4 +65,7 @@
   --ink-article: #D6D2C8;
   --ink-pull: #C6C2B8;
   --ink-watermark: #8B867C;
+
+  --panel: #1E2128;
+  --btn-accent: #4A5C94;
 }

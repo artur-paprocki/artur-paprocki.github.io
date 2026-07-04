@@ -106,7 +106,7 @@
 .btn {
   position: relative;
   display: inline-block;
-  background: var(--accent);
+  background: var(--btn-accent);
   color: #fff;
   border: none;
   cursor: pointer;
@@ -316,6 +316,7 @@
   cursor: pointer;
   user-select: none;
   padding: 3px;
+  text-decoration: none;
 }
 
 .lang-pill input {
@@ -348,7 +349,8 @@
   transition-timing-function: var(--ease-spring);
 }
 
-.lang-pill input:checked ~ .thumb-slide {
+.lang-pill input:checked ~ .thumb-slide,
+.lang-pill[data-active="en"] .thumb-slide {
   transform: translateX(100%);
 }
 
@@ -356,11 +358,13 @@
   color: #fff;
 }
 
-.lang-pill input:checked ~ .opt.pl {
+.lang-pill input:checked ~ .opt.pl,
+.lang-pill[data-active="en"] .opt.pl {
   color: var(--muted);
 }
 
-.lang-pill input:checked ~ .opt.en {
+.lang-pill input:checked ~ .opt.en,
+.lang-pill[data-active="en"] .opt.en {
   color: #fff;
 }
 

@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+{%- set essays = collections[collectionName] -%}
+{%- set featured = essays | first -%}
+
+<div class="hero-intro">
+  <h1>{{ heroTitle | safe }}</h1>
+  <p>{{ heroParagraph }}</p>
+  <div class="who">{{ whoLine }}</div>
+</div>
+
+{%- if featured %}
+<div class="featured">
+  <div class="kicker">{{ featuredKicker }}</div>
+  <span class="only-light">{% img "src/assets/ill/light/" + featured.data.heroLight + ".jpg", featured.data.heroAlt, [480, 800, 1400], true, "cover" %}</span>
+  <span class="only-dark">{% img "src/assets/ill/dark/" + featured.data.heroDark + ".jpg", featured.data.heroAlt, [480, 800, 1400], true, "cover" %}</span>
+  <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
+  <p>{{ featured.data.description }}</p>
+  <div class="essay-meta">{{ (featured.data.date | pldate) if lang == "pl" else (featured.data.date | endate) }} · {{ featured.data.readingTime }} {{ minLabel }}</div>
+</div>
+{%- endif %}
+
+{%- if essays.length > 1 %}
+<div class="list-block">
+  <div class="kicker">{{ olderKicker }}</div>
+  {%- for essay in essays %}
+  {%- if not loop.first %}
+  <div class="essay-item">
+    <div>
+      <h3><a href="{{ essay.url }}">{{ essay.data.title }}</a></h3>
+      <p>{{ essay.data.description }}</p>
+      <div class="essay-meta">{{ (essay.data.date | pldate) if lang == "pl" else (essay.data.date | endate) }} · {{ essay.data.readingTime }} {{ minLabel }}</div>
+    </div>
+    {%- if essay.data.heroLight %}
+    <span class="only-light">{% img "src/assets/ill/light/" + essay.data.heroLight + ".jpg", essay.data.heroAlt, [150, 300], false, "thumb" %}</span>
+    <span class="only-dark">{% img "src/assets/ill/dark/" + essay.data.heroDark + ".jpg", essay.data.heroAlt, [150, 300], false, "thumb" %}</span>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  {%- endfor %}
+</div>
+{%- endif %}

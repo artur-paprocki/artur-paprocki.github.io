@@ -1,0 +1,84 @@
+{%- set pageTitle = title + " — " + site.author -%}
+{%- set pageDescription = description or "Eseje o przyszłości kreatywności — Artur Paprocki." -%}
+{%- set canonical = site.url + page.url -%}
+{%- set ogType = "article" if pageType == "essay" else "website" -%}
+{%- set ogHeroName = heroLight or "ill-hero-1400" -%}
+{%- set ogImageSrc = "src/assets/ill/light/" + ogHeroName + ".jpg" -%}
+
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDescription }}">
+<link rel="canonical" href="{{ canonical }}">
+
+{%- if site.noindex %}
+<meta name="robots" content="noindex, nofollow">
+{%- else %}
+<meta name="robots" content="index, follow">
+{%- endif %}
+
+{%- if pair %}
+  {%- if lang == "pl" %}
+<link rel="alternate" hreflang="pl" href="{{ site.url }}/eseje/{{ page.fileSlug }}/">
+<link rel="alternate" hreflang="en" href="{{ site.url }}/essays/{{ pair }}/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/eseje/{{ page.fileSlug }}/">
+  {%- elif lang == "en" %}
+<link rel="alternate" hreflang="en" href="{{ site.url }}/essays/{{ page.fileSlug }}/">
+<link rel="alternate" hreflang="pl" href="{{ site.url }}/eseje/{{ pair }}/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/eseje/{{ pair }}/">
+  {%- endif %}
+{%- elif page.url == "/" %}
+<link rel="alternate" hreflang="pl" href="{{ site.url }}/">
+<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+{%- elif page.url == "/en/" %}
+<link rel="alternate" hreflang="en" href="{{ site.url }}/en/">
+<link rel="alternate" hreflang="pl" href="{{ site.url }}/">
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+{%- endif %}
+
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ pageDescription }}">
+<meta property="og:type" content="{{ ogType }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:site_name" content="{{ site.author }}">
+<meta property="og:image" content="{{ site.url }}{% ogimg ogImageSrc %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{ pageDescription }}">
+<meta name="twitter:image" content="{{ site.url }}{% ogimg ogImageSrc %}">
+
+{%- if ogType == "article" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ title | dump | safe }},
+  "description": {{ pageDescription | dump | safe }},
+  "datePublished": {{ date | dump | safe }},
+  "inLanguage": {{ lang | dump | safe }},
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author | dump | safe }},
+    "url": {{ site.url | dump | safe }}
+  },
+  "image": {{ (site.url + '/assets/ill/light/' + ogHeroName + '.jpg') | dump | safe }}
+}
+</script>
+{%- else %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.author | dump | safe }},
+  "url": {{ site.url | dump | safe }}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author | dump | safe }},
+  "url": {{ site.url | dump | safe }},
+  "sameAs": [{{ site.links.linkedin | dump | safe }}]
+}
+</script>
+{%- endif %}

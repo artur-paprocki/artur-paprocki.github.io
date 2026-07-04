@@ -28,6 +28,30 @@ a {
   color: inherit;
 }
 
+/* Dual-theme illustration swap: pairs of <img> toggled by [data-theme],
+   with a prefers-color-scheme fallback for the no-manual-choice case. */
+.only-dark {
+  display: none;
+}
+
+[data-theme="dark"] .only-light {
+  display: none;
+}
+
+[data-theme="dark"] .only-dark {
+  display: block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .only-light {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .only-dark {
+    display: block;
+  }
+}
+
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
@@ -82,5 +106,268 @@ a {
 @media (prefers-reduced-motion: reduce) {
   body {
     transition: none;
+  }
+}
+
+/* Page structure — values match `design/makiety/makieta-{jasna,ciemna}.html` 1:1. */
+
+.wrap {
+  padding: 0 32px;
+}
+
+header.site {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 48px 0 0;
+  gap: 16px;
+}
+
+.brand {
+  font-family: var(--display);
+  font-size: 19px;
+  letter-spacing: .005em;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav.top {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+nav.top a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav.top a:hover {
+  color: var(--ink);
+}
+
+/* ——— home page ——— */
+
+.hero-intro {
+  margin: 76px 0 60px;
+}
+
+.hero-intro h1 {
+  margin: 0 0 20px;
+}
+
+.hero-intro p {
+  font-size: 19.5px;
+  line-height: 1.62;
+  color: var(--ink-hero);
+  margin: 0;
+}
+
+.hero-intro .who {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+.featured {
+  margin: 64px 0 8px;
+}
+
+.kicker {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.featured .cover {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.featured h2 {
+  margin: 26px 0 12px;
+}
+
+.featured h2 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.featured h2 a:hover {
+  color: var(--accent);
+}
+
+.featured p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-featured);
+  margin: 0;
+}
+
+.featured .essay-meta {
+  margin-top: 14px;
+}
+
+.list-block {
+  margin-top: 56px;
+}
+
+.essay-item {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  gap: 30px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: center;
+}
+
+.essay-item:last-of-type {
+  border-bottom: none;
+}
+
+.essay-item h3 {
+  margin: 0 0 9px;
+}
+
+.essay-item p {
+  margin: 0;
+  font-size: 16.5px;
+  line-height: 1.55;
+  color: var(--ink-featured);
+}
+
+.thumb {
+  width: 150px;
+  height: 112px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+footer.site {
+  padding: 40px 0 60px;
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+footer.site a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-zone {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.stroke-sep {
+  height: 26px;
+  margin: 8px auto 0;
+  width: 190px;
+  object-fit: cover;
+  opacity: .85;
+}
+
+[data-theme="dark"] .stroke-sep {
+  opacity: .95;
+  border-radius: 3px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .stroke-sep {
+    opacity: .95;
+    border-radius: 3px;
+  }
+}
+
+/* ——— essay page ——— */
+
+.essay-head {
+  margin: 84px 0 8px;
+}
+
+.essay-head .meta {
+  font-family: var(--sans);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.essay-head .meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.hero-ill {
+  margin: 44px -80px 52px;
+}
+
+.hero-ill img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.monogram-zone {
+  text-align: center;
+  margin: 54px 0 10px;
+}
+
+.monogram {
+  width: 74px;
+  height: 74px;
+  object-fit: cover;
+  opacity: .92;
+}
+
+[data-theme="dark"] .monogram {
+  opacity: .95;
+  border-radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .monogram {
+    opacity: .95;
+    border-radius: 6px;
+  }
+}
+
+.subscribe {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 30px 34px;
+  margin: 40px 0 24px;
+}
+
+.subscribe h3 {
+  margin: 0 0 8px;
+}
+
+.subscribe p {
+  font-size: 15.5px;
+  line-height: 1.55;
+  margin: 0 0 16px;
+  color: var(--ink-featured);
+}
+
+@media (max-width: 740px) {
+  .essay-item {
+    grid-template-columns: 1fr;
+  }
+
+  .thumb {
+    width: 100%;
+    height: 150px;
+  }
+
+  .hero-ill {
+    margin: 36px 0 44px;
   }
 }

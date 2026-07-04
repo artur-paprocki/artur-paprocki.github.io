@@ -1,0 +1,24 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.author }}</title>
+  <subtitle>Eseje o przyszłości kreatywności.</subtitle>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <id>{{ site.url }}/</id>
+  <updated>{{ (collections.essays_pl | first).data.date | isodate }}T00:00:00Z</updated>
+  {%- for essay in collections.essays_pl %}
+  <entry>
+    <title>{{ essay.data.title }}</title>
+    <link href="{{ site.url }}{{ essay.url }}"/>
+    <id>{{ site.url }}{{ essay.url }}</id>
+    <published>{{ essay.data.date | isodate }}T00:00:00Z</published>
+    <updated>{{ essay.data.date | isodate }}T00:00:00Z</updated>
+    <author><name>{{ site.author }}</name></author>
+    <summary>{{ essay.data.description }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>
