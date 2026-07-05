@@ -92,3 +92,8 @@ dopiero PO potwierdzeniu, że rekordy DNS są already wpisane w OVH:
    (z podniesioną asercją SEO), jak i deploy z aktualnym `CNAME`.
 
 Pełna kolejność komend do skopiowania — patrz `docs/uruchomienie.md`.
+
+## Formularz kontaktowy — kroki przy premierze domeny
+
+1. W `src/_data/site.mjs` zmień `publicUrl` na `https://arturpaprocki.com` (redirect po wysyłce formularza).
+2. Po aktywacji FormSubmit (mail "Activate" na artur.paprocki@me.com) otwórz mail aktywacyjny — zawiera **random-like alias** (np. `a1b2c3...`). Podmień w `src/kontakt.njk` i `src/en/contact.njk` action na `https://formsubmit.co/<alias>` — adres e-mail zniknie z HTML całkowicie.
