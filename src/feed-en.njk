@@ -9,8 +9,8 @@ eleventyExcludeFromCollections: true
   <link href="{{ site.url }}/en/feed.xml" rel="self"/>
   <link href="{{ site.url }}/en/"/>
   <id>{{ site.url }}/en/</id>
-  <updated>{{ (collections.essays_en | first).data.date | isodate }}T00:00:00Z</updated>
-  {%- for essay in collections.essays_en %}
+  <updated>{{ (collections.essays_en | published | first).data.date | isodate }}T00:00:00Z</updated>
+  {%- for essay in collections.essays_en | published %}
   <entry>
     <title>{{ essay.data.title }}</title>
     <link href="{{ site.url }}{{ essay.url }}"/>

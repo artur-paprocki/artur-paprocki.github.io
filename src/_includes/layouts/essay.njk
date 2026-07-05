@@ -9,6 +9,9 @@ layout: layouts/base.njk
 {%- set subscribeBody = "Bez spamu — tylko kolejny esej, prosto do skrzynki. Po polsku lub po angielsku, jak wolisz." if lang == "pl" else "No spam — just the next essay, straight to your inbox. In Polish or English, your choice." -%}
 {%- set subscribeCta = "Subskrybuj newsletter" if lang == "pl" else "Subscribe to the newsletter" -%}
 
+{%- if draft -%}
+<div class="draft-banner">{{ "PODGLĄD — wersja robocza. Ta strona nie jest publiczna: brak jej na liście esejów, w RSS i w Google." if lang == "pl" else "PREVIEW — draft. This page is not public: absent from the essay list, RSS, and Google." }}</div>
+{%- endif -%}
 <div class="essay-head">
   <h1>{{ title }}</h1>
   <div class="meta">

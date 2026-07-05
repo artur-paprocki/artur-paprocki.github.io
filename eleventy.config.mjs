@@ -11,6 +11,11 @@ export default function (eleventyConfig) {
   imageShortcode(eleventyConfig);
   gestureShortcode(eleventyConfig);
   dateFilters(eleventyConfig);
+
+  // Drafty (draft: true) zostaja poza listami, feedami i sitemapa.
+  eleventyConfig.addFilter("published", (items) =>
+    (items || []).filter((it) => !it.data.draft)
+  );
   faviconPlugin(eleventyConfig);
 
   eleventyConfig.addCollection("essays_pl", (collection) =>

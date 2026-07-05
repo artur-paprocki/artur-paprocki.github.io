@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-{%- set essays = collections[collectionName] -%}
+{%- set essays = collections[collectionName] | published -%}
 {%- set featured = essays | first -%}
 
 <div class="hero-intro">

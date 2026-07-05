@@ -12,7 +12,7 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-{%- if site.noindex %}
+{%- if site.noindex or draft %}
 <meta name="robots" content="noindex, nofollow">
 {%- else %}
 <meta name="robots" content="index, follow">
