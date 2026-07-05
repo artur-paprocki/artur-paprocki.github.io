@@ -17,15 +17,21 @@ layout: layouts/base.njk
 </div>
 
 {%- if audio %}
-<div class="player" hidden>
-  <button type="button" class="play" aria-label="{{ 'Odtwórz' if lang == 'pl' else 'Play' }}">▶</button>
-  <input type="range" class="bar" value="0" min="0" step="0.1">
-  <span class="time">0:00</span>
-  <audio preload="none" controls src="{{ audio }}"></audio>
+<div class="player-slot">
+  <div class="player" hidden>
+    <button type="button" class="play"
+      aria-label="{{ 'Odtwórz' if lang == 'pl' else 'Play' }}"
+      data-label-play="{{ 'Odtwórz' if lang == 'pl' else 'Play' }}"
+      data-label-pause="{{ 'Pauza' if lang == 'pl' else 'Pause' }}">▶</button>
+    <input type="range" class="bar" value="0" min="0" step="0.1"
+      aria-label="{{ 'Postęp odtwarzania' if lang == 'pl' else 'Playback progress' }}">
+    <span class="time">0:00</span>
+    <audio preload="none" controls src="{{ audio }}"></audio>
+  </div>
+  <noscript>
+    <p>{{ listenLabel }}: <audio preload="none" controls src="{{ audio }}"></audio></p>
+  </noscript>
 </div>
-<noscript>
-  <p>{{ listenLabel }}: <audio preload="none" controls src="{{ audio }}"></audio></p>
-</noscript>
 <p class="essay-meta">{{ listenLabel }}</p>
 {%- endif %}
 

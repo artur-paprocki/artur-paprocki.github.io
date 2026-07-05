@@ -70,7 +70,20 @@ a {
   outline-offset: 2px;
 }
 
-/* Audio player (progressive enhancement over native <audio controls>) */
+/* Audio player (progressive enhancement over native <audio controls>).
+   The slot reserves the enhanced player's height up front, so un-hiding it
+   after JS loads causes zero layout shift. */
+.player-slot {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  margin: 18px 0 6px;
+}
+
+.player-slot > * {
+  flex: 1;
+}
+
 .player {
   display: flex;
   align-items: center;
@@ -78,6 +91,18 @@ a {
   font-family: var(--sans);
   font-size: 13.5px;
   color: var(--muted);
+}
+
+/* `display: flex` above would defeat the [hidden] attribute (author styles
+   beat the UA sheet), painting the raw native widget before JS enhances it —
+   the collapse afterwards shifted the whole page. */
+.player[hidden] {
+  display: none;
+}
+
+/* Inside the enhanced player the <audio> is a JS-driven engine, never UI. */
+.player audio {
+  display: none;
 }
 
 .player .play {
@@ -317,25 +342,17 @@ footer.site a {
   text-decoration-color: var(--rule);
 }
 
-/* Full-bleed hero only when the viewport actually has room for the overhang —
-   otherwise the negative margins overflow the column and skew centering. */
 .hero-ill {
-  margin: 44px 0 52px;
-}
-
-@media (min-width: 900px) {
-  .hero-ill {
-    margin: 44px -80px 52px;
-  }
-}
-
-body {
-  overflow-x: clip;
+  margin: 44px -80px 52px;
 }
 
 .hero-ill img {
   width: 100%;
   height: auto;
+  /* All hero illustrations are produced at 1400x792; declaring the ratio here
+     reserves the box before the lazy image (and web fonts) arrive — without
+     it the swap reflows the page and Lighthouse reports CLS on the hero. */
+  aspect-ratio: 1400 / 792;
   border-radius: 5px;
 }
 
