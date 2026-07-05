@@ -1,8 +1,7 @@
 export default {
   url: "https://arturpaprocki.com",
-  // Adres, pod którym strona FAKTYCZNIE jest teraz dostępna (redirect _next
-  // formularza). Po podpięciu domeny (runbook DNS) zmień na url powyżej.
-  publicUrl: "https://artur-paprocki.github.io",
+  // Adres, pod którym strona jest publicznie dostępna (redirect _next formularza).
+  publicUrl: "https://arturpaprocki.com",
   author: "Artur Paprocki",
   // Single switch: while true, every page gets meta robots noindex,nofollow.
   noindex: true,
