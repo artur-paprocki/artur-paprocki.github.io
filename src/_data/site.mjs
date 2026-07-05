@@ -8,6 +8,6 @@ export default {
     // Empty until the Substack account exists — templates hide the
     // subscribe box and footer link while this is falsy.
     substack: "",
-    email: "artur@arturpaprocki.com",
+    email: "contact@arturpaprocki.com",
   },
 };
