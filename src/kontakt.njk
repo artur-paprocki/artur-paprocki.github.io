@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Kontakt
+description: "Napisz do mnie — formularz kontaktowy. Odpowiadam na wiadomości o kreatywności, technologii i współpracy."
+lang: pl
+pageType: page
+permalink: /kontakt/
+pair: /en/contact/
+---
+<div class="essay-head">
+  <h1>Kontakt</h1>
+</div>
+<article>
+  <p>Najszybciej złapiesz mnie na <a href="{{ site.links.linkedin }}">LinkedInie</a>. A jeśli wolisz dłuższą formę — napisz tutaj, wiadomość trafi prosto do mojej skrzynki.</p>
+</article>
+<form class="contact-form" action="https://formsubmit.co/contact@arturpaprocki.com" method="POST">
+  <input type="hidden" name="_subject" value="Wiadomość z arturpaprocki.com">
+  <input type="hidden" name="_next" value="{{ site.publicUrl }}/dziekuje/">
+  <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label for="cf-name">Imię</label>
+  <input id="cf-name" type="text" name="name" required autocomplete="name">
+  <label for="cf-email">Twój e-mail</label>
+  <input id="cf-email" type="email" name="email" required autocomplete="email">
+  <label for="cf-message">Wiadomość</label>
+  <textarea id="cf-message" name="message" rows="7" required></textarea>
+  <button class="btn" type="submit">
+    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
+    Wyślij wiadomość
+  </button>
+</form>

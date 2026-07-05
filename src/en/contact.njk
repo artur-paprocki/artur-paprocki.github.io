@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Contact
+description: "Write to me — contact form. I reply to messages about creativity, technology, and collaboration."
+lang: en
+pageType: page
+permalink: /en/contact/
+pair: /kontakt/
+---
+<div class="essay-head">
+  <h1>Contact</h1>
+</div>
+<article>
+  <p>The fastest way to reach me is <a href="{{ site.links.linkedin }}">LinkedIn</a>. If you prefer the longer form — write here and the message lands straight in my inbox.</p>
+</article>
+<form class="contact-form" action="https://formsubmit.co/contact@arturpaprocki.com" method="POST">
+  <input type="hidden" name="_subject" value="Message from arturpaprocki.com">
+  <input type="hidden" name="_next" value="{{ site.publicUrl }}/en/thank-you/">
+  <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label for="cf-name">Name</label>
+  <input id="cf-name" type="text" name="name" required autocomplete="name">
+  <label for="cf-email">Your e-mail</label>
+  <input id="cf-email" type="email" name="email" required autocomplete="email">
+  <label for="cf-message">Message</label>
+  <textarea id="cf-message" name="message" rows="7" required></textarea>
+  <button class="btn" type="submit">
+    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
+    Send message
+  </button>
+</form>

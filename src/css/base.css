@@ -355,6 +355,56 @@ footer.site a {
   }
 }
 
+/* ——— contact form ——— */
+
+.contact-form {
+  margin: 34px 0 24px;
+  max-width: 520px;
+}
+
+.contact-form label {
+  display: block;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+  margin: 18px 0 6px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  font-family: var(--text);
+  font-size: 17px;
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .btn {
+  margin-top: 22px;
+}
+
+/* Honeypot — poza ekranem, niewidoczny dla ludzi, kuszący dla botów. */
+.contact-form .hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+}
+
 /* ——— essay page ——— */
 
 .essay-head {
