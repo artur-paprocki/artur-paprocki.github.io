@@ -322,6 +322,39 @@ footer.site a {
   }
 }
 
+/* ——— about page ——— */
+
+.about-photo {
+  float: right;
+  width: 248px;
+  margin: 6px 0 18px 28px;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Dim the photographic print slightly on the dark edition so it doesn't glare. */
+[data-theme="dark"] .about-photo img {
+  filter: brightness(.86) saturate(.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .about-photo img {
+    filter: brightness(.86) saturate(.9);
+  }
+}
+
+@media (max-width: 560px) {
+  .about-photo {
+    float: none;
+    width: 100%;
+    margin: 8px 0 20px;
+  }
+}
+
 /* ——— essay page ——— */
 
 .essay-head {
