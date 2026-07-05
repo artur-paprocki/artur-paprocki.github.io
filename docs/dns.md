@@ -97,3 +97,14 @@ Pełna kolejność komend do skopiowania — patrz `docs/uruchomienie.md`.
 
 1. W `src/_data/site.mjs` zmień `publicUrl` na `https://arturpaprocki.com` (redirect po wysyłce formularza).
 2. Po aktywacji FormSubmit (mail "Activate" na artur.paprocki@me.com) otwórz mail aktywacyjny — zawiera **random-like alias** (np. `a1b2c3...`). Podmień w `src/kontakt.njk` i `src/en/contact.njk` action na `https://formsubmit.co/<alias>` — adres e-mail zniknie z HTML całkowicie.
+
+## ⚠️ KOLEJNOŚĆ (lekcja z 2026-07-05)
+
+Custom domain w Pages ustawiaj DOPIERO PO wklikaniu rekordów w OVH i ich propagacji.
+Odwrotna kolejność = github.io robi 301 na martwą domenę (strona bez CSS), a Chrome
+cache'uje 301 na twardo (naprawa u widza: DevTools → prawy klik na odśwież →
+"Opróżnij pamięć podręczną i twardo załaduj").
+
+Deploy Pages bywa kapryśny ("Deployment failed, try again later"):
+1) `gh run rerun <id> --repo artur-paprocki/artur-paprocki.github.io --failed`
+2) jeśli znowu padnie — pusty commit i push.
