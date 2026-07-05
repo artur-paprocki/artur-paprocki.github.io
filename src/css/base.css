@@ -27,10 +27,39 @@ a {
   color: inherit;
 }
 
-/* Dual-theme illustration swap: pairs of <img> toggled by [data-theme],
-   with a prefers-color-scheme fallback for the no-manual-choice case. */
-.only-dark {
+/* Dual-theme illustration swap: pairs of <img>/<span> toggled by [data-theme],
+   with a prefers-color-scheme fallback for the no-manual-choice case.
+   Doubled class selectors: these utilities MUST outrank any component rule
+   that also sets display (lesson: `.stamp{display:inline-block}` was
+   resurrecting the hidden dark monogram in the light theme). */
+.only-dark.only-dark {
   display: none;
+}
+
+[data-theme="dark"] .only-light.only-light {
+  display: none;
+}
+
+[data-theme="dark"] .only-dark.only-dark {
+  display: block;
+}
+
+[data-theme="dark"] .stamp.only-dark.only-dark {
+  display: inline-block;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .only-light.only-light {
+    display: none;
+  }
+
+  :root:not([data-theme="light"]) .only-dark.only-dark {
+    display: block;
+  }
+
+  :root:not([data-theme="light"]) .stamp.only-dark.only-dark {
+    display: inline-block;
+  }
 }
 
 /* Small accent artwork (stroke separator, AP monogram) is baked on paper the
@@ -45,24 +74,6 @@ a {
 .stroke-sep.only-dark,
 .only-dark .monogram {
   mix-blend-mode: screen;
-}
-
-[data-theme="dark"] .only-light {
-  display: none;
-}
-
-[data-theme="dark"] .only-dark {
-  display: block;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .only-light {
-    display: none;
-  }
-
-  :root:not([data-theme="light"]) .only-dark {
-    display: block;
-  }
 }
 
 :focus-visible {
