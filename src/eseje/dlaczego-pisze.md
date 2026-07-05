@@ -7,6 +7,7 @@ heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "Dłoń rysująca linię, którą kończy ramię robota; linia zrywa się w stado ptaków — ołówek i akwarela"
 readingTime: 4
+audio: /assets/audio/dlaczego-pisze-pl.mp3
 ---
 
 Kilka miesięcy temu obserwowałem w studiu moment, w którym coś, co jeszcze niedawno wymagałoby całego zespołu i tygodni pracy, zaczęło dziać się w ułamku tego czasu — dzięki agentowi AI, który wszedł w miejsce części naszej dotychczasowej roboty. I właśnie to mnie zatrzymało. Nie sam efekt, tylko tempo, w jakim się pojawił. Rok wcześniej ta sama rozmowa kończyłaby się na „może kiedyś". Dziś kończy się na „spróbujmy w tym tygodniu".

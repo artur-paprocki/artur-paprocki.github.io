@@ -7,6 +7,7 @@ heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "A hand drawing a line that a robotic arm continues; the line breaks into a flock of birds — pencil and watercolor"
 readingTime: 4
+audio: /assets/audio/why-i-write-en.mp3
 ---
 
 A few months ago I watched something happen in the studio that would have taken a full team weeks to pull off — done in a fraction of the time, because an AI agent had stepped into part of the work we used to do by hand. That's what stopped me. Not the result itself, but the speed at which it arrived. A year earlier, that same conversation would have ended with "maybe someday." Now it ends with "let's try this week."

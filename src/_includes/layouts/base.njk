@@ -55,7 +55,7 @@
     </div>
     <footer class="site">
       <span>{{ copyrightLine }}</span>
-      <span><a href="{{ site.links.substack }}">{{ newsletterLabel }}</a> · <a href="{{ site.links.linkedin }}">LinkedIn</a> · <a href="{{ feedHref }}">{{ rssLabel }}</a></span>
+      <span>{% if site.links.substack %}<a href="{{ site.links.substack }}">{{ newsletterLabel }}</a> · {% endif %}<a href="mailto:{{ site.links.email }}">{{ site.links.email }}</a> · <a href="{{ site.links.linkedin }}">LinkedIn</a> · <a href="{{ feedHref }}">{{ rssLabel }}</a></span>
     </footer>
   </div>
 

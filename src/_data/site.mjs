@@ -5,6 +5,9 @@ export default {
   noindex: true,
   links: {
     linkedin: "https://www.linkedin.com/in/arturpaprocki",
-    substack: "#TODO-substack",
+    // Empty until the Substack account exists — templates hide the
+    // subscribe box and footer link while this is falsy.
+    substack: "",
+    email: "artur@arturpaprocki.com",
   },
 };

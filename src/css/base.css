@@ -33,6 +33,20 @@ a {
   display: none;
 }
 
+/* Small accent artwork (stroke separator, AP monogram) is baked on paper the
+   same hue as each theme's background but never pixel-identical — blend it
+   into the page so no rectangle shows: multiply drops white paper on light,
+   screen drops dark paper on dark. */
+.stroke-sep.only-light,
+.only-light .monogram {
+  mix-blend-mode: multiply;
+}
+
+.stroke-sep.only-dark,
+.only-dark .monogram {
+  mix-blend-mode: screen;
+}
+
 [data-theme="dark"] .only-light {
   display: none;
 }
@@ -303,8 +317,20 @@ footer.site a {
   text-decoration-color: var(--rule);
 }
 
+/* Full-bleed hero only when the viewport actually has room for the overhang —
+   otherwise the negative margins overflow the column and skew centering. */
 .hero-ill {
-  margin: 44px -80px 52px;
+  margin: 44px 0 52px;
+}
+
+@media (min-width: 900px) {
+  .hero-ill {
+    margin: 44px -80px 52px;
+  }
+}
+
+body {
+  overflow-x: clip;
 }
 
 .hero-ill img {

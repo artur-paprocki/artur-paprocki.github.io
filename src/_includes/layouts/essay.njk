@@ -44,6 +44,7 @@ layout: layouts/base.njk
   <span class="bird" data-awake aria-hidden="true"></span>
 </div>
 
+{%- if site.links.substack %}
 <div class="subscribe">
   <h2>{{ subscribeTitle }}</h2>
   <p>{{ subscribeBody }}</p>
@@ -52,3 +53,4 @@ layout: layouts/base.njk
     {{ subscribeCta }}
   </a>
 </div>
+{%- endif %}
