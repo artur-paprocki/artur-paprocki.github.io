@@ -3,9 +3,9 @@ title: "The Vertigo Effect"
 description: "An essay on two waves colliding — AI-driven production costs in freefall and audiences moving to the vertical phone screen — and why the new format doesn't condemn stories to banality, as long as someone guards the craft Hitchcock built."
 date: 2026-07-12
 # pair: /eseje/efekt-vertigo/  — uncomment on publication (the pair is still in draft)
-heroLight: ill-vertigo-1400
-heroDark: dill-vertigo-1400
-heroAlt: "A subway car stretched as in Hitchcock's dolly zoom: passengers absorbed in glowing vertical screens, a figure at the centre staying the same size — pencil and watercolour"
+heroLight: ill-vertigo-en-1400
+heroDark: dill-vertigo-en-1400
+heroAlt: "A small figure on an empty platform faces a tunnel curling into a vertigo spiral, vertical screens lifting off along its lines like a flock of birds — loose pencil and watercolour"
 readingTime: 6
 audio: /assets/audio/the-vertigo-effect-en.mp3
 draft: true

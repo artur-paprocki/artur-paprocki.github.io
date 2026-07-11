@@ -5,7 +5,7 @@ date: 2026-07-12
 # pair: /essays/the-vertigo-effect/  — odkomentować przy publikacji (para jest w drafcie)
 heroLight: ill-vertigo-1400
 heroDark: dill-vertigo-1400
-heroAlt: "Wagon metra rozciągnięty jak w transfokacji Hitchcocka: pasażerowie zapatrzeni w świecące pionowe ekrany, pośrodku postać tej samej wielkości — ołówek i akwarela"
+heroAlt: "Mała postać stoi nieruchomo między rozpędzonymi liniami wagonu metra, a pionowe ekrany ulatują wzdłuż perspektywy jak stado ptaków — luźny szkic ołówkiem z akwarelą"
 readingTime: 6
 audio: /assets/audio/efekt-vertigo-pl.mp3
 draft: true
