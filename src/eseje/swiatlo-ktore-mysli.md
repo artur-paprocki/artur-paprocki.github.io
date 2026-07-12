@@ -5,7 +5,7 @@ date: 2026-07-11
 pair: /essays/the-light-that-thinks/
 heroLight: ill-swiatlo-1400
 heroDark: dill-swiatlo-1400
-heroAlt: "Szkic ołówkiem z akwarelą: hala zdjęciowa, na ścianie LED z chmury świetlnych punktów wyłania się przytulny pokój; na pierwszym planie kamera na kranie i dwie sylwetki ekipy"
+heroAlt: "Szkic ołówkiem z akwarelą: samotny filmowiec przed wielką ścianą LED, na której z dryfujących punktów światła składa się antarktyczny pejzaż z wijącą się zamarzniętą rzeką"
 readingTime: 5
 audio: /assets/audio/swiatlo-ktore-mysli-pl.mp3
 ---
