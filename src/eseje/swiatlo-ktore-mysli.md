@@ -1,4 +1,4 @@
----
+﻿---
 title: "Światło, które myśli"
 description: "O seminarium mojego zespołu na Camerimage, błędzie z zamarzniętą rzeką na Antarktydzie i o tym, jak Gaussian splatting generowany z promptu przesuwa ciężar kina z aktorstwa na budowanie świata."
 date: 2026-07-11
@@ -21,7 +21,7 @@ Dziś scenograf otwiera [Marble od World Labs](https://marble.worldlabs.ai), wpi
 
 Zespół streścił tę zmianę na jednym slajdzie: od „scan-to-splat" do „prompt-to-splat". Do niedawna splat trzeba było wyskanować z miejsca, które istnieje. Dziś wystarczy je opisać — a różnicę między tymi dwoma światami widać na jednym kadrze: po lewej galeria gotowych miejsc, po prawej surowa chmura punktów, od której każde z nich się zaczyna.
 
-<figure class="hero-ill">
+<figure class="still-ill">
 {% img "src/assets/stills/swiatlo-splat-1400.jpg", "Slajd z seminarium: po lewej galeria gotowych światów Marble, po prawej surowa chmura punktów Gaussian splata" %}
 <figcaption>„From scan-to-splat… to prompt-to-splat" — slajd z naszego seminarium. <a href="https://www.youtube.com/watch?v=jJvGwOjRT2E&t=2674">Ten moment na nagraniu (44:34)</a>.</figcaption>
 </figure>
@@ -30,12 +30,17 @@ Zespół streścił tę zmianę na jednym slajdzie: od „scan-to-splat" do „p
 
 Dwa tygodnie przed naszym seminarium ta metoda przeszła pierwszy test w prawdziwej produkcji: teledysk dla młodej polskiej artystki, trzy albo cztery wirtualne sety, mniej niż trzy dni przygotowań, ekipa złożona ze scenografa, generalisty Unreal Engine i inżyniera — plus, rzecz jasna, produkcja i aktorzy. [Nasz szef technologii mówił o tym](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=2854) jako o prawdopodobnie pierwszym na świecie komercyjnym użyciu Gaussian splatów generowanych przez AI. Zastrzegam od razu: to samoocena, nie tytuł przyznany przez kogokolwiek z zewnątrz. Z tego teledysku pochodzi za to kadr, który najkrócej tłumaczy, po co nam ta technologia: korytarz pełen androidów, którego nikt nigdy nie zbudował.
 
-<figure class="hero-ill">
+<figure class="still-ill">
 {% img "src/assets/stills/swiatlo-teledysk-1400.jpg", "Kadr z teledysku: symetryczny korytarz pełen białych androidów w szklanych kapsułach" %}
 <figcaption>Kadr z teledysku nakręconego na generowanych splatach — scenografia za ścianą LED dokładana w czasie rzeczywistym. <a href="https://www.youtube.com/watch?v=jJvGwOjRT2E&t=3040">Fragment na nagraniu (50:40)</a>.</figcaption>
 </figure>
 
 Drugim testem był trailer do filmu, który wciąż jest w developmencie: cztery sceny, sześć dni przygotowań, jeden dzień zdjęciowy na ARRI Alexa Mini z zawodowym operatorem. [Normalnie na taki materiał po prostu nie ma budżetu](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=3236) — to forma promocyjna, na którą firmy produkcyjne nie wydają realnych pieniędzy, dopóki film nie ma finansowania. Tu nagle się to opłacało.
+
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/jJvGwOjRT2E?start=2918&end=2927" title="Wideo-cytat: przygotowanie zajęło mniej niż trzy dni" loading="lazy" allowfullscreen></iframe>
+<figcaption>Dziewięć sekund, które streszczają całą zmianę tempa: „Przygotowanie wszystkiego zajęło nam mniej niż trzy dni — to przyspiesza proces wielokrotnie" (48:38–48:47).</figcaption>
+</figure>
 
 Na tym samym seminarium gościł reżyser, który spędził pięć miesięcy z dwunastoosobowym zespołem, kręcąc osiemdziesięciominutowy film w całości wygenerowany przez AI. [Jego teza](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=1388) była prostsza, niż się spodziewałem: modele nie przenoszą emocji z twarzy aktora, więc trzeba przestać na niej polegać. Zamiast tego buduje się kontekst — scenografię, atmosferę, świat wokół postaci. Model nazwał [„wielkim kalkulatorem"](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=4742), bo — jak mówił — polecenie „zagraj strasznie" nie działa ani na aktora, ani na sieć neuronową.
 
@@ -45,7 +50,12 @@ Przypomniał przy okazji, że Pixar i Disney od dekad robią kino bez żywego ak
 
 Nic z tego nie jest jeszcze proste. Finał generatywnej sceny to [zawsze zgadywanka](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=4538): zmiana jednego krzesła potrafi wymusić regenerację całego kadru, a największym problemem zostaje ciągłość emocji tej samej postaci między ujęciami. Wnętrza wychodzą dobrze, ale eksteriery ze splatów wciąż mają kłopoty z perspektywą, więc na planie i tak trzymamy w zapasie klasyczne plansze 2.5D jako zabezpieczenie. I nikt nie powinien traktować tego jako oszczędności bez kosztów — wyszkolenie zespołu i naszych prompt engineerów kosztowało sporo, zanim cokolwiek zaczęło działać szybciej niż po staremu.
 
-<figure class="hero-ill">
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/jJvGwOjRT2E?start=4538&end=4568" title="Wideo-cytat: finał jest zawsze zgadywanką" loading="lazy" allowfullscreen></iframe>
+<figcaption>Pół minuty szczerości z pytań publiczności: „Finał jest zawsze zgadywanką — najczęściej bierzesz to, co dostajesz, a ostatnie słowo ma reżyser" (1:15:38).</figcaption>
+</figure>
+
+<figure class="still-ill">
 {% img "src/assets/stills/swiatlo-antarktyda-1400.jpg", "Kadr z trailera: postać na śnieżnej grani Antarktydy, po lewej wijąca się zamarznięta rzeka" %}
 <figcaption>Kadr z trailera: grań na Antarktydzie — i rzeka, która nie miała prawa tam płynąć. <a href="https://www.youtube.com/watch?v=jJvGwOjRT2E&t=3687">Historia tej pomyłki na nagraniu (1:01:27)</a>.</figcaption>
 </figure>

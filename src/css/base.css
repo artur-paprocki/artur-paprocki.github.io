@@ -481,6 +481,42 @@ footer.site a {
   text-decoration-color: var(--rule);
 }
 
+/* In-text media — source stills and clipped video quotes — stay WITHIN the
+   text column; only the hero bleeds (Artur's feedback 2026-07-12). */
+.still-ill {
+  margin: 40px 0 48px;
+}
+
+.still-ill img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1400 / 792;
+  border-radius: 5px;
+}
+
+.still-ill iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 5px;
+}
+
+.still-ill figcaption {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: center;
+}
+
+.still-ill figcaption a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--rule);
+}
+
 .monogram-zone {
   text-align: center;
   margin: 54px 0 10px;
