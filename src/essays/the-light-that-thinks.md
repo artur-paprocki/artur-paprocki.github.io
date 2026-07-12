@@ -3,9 +3,9 @@ title: "The Light That Thinks"
 description: "On the seminar my team ran at Camerimage, the frozen river we put into a trailer by mistake, and how prompt-generated Gaussian splatting shifts the weight of cinema from performance to world-building."
 date: 2026-07-11
 # pair: /eseje/swiatlo-ktore-mysli/  — uncomment on publication (the pair is still in draft)
-heroLight: ill-hero-1400
-heroDark: dill-hero-1400
-heroAlt: "Temporary illustration — the essay's final artwork is in preparation"
+heroLight: ill-swiatlo-1400
+heroDark: dill-swiatlo-1400
+heroAlt: "Pencil-and-watercolor sketch: a film soundstage where a cozy room materializes from a cloud of luminous points on an LED wall; a camera crane and two crew silhouettes in the foreground"
 readingTime: 5
 audio: /assets/audio/the-light-that-thinks-en.mp3
 draft: true
@@ -13,11 +13,11 @@ draft: true
 
 In the final cut of a trailer we shipped, a frozen river cuts through an Antarctic wasteland. The light is hard, the snow convincing, mountains stacking up behind it — everything a shot needs to read as real cinema. Nobody in the room paused. Antarctica has no rivers. Our head of technology caught it only while building the slide about this very shot; the frame had passed through the whole production before him and nobody caught it.
 
-That slide belonged to a talk called "The Light That Thinks," which my team gave at the Camerimage festival. We walked through three doors AI is currently opening in filmmaking: volumetric capture that carries a real actor's performance straight into a game engine, a feature directed entirely by AI, and the thing we do for a living — building virtual worlds out of Gaussian splats generated from a prompt. I want to spend most of this essay on the third door, because it's our work, and our mistake with the river.
+That slide belonged to a talk called ["The Light That Thinks,"](https://www.youtube.com/watch?v=jJvGwOjRT2E) which my team gave at the Camerimage festival — the full recording is public on the festival's channel. We walked through three doors AI is currently opening in filmmaking: volumetric capture that carries a real actor's performance straight into a game engine, a feature directed entirely by AI, and the thing we do for a living — building virtual worlds out of [Gaussian splats](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) generated from a prompt. I want to spend most of this essay on the third door, because it's our work, and our mistake with the river.
 
 Before generated worlds, building a virtual set was the most expensive stage of any shoot. An architect designed the space, someone built the textures, the client sent notes, we went back to the start. It could take weeks before anything reached the LED wall.
 
-Now a set designer opens Marble, from World Labs, types a description — sometimes fifty words, sometimes just a reference image — and ten seconds later has a full 3D environment: a Gaussian splat, a cloud of points carrying the color and light of an entire scene at once. The splat goes through a plugin called Volinga into Unreal Engine, and from there onto our LED wall — 7.5 by 3.5 meters, running Ghostframe so three cameras can shoot it at once. Into the same environment we can fold a scan captured on a roughly five-thousand-dollar camera, or classic photogrammetry — a splat, a scan, and a physical prop now sharing one scene.
+Now a set designer opens [Marble](https://marble.worldlabs.ai), from World Labs, types a description — sometimes fifty words, sometimes just a reference image — and ten seconds later has a full 3D environment: a Gaussian splat, a cloud of points carrying the color and light of an entire scene at once. The team compressed the shift into one slide: from scan-to-splat to prompt-to-splat — until recently a splat had to be scanned from a place that exists; now you just describe one. The splat goes through a plugin called [Volinga](https://volinga.ai) into Unreal Engine, and from there onto our LED wall — 7.5 by 3.5 meters, running [GhostFrame](https://www.ghostframe.com) so three cameras can shoot it at once. Into the same environment we can fold a scan captured on a [roughly five-thousand-dollar handheld camera](https://www.xgrids.com), or classic photogrammetry — a splat, a scan, and a physical prop now sharing one scene.
 
 > Generating an entire environment now takes ten seconds. You can throw out a virtual set completely and start over.
 
@@ -36,3 +36,14 @@ None of this is easy yet. The final result of a generated scene is always a gues
 I keep coming back to that frozen river, because it's the shortest version of what the seminar taught me. The model generated the mountain, the snow, the light, the whole composition — everything the eye needs to believe the scene. It didn't know one thing: that no rivers run on that continent. That knowledge doesn't sit in training data in a form that activates itself at the right moment. It sits in someone who has been there, or at least read about it, and has a reason to doubt what they're looking at.
 
 I run a studio that's been building virtual production in Warsaw since 2022 — an LED wall, motion capture, Unreal Engine, and increasingly AI agents helping with the same work. So I watch up close how fast the light on our wall is starting to think for itself — how readily it can offer up a mountain, a river, an entire sky. But we still decide whether that river belongs there. The faster the machine generates worlds, the more time is left for the one question it never asks itself: what shouldn't be in this picture.
+
+---
+
+Sources:
+
+- [Recording of "The Light That Thinks" seminar — Camerimage festival channel, YouTube, 84 min](https://www.youtube.com/watch?v=jJvGwOjRT2E). Key moments: the virtual-set bottleneck ([38:41](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=2321)), "from scan-to-splat to prompt-to-splat" ([44:34](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=2674)), the music video on generated splats ([47:34](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=2854)), the one-shooting-day trailer ([53:56](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=3236)), the frozen river ([1:01:27](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=3687)), the director on the world of Kubrick's "2001" ([1:13:37](https://www.youtube.com/watch?v=jJvGwOjRT2E&t=4417)).
+- [Kerbl, Kopanas, Leimkühler, Drettakis — "3D Gaussian Splatting for Real-Time Radiance Field Rendering," SIGGRAPH 2023](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/) — the technique's source paper.
+- [Marble — World Labs](https://marble.worldlabs.ai) — generating 3D environments (splats) from a description or reference image.
+- [Volinga](https://volinga.ai) — the plugin that renders splats inside Unreal Engine.
+- [XGRIDS](https://www.xgrids.com) — handheld cameras for scanning real spaces into splats.
+- [GhostFrame](https://www.ghostframe.com) — the technology that splits one LED wall between several cameras at once.
