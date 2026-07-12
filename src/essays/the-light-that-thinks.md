@@ -51,7 +51,7 @@ None of this is easy yet. The final result of a generated scene is [always a gue
 
 <figure class="still-ill">
 <iframe src="https://www.youtube-nocookie.com/embed/jJvGwOjRT2E?start=4538&end=4568" title="Video quote: the final is always a guess" loading="lazy" allowfullscreen></iframe>
-<figcaption>Half a minute of honesty from the Q&A: "The final is always a guess — mostly you take what you get, and the director has the last word" (1:15:38).</figcaption>
+<figcaption>Half a minute of honesty from the Q&amp;A: "The final is always a guess — mostly you take what you get, and the director has the last word" (1:15:38).</figcaption>
 </figure>
 
 <figure class="still-ill">
