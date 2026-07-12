@@ -463,6 +463,24 @@ footer.site a {
   border-radius: 5px;
 }
 
+/* Source stills (video frames quoted in essays) share the .hero-ill bleed;
+   the caption returns to the text column and carries the quote + timestamp link. */
+.hero-ill figcaption {
+  margin-top: 14px;
+  padding: 0 80px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+  text-align: center;
+}
+
+.hero-ill figcaption a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--rule);
+}
+
 .monogram-zone {
   text-align: center;
   margin: 54px 0 10px;
@@ -519,5 +537,9 @@ footer.site a {
 
   .hero-ill {
     margin: 36px 0 44px;
+  }
+
+  .hero-ill figcaption {
+    padding: 0;
   }
 }
