@@ -2,13 +2,12 @@
 title: "The Light That Thinks"
 description: "On the seminar my team ran at Camerimage, the frozen river we put into a trailer by mistake, and how prompt-generated Gaussian splatting shifts the weight of cinema from performance to world-building."
 date: 2026-07-11
-# pair: /eseje/swiatlo-ktore-mysli/  — uncomment on publication (the pair is still in draft)
+pair: /eseje/swiatlo-ktore-mysli/
 heroLight: ill-swiatlo-en-1400
 heroDark: dill-swiatlo-en-1400
 heroAlt: "Pencil-and-watercolor sketch: a lone filmmaker faces a vast LED wall on which an Antarctic landscape with a winding frozen river assembles itself from drifting points of light"
 readingTime: 5
 audio: /assets/audio/the-light-that-thinks-en.mp3
-draft: true
 ---
 
 In the final cut of a trailer we shipped, a frozen river cuts through an Antarctic wasteland. The light is hard, the snow convincing, mountains stacking up behind it — everything a shot needs to read as real cinema. Nobody in the room paused. Antarctica has no rivers. Our head of technology caught it only while building the slide about this very shot; the frame had passed through the whole production before him and nobody caught it.

@@ -2,13 +2,12 @@
 title: "Światło, które myśli"
 description: "O seminarium mojego zespołu na Camerimage, błędzie z zamarzniętą rzeką na Antarktydzie i o tym, jak Gaussian splatting generowany z promptu przesuwa ciężar kina z aktorstwa na budowanie świata."
 date: 2026-07-11
-# pair: /essays/the-light-that-thinks/  — odkomentować przy publikacji (para jest w drafcie)
+pair: /essays/the-light-that-thinks/
 heroLight: ill-swiatlo-1400
 heroDark: dill-swiatlo-1400
 heroAlt: "Szkic ołówkiem z akwarelą: hala zdjęciowa, na ścianie LED z chmury świetlnych punktów wyłania się przytulny pokój; na pierwszym planie kamera na kranie i dwie sylwetki ekipy"
 readingTime: 5
 audio: /assets/audio/swiatlo-ktore-mysli-pl.mp3
-draft: true
 ---
 
 W kadrze, który trafił do finalnego cięcia trailera, przez antarktyczne pustkowie płynie zamarznięta rzeka. Ostre światło, śnieg, góry piętrzące się w tle — wszystko wygląda tak, jak powinno wyglądać kino: przekonująco. Nikt na sali by się nie zawahał. A jednak na Antarktydzie nie ma rzek. Zauważył to dopiero nasz szef technologii, kiedy szykował do tej sceny prezentację. Wcześniej ten kadr przeszedł przez całą produkcję i nikt nie złapał błędu.
