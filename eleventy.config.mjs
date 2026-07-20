@@ -25,6 +25,16 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("essays_en", (collection) =>
     collection.getFilteredByTag("essays_en").sort((a, b) => b.date - a.date)
   );
+  eleventyConfig.addCollection("notatki", (collection) =>
+    collection.getFilteredByTag("notatki").sort((a, b) => b.date - a.date)
+  );
+  // Feed PL scala eseje i notatki w jedną chronologiczną oś.
+  eleventyConfig.addCollection("content_pl", (collection) =>
+    [
+      ...collection.getFilteredByTag("essays_pl"),
+      ...collection.getFilteredByTag("notatki"),
+    ].sort((a, b) => b.date - a.date)
+  );
 
   return {
     dir: {

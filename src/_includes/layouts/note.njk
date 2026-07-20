@@ -1,0 +1,43 @@
+---
+layout: layouts/base.njk
+---
+{%- set dateDisplay = date | pldate -%}
+{%- set readingLabel = (readingTime | string) + " minut czytania" -%}
+
+{%- if draft -%}
+<div class="draft-banner">PODGLĄD — wersja robocza. Ta strona nie jest publiczna: brak jej na liście notatek, w RSS i w Google.</div>
+{%- endif -%}
+<div class="essay-head">
+  <h1>{{ title }}</h1>
+  <div class="meta">
+    <time datetime="{{ date | isodate }}">{{ dateDisplay }}</time> · {{ readingLabel }}
+  </div>
+</div>
+
+{%- if heroLight and heroDark %}
+<figure class="hero-ill">
+  <span class="only-light">{% heroimg "src/assets/ill/light/" + heroLight + ".jpg", heroAlt %}</span>
+  <span class="only-dark">{% heroimg "src/assets/ill/dark/" + heroDark + ".jpg", heroAlt %}</span>
+</figure>
+{%- endif %}
+
+<article>
+  {{ content | safe | replace("<blockquote>", '<blockquote class="pull">') }}
+</article>
+
+<div class="monogram-zone">
+  <span class="only-light stamp" data-awake>{% img "src/assets/ill/light/ill-monogram-220.jpg", "Monogram AP", [220], false, "monogram" %}</span>
+  <span class="only-dark stamp" data-awake>{% img "src/assets/ill/dark/dill-monogram-220.jpg", "Monogram AP", [220], false, "monogram" %}</span>
+  <span class="bird" data-awake aria-hidden="true"></span>
+</div>
+
+{%- if site.links.substack %}
+<div class="subscribe">
+  <h2>Nowe eseje co dwa tygodnie</h2>
+  <p>Bez spamu — tylko kolejny esej, prosto do skrzynki. Po polsku lub po angielsku, jak wolisz.</p>
+  <a class="btn" href="{{ site.links.substack }}">
+    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
+    Subskrybuj newsletter
+  </a>
+</div>
+{%- endif %}

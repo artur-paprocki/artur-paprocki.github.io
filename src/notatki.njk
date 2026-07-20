@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: Notatki
+description: "Krótsze, luźniejsze wpisy obok esejów."
+lang: pl
+pageType: page
+permalink: /notatki/
+---
+{%- set notes = collections.notatki | published -%}
+<div class="essay-head">
+  <h1>{{ site.notesLabel }}</h1>
+</div>
+{%- if notes.length > 0 %}
+<div class="list-block">
+  {%- for note in notes %}
+  <div class="essay-item">
+    <div>
+      <h3><a href="{{ note.url }}">{{ note.data.title }}</a></h3>
+      <p>{{ note.data.description }}</p>
+      <div class="essay-meta">{{ note.data.date | pldate }}</div>
+    </div>
+  </div>
+  {%- endfor %}
+</div>
+{%- else %}
+<article>
+  <p>Wkrótce pojawią się tu krótsze, luźniejsze wpisy obok esejów — na razie ta sekcja czeka na pierwszą notatkę.</p>
+</article>
+{%- endif %}

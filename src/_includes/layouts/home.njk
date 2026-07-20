@@ -41,3 +41,21 @@ layout: layouts/base.njk
   {%- endfor %}
 </div>
 {%- endif %}
+
+{%- if lang == "pl" %}
+{%- set notes = collections.notatki | published %}
+{%- if notes.length > 0 %}
+<div class="list-block">
+  <div class="kicker">{{ site.notesLabel }}</div>
+  {%- for note in notes %}
+  <div class="essay-item">
+    <div>
+      <h3><a href="{{ note.url }}">{{ note.data.title }}</a></h3>
+      <p>{{ note.data.description }}</p>
+      <div class="essay-meta">{{ note.data.date | pldate }}</div>
+    </div>
+  </div>
+  {%- endfor %}
+</div>
+{%- endif %}
+{%- endif %}
