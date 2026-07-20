@@ -3,23 +3,33 @@ title: "Reżyser, który dołączył do maszyny"
 description: "Historia chińskiego reżysera, który zamienił plan filmowy na generator AI, pokazuje mechanizm, który dotknie każdą pracę kreatywną — piszę o nim z perspektywy kogoś, kto sam prowadzi studio na tym samym pograniczu."
 date: 2026-07-11
 # pair: /essays/the-director-who-joined-the-machine/  — odkomentować przy publikacji (para jest w drafcie)
-heroLight: ill-hero-1400
-heroDark: dill-hero-1400
-heroAlt: "Ilustracja tymczasowa — docelowa ilustracja eseju w przygotowaniu"
+heroLight: ill-rezyser-ktory-dolaczyl-do-maszyny-1400
+heroDark: dill-rezyser-ktory-dolaczyl-do-maszyny-1400
+heroAlt: "Dłoń z ołówkiem przesuwa linię granicy na pustej podłodze studia: krzesło reżyserskie po jednej stronie, maszyna po drugiej — luźny szkic ołówkiem z akwarelą"
 readingTime: 5
 audio: /assets/audio/rezyser-ktory-dolaczyl-do-maszyny-pl.mp3
 draft: true
 ---
 
-W reportażu CNA Insider jest ujęcie, które zostało mi w głowie dłużej, niż powinno. Reżyser siedzi przed ekranem i czeka, aż wygenerowany kadr go zadowoli. Nie patrzy na aktora. Nie mówi „jeszcze raz, ale z większym uczuciem". Patrzy na wynik, który wypluła maszyna, i decyduje, czy próbować dalej.
+W [reportażu CNA Insider](https://www.youtube.com/watch?v=uWSB7s_DQHw) jest ujęcie, które zostało mi w głowie dłużej, niż powinno. Reżyser siedzi przed ekranem i czeka, aż wygenerowany kadr go zadowoli. Nie patrzy na aktora. Nie mówi „jeszcze raz, ale z większym uczuciem". Patrzy na wynik, który wypluła maszyna, i decyduje, czy próbować dalej.
 
 Bohater reportażu, Wang Jinfei, jeszcze kilka lat temu kręcił w Chinach tradycyjne filmy. Dziś reżyseruje mikrodramy — krótkie, pionowe historie robione pod telefon, dzielone na odcinki po kilkadziesiąt sekund — z których większość generuje AI. To nie jest jego dorobek uboczny na boku etatu. To jest teraz cała jego praca.
 
 Liczby, które podaje w reportażu, tłumaczą, dlaczego cała branża się w to rzuciła. Wcześniej jedna tradycyjna produkcja potrafiła kosztować tyle, że jedna wpadka oznaczała stratę budżetu na cały rok. Dziś, jak mówi, za trzysta tysięcy juanów można zrobić naraz dziesięć produkcji AI. Nawet jeśli kilka z nich się nie uda, wystarczy, że kilka odniesie sukces, żeby odzyskać inwestycję. To nie jest opowieść o tańszym filmie. To jest zmiana modelu biznesowego — z jednego drogiego zakładu na portfel tanich prób.
 
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/uWSB7s_DQHw?start=146" title="Wideo-cytat: nowa ekonomia mikrodram" loading="lazy" allowfullscreen></iframe>
+<figcaption>Wang Jinfei rozkłada nową ekonomię mikrodram na czynniki pierwsze — wypowiedź od 2:26. <a href="https://www.youtube.com/watch?v=uWSB7s_DQHw">Pełny reportaż CNA Insider</a>.</figcaption>
+</figure>
+
 Tyle że ten sam reportaż pokazuje też drugą stronę rachunku, tę, o której rzadziej się mówi przy okazji ekscytacji nowym narzędziem. Żeby zarobić tyle, co wcześniej w miesiąc tradycyjnej produkcji, Wang Jinfei potrzebuje dziś około trzech miesięcy pracy z AI. Zniknęła większość stanowisk, które kiedyś stały wokół kamery — operator, oświetleniowiec, rekwizytor. Jedna z jego współpracowniczek mówi wprost, że na planie czuła się niezastąpiona, a przy AI czuje, że w każdej chwili może zostać zastąpiona. Narrator reportażu podsumowuje to jednym zdaniem, które warto zapamiętać: „technologia niekoniecznie zastępuje pracowników, ale zmienia wartość ich pracy". Nie mniej ludzi. Inna cena tego, co ludzie umieją.
 
 Zmienia się też sama praca reżysera. Wang Jinfei mówi, że kiedyś największym wyzwaniem była rozmowa z aktorem — jeśli scena nie grała, siadał z nim i szukali razem, co poprawić. Dziś tej rozmowy nie ma. Jest generowanie ujęcia, ocena, czy wynik satysfakcjonuje, i kolejna próba, jeśli nie. Sam nazywa to hazardem — nie wie z góry, czy dane polecenie da mu to, czego szuka, dopóki nie zobaczy rezultatu. Reżyseria przestaje być rzemiosłem, w którym doświadczenie daje kontrolę nad efektem. Staje się iterowaniem na maszynie, która czasem trafia, a czasem nie.
+
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/uWSB7s_DQHw?start=316" title="Wideo-cytat: generowanie jak hazard" loading="lazy" allowfullscreen></iframe>
+<figcaption>Generowanie ujęć przypomina mu hazard, a rozmowy z aktorem już nie ma — wypowiedzi od 5:16 (wątek aktora od 5:31).</figcaption>
+</figure>
 
 A widza to wszystko właściwie nie obchodzi. Reportaż zauważa, że jeśli historia jest dobra, nikt nie pyta, ile w niej ludzkiej ręki, a ile pracy maszyny. To chyba najbardziej niewygodne zdanie z całego materiału — nie dlatego, że jest fałszywe, tylko dlatego, że jest prawdziwe od zawsze, tylko wcześniej nie mieliśmy powodu się nad tym zastanawiać.
 
