@@ -2,11 +2,15 @@
 title: "The Director Who Joined the Machine"
 description: "The story of a Chinese film director who traded the set for an AI generator previews a mechanism that will reach every kind of creative work — I write about it as someone running a studio on the same frontier."
 date: 2026-07-11
-# pair: /eseje/rezyser-ktory-dolaczyl-do-maszyny/  — uncomment on publication (the pair is still in draft)
+# work: rezyser-ktory-dolaczyl-do-maszyny  — uncomment on publication (the pair is still in draft)
 heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "Temporary illustration — the essay's final artwork is in preparation"
 readingTime: 5
+theses:
+  - "Directing stops being a craft in which experience gives you control over the outcome."
+  - "The Chinese wave of AI micro-dramas is not a curiosity from the other side of the world."
+  - "What interests me is a third way: deliberately choosing what in the production chain stays with the human, and what I hand over to the machine."
 audio: /assets/audio/the-director-who-joined-the-machine-en.mp3
 draft: true
 ---

@@ -1,6 +1,14 @@
 /* Self-hosted fonts. Static instances subset from Fraunces v38 and
    Newsreader v26 variable fonts (Google Fonts), latin + latin-ext,
-   woff2 only. No external requests. */
+   woff2 only. No external requests.
+
+   Chinese (zh-Hans) adds a third serif — Noto Serif SC, SIL Open Font
+   License 1.1, licence in `/assets/fonts/OFL-Noto-Serif-SC.txt`. Its
+   `@font-face` is NOT here: every Chinese page carries a different subset
+   (`/assets/fonts/zh/<slug>.woff2`, cut in the build by `lib/fonts-cjk.mjs`
+   to the characters that page prints), so the rule is inlined per page.
+   What stays global is the stack below — it works with the subset and
+   without it. */
 
 /* Fraunces — regular 400 */
 @font-face {
@@ -108,4 +116,34 @@
   font-display: swap;
   src: url("/assets/fonts/newsreader-italic-400-latin.woff2") format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Chinese pages: the house typefaces stay in front, so Latin inside a Chinese
+   sentence ("Gaussian splatting") still reads in Fraunces and Newsreader —
+   neither of them owns a single CJK glyph, so the browser walks on to Noto
+   Serif SC for Chinese characters only. `:root:lang(zh)` outranks the `:root`
+   defaults in typography.css by specificity, not by load order.
+
+   The families after it are the escape route: a page whose subset failed to
+   build lands on the system CJK serif (Noto Serif CJK on Linux and Android,
+   Songti SC on macOS, SimSun on Windows) instead of on a wall of tofu.
+
+   Scoped to any [lang], not just the root, so that a nested Chinese element on a
+   Polish page — the essay header links to every other version in that version's
+   own language, so a Polish page carries "阅读中文版 →" inside a lang="zh-Hans"
+   anchor — is covered by the same rule as a whole Chinese page.
+
+   Measured caveat, so nobody trusts this further than it goes: for that anchor
+   the redefinition changes nothing. Its parent .meta already declares
+   `font-family: var(--sans)`, var() resolves there, and the anchor inherits the
+   finished value — redefining --sans further down cannot reach it. The link
+   still renders (every system sans carries CJK), so this is a limit of the
+   mechanism, not a defect: to actually steer such a fragment you would have to
+   set font-family on it, not a custom property. Either way it gets no subset —
+   a subset holds only the characters of its own page, which is right for five
+   glyphs. */
+:lang(zh) {
+  --display: 'Fraunces', 'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', SimSun, Georgia, serif;
+  --text: 'Newsreader', 'Noto Serif SC', 'Noto Serif CJK SC', 'Songti SC', SimSun, Georgia, serif;
+  --sans: ui-sans-serif, system-ui, 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }

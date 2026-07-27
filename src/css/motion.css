@@ -314,22 +314,19 @@ body {
   }
 }
 
+/* Przełącznik języka — pigułka z suwakiem. Opcji jest tyle, ile wersji ma
+   dana strona (LANG-SET, spec 0052): aktywna to <span aria-current>, reszta
+   to linki. Suwak ma szerokość dokładnie jednej opcji, więc translateX(N×100%)
+   trafia w jej miejsce niezależnie od liczby stanów — przy dwóch geometria
+   jest ta sama co przed zestawem językowym. */
 .lang-pill {
   position: relative;
   display: inline-flex;
   border: 1px solid var(--rule);
   border-radius: 999px;
   background: var(--paper);
-  cursor: pointer;
   user-select: none;
   padding: 3px;
-  text-decoration: none;
-}
-
-.lang-pill input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .lang-pill .opt {
@@ -340,7 +337,18 @@ body {
   font-weight: 600;
   padding: 7px 16px;
   color: var(--muted);
+  text-decoration: none;
   transition: color .35s ease;
+}
+
+/* Opcja nieaktywna jest linkiem, więc łapie `nav.top a:hover` z base.css —
+   zerujemy to, żeby pigułka pod kursorem wyglądała tak samo jak w spoczynku. */
+nav.top .lang-pill a.opt:hover {
+  color: var(--muted);
+}
+
+.lang-pill .opt[aria-current] {
+  color: #fff;
 }
 
 .lang-pill .thumb-slide {
@@ -356,23 +364,38 @@ body {
   transition-timing-function: var(--ease-spring);
 }
 
-.lang-pill input:checked ~ .thumb-slide,
-.lang-pill[data-active="en"] .thumb-slide {
+.lang-pill[data-index="1"] .thumb-slide {
   transform: translateX(100%);
 }
 
-.lang-pill .opt.pl {
-  color: #fff;
+.lang-pill[data-index="2"] .thumb-slide {
+  transform: translateX(200%);
 }
 
-.lang-pill input:checked ~ .opt.pl,
-.lang-pill[data-active="en"] .opt.pl {
-  color: var(--muted);
+/* Żadna opcja nie jest bieżąca (`data-index="-1"`): suwak znika, zamiast stać
+   pod pierwszą i kłamać, że to ona. Wtedy żadna opcja nie ma `aria-current`,
+   więc obraz i czytnik ekranu mówią to samo. Szablon dokłada bieżący język
+   przez `langEnsure`, ten stan jest siatką bezpieczeństwa pod język spoza
+   rejestru. */
+.lang-pill[data-index="-1"] .thumb-slide {
+  opacity: 0;
 }
 
-.lang-pill input:checked ~ .opt.en,
-.lang-pill[data-active="en"] .opt.en {
-  color: #fff;
+/* Trzy stany: suwak węższy o trzecią, opcje ciaśniejsze — pigułka nie może
+   urosnąć ponad to, co nagłówek ma do oddania. Przy 420 px i mniej schodzi do
+   szerokości wersji dwustanowej, bo tam pasek nawigacji jest już ciasny. */
+.lang-pill[data-count="3"] .thumb-slide {
+  width: calc((100% - 6px) / 3);
+}
+
+.lang-pill[data-count="3"] .opt {
+  padding: 7px 11px;
+}
+
+@media (max-width: 420px) {
+  .lang-pill[data-count="3"] .opt {
+    padding: 7px 7px;
+  }
 }
 
 /* 8 · Living element — the bird: true frame-by-frame animation, paused

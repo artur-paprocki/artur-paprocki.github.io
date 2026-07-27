@@ -2,11 +2,15 @@
 title: "Why I Write"
 description: "An opening manifesto: the future of creativity is being built right now, in practice — I write to think out loud about what I learn running a studio at the intersection of film, animation, and AI."
 date: 2026-07-05
-pair: /eseje/dlaczego-pisze/
+work: dlaczego-pisze
 heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "A hand drawing a line that a robotic arm continues; the line breaks into a flock of birds — pencil and watercolor"
 readingTime: 4
+theses:
+  - "I'm starting it because writing is, for me, a way of thinking, not just a way of communicating something I already know."
+  - "The future of creativity is being built right now, and it's being built in practice — in studios where film, animation, and technology meet in the same workshop, not in abstract predictions about what will happen a decade from now."
+  - "I'm promising honesty about what I don't know, and specifics about what I've actually learned."
 audio: /assets/audio/why-i-write-en.mp3
 ---
 

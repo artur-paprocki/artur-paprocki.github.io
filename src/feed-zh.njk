@@ -1,0 +1,31 @@
+---
+permalink: /zh/feed.xml
+eleventyExcludeFromCollections: true
+date: 2026-07-26
+---
+{#- Sekcja chińska startuje z jednym esejem w podglądzie, więc kolekcja
+    opublikowanych bywa PUSTA — a wtedy `first` nie ma `.data.date` i `isodate`
+    wywala build (RangeError na Invalid Date). Stąd `latest` z zapasem na dacie
+    tego pliku: pusty feed jest poprawnym Atomem, byle miał `updated`. -#}
+{%- set items = collections.essays_zh | published -%}
+{%- set latest = items | first -%}
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.author }}</title>
+  <subtitle>关于创造力未来的随笔。</subtitle>
+  <link href="{{ site.url }}/zh/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/zh/"/>
+  <id>{{ site.url }}/zh/</id>
+  <updated>{{ (latest.data.date if latest else date) | isodate }}T00:00:00Z</updated>
+  {%- for essay in items %}
+  <entry>
+    <title>{{ essay.data.title }}</title>
+    <link href="{{ site.url }}{{ essay.url }}"/>
+    <id>{{ site.url }}{{ essay.url }}</id>
+    <published>{{ essay.data.date | isodate }}T00:00:00Z</published>
+    <updated>{{ essay.data.date | isodate }}T00:00:00Z</updated>
+    <author><name>{{ site.author }}</name></author>
+    <summary>{{ essay.data.description }}</summary>
+  </entry>
+  {%- endfor %}
+</feed>

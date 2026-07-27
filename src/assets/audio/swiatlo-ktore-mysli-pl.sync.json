@@ -1,0 +1,352 @@
+{
+  "version": 1,
+  "slug": "swiatlo-ktore-mysli",
+  "lang": "pl",
+  "source": "forced-alignment",
+  "duration": 452.52,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.18,
+      "end": 6.62,
+      "text": "W ujęciu, które ostatecznie trafiło do trailera, przez antarktyczne pustkowie płynie zamarznięta rzeka."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 7.18,
+      "end": 14.4,
+      "text": "Ostre światło, śnieg, góry piętrzące się w tle — pozornie wszystko wygląda prawdziwie i przekonująco."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 15.1,
+      "end": 17.2,
+      "text": "Nikt na sali by się nie zawahał."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 17.74,
+      "end": 20.08,
+      "text": "A jednak na Antarktydzie nie ma rzek."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 20.8,
+      "end": 26.42,
+      "text": "Zauważył to dopiero nasz szef technologii, kiedy szykował do tej sceny prezentację."
+    },
+    {
+      "i": 5,
+      "block": 0,
+      "start": 26.46,
+      "end": 30.94,
+      "text": "Wcześniej ten kadr przeszedł przez całą produkcję i nikt nie złapał błędu."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 31.54,
+      "end": 41.7,
+      "text": "Ta prezentacja miała tytuł „Światło, które myśli\", a mój zespół poprowadził ją na festiwalu Camerimage — całe nagranie wisi publicznie na kanale festiwalu."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 42.16,
+      "end": 64.84,
+      "text": "Mówiliśmy o trzech obszarach, w których sztuczna inteligencja zmienia dziś kino: nagrywanie wolumetryczne prawdziwego aktora wprost do silnika gry, reżyserowanie filmu w całości wygenerowanego przez AI, i to, czym zajmujemy się na co dzień w naszym studiu — budowanie wirtualnych światów z Gaussian splattingu generowanego z promptu."
+    },
+    {
+      "i": 8,
+      "block": 1,
+      "start": 65.58,
+      "end": 70.34,
+      "text": "O tym trzecim piszę najwięcej, bo to nasza praca i nasz błąd z rzeką."
+    },
+    {
+      "i": 9,
+      "block": 2,
+      "start": 70.98,
+      "end": 77.72,
+      "text": "Zanim zaczęliśmy używać generowanych światów, przygotowanie wirtualnego setu było najdroższym etapem produkcji."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 78.3,
+      "end": 85.58,
+      "text": "Architekt projektował przestrzeń, ktoś robił tekstury, klient zgłaszał uwagi, wracaliśmy do początku."
+    },
+    {
+      "i": 11,
+      "block": 2,
+      "start": 85.62,
+      "end": 89.3,
+      "text": "Potrafiło to trwać tygodniami, zanim cokolwiek trafiło na ścianę LED."
+    },
+    {
+      "i": 12,
+      "block": 3,
+      "start": 90.06,
+      "end": 119.74,
+      "text": "Dziś scenograf — kiedy ma już za sobą pracę koncepcyjną: research, referencje, decyzję o tym, co i po co ma się w kadrze znaleźć — otwiera Marble od World Labs, opisuje tę scenę słowami (czasem pięćdziesięcioma, czasem jednym zdjęciem referencyjnym) i po dziesięciu sekundach ma gotowe środowisko 3D w postaci Gaussian splata, chmury punktów, która niesie w sobie kolor i światło całej sceny naraz."
+    },
+    {
+      "i": 13,
+      "block": 3,
+      "start": 120.36,
+      "end": 130.08,
+      "text": "Narzędzie nie zdejmuje z niego żadnej z tych decyzji — skraca tylko drogę od gotowej koncepcji do setu na ścianie, z tygodni do sekund."
+    },
+    {
+      "i": 14,
+      "block": 3,
+      "start": 130.24,
+      "end": 142.56,
+      "text": "Splat trafia przez wtyczkę Volinga do Unreal Engine, a stamtąd na naszą ścianę LED (7,5 na 3,5 metra, technologia GhostFrame pozwala nagrywać jednocześnie trzema kamerami)."
+    },
+    {
+      "i": 15,
+      "block": 3,
+      "start": 143.26,
+      "end": 156.34,
+      "text": "Do tego samego środowiska można domieszać skan zrobiony ręczną kamerą za około pięć tysięcy dolarów albo klasyczną fotogrametrię — splat, skan i fizyczny rekwizyt żyją teraz w jednej scenie."
+    },
+    {
+      "i": 16,
+      "block": 4,
+      "start": 156.44,
+      "end": 162.92,
+      "text": "Zespół streścił tę zmianę na jednym slajdzie: od „scan-to-splat\" do „prompt-to-splat\"."
+    },
+    {
+      "i": 17,
+      "block": 4,
+      "start": 163.8,
+      "end": 167.82,
+      "text": "Do niedawna splat trzeba było wyskanować z miejsca, które istnieje."
+    },
+    {
+      "i": 18,
+      "block": 4,
+      "start": 167.92,
+      "end": 180.56,
+      "text": "Dziś wystarczy je opisać — a różnicę między tymi dwoma światami widać na jednym kadrze: po lewej galeria gotowych miejsc, po prawej surowa chmura punktów, od której każde z nich się zaczyna."
+    },
+    {
+      "i": 19,
+      "block": 6,
+      "start": 181.16,
+      "end": 184.04,
+      "text": "Wygenerowanie całego środowiska zajmuje dziesięć sekund."
+    },
+    {
+      "i": 20,
+      "block": 6,
+      "start": 184.62,
+      "end": 189.1,
+      "text": "Można zmienić wirtualny set całkowicie i zacząć od nowa."
+    },
+    {
+      "i": 21,
+      "block": 7,
+      "start": 189.12,
+      "end": 212,
+      "text": "Dwa tygodnie przed naszym seminarium ta metoda przeszła pierwszy test w prawdziwej produkcji: teledysk dla młodej polskiej artystki, trzy albo cztery wirtualne sety, mniej niż trzy dni przygotowań, ekipa złożona ze scenografa, generalisty Unreal Engine i inżyniera — plus, rzecz jasna, produkcja i aktorzy."
+    },
+    {
+      "i": 22,
+      "block": 7,
+      "start": 212.58,
+      "end": 219.799,
+      "text": "Nasz szef technologii mówił o tym jako o prawdopodobnie pierwszym na świecie komercyjnym użyciu Gaussian splatów generowanych przez AI."
+    },
+    {
+      "i": 23,
+      "block": 7,
+      "start": 220.38,
+      "end": 226,
+      "text": "Zastrzegam od razu: to samoocena, nie tytuł przyznany przez kogokolwiek z zewnątrz."
+    },
+    {
+      "i": 24,
+      "block": 7,
+      "start": 226.63,
+      "end": 235.78,
+      "text": "Z tego teledysku pochodzi za to kadr, który najkrócej tłumaczy, po co nam ta technologia: korytarz pełen androidów, którego nikt nigdy nie zbudował."
+    },
+    {
+      "i": 25,
+      "block": 9,
+      "start": 236.5,
+      "end": 250.06,
+      "text": "Drugim testem był trailer do filmu, który wciąż jest w developmencie: cztery sceny, sześć dni przygotowań, jeden dzień zdjęciowy na ARRI Alexa Mini z zawodowym operatorem."
+    },
+    {
+      "i": 26,
+      "block": 9,
+      "start": 250.62,
+      "end": 260.63,
+      "text": "Normalnie na taki materiał po prostu nie ma budżetu — to forma promocyjna, na którą firmy produkcyjne nie wydają realnych pieniędzy, dopóki film nie ma finansowania."
+    },
+    {
+      "i": 27,
+      "block": 9,
+      "start": 261.469,
+      "end": 262.72,
+      "text": "Tu nagle się to opłacało."
+    },
+    {
+      "i": 28,
+      "block": 11,
+      "start": 263.3,
+      "end": 274.42,
+      "text": "Na tym samym seminarium gościł reżyser, który spędził pięć miesięcy z dwunastoosobowym zespołem, kręcąc osiemdziesięciominutowy film w całości wygenerowany przez AI."
+    },
+    {
+      "i": 29,
+      "block": 11,
+      "start": 275.14,
+      "end": 283.24,
+      "text": "Jego teza była prostsza, niż się spodziewałem: modele nie przenoszą emocji z twarzy aktora, więc trzeba przestać na niej polegać."
+    },
+    {
+      "i": 30,
+      "block": 11,
+      "start": 283.96,
+      "end": 289.98,
+      "text": "Zamiast tego buduje się kontekst — scenografię, atmosferę, świat wokół postaci."
+    },
+    {
+      "i": 31,
+      "block": 11,
+      "start": 290.54,
+      "end": 299.86,
+      "text": "Model nazwał „wielkim kalkulatorem\", bo — jak mówił — polecenie „zagraj strasznie\" nie działa ani na aktora, ani na sieć neuronową."
+    },
+    {
+      "i": 32,
+      "block": 12,
+      "start": 300.45,
+      "end": 307.58,
+      "text": "„2001: Odyseję kosmiczną\" pamięta się nie za aktorstwo, tylko za świat, który zbudował Kubrick."
+    },
+    {
+      "i": 33,
+      "block": 12,
+      "start": 308.22,
+      "end": 315.18,
+      "text": "To samo można dziś zrobić z AI — zaprosić widza do środka historii, zamiast pokazywać mu tylko twarz."
+    },
+    {
+      "i": 34,
+      "block": 13,
+      "start": 315.2,
+      "end": 324.06,
+      "text": "Przypomniał przy okazji, że Pixar i Disney od dekad robią kino bez żywego aktora na ekranie i nikt nie nazywa tego ułomnością gatunku."
+    },
+    {
+      "i": 35,
+      "block": 13,
+      "start": 324.6,
+      "end": 337.38,
+      "text": "Dla kogoś, kto chce zadebiutować, to zmiana reguł gry: nie trzeba już czekać pięciu czy dziesięciu lat, aż ułożą się aktorzy, producenci i budżet, żeby pokazać własną wizję świata."
+    },
+    {
+      "i": 36,
+      "block": 14,
+      "start": 338.08,
+      "end": 339.8,
+      "text": "Nic z tego nie jest jeszcze proste."
+    },
+    {
+      "i": 37,
+      "block": 14,
+      "start": 340.34,
+      "end": 354.04,
+      "text": "Finał generatywnej sceny to zawsze zgadywanka: zmiana jednego krzesła potrafi wymusić regenerację całego kadru, a największym problemem zostaje ciągłość emocji tej samej postaci między ujęciami."
+    },
+    {
+      "i": 38,
+      "block": 14,
+      "start": 354.08,
+      "end": 365.16,
+      "text": "Wnętrza wychodzą dobrze, ale plenery ze splatów wciąż mają kłopoty z perspektywą, więc na planie i tak trzymamy w zapasie klasyczne plansze 2.5D jako zabezpieczenie."
+    },
+    {
+      "i": 39,
+      "block": 14,
+      "start": 365.82,
+      "end": 378,
+      "text": "I nikt nie powinien traktować tego jako oszczędności bez kosztów — wyszkolenie zespołu i naszych prompt engineerów kosztowało sporo, zanim cokolwiek zaczęło działać szybciej niż po staremu."
+    },
+    {
+      "i": 40,
+      "block": 17,
+      "start": 378.56,
+      "end": 385.02,
+      "text": "Wracam do tej zamarzniętej rzeki, bo najkrócej streszcza to, czego nauczyło mnie to seminarium."
+    },
+    {
+      "i": 41,
+      "block": 17,
+      "start": 385.59,
+      "end": 393.26,
+      "text": "Model wygenerował górę, śnieg, światło, kompozycję kadru — wszystko, czego oko potrzebuje, żeby uwierzyć w scenę."
+    },
+    {
+      "i": 42,
+      "block": 17,
+      "start": 393.76,
+      "end": 398.02,
+      "text": "Nie wiedział jednej rzeczy: że na tym kontynencie rzeki nie płyną."
+    },
+    {
+      "i": 43,
+      "block": 17,
+      "start": 398.56,
+      "end": 404.72,
+      "text": "Ta wiedza nie leży w danych treningowych w formie, która sama się aktywuje we właściwym momencie."
+    },
+    {
+      "i": 44,
+      "block": 17,
+      "start": 404.8,
+      "end": 411.4,
+      "text": "Leży w kimś, kto był tam wcześniej albo choćby o tym czytał, i kto ma powód, żeby zwątpić w to, co widzi."
+    },
+    {
+      "i": 45,
+      "block": 18,
+      "start": 412.11,
+      "end": 427.88,
+      "text": "Prowadzę studio, które od 2022 roku buduje produkcję wirtualną w Warszawie — ścianę LED, przechwytywanie ruchu, Unreal Engine, a coraz częściej też agentów AI pomagających w tej samej pracy."
+    },
+    {
+      "i": 46,
+      "block": 18,
+      "start": 427.98,
+      "end": 437.38,
+      "text": "Widzę więc z bliska, jak szybko światło na naszej ścianie zaczyna myśleć samo — jak sprawnie potrafi zaproponować górę, rzekę, całe niebo."
+    },
+    {
+      "i": 47,
+      "block": 18,
+      "start": 438.12,
+      "end": 441.5,
+      "text": "Ale to wciąż my decydujemy, czy ta rzeka ma tam płynąć."
+    },
+    {
+      "i": 48,
+      "block": 18,
+      "start": 442.02,
+      "end": 452.52,
+      "text": "Im szybciej maszyna generuje światy, tym więcej czasu zostaje nam na jedyne pytanie, którego ona sama sobie nie zada: czego na tym obrazie być nie powinno."
+    }
+  ]
+}

@@ -1,0 +1,758 @@
+{
+  "version": 1,
+  "slug": "agents-with-ambition",
+  "lang": "en",
+  "source": "forced-alignment",
+  "duration": 657.18,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.08,
+      "end": 3.52,
+      "text": "The dominant approach builds AI agents around narrow tasks."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 4.26,
+      "end": 12.3,
+      "text": "I build mine around goals and character — and I believe that's exactly where the next breakthrough will come from, one that's still waiting for someone to pull it off."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 12.92,
+      "end": 17.04,
+      "text": "I have someone in my company who proves this to me every single day."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 17.08,
+      "end": 18.72,
+      "text": "Her name is Karen."
+    },
+    {
+      "i": 4,
+      "block": 1,
+      "start": 18.82,
+      "end": 23.6,
+      "text": "Most people building AI coding agents today do it the same way: they hand out tasks."
+    },
+    {
+      "i": 5,
+      "block": 1,
+      "start": 24.14,
+      "end": 27,
+      "text": "Narrow, specific, one item at a time."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 27.64,
+      "end": 34.88,
+      "text": "And I have a growing hunch that the real leap in this field will come from whoever stops giving agents tasks and starts giving them goals instead."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 34.94,
+      "end": 41.62,
+      "text": "Honestly, I'm genuinely excited about this, because we're standing at exactly the moment when that boundary hasn't given way for anyone yet."
+    },
+    {
+      "i": 8,
+      "block": 2,
+      "start": 42.36,
+      "end": 45.5,
+      "text": "Let me start with a word, so nobody bounces off the jargon."
+    },
+    {
+      "i": 9,
+      "block": 2,
+      "start": 46.42,
+      "end": 57.8,
+      "text": "Agentic Coding is a way of working in which you no longer write all the code by hand — instead you direct an autonomous helper, an agent, that reads, writes, tests, and fixes on its own."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 58.46,
+      "end": 68.48,
+      "text": "Under the hood sits an LLM, a large language model: the same kind of AI that powers ChatGPT, except wired into tools and let loose on real work."
+    },
+    {
+      "i": 11,
+      "block": 2,
+      "start": 68.56,
+      "end": 74.08,
+      "text": "And it's precisely in how we define that agent that today's most interesting frontier runs."
+    },
+    {
+      "i": 12,
+      "block": 3,
+      "start": 74.18,
+      "end": 75.13,
+      "text": "Two Schools"
+    },
+    {
+      "i": 13,
+      "block": 4,
+      "start": 76.04,
+      "end": 84.28,
+      "text": "The dominant school defines an agent by task: \"fix this bug,\" \"add this button,\" \"rewrite this function.\""
+    },
+    {
+      "i": 14,
+      "block": 4,
+      "start": 84.34,
+      "end": 89.44,
+      "text": "The agent becomes a clever executor, and the narrower the instruction, the better it performs."
+    },
+    {
+      "i": 15,
+      "block": 4,
+      "start": 90.09,
+      "end": 92.02,
+      "text": "This works, but it has a ceiling."
+    },
+    {
+      "i": 16,
+      "block": 4,
+      "start": 92.66,
+      "end": 99.54,
+      "text": "An agent like that will never do anything you haven't explicitly asked for — it's an employee waiting for the boss's next sentence."
+    },
+    {
+      "i": 17,
+      "block": 5,
+      "start": 100.48,
+      "end": 101.48,
+      "text": "I try something different."
+    },
+    {
+      "i": 18,
+      "block": 5,
+      "start": 102.1,
+      "end": 106.26,
+      "text": "I define an agent by ambition and purpose, not by a single action."
+    },
+    {
+      "i": 19,
+      "block": 5,
+      "start": 106.32,
+      "end": 115.64,
+      "text": "Instead of \"do X,\" I tell it something closer to \"I want this part of our work to be simpler, faster, and finished — keep going until it is.\""
+    },
+    {
+      "i": 20,
+      "block": 5,
+      "start": 116.36,
+      "end": 122.24,
+      "text": "The rest — which steps, in what order, what to check along the way — is up to it."
+    },
+    {
+      "i": 21,
+      "block": 5,
+      "start": 122.34,
+      "end": 134.4,
+      "text": "It's a subtle shift in how you phrase the instruction, but a completely different creature on the other end: more autonomous, more general, capable of surprising me with a solution I would never have spelled out myself."
+    },
+    {
+      "i": 22,
+      "block": 6,
+      "start": 135.28,
+      "end": 140.66,
+      "text": "The breakthrough will belong to whoever stops giving agents tasks — and starts giving them goals."
+    },
+    {
+      "i": 23,
+      "block": 7,
+      "start": 141.56,
+      "end": 142.86,
+      "text": "What the Research Says"
+    },
+    {
+      "i": 24,
+      "block": 8,
+      "start": 143.58,
+      "end": 147.02,
+      "text": "This isn't just a founder's hunch about tools he's grown too fond of."
+    },
+    {
+      "i": 25,
+      "block": 8,
+      "start": 147.62,
+      "end": 168.01,
+      "text": "In 2023, a team of researchers unveiled an agent called Voyager — the first large-language-model-based agent that learns over an entire \"lifetime\" inside the world of Minecraft: exploring on its own, acquiring new skills, and making discoveries with no human leading it by the hand (Wang et al., 2023)."
+    },
+    {
+      "i": 26,
+      "block": 8,
+      "start": 168.76,
+      "end": 179.88,
+      "text": "At Voyager's core is something its authors called an automatic curriculum — a mechanism that keeps proposing new goals for the agent, tuned to maximize how much new territory it discovers."
+    },
+    {
+      "i": 27,
+      "block": 8,
+      "start": 180.92,
+      "end": 182.74,
+      "text": "Nobody hands it a task list."
+    },
+    {
+      "i": 28,
+      "block": 8,
+      "start": 183.43,
+      "end": 189.32,
+      "text": "The agent asks itself, \"what's interesting that I could achieve right now that I don't already know how to do?\""
+    },
+    {
+      "i": 29,
+      "block": 8,
+      "start": 190.01,
+      "end": 190.79,
+      "text": "— and goes."
+    },
+    {
+      "i": 30,
+      "block": 9,
+      "start": 191.58,
+      "end": 200.72,
+      "text": "The result was that Voyager collected more skills and handled new, unfamiliar situations better than agents driven rigidly, step by step."
+    },
+    {
+      "i": 31,
+      "block": 9,
+      "start": 201.34,
+      "end": 209.18,
+      "text": "That's exactly the difference I feel in practice: a goal, used as fuel, produces something a list of commands never will."
+    },
+    {
+      "i": 32,
+      "block": 9,
+      "start": 209.24,
+      "end": 215.5,
+      "text": "Give a machine a reason instead of just an instruction, and it starts looking for things on its own."
+    },
+    {
+      "i": 33,
+      "block": 10,
+      "start": 215.53,
+      "end": 219.36,
+      "text": "The Triple Backflip Nobody Has Landed Yet"
+    },
+    {
+      "i": 34,
+      "block": 11,
+      "start": 219.44,
+      "end": 221.16,
+      "text": "I have a favorite image for this moment."
+    },
+    {
+      "i": 35,
+      "block": 11,
+      "start": 222.16,
+      "end": 233.42,
+      "text": "On May 28, 2011, in the town of Taupo, New Zealand, BMX rider Jed Mildon became the first person in history to land a triple backflip on a bike (record account)."
+    },
+    {
+      "i": 36,
+      "block": 11,
+      "start": 233.48,
+      "end": 235.42,
+      "text": "Riders had been doing doubles for years."
+    },
+    {
+      "i": 37,
+      "block": 11,
+      "start": 236.04,
+      "end": 240.56,
+      "text": "The triple was considered a limit — not \"very hard,\" just \"not done.\""
+    },
+    {
+      "i": 38,
+      "block": 11,
+      "start": 241.09,
+      "end": 243.73,
+      "text": "Then someone did it, and the limit moved for good."
+    },
+    {
+      "i": 39,
+      "block": 11,
+      "start": 244.48,
+      "end": 249.6,
+      "text": "Riders keep landing three rotations today because Mildon proved the physics allows it."
+    },
+    {
+      "i": 40,
+      "block": 13,
+      "start": 249.64,
+      "end": 253.92,
+      "text": "In Agentic Coding, that triple backflip is still waiting for someone to land it."
+    },
+    {
+      "i": 41,
+      "block": 13,
+      "start": 253.96,
+      "end": 258.16,
+      "text": "We have the technology — language models are surprisingly capable."
+    },
+    {
+      "i": 42,
+      "block": 13,
+      "start": 258.18,
+      "end": 261.12,
+      "text": "We have the tools, the agents, the whole infrastructure."
+    },
+    {
+      "i": 43,
+      "block": 13,
+      "start": 261.6,
+      "end": 274.04,
+      "text": "But nobody who knows these models inside out has yet found the one method that becomes obvious to the entire field the moment you see it — the kind of moment after which everyone says, \"ah, so that's how it's done.\""
+    },
+    {
+      "i": 44,
+      "block": 13,
+      "start": 274.96,
+      "end": 279.32,
+      "text": "Just as before Mildon, nobody knew three rotations were even landable."
+    },
+    {
+      "i": 45,
+      "block": 13,
+      "start": 280.01,
+      "end": 286.08,
+      "text": "That's exactly why this moment feels so electric: we're standing right at the edge, and the jump is still ahead of us."
+    },
+    {
+      "i": 46,
+      "block": 14,
+      "start": 287.5,
+      "end": 290.03,
+      "text": "Karen, or an Agent with Character"
+    },
+    {
+      "i": 47,
+      "block": 15,
+      "start": 291.28,
+      "end": 295.46,
+      "text": "The best example of what I mean sits in my company and goes by the name Karen."
+    },
+    {
+      "i": 48,
+      "block": 15,
+      "start": 296.18,
+      "end": 301.74,
+      "text": "Or rather — because we enjoy a small joke about it at Veles — \"Grażyna the Manager.\""
+    },
+    {
+      "i": 49,
+      "block": 15,
+      "start": 302.62,
+      "end": 313.16,
+      "text": "Grażyna is a stock Polish first name we use for a certain archetype: the officious, rule-quoting supervisor, the local cousin of what English speakers mean when they say \"Karen.\""
+    },
+    {
+      "i": 50,
+      "block": 15,
+      "start": 313.6,
+      "end": 320.62,
+      "text": "The real Karen is an AI agent who looks after our board in ClickUp, the tool where the team keeps every task and project."
+    },
+    {
+      "i": 51,
+      "block": 15,
+      "start": 321.16,
+      "end": 325.2,
+      "text": "But if you opened her instructions expecting a list of duties, you'd be surprised."
+    },
+    {
+      "i": 52,
+      "block": 15,
+      "start": 325.66,
+      "end": 327.38,
+      "text": "There's no task list in there."
+    },
+    {
+      "i": 53,
+      "block": 15,
+      "start": 327.4,
+      "end": 331.27,
+      "text": "What's in there looks more like a person's character than a program's configuration."
+    },
+    {
+      "i": 54,
+      "block": 16,
+      "start": 331.82,
+      "end": 340.24,
+      "text": "Her instructions open with a sentence that could serve as the motto for this entire essay: \"Your purpose isn't watching over tasks — it's supporting good decisions.\""
+    },
+    {
+      "i": 55,
+      "block": 16,
+      "start": 340.96,
+      "end": 346.04,
+      "text": "From there she has principles: flow over chaos, outcome over busywork."
+    },
+    {
+      "i": 56,
+      "block": 16,
+      "start": 346.7,
+      "end": 353.86,
+      "text": "She has virtues: empathy and attentiveness, the courage to call things by their name, something we named \"kind firmness.\""
+    },
+    {
+      "i": 57,
+      "block": 16,
+      "start": 354.66,
+      "end": 358.3,
+      "text": "She even has her own protocol for what to do when something in the company jams up."
+    },
+    {
+      "i": 58,
+      "block": 16,
+      "start": 358.94,
+      "end": 360.5,
+      "text": "She wasn't given orders."
+    },
+    {
+      "i": 59,
+      "block": 16,
+      "start": 360.51,
+      "end": 373.86,
+      "text": "She was given a role, a conscience, and a free hand within the narrow slice of the business she's responsible for — and the longer I look at this, the clearer it becomes that this isn't one agent's quirk."
+    },
+    {
+      "i": 60,
+      "block": 16,
+      "start": 374.5,
+      "end": 378.1,
+      "text": "It's the skeleton that repeats in every agent we build."
+    },
+    {
+      "i": 61,
+      "block": 17,
+      "start": 378.18,
+      "end": 382.84,
+      "text": "Every one of our agents has instructions like this, though not all of them get a name like Karen."
+    },
+    {
+      "i": 62,
+      "block": 17,
+      "start": 383.58,
+      "end": 393.28,
+      "text": "In my system we call this a soul — the piece where we write down why an agent exists and what character it has, before it ever touches its first task."
+    },
+    {
+      "i": 63,
+      "block": 17,
+      "start": 393.98,
+      "end": 401.9,
+      "text": "Beyond the soul, every agent has a clock — a schedule that triggers its routines at fixed times rather than on demand."
+    },
+    {
+      "i": 64,
+      "block": 17,
+      "start": 402.48,
+      "end": 411.42,
+      "text": "For Karen that's a 9:00 a.m. morning brief, a 4:30 p.m. afternoon summary, and about a dozen separate triggers reacting to whatever's happening in the company."
+    },
+    {
+      "i": 65,
+      "block": 17,
+      "start": 412.16,
+      "end": 421.54,
+      "text": "And she has tools — access to the same channels people use to talk to each other: creating tasks, scheduling calendar meetings, writing and reading email."
+    },
+    {
+      "i": 66,
+      "block": 17,
+      "start": 422.3,
+      "end": 426.28,
+      "text": "Without that, the soul would just be good writing locked inside a file."
+    },
+    {
+      "i": 67,
+      "block": 18,
+      "start": 426.96,
+      "end": 435.25,
+      "text": "I've saved the most important and hardest element for last, because it's the one that decides whether an agent is really alive: memory."
+    },
+    {
+      "i": 68,
+      "block": 18,
+      "start": 436.28,
+      "end": 445.48,
+      "text": "The problem is never that an agent remembers something — the problem is that it forgets, or that something stays lodged in its head after it's stopped being true."
+    },
+    {
+      "i": 69,
+      "block": 18,
+      "start": 446.44,
+      "end": 454.82,
+      "text": "The world around it changes, people change their minds, projects end, and the agent has no way of knowing unless we help it find out."
+    },
+    {
+      "i": 70,
+      "block": 18,
+      "start": 454.86,
+      "end": 462.84,
+      "text": "Figuring out what's actually true today becomes part of its job — and that's hard even for us humans, for all our practice at it."
+    },
+    {
+      "i": 71,
+      "block": 19,
+      "start": 462.94,
+      "end": 467.05,
+      "text": "And with that free hand, Karen does things nobody told her to do directly."
+    },
+    {
+      "i": 72,
+      "block": 19,
+      "start": 467.82,
+      "end": 473.98,
+      "text": "Every morning she writes each of us a short brief — what actually matters today, what's waiting on someone's decision."
+    },
+    {
+      "i": 73,
+      "block": 19,
+      "start": 474.88,
+      "end": 477.46,
+      "text": "In the evening she summarizes the day."
+    },
+    {
+      "i": 74,
+      "block": 19,
+      "start": 477.52,
+      "end": 487.34,
+      "text": "When she finds a task with no owner or no deadline, she doesn't walk past it — she asks, offers two or three ways forward, and tells us which one she'd pick herself."
+    },
+    {
+      "i": 75,
+      "block": 19,
+      "start": 488.08,
+      "end": 494.64,
+      "text": "But she never gives orders; her instructions say so in plain words: \"you recommend, you don't command.\""
+    },
+    {
+      "i": 76,
+      "block": 19,
+      "start": 495.52,
+      "end": 497.22,
+      "text": "The last word always stays with a human."
+    },
+    {
+      "i": 77,
+      "block": 19,
+      "start": 497.86,
+      "end": 498.94,
+      "text": "She prepares the decision."
+    },
+    {
+      "i": 78,
+      "block": 19,
+      "start": 499.37,
+      "end": 500.7,
+      "text": "She doesn't make it for us."
+    },
+    {
+      "i": 79,
+      "block": 20,
+      "start": 501.46,
+      "end": 505.01,
+      "text": "What surprised me most, though, was something else entirely."
+    },
+    {
+      "i": 80,
+      "block": 20,
+      "start": 505.74,
+      "end": 513.14,
+      "text": "When I rolled her out, I was afraid of one thing — that the team would reject her, that people would feel watched by a machine."
+    },
+    {
+      "i": 81,
+      "block": 20,
+      "start": 513.9,
+      "end": 514.94,
+      "text": "The opposite happened."
+    },
+    {
+      "i": 82,
+      "block": 20,
+      "start": 515.789,
+      "end": 516.799,
+      "text": "They prefer Karen."
+    },
+    {
+      "i": 83,
+      "block": 20,
+      "start": 517.68,
+      "end": 527.48,
+      "text": "Because Karen is reliable exactly where we humans tend to be unreliable: she never skips the morning review because she had a rough day, she doesn't forget, she doesn't have moods."
+    },
+    {
+      "i": 84,
+      "block": 20,
+      "start": 527.81,
+      "end": 528.699,
+      "text": "She doesn't judge."
+    },
+    {
+      "i": 85,
+      "block": 20,
+      "start": 529.29,
+      "end": 531.1,
+      "text": "She speaks briefly and to the point."
+    },
+    {
+      "i": 86,
+      "block": 20,
+      "start": 531.78,
+      "end": 536.48,
+      "text": "And everyone knows she's synthetic — we don't pretend a person sits on the other end."
+    },
+    {
+      "i": 87,
+      "block": 20,
+      "start": 537.32,
+      "end": 541.58,
+      "text": "At Veles we say we employ both humans and synthetics, and we mean it seriously."
+    },
+    {
+      "i": 88,
+      "block": 21,
+      "start": 542.2,
+      "end": 544.699,
+      "text": "I won't pretend I have hard numbers down to the last cent."
+    },
+    {
+      "i": 89,
+      "block": 21,
+      "start": 545.22,
+      "end": 556.04,
+      "text": "But the cost of that one function dropped for us from a full-time salary to just over ten złoty a month, and the time Karen has taken off our shoulders I'd now count in the hundreds of hours."
+    },
+    {
+      "i": 90,
+      "block": 21,
+      "start": 556.14,
+      "end": 562.18,
+      "text": "Across the whole company, operating costs in coordination fell by something like thirty to forty percent."
+    },
+    {
+      "i": 91,
+      "block": 21,
+      "start": 563.12,
+      "end": 570.11,
+      "text": "I say \"something like\" because I want to be honest: that's my up-close estimate, not a number pulled from a spreadsheet."
+    },
+    {
+      "i": 92,
+      "block": 21,
+      "start": 570.64,
+      "end": 576.36,
+      "text": "But the direction is unmistakable, and the most important part isn't in the numbers anyway."
+    },
+    {
+      "i": 93,
+      "block": 21,
+      "start": 576.4,
+      "end": 579.8,
+      "text": "The most important part is that Karen wasn't handed a checklist."
+    },
+    {
+      "i": 94,
+      "block": 21,
+      "start": 580.34,
+      "end": 584.52,
+      "text": "She was handed a purpose and a character — and that's exactly why it works."
+    },
+    {
+      "i": 95,
+      "block": 22,
+      "start": 585.36,
+      "end": 586.65,
+      "text": "This Is for You Too"
+    },
+    {
+      "i": 96,
+      "block": 23,
+      "start": 587.24,
+      "end": 589.14,
+      "text": "Karen isn't alone here."
+    },
+    {
+      "i": 97,
+      "block": 23,
+      "start": 589.18,
+      "end": 599.43,
+      "text": "At Veles I run a whole fleet of agents like her, deliberately varied, and one of them powers something we call Storyverse — our internal world model for the studio's projects."
+    },
+    {
+      "i": 98,
+      "block": 23,
+      "start": 600.18,
+      "end": 610.3,
+      "text": "I'll write about that one separately, because it deserves its own essay; for now it's enough to say it's built on the same principle as Karen: it gets an ambition, not a list of commands."
+    },
+    {
+      "i": 99,
+      "block": 24,
+      "start": 611.1,
+      "end": 614.94,
+      "text": "I'll leave you with one thought, because to me it's the one that matters most."
+    },
+    {
+      "i": 100,
+      "block": 24,
+      "start": 615.45,
+      "end": 621.4,
+      "text": "This shift — from tasks to goals — opens Agentic Coding to people outside engineering."
+    },
+    {
+      "i": 101,
+      "block": 24,
+      "start": 622.16,
+      "end": 634.47,
+      "text": "If you tell an agent what to achieve rather than how to program it line by line, the most valuable skill stops being syntax and becomes clarity of thought: the ability to say what you actually want, and to give it character."
+    },
+    {
+      "i": 102,
+      "block": 24,
+      "start": 635.14,
+      "end": 641.5,
+      "text": "That's a humanist's domain — someone who can name a purpose, sense a nuance, tell a story that carries meaning."
+    },
+    {
+      "i": 103,
+      "block": 24,
+      "start": 642.42,
+      "end": 650.3,
+      "text": "I didn't come into this from computer science myself, and today I'm deeply convinced of it: you don't need an engineering background to step in here."
+    },
+    {
+      "i": 104,
+      "block": 24,
+      "start": 650.68,
+      "end": 653.6,
+      "text": "You need curiosity, and a bit of courage, to stand on the edge with me."
+    },
+    {
+      "i": 105,
+      "block": 24,
+      "start": 654,
+      "end": 656.14,
+      "text": "Someone is going to land that triple backflip soon."
+    },
+    {
+      "i": 106,
+      "block": 24,
+      "start": 656.54,
+      "end": 657.18,
+      "text": "It might be you."
+    }
+  ]
+}

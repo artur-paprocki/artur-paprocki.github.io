@@ -2,11 +2,15 @@
 title: "The Light That Thinks"
 description: "On the seminar my team ran at Camerimage, the frozen river we put into a trailer by mistake, and how prompt-generated Gaussian splatting shifts the weight of cinema from performance to world-building."
 date: 2026-07-11
-pair: /eseje/swiatlo-ktore-mysli/
+work: swiatlo-ktore-mysli
 heroLight: ill-swiatlo-1400
 heroDark: dill-swiatlo-1400
 heroAlt: "Pencil-and-watercolor sketch: a lone filmmaker faces a vast LED wall on which an Antarctic landscape with a winding frozen river assembles itself from drifting points of light"
 readingTime: 5
+theses:
+  - "Generating an entire environment now takes ten seconds."
+  - "It sits in someone who has been there, or at least read about it, and has a reason to doubt what they're looking at."
+  - "The faster the machine generates worlds, the more time is left for the one question it never asks itself: what shouldn't be in this picture."
 audio: /assets/audio/the-light-that-thinks-en.mp3
 ---
 

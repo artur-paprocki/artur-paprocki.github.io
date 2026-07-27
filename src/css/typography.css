@@ -68,6 +68,21 @@ article p:first-of-type::first-letter {
   font-weight: 400;
 }
 
+/* No drop cap in Chinese. A Latin initial takes one letter out of a word and the
+   word survives; a Chinese one takes a whole morpheme — the pull quote opened
+   with 生成 ("to generate") and the cap left 生 in the margin and 成 in the line,
+   splitting the word in half. Caught on a screenshot, not by any gate: every
+   check passes on a page that reads wrong. */
+article:lang(zh) p:first-of-type::first-letter {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  float: none;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+
 .pull {
   font-family: var(--display);
   font-style: italic;

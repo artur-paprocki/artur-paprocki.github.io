@@ -43,13 +43,34 @@ function enhance(root) {
     time.textContent = formatTime(audio.duration);
   });
 
+  // While the listener drags the thumb, `timeupdate` must not write the bar back
+  // to the audio's own position — otherwise the thumb is yanked out from under
+  // the cursor and the recording cannot be scrubbed.
+  let scrubbing = false;
+  const startScrub = () => {
+    scrubbing = true;
+  };
+  const endScrub = () => {
+    scrubbing = false;
+  };
+  bar.addEventListener("pointerdown", startScrub);
+  bar.addEventListener("keydown", startScrub);
+  window.addEventListener("pointerup", endScrub);
+  bar.addEventListener("keyup", endScrub);
+  bar.addEventListener("blur", endScrub);
+
   audio.addEventListener("timeupdate", () => {
-    bar.value = String(audio.currentTime);
+    if (!scrubbing) bar.value = String(audio.currentTime);
     time.textContent = formatTime(audio.duration - audio.currentTime);
   });
 
   bar.addEventListener("input", () => {
+    // With preload="none" the duration is unknown until the first play, and the
+    // bar still carries its default 0-100 range — seeking then would jump to an
+    // arbitrary second.
+    if (!Number.isFinite(audio.duration)) return;
     audio.currentTime = Number(bar.value);
+    time.textContent = formatTime(audio.duration - audio.currentTime);
   });
 }
 

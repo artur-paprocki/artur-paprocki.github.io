@@ -2,11 +2,15 @@
 title: "Rzeka, której nie ma"
 description: "O seminarium mojego zespołu na Camerimage, błędzie z zamarzniętą rzeką na Antarktydzie i o tym, jak Gaussian splatting generowany z promptu przesuwa ciężar kina z aktorstwa na budowanie świata."
 date: 2026-07-11
-pair: /essays/the-light-that-thinks/
+work: swiatlo-ktore-mysli
 heroLight: ill-swiatlo-1400
 heroDark: dill-swiatlo-1400
 heroAlt: "Szkic ołówkiem z akwarelą: samotny filmowiec przed wielką ścianą LED, na której z dryfujących punktów światła składa się antarktyczny pejzaż z wijącą się zamarzniętą rzeką"
 readingTime: 5
+theses:
+  - "Wygenerowanie całego środowiska zajmuje dziesięć sekund."
+  - "Leży w kimś, kto był tam wcześniej albo choćby o tym czytał, i kto ma powód, żeby zwątpić w to, co widzi."
+  - "Im szybciej maszyna generuje światy, tym więcej czasu zostaje nam na jedyne pytanie, którego ona sama sobie nie zada: czego na tym obrazie być nie powinno."
 audio: /assets/audio/swiatlo-ktore-mysli-pl.mp3
 ---
 

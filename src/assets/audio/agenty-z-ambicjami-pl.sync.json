@@ -1,0 +1,737 @@
+{
+  "version": 1,
+  "slug": "agenty-z-ambicjami",
+  "lang": "pl",
+  "source": "forced-alignment",
+  "duration": 686.82,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.1,
+      "end": 4.2,
+      "text": "Dominujący nurt buduje agentów AI przez wąskie zadania."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 4.26,
+      "end": 11.02,
+      "text": "Ja buduję je przez cele i charakter — i wierzę, że właśnie stąd przyjdzie przełom, który dopiero czeka na wykonawcę."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 11.58,
+      "end": 14.72,
+      "text": "Mam w firmie kogoś, kto codziennie mi to udowadnia."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 14.78,
+      "end": 15.82,
+      "text": "Nazywa się Karen."
+    },
+    {
+      "i": 4,
+      "block": 1,
+      "start": 16.379,
+      "end": 23.86,
+      "text": "Większość ludzi, którzy dziś budują agentów AI do programowania, robi to tak samo: rozpisują im zadania."
+    },
+    {
+      "i": 5,
+      "block": 1,
+      "start": 23.92,
+      "end": 26.53,
+      "text": "Wąsko, konkretnie, punkt po punkcie."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 27.22,
+      "end": 36.16,
+      "text": "A ja mam coraz mocniejsze przeczucie, że prawdziwy przeskok w tej dziedzinie zrobi ktoś, kto przestanie dawać agentom zadania — a zacznie dawać im cele."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 36.2,
+      "end": 43.58,
+      "text": "I szczerze mówiąc, naprawdę się tym jaram, bo jesteśmy dokładnie w tym momencie, w którym ta granica jeszcze nikomu nie uległa."
+    },
+    {
+      "i": 8,
+      "block": 2,
+      "start": 43.66,
+      "end": 47.14,
+      "text": "Zacznę od słowa, żeby nikt nie odbił się od żargonu."
+    },
+    {
+      "i": 9,
+      "block": 2,
+      "start": 47.2,
+      "end": 59.34,
+      "text": "Agentic Coding to sposób pracy, w którym nie piszemy już całego kodu ręcznie, tylko prowadzimy autonomicznego pomocnika — agenta — który sam czyta, pisze, sprawdza i poprawia."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 59.82,
+      "end": 71.78,
+      "text": "Pod jego maską pracuje LLM, czyli duży model językowy: ten sam rodzaj sztucznej inteligencji, co w ChatGPT, tyle że wpięty w narzędzia i puszczony luzem po prawdziwej robocie."
+    },
+    {
+      "i": 11,
+      "block": 2,
+      "start": 71.82,
+      "end": 77.52,
+      "text": "I to właśnie w tym, jak takiego agenta definiujemy, przebiega dziś najciekawsza granica."
+    },
+    {
+      "i": 12,
+      "block": 3,
+      "start": 77.54,
+      "end": 78.16,
+      "text": "Dwie szkoły"
+    },
+    {
+      "i": 13,
+      "block": 4,
+      "start": 78.22,
+      "end": 86.24,
+      "text": "Dominujący nurt definiuje agenta przez zadanie: „napraw ten błąd\", „dodaj ten przycisk\", „przepisz tę funkcję\"."
+    },
+    {
+      "i": 14,
+      "block": 4,
+      "start": 86.86,
+      "end": 91.92,
+      "text": "Agent jest wtedy sprytnym wykonawcą i im węższe polecenie, tym lepiej sobie radzi."
+    },
+    {
+      "i": 15,
+      "block": 4,
+      "start": 92.38,
+      "end": 94.179,
+      "text": "To działa, ale ma sufit."
+    },
+    {
+      "i": 16,
+      "block": 4,
+      "start": 94.82,
+      "end": 102.64,
+      "text": "Taki agent nigdy nie zrobi nic, o co go wprost nie poprosisz — jest jak pracownik, który czeka na każde kolejne zdanie z ust szefa."
+    },
+    {
+      "i": 17,
+      "block": 5,
+      "start": 103.36,
+      "end": 104.94,
+      "text": "Ja próbuję czegoś innego."
+    },
+    {
+      "i": 18,
+      "block": 5,
+      "start": 105.64,
+      "end": 110.22,
+      "text": "Definiuję agenta przez ambicję i cel, a nie przez pojedynczą czynność."
+    },
+    {
+      "i": 19,
+      "block": 5,
+      "start": 110.74,
+      "end": 119.98,
+      "text": "Zamiast „zrób X\" mówię mu raczej „chcę, żeby ten fragment naszej pracy był prostszy, szybszy i domknięty — działaj, aż będzie\"."
+    },
+    {
+      "i": 20,
+      "block": 5,
+      "start": 120.66,
+      "end": 127.36,
+      "text": "Reszta — jakie kroki, w jakiej kolejności, co sprawdzić po drodze — należy do niego."
+    },
+    {
+      "i": 21,
+      "block": 5,
+      "start": 127.4,
+      "end": 139.1,
+      "text": "To subtelna zmiana w opisie, a zupełnie inna istota po drugiej stronie: bardziej samodzielna, bardziej uniwersalna, zdolna zaskoczyć mnie rozwiązaniem, którego sam bym nie rozpisał."
+    },
+    {
+      "i": 22,
+      "block": 6,
+      "start": 139.549,
+      "end": 144.94,
+      "text": "Przełom zrobi ktoś, kto przestanie dawać agentom zadania — a zacznie dawać im cele."
+    },
+    {
+      "i": 23,
+      "block": 7,
+      "start": 145.68,
+      "end": 146.66,
+      "text": "Co na to nauka"
+    },
+    {
+      "i": 24,
+      "block": 8,
+      "start": 147.92,
+      "end": 152.9,
+      "text": "Nie jest to tylko przeczucie foundera, który za bardzo polubił swoje narzędzia."
+    },
+    {
+      "i": 25,
+      "block": 8,
+      "start": 152.94,
+      "end": 176.28,
+      "text": "W 2023 roku zespół badaczy pokazał agenta o nazwie Voyager — pierwszego opartego na dużym modelu językowym agenta, który uczy się przez całe „życie\" w świecie gry Minecraft: sam eksploruje, zdobywa nowe umiejętności i dokonuje odkryć bez człowieka prowadzącego go za rękę (Wang i inni, 2023)."
+    },
+    {
+      "i": 26,
+      "block": 8,
+      "start": 176.38,
+      "end": 188.44,
+      "text": "Sercem Voyagera jest coś, co autorzy nazwali automatycznym programem nauczania — mechanizm, który sam podsuwa agentowi kolejne cele tak, żeby maksymalizować odkrywanie nowego."
+    },
+    {
+      "i": 27,
+      "block": 8,
+      "start": 188.5,
+      "end": 190.8,
+      "text": "Nikt nie wpisuje mu listy zadań."
+    },
+    {
+      "i": 28,
+      "block": 8,
+      "start": 190.9,
+      "end": 195.66,
+      "text": "Agent sam pyta: „co ciekawego mogę teraz osiągnąć, czego jeszcze nie umiem?\""
+    },
+    {
+      "i": 29,
+      "block": 8,
+      "start": 196.19,
+      "end": 197.38,
+      "text": "— i rusza."
+    },
+    {
+      "i": 30,
+      "block": 9,
+      "start": 197.46,
+      "end": 207.4,
+      "text": "Efekt był taki, że Voyager zebrał więcej umiejętności i lepiej radził sobie w nowych, nieznanych sytuacjach niż agenty prowadzone sztywno, krok po kroku."
+    },
+    {
+      "i": 31,
+      "block": 9,
+      "start": 208.08,
+      "end": 216.12,
+      "text": "To dokładnie ta różnica, którą czuję w praktyce: cel jako paliwo daje coś, czego lista poleceń nie da nigdy."
+    },
+    {
+      "i": 32,
+      "block": 9,
+      "start": 216.16,
+      "end": 221.42,
+      "text": "Kiedy dajesz maszynie powód, a nie tylko instrukcję, zaczyna szukać."
+    },
+    {
+      "i": 33,
+      "block": 10,
+      "start": 221.46,
+      "end": 224.14,
+      "text": "Potrójne salto, którego nikt jeszcze nie zrobił"
+    },
+    {
+      "i": 34,
+      "block": 11,
+      "start": 224.68,
+      "end": 226.78,
+      "text": "Mam na ten moment swój ulubiony obraz."
+    },
+    {
+      "i": 35,
+      "block": 11,
+      "start": 227.42,
+      "end": 242.62,
+      "text": "28 maja 2011 roku, w miasteczku Taupo w Nowej Zelandii, rowerzysta BMX Jed Mildon jako pierwszy człowiek w historii wykonał i wylądował potrójne salto w tył na rowerze (relacja z rekordu)."
+    },
+    {
+      "i": 36,
+      "block": 11,
+      "start": 243.14,
+      "end": 244.98,
+      "text": "Podwójne robiono od lat."
+    },
+    {
+      "i": 37,
+      "block": 11,
+      "start": 245.04,
+      "end": 250.78,
+      "text": "Potrójne uchodziło za granicę — nie „bardzo trudne\", tylko po prostu „nierobione\"."
+    },
+    {
+      "i": 38,
+      "block": 11,
+      "start": 251.4,
+      "end": 254.94,
+      "text": "Aż ktoś je zrobił i granica przesunęła się na zawsze."
+    },
+    {
+      "i": 39,
+      "block": 11,
+      "start": 255.62,
+      "end": 261.42,
+      "text": "Dziś kolejni zawodnicy lądują trzy obroty, bo Mildon udowodnił, że fizyka na to pozwala."
+    },
+    {
+      "i": 40,
+      "block": 13,
+      "start": 261.829,
+      "end": 265.42,
+      "text": "W Agentic Coding to potrójne salto wciąż czeka na wykonawcę."
+    },
+    {
+      "i": 41,
+      "block": 13,
+      "start": 265.94,
+      "end": 269.9,
+      "text": "Mamy technologię — modele językowe są zaskakująco zdolne."
+    },
+    {
+      "i": 42,
+      "block": 13,
+      "start": 270.34,
+      "end": 273.42,
+      "text": "Mamy narzędzia, agentów, całą infrastrukturę."
+    },
+    {
+      "i": 43,
+      "block": 13,
+      "start": 273.9,
+      "end": 286.12,
+      "text": "Ale nikt, znając te modele od podszewki, nie odkrył jeszcze tej jednej metody, która stanie się oczywistością dla całej dziedziny — momentem, po którym powie się „aha, więc tak się to robi\"."
+    },
+    {
+      "i": 44,
+      "block": 13,
+      "start": 286.74,
+      "end": 290.72,
+      "text": "Tak jak przed Mildonem nikt nie wiedział, że da się wylądować trzy obroty."
+    },
+    {
+      "i": 45,
+      "block": 13,
+      "start": 291.32,
+      "end": 298.159,
+      "text": "Właśnie dlatego ten moment jest tak elektryzujący: stoimy przy samej krawędzi, a skok jeszcze przed nami."
+    },
+    {
+      "i": 46,
+      "block": 14,
+      "start": 298.86,
+      "end": 300.98,
+      "text": "Karen, czyli agent z charakterem"
+    },
+    {
+      "i": 47,
+      "block": 15,
+      "start": 301.4,
+      "end": 306.3,
+      "text": "Najlepszy przykład tego, o czym mówię, siedzi u mnie w firmie i nazywa się Karen."
+    },
+    {
+      "i": 48,
+      "block": 15,
+      "start": 307,
+      "end": 311.52,
+      "text": "A właściwie — bo lubimy w Veles drobny żart — „Grażyna Kierownik\"."
+    },
+    {
+      "i": 49,
+      "block": 15,
+      "start": 312.28,
+      "end": 321.1,
+      "text": "Karen jest agentem AI, który opiekuje się naszą tablicą w ClickUpie, czyli w narzędziu, gdzie zespół trzyma wszystkie zadania i projekty."
+    },
+    {
+      "i": 50,
+      "block": 15,
+      "start": 321.14,
+      "end": 328.04,
+      "text": "Gdyby jednak ktoś zajrzał do jej instrukcji, spodziewając się listy obowiązków, byłby zdziwiony."
+    },
+    {
+      "i": 51,
+      "block": 15,
+      "start": 328.08,
+      "end": 329.5,
+      "text": "Nie ma tam listy zadań."
+    },
+    {
+      "i": 52,
+      "block": 15,
+      "start": 330.03,
+      "end": 335.3,
+      "text": "Jest coś, co bardziej przypomina charakter człowieka niż konfigurację programu."
+    },
+    {
+      "i": 53,
+      "block": 16,
+      "start": 335.34,
+      "end": 345.86,
+      "text": "Jej instrukcja zaczyna się od zdania, które mogłoby być mottem całego tego tekstu: „Twoim celem nie jest pilnowanie zadań, tylko wspieranie dobrych decyzji\"."
+    },
+    {
+      "i": 54,
+      "block": 16,
+      "start": 346.58,
+      "end": 352.72,
+      "text": "Dalej ma zasady — przepływ ważniejszy od chaosu, efekt ważniejszy od samej krzątaniny."
+    },
+    {
+      "i": 55,
+      "block": 16,
+      "start": 353.34,
+      "end": 362,
+      "text": "Ma cnoty: empatię i uważność, odwagę w nazywaniu rzeczy po imieniu, coś, co nazwaliśmy „życzliwą stanowczością\"."
+    },
+    {
+      "i": 56,
+      "block": 16,
+      "start": 362.62,
+      "end": 367.28,
+      "text": "Ma nawet własny kodeks na sytuacje, w których coś w firmie się zacina."
+    },
+    {
+      "i": 57,
+      "block": 16,
+      "start": 367.32,
+      "end": 368.52,
+      "text": "Nie dostała rozkazów."
+    },
+    {
+      "i": 58,
+      "block": 16,
+      "start": 369.1,
+      "end": 385.88,
+      "text": "Dostała rolę, sumienie i wolną rękę w wąskim wycinku, za który odpowiada — i im dłużej się temu przyglądam, tym wyraźniej widzę, że to nie jest ciekawostka jednego agenta, tylko szkielet, który powtarza się w każdym, którego u nas budujemy."
+    },
+    {
+      "i": 59,
+      "block": 17,
+      "start": 386.42,
+      "end": 391.9,
+      "text": "Każdy z naszych agentów ma taką instrukcję, choć nie każdy dostaje od nas imię jak Karen."
+    },
+    {
+      "i": 60,
+      "block": 17,
+      "start": 392.42,
+      "end": 407.4,
+      "text": "U mnie to się nazywa dusza — fragment, w którym zapisujemy, po co agent istnieje i jaki ma charakter, zanim jeszcze dotknie pierwszego zadania; w anglojęzycznym świecie mówi się na to soul, ale sens jest ten sam."
+    },
+    {
+      "i": 61,
+      "block": 17,
+      "start": 407.96,
+      "end": 416.34,
+      "text": "Poza duszą każdy agent ma zegar — harmonogram, który uruchamia jego rutyny o stałych porach, a nie na zawołanie."
+    },
+    {
+      "i": 62,
+      "block": 17,
+      "start": 416.4,
+      "end": 426.82,
+      "text": "U Karen to poranny brief o 9:00, popołudniowe podsumowanie o 16:30 i kilkanaście osobnych wyzwalaczy reagujących na to, co dzieje się w firmie."
+    },
+    {
+      "i": 63,
+      "block": 17,
+      "start": 426.88,
+      "end": 437.52,
+      "text": "I ma narzędzia — dostęp do tych samych kanałów, którymi porozumiewają się ludzie: tworzenie zadań, planowanie spotkań w kalendarzu, pisanie i czytanie e-maili."
+    },
+    {
+      "i": 64,
+      "block": 17,
+      "start": 437.54,
+      "end": 440.9,
+      "text": "Bez tego dusza zostałaby dobrym tekstem zamkniętym w pliku."
+    },
+    {
+      "i": 65,
+      "block": 18,
+      "start": 441.64,
+      "end": 449.7,
+      "text": "Najważniejszy i najtrudniejszy element zostawiam na koniec, bo dopiero on rozstrzyga, czy agent naprawdę żyje: pamięć."
+    },
+    {
+      "i": 66,
+      "block": 18,
+      "start": 450.28,
+      "end": 459.26,
+      "text": "Problemem nigdy nie jest to, że agent coś zapamięta — problemem jest to, że zapomni, albo że zostanie mu w głowie coś, co przestało być prawdą."
+    },
+    {
+      "i": 67,
+      "block": 18,
+      "start": 459.98,
+      "end": 468.1,
+      "text": "Świat wokół niego się zmienia, ludzie zmieniają zdanie, projekty się kończą, a agent sam tego nie wie, jeśli mu nie pomożemy."
+    },
+    {
+      "i": 68,
+      "block": 18,
+      "start": 468.7,
+      "end": 478.38,
+      "text": "Ustalanie, co dziś jest prawdziwe, staje się więc częścią jego pracy — a to bywa trudne nawet dla nas, ludzi, mimo całej naszej wprawy."
+    },
+    {
+      "i": 69,
+      "block": 19,
+      "start": 478.44,
+      "end": 483.62,
+      "text": "A Karen robi ze swoją wolną ręką rzeczy, których nikt jej nie kazał robić wprost."
+    },
+    {
+      "i": 70,
+      "block": 19,
+      "start": 484.22,
+      "end": 491.08,
+      "text": "Codziennie rano pisze do każdego z nas krótki brief — co dziś naprawdę ważne, co czeka na czyjąś decyzję."
+    },
+    {
+      "i": 71,
+      "block": 19,
+      "start": 491.68,
+      "end": 493.26,
+      "text": "Wieczorem podsumowuje dzień."
+    },
+    {
+      "i": 72,
+      "block": 19,
+      "start": 493.86,
+      "end": 505.02,
+      "text": "Kiedy natrafia na zadanie bez właściciela albo bez terminu, nie przechodzi obok — dopytuje, proponuje dwie–trzy drogi wyjścia i podpowiada, którą wybrałaby sama."
+    },
+    {
+      "i": 73,
+      "block": 19,
+      "start": 505.08,
+      "end": 513.38,
+      "text": "Ale nigdy nie rozkazuje; w jej instrukcji jest to zapisane wprost: „rekomendujesz, nie rozkazujesz\"."
+    },
+    {
+      "i": 74,
+      "block": 19,
+      "start": 514.08,
+      "end": 517.48,
+      "text": "Ostatnie słowo zawsze zostaje przy człowieku."
+    },
+    {
+      "i": 75,
+      "block": 19,
+      "start": 517.56,
+      "end": 520.68,
+      "text": "Ona przygotowuje decyzję, nie podejmuje jej za nas."
+    },
+    {
+      "i": 76,
+      "block": 20,
+      "start": 521.28,
+      "end": 524.32,
+      "text": "Najbardziej zaskoczyło mnie jednak co innego."
+    },
+    {
+      "i": 77,
+      "block": 20,
+      "start": 524.36,
+      "end": 532.88,
+      "text": "Kiedy ją wprowadzałem, bałem się jednej rzeczy — że zespół ją odrzuci, że ludzie poczują się nadzorowani przez maszynę."
+    },
+    {
+      "i": 78,
+      "block": 20,
+      "start": 532.98,
+      "end": 534.68,
+      "text": "Stało się dokładnie odwrotnie."
+    },
+    {
+      "i": 79,
+      "block": 20,
+      "start": 534.8,
+      "end": 535.62,
+      "text": "Wolą Karen."
+    },
+    {
+      "i": 80,
+      "block": 20,
+      "start": 536.22,
+      "end": 547.02,
+      "text": "Bo Karen jest regularna tam, gdzie my, ludzie, bywamy zawodni: nie odpuszcza porannego przeglądu, bo akurat miała gorszy dzień, nie zapomina, nie ma humorów."
+    },
+    {
+      "i": 81,
+      "block": 20,
+      "start": 547.52,
+      "end": 548.14,
+      "text": "Nie ocenia."
+    },
+    {
+      "i": 82,
+      "block": 20,
+      "start": 548.74,
+      "end": 550.14,
+      "text": "Mówi krótko i konkretnie."
+    },
+    {
+      "i": 83,
+      "block": 20,
+      "start": 550.74,
+      "end": 556.02,
+      "text": "A przy tym wszyscy wiedzą, że to syntetyk — nie udajemy, że po drugiej stronie siedzi człowiek."
+    },
+    {
+      "i": 84,
+      "block": 20,
+      "start": 556.7,
+      "end": 562.92,
+      "text": "W Veles mówimy o sobie, że zatrudniamy i ludzi, i syntetyków, i traktujemy to serio."
+    },
+    {
+      "i": 85,
+      "block": 21,
+      "start": 563.58,
+      "end": 567.28,
+      "text": "Nie będę udawał, że mam na to twarde słupki co do złotówki."
+    },
+    {
+      "i": 86,
+      "block": 21,
+      "start": 567.34,
+      "end": 577.2,
+      "text": "Ale koszt tej jednej funkcji spadł nam z pełnego etatu do kilkunastu złotych miesięcznie, a czas, który Karen zdjęła nam z barków, liczę już w setkach godzin."
+    },
+    {
+      "i": 87,
+      "block": 21,
+      "start": 577.75,
+      "end": 584.82,
+      "text": "W skali całej firmy koszty operacyjne w obszarze koordynacji spadły o jakieś trzydzieści do czterdziestu procent."
+    },
+    {
+      "i": 88,
+      "block": 21,
+      "start": 584.86,
+      "end": 591.98,
+      "text": "Piszę „jakieś\", bo jestem uczciwy: to mój szacunek z bliska, a nie wyrok z tabelki."
+    },
+    {
+      "i": 89,
+      "block": 21,
+      "start": 592.04,
+      "end": 596.88,
+      "text": "Ale kierunek jest jednoznaczny, a najważniejsze wcale nie jest w liczbach."
+    },
+    {
+      "i": 90,
+      "block": 21,
+      "start": 596.92,
+      "end": 600.7,
+      "text": "Najważniejsze jest to, że Karen nie dostała listy rzeczy do odhaczenia."
+    },
+    {
+      "i": 91,
+      "block": 21,
+      "start": 601.34,
+      "end": 605.98,
+      "text": "Dostała cel i charakter — i właśnie dlatego działa."
+    },
+    {
+      "i": 92,
+      "block": 22,
+      "start": 606.02,
+      "end": 607.079,
+      "text": "To jest też dla ciebie"
+    },
+    {
+      "i": 93,
+      "block": 23,
+      "start": 607.17,
+      "end": 608.68,
+      "text": "Karen nie jest u nas sama."
+    },
+    {
+      "i": 94,
+      "block": 23,
+      "start": 609.26,
+      "end": 619.7,
+      "text": "Prowadzę w Veles całą, celowo różną flotę takich agentów, a jeden z nich zasila coś, co nazywamy Storyverse — nasz wewnętrzny model świata dla projektów studia."
+    },
+    {
+      "i": 95,
+      "block": 23,
+      "start": 620.38,
+      "end": 631.14,
+      "text": "O nim napiszę osobno, bo zasługuje na własny tekst; tu wystarczy powiedzieć, że jest zbudowany na tej samej zasadzie co Karen: dostaje ambicję, nie listę poleceń."
+    },
+    {
+      "i": 96,
+      "block": 24,
+      "start": 631.62,
+      "end": 635.36,
+      "text": "Zostawię cię z jedną myślą, bo dla mnie jest najważniejsza."
+    },
+    {
+      "i": 97,
+      "block": 24,
+      "start": 635.96,
+      "end": 642.38,
+      "text": "Ta zmiana — od zadań do celów — otwiera Agentic Coding dla ludzi spoza inżynierii."
+    },
+    {
+      "i": 98,
+      "block": 24,
+      "start": 642.88,
+      "end": 659.2,
+      "text": "Jeśli agentowi mówi się, co ma osiągnąć, a nie jak to zaprogramować linijka po linijce, to najcenniejszą umiejętnością przestaje być składnia, a staje się jasność myślenia: zdolność powiedzenia, czego naprawdę chcemy, i nadania temu charakteru."
+    },
+    {
+      "i": 99,
+      "block": 24,
+      "start": 659.86,
+      "end": 666.62,
+      "text": "A to jest domena humanisty — kogoś, kto potrafi nazwać cel, wyczuć niuans, opowiedzieć sens."
+    },
+    {
+      "i": 100,
+      "block": 24,
+      "start": 667.31,
+      "end": 676.46,
+      "text": "Sam nie wchodziłem w to od strony informatyki i dziś jestem o tym głęboko przekonany: nie potrzebujesz inżynierskiego zaplecza, żeby tu wejść."
+    },
+    {
+      "i": 101,
+      "block": 24,
+      "start": 676.48,
+      "end": 681.9,
+      "text": "Potrzebujesz ciekawości i odrobiny odwagi, żeby stanąć na krawędzi razem ze mną."
+    },
+    {
+      "i": 102,
+      "block": 24,
+      "start": 682.46,
+      "end": 685.699,
+      "text": "To potrójne salto ktoś niedługo wykona."
+    },
+    {
+      "i": 103,
+      "block": 24,
+      "start": 685.76,
+      "end": 686.82,
+      "text": "Może właśnie ty."
+    }
+  ]
+}

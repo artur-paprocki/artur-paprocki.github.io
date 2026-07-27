@@ -61,9 +61,11 @@ podmiana demo na treść docelową to operacja plikowa w repo:
    podmień `title`, `description`, `date`, `heroAlt`, `readingTime`, usuń `demo: true`,
    wklej zaakceptowaną treść PL/EN):
    ```
-   src/eseje/dlaczego-pisze.md      (pair: /essays/why-i-write/)
-   src/essays/why-i-write.md        (pair: /eseje/dlaczego-pisze/)
+   src/eseje/dlaczego-pisze.md      (work: dlaczego-pisze)
+   src/essays/why-i-write.md        (work: dlaczego-pisze)
    ```
+   Wersje wiąże **ten sam klucz `work:`** w obu plikach, nie link do odpowiednika
+   (`eleventy.config.mjs:97` — kolekcja `works`; szczegóły w `docs/publikowanie.md`).
 
 2. **Usuń demo:**
    ```

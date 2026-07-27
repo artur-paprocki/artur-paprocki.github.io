@@ -2,11 +2,15 @@
 title: "Reżyser, który dołączył do maszyny"
 description: "Historia chińskiego reżysera, który zamienił plan filmowy na generator AI, pokazuje mechanizm, który dotknie każdą pracę kreatywną — piszę o nim z perspektywy kogoś, kto sam prowadzi studio na tym samym pograniczu."
 date: 2026-07-11
-# pair: /essays/the-director-who-joined-the-machine/  — odkomentować przy publikacji (para jest w drafcie)
+# work: rezyser-ktory-dolaczyl-do-maszyny  — odkomentować przy publikacji (para jest w drafcie)
 heroLight: ill-rezyser-ktory-dolaczyl-do-maszyny-1400
 heroDark: dill-rezyser-ktory-dolaczyl-do-maszyny-1400
 heroAlt: "Dłoń z ołówkiem przesuwa linię granicy na pustej podłodze studia: krzesło reżyserskie po jednej stronie, maszyna po drugiej — luźny szkic ołówkiem z akwarelą"
 readingTime: 5
+theses:
+  - "Reżyseria przestaje być rzemiosłem, w którym doświadczenie daje kontrolę nad efektem."
+  - "Chińska fala mikrodram AI to nie ciekawostka z drugiego końca świata."
+  - "Interesuje mnie trzecia droga: świadomy wybór, co w łańcuchu produkcji zostaje przy człowieku, a co oddaję maszynie."
 audio: /assets/audio/rezyser-ktory-dolaczyl-do-maszyny-pl.mp3
 draft: true
 ---

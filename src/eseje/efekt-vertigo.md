@@ -2,11 +2,16 @@
 title: "Efekt Vertigo"
 description: "Esej o zderzeniu dwóch fal — taniejącej technologii AI i widza, który przeniósł się na pionowy ekran telefonu — oraz o tym, dlaczego nowy format wcale nie skazuje historii na banał, jeśli ktoś pilnuje rzemiosła rodem z Hitchcocka."
 date: 2026-07-12
-# pair: /essays/the-vertigo-effect/  — odkomentować przy publikacji (para jest w drafcie)
+# work: efekt-vertigo  — odkomentować przy publikacji (para jest w drafcie)
 heroLight: ill-vertigo-1400
 heroDark: dill-vertigo-1400
 heroAlt: "Dwie fale spotykają się i nakładają w jedną wyższą, dookoła spokojna woda — luźny szkic ołówkiem z akwarelą"
 readingTime: 7
+theses:
+  - "Kiedy te dwie fale spotykają się naraz, nie dostajemy po prostu tańszego filmu ani po prostu krótszego materiału wideo."
+  - "Winne jest to, co ludzie robią z narzędziem, kiedy nikt nie każe im szukać czegoś swojego."
+  - "Historia i człowiek mają zostać w kadrze tej samej wielkości."
+  - "Pion ekranu i krótki odcinek to tylko naczynie."
 audio: /assets/audio/efekt-vertigo-pl.mp3
 draft: true
 ---

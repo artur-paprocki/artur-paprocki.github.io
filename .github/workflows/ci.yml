@@ -22,8 +22,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Unit tests
+        run: npm test
+
       - name: Build
         run: npm run build
+
+      - name: Check published essays
+        run: npm run check
 
       - name: Validate HTML
         run: npx --yes html-validate "_site/**/*.html"

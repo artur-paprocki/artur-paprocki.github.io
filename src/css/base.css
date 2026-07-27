@@ -83,12 +83,31 @@ a {
 
 /* Audio player (progressive enhancement over native <audio controls>).
    The slot reserves the enhanced player's height up front, so un-hiding it
-   after JS loads causes zero layout shift. */
+   after JS loads causes zero layout shift.
+
+   The bar also pins to the top of the viewport while the essay is read aloud.
+   The former 18px top margin became padding of the same size: a sticky box is
+   offset by its margin edge, so a top margin would leave a gap through which
+   the text below scrolls into view. Total occupied height is unchanged
+   (10px padding + 34px row + 6px margin = the old 18 + 34 + 6, the top margin
+   having collapsed with .essay-head's 8px). */
+/* Height of the pinned player bar: 10px padding + the 34px control row. Kept
+   here (not in tokens.css, which holds palette and easings) because it is a
+   layout constant of this component, read back by .z's scroll-margin. */
+:root {
+  --bar-h: 44px;
+}
+
 .player-slot {
-  min-height: 34px;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  min-height: var(--bar-h);
   display: flex;
   align-items: center;
-  margin: 18px 0 6px;
+  background: var(--paper);
+  margin: 0 0 6px;
+  padding: 10px 0 0;
 }
 
 .player-slot > * {
@@ -99,6 +118,9 @@ a {
   display: flex;
   align-items: center;
   gap: 12px;
+  /* Holds the row height while the pinned bar compacts its controls, so the
+     text below never jumps (CLS stays at zero). */
+  min-height: 34px;
   font-family: var(--sans);
   font-size: 13.5px;
   color: var(--muted);
@@ -136,14 +158,52 @@ a {
   color: var(--accent);
 }
 
+/* The rail is painted on the track pseudo-element, not on the input itself, so the
+   input can stay tall enough to grab. `appearance: none` erases the UA thumb, so
+   both thumb pseudo-elements below are mandatory — without them there is nothing
+   to drag and the essay cannot be scrubbed (Artur, 25.07). */
 .player .bar {
   flex: 1;
   appearance: none;
+  -webkit-appearance: none;
+  height: 20px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.player .bar::-webkit-slider-runnable-track {
   height: 3px;
   border-radius: 999px;
   background: var(--rule);
-  accent-color: var(--accent);
-  cursor: pointer;
+}
+
+.player .bar::-moz-range-track {
+  height: 3px;
+  border-radius: 999px;
+  background: var(--rule);
+}
+
+.player .bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 13px;
+  height: 13px;
+  margin-top: -5px;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.player .bar::-moz-range-thumb {
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.player .bar:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
 }
 
 .player .time {
@@ -494,6 +554,31 @@ footer.site a {
   border-radius: 5px;
 }
 
+/* Archival photographs and app screenshots are not 16:9 — the fixed ratio above
+   would squash them. `.natural` keeps the file's own proportions; `.portrait`
+   also caps the width, so a 9:16 phone screen doesn't swamp the column. */
+.still-ill.natural img {
+  aspect-ratio: auto;
+}
+
+.still-ill.portrait img {
+  aspect-ratio: auto;
+  width: auto;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* A 9:16 video quote — the essay is about the vertical rectangle, so the embed
+   has to actually be one, capped like the portrait stills above. */
+.still-ill.portrait iframe {
+  aspect-ratio: 9 / 16;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: block;
+}
+
 .still-ill iframe {
   width: 100%;
   height: auto;
@@ -559,6 +644,181 @@ footer.site a {
   line-height: 1.55;
   margin: 0 0 16px;
   color: var(--ink-featured);
+}
+
+/* ——— Czytanie synchroniczne (spec 0051) ——— */
+
+/* Zero-height marker directly above the player slot: an IntersectionObserver
+   reads its exit from the viewport as the moment the bar pins itself — no
+   scroll listener, no per-frame measuring. */
+.sticky-sentinel {
+  height: 0;
+}
+
+/* Pinned state: paper spanning the full viewport width behind the bar. The
+   hero illustration bleeds 80px past the text column and would otherwise slide
+   out from under a column-wide background; a fixed pseudo-element covers it
+   without adding scrollable width (which a -50vw inset would). */
+.player-slot::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: -1;
+  height: var(--bar-h);
+  background: var(--paper);
+  box-shadow: 0 1px 0 var(--rule);
+  opacity: 0;
+  transition: opacity .25s var(--ease-gesture-fallback);
+  transition-timing-function: var(--ease-gesture);
+  /* The strip exists at every scroll position (opacity only stops the paint,
+     never the hit test) and .player-slot sits at z-index 5, so without this
+     it would swallow every click in the top 44px: navigation, the language
+     and theme switches, and any source link passing under the bar. */
+  pointer-events: none;
+}
+
+.player-slot.stuck::before {
+  opacity: 1;
+}
+
+/* Compaction touches the controls only — the row keeps its 34px, so nothing
+   below the bar moves when it pins. */
+.player-slot.stuck .play {
+  width: 28px;
+  height: 28px;
+}
+
+.player-slot.stuck .player {
+  gap: 10px;
+  font-size: 12.5px;
+}
+
+.player .tezy-toggle {
+  flex: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.4;
+  padding: 4px 12px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.player .tezy-toggle:hover,
+.player .tezy-toggle[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* The "Sedno"/"Key Takeaways" button pushed the row past the column on a 320px screen
+   (279px in a 256px slot; the English label is wider still). A flex item may
+   not shrink below its content unless told to, and a range input carries an
+   intrinsic width of ~129px — so the row, and inside it the rail, refused to
+   give way. Both need releasing: the row so it stops overflowing the column,
+   the rail because it is the one element here that can afford to be shorter.
+   The button keeps its visible label, and with it the name a screen reader
+   announces. */
+.player,
+.player .bar {
+  min-width: 0;
+}
+
+/* Releasing the rail stops the overflow but goes too far: in a 256px column
+   "Key Takeaways" claims 113px and the rail is left with 44px — nothing a thumb
+   can scrub. So on a narrow screen the row breaks instead of squeezing: the rail
+   gets a floor (only then is the line genuinely too long, and only then does
+   flexbox wrap rather than shrink) and the button moves to its own line. Must
+   sit after the rule above — same specificity, later wins. --bar-h grows with
+   the second line, because the fixed backdrop and .z's scroll-margin both read
+   it and would otherwise let text slide under a taller bar.
+
+   The breakpoint is 361px — the width at which BOTH labels wrap, not the wider
+   one. Left to itself English would wrap at ≤419px and Polish only at ≤361px
+   ("Sedno" is the shorter word), and a query sized for English reserved a second
+   line of pinned bar on every Polish phone between 362 and 419px: 38px of dead
+   paper with the hairline floating below the controls, on the most common screen
+   widths there are. Sizing for Polish instead costs English a shorter rail in
+   that band (86-144px, still far above the 44px that started this), and the
+   height reserved here stays truthful for both. It must be CSS, not a runtime
+   measurement: the slot reserves its height before JS unhides the player, and
+   correcting it afterwards would be a layout shift — CLS has to stay at zero. */
+@media (max-width: 361px) {
+  :root {
+    --bar-h: 82px;
+  }
+
+  .player {
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+
+  .player .bar {
+    min-width: 140px;
+  }
+
+  .player .tezy-toggle {
+    order: 1;
+    margin-left: auto;
+  }
+}
+
+.z {
+  scroll-margin-top: calc(var(--bar-h) + 24px);
+}
+
+/* Karaoke lives entirely under `.reading`, a class the runtime adds on play and
+   drops on pause and at the end — a paused essay is clean static type again.
+   Sentences not yet spoken step back to --muted, spoken ones return to the
+   article's ink, the current one gets full ink plus a 7% accent wash (the same
+   "decision tint" the style contract allows the interface). */
+article.reading .z[data-t] {
+  color: var(--muted);
+  transition: color .4s var(--ease-gesture-fallback), background-color .4s var(--ease-gesture-fallback);
+  transition-timing-function: var(--ease-gesture);
+}
+
+article.reading .z.said {
+  color: var(--ink-article);
+}
+
+article.reading .z.zz,
+.z:target {
+  color: var(--ink);
+  background-color: color-mix(in srgb, var(--accent) 7%, transparent);
+  border-radius: 3px;
+  /* The wash spills slightly past the glyph box; a spread shadow does that
+     without inline padding, which would reflow the paragraph mid-sentence. */
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 7%, transparent);
+}
+
+/* The pointer appears only once the recording has been started — a reader who
+   never plays the audio should not meet clickable prose. */
+article.audio-on .z[data-t] {
+  cursor: pointer;
+}
+
+/* Theses. <mark> arrives with the UA's yellow marker, which this page never
+   wants; the reveal is the underline-gesture from the motion catalog (§6.1) —
+   drawn in, never a static highlight. box-decoration-break gives every line of
+   a wrapped thesis its own stroke. */
+.teza {
+  background: none;
+  color: inherit;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0 2px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size .7s var(--ease-gesture-fallback);
+  transition-timing-function: var(--ease-gesture);
+}
+
+article.tezy-on .teza {
+  background-size: 100% 2px;
 }
 
 @media (max-width: 740px) {

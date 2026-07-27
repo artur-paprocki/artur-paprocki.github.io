@@ -6,12 +6,15 @@
   "description": "Personal essay site of Artur Paprocki, built with Eleventy.",
   "scripts": {
     "build": "eleventy",
-    "serve": "eleventy --serve"
+    "serve": "eleventy --serve",
+    "test": "node --test \"lib/**/*.test.mjs\"",
+    "check": "node lib/check-essays.mjs _site"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-img": "^6.0.4",
     "roughjs": "^4.6.6",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "subset-font": "^2.5.0"
   }
 }

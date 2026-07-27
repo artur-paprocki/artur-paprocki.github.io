@@ -4,6 +4,17 @@
 {%- set ogType = "article" if pageType == "essay" else "website" -%}
 {%- set ogHeroName = heroLight or "ill-hero-1400" -%}
 {%- set ogImageSrc = "src/assets/ill/light/" + ogHeroName + ".jpg" -%}
+{#- Time map of the recording, when one exists (spec 0051, SYNC-1). It carries
+    the length of the audio and the address of the timestamped transcript. -#}
+{%- set syncEntry = sync[page.fileSlug + "-" + lang] if pageType == "essay" else null -%}
+{#- Language set of this page (LANG-SET, spec 0052): an ordered list of every
+    version of the same work, this one included. Two entries or three, the code
+    below is the same; a page with no counterpart has `langSet` null and says
+    nothing about languages at all. -#}
+{%- set langOthers = langSet | langExcept(lang) -%}
+{%- set langOrigin = langSet | langPick(langs.origin) -%}
+{%- set langTag = langs.by[lang].hreflang if langs.by[lang] else lang -%}
+{%- set thesesList = theses if theses else [] -%}
 
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDescription }}">
@@ -18,12 +29,19 @@
 <meta name="robots" content="index, follow">
 {%- endif %}
 
-{%- if pair %}
-  {%- set plHref = site.url + (page.url if lang == "pl" else pair) -%}
-  {%- set enHref = site.url + (pair if lang == "pl" else page.url) -%}
-<link rel="alternate" hreflang="pl" href="{{ plHref }}">
-<link rel="alternate" hreflang="en" href="{{ enHref }}">
-<link rel="alternate" hreflang="x-default" href="{{ plHref }}">
+{%- if langSet %}
+  {%- for v in langSet -%}
+    {%- if langs.by[v.lang] -%}
+<link rel="alternate" hreflang="{{ langs.by[v.lang].hreflang }}" href="{{ site.url }}{{ v.url }}">
+{% endif -%}
+  {%- endfor -%}
+  {%- if langOrigin -%}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ langOrigin.url }}">
+  {%- endif -%}
+{%- endif %}
+
+{%- if syncEntry %}
+<link rel="alternate" type="application/json" href="{{ syncEntry.href }}" title="{{ langs.by[lang].ui.transcript if langs.by[lang] else langs.by.pl.ui.transcript }}">
 {%- endif %}
 
 <meta property="og:title" content="{{ title }}">
@@ -38,20 +56,73 @@
 <meta name="twitter:image" content="{{ site.url }}{% ogimg ogImageSrc %}">
 
 {%- if ogType == "article" %}
+{#- Every value below goes through `| dump`, so quotes, dashes and Polish
+    diacritics inside a title or a thesis can never break the JSON. Optional
+    members are appended as comma-prefixed blocks after the last mandatory key
+    ("image"), which keeps the document valid in every state of the data:
+    no theses, no audio, no time map, no language set. -#}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": {{ title | dump | safe }},
   "description": {{ pageDescription | dump | safe }},
-  "datePublished": {{ date | dump | safe }},
-  "inLanguage": {{ lang | dump | safe }},
+  "datePublished": {{ date | isodate | dump | safe }},
+  "inLanguage": {{ langTag | dump | safe }},
+  "isAccessibleForFree": true,
+  "url": {{ canonical | dump | safe }},
+  "mainEntityOfPage": {{ canonical | dump | safe }},
   "author": {
     "@type": "Person",
     "name": {{ site.author | dump | safe }},
     "url": {{ site.url | dump | safe }}
   },
   "image": {{ (site.url + '/assets/ill/light/' + ogHeroName + '.jpg') | dump | safe }}
+  {%- if thesesList.length %},
+  {# The theses are the author's own sentences, marked in the text as
+     <mark class="z teza">. `speakable` points a reading agent straight
+     at them; `abstract` gives the same thing as one paragraph. -#}
+  "abstract": {{ thesesList | join(" ") | dump | safe }},
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".teza"]
+  }
+  {%- endif %}
+  {%- if audio %},
+  "audio": {
+    "@type": "AudioObject",
+    "name": {{ title | dump | safe }},
+    "encodingFormat": "audio/mpeg",
+    "inLanguage": {{ langTag | dump | safe }},
+    "contentUrl": {{ (site.url + audio) | dump | safe }}
+    {%- if syncEntry and syncEntry.durationIso %},
+    "duration": {{ syncEntry.durationIso | dump | safe }}
+    {%- endif %}
+  }
+  {%- endif %}
+  {%- if lang == langs.origin and langOthers.length %},
+  {# The original (Polish) owns the list of its translations; every translation
+     points back at the original. An array, because there can be more than one
+     — the direction of the relation must stay right at two versions and at
+     three. -#}
+  "workTranslation": [
+    {%- for v in langOthers %}
+    {
+      "@type": "Article",
+      "@id": {{ (site.url + v.url) | dump | safe }},
+      "url": {{ (site.url + v.url) | dump | safe }},
+      "inLanguage": {{ (langs.by[v.lang].hreflang if langs.by[v.lang] else v.lang) | dump | safe }}
+    }{% if not loop.last %},{% endif %}
+    {%- endfor %}
+  ]
+  {%- elif langOrigin and lang != langs.origin %},
+  "translationOfWork": {
+    "@type": "Article",
+    "@id": {{ (site.url + langOrigin.url) | dump | safe }},
+    "url": {{ (site.url + langOrigin.url) | dump | safe }},
+    "inLanguage": {{ langs.by[langs.origin].hreflang | dump | safe }}
+  }
+  {%- endif %}
 }
 </script>
 {%- else %}

@@ -1,19 +1,27 @@
-{%- set homeHref = "/en/" if lang == "en" else "/" -%}
-{%- set aboutHref = "/en/about/" if lang == "en" else "/o-mnie/" -%}
-{%- set navEssays = "Essays" if lang == "en" else "Eseje" -%}
-{%- set navAbout = "About" if lang == "en" else "O mnie" -%}
+{#- Wszystko, co w nagłówku i stopce zależy od języka, pochodzi z rejestru
+    `src/_data/langs.mjs` (LANG-SET, spec 0052) — dołożenie języka nie wymaga
+    już dopisywania kolejnego `if lang == …` w tym pliku. -#}
+{%- set L = langs.by[lang] if langs.by[lang] else langs.by[langs.origin] -%}
+{%- set homeHref = L.home -%}
+{%- set aboutHref = L.about -%}
+{%- set navEssays = L.nav.essays -%}
+{%- set navAbout = L.nav.about -%}
 {%- set newsletterLabel = "Newsletter" -%}
 {%- set rssLabel = "RSS" -%}
-{%- set feedHref = "/en/feed.xml" if lang == "en" else "/feed.xml" -%}
+{%- set feedHref = L.feed -%}
 {%- set copyrightLine = "© 2026 " + site.author -%}
 
-{%- if pair -%}
-  {%- set otherLangHref = pair -%}
-{%- elif lang == "en" -%}
-  {%- set otherLangHref = "/" -%}
-{%- else -%}
-  {%- set otherLangHref = "/en/" -%}
-{%- endif -%}
+{#- Przełącznik języka pokazuje wersje TEJ strony, a gdy strona nie ma
+    odpowiednika (notatka, draft bez pary) — strony główne języków, które już
+    istnieją. Dlatego zapasowy zestaw jest tu, a nie w `langSet`: hreflang
+    i JSON-LD mówią wyłącznie o prawdziwych tłumaczeniach.
+
+    Zapasowy zestaw nie musi zawierać języka tej strony (sekcja `/zh/` powstaje
+    zanim `live` się przełączy), a przełącznik bez bieżącego języka to suwak pod
+    cudzą opcją i brak `aria-current` — dlatego `langEnsure` dokłada tę stronę
+    jako jej własną pozycję. -#}
+{%- set langSwitch = (langSet if langSet else langs.homes) | langEnsure(lang, page.url) -%}
+{%- set langSwitchIndex = langSwitch | langIndex(lang) -%}
 
 <!doctype html>
 <!--
@@ -45,13 +53,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- include "components/theme-head.njk" %}
   {%- include "components/head.njk" %}
-  {#- Preload the four fonts used above the fold; without this, font-display:
-      swap reflows the heading/meta block after paint and drags the hero with
-      it (visible CLS). -#}
+  {#- Preload the fonts used above the fold; without this, font-display: swap
+      reflows the heading/meta block after paint and drags the hero with it
+      (visible CLS). -#}
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/fraunces-normal-600-latin.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/fraunces-normal-600-latin-ext.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/newsreader-normal-400-latin.woff2">
+  {%- if L.latinExt %}
+  {#- Latin Extended niesie diakrytykę polską — i tylko po to tu jest (LANG-EXT,
+      spec 0052). Łacina na stronie chińskiej to „Camerimage", „LED", „AI",
+      „GhostFrame", „prompt-to-splat" — czysty ASCII, czyli podzbiór `latin`.
+      Bezwarunkowy preload dociągał tam 32 kB, których strona nie stawia ani
+      jednym znakiem — mierzone: kroju italic latin-ext, którego nikt nie
+      preloaduje, strona ZH nie pobiera w ogóle. Reguły `@font-face` zostają
+      nietknięte, więc gdyby taki znak jednak padł na stronę bez tej flagi,
+      przeglądarka dociągnie plik normalną drogą. -#}
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/fraunces-normal-600-latin-ext.woff2">
   <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/newsreader-normal-400-latin-ext.woff2">
+  {%- endif %}
+  {%- if lang == "zh" %}
+  {#- Chiński krój jest przycinany per strona do znaków, które ta strona
+      realnie stawia (FONT-CJK, spec 0052) — stąd plik nazwany slugiem,
+      a nie jeden wspólny podzbiór. Preload tylko tam, gdzie jest tekst CJK:
+      dla PL i EN ten blok nie istnieje. -#}
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="/assets/fonts/zh/{{ page.fileSlug }}.woff2">
+  {%- endif %}
   <link rel="stylesheet" href="/css/fonts.css">
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/base.css">
@@ -66,12 +91,17 @@
       <nav class="top">
         <a href="{{ homeHref }}">{{ navEssays }}</a>
         <a href="{{ aboutHref }}">{{ navAbout }}</a>
-        <a class="lang-pill" data-active="{{ lang }}" href="{{ otherLangHref }}" aria-label="{{ 'Switch to English' if lang == 'pl' else 'Przełącz na polski' }}">
+        <div class="lang-pill" data-count="{{ langSwitch.length }}" data-index="{{ langSwitchIndex }}">
           <span class="thumb-slide" aria-hidden="true"></span>
-          <span class="opt pl">PL</span>
-          <span class="opt en">EN</span>
-        </a>
-        <button type="button" class="theme-toggle" data-theme-toggle aria-label="{{ 'Przełącz motyw' if lang == 'pl' else 'Toggle theme' }}"></button>
+          {%- for v in langSwitch %}
+          {%- if v.lang == lang %}
+          <span class="opt" aria-current="true">{{ langs.by[v.lang].label }}</span>
+          {%- else %}
+          <a class="opt" href="{{ v.url }}" aria-label="{{ langs.by[v.lang].switchTo }}">{{ langs.by[v.lang].label }}</a>
+          {%- endif %}
+          {%- endfor %}
+        </div>
+        <button type="button" class="theme-toggle" data-theme-toggle aria-label="{{ L.nav.themeToggle }}"></button>
       </nav>
     </header>
 
@@ -85,7 +115,7 @@
     </div>
     <footer class="site">
       <span>{{ copyrightLine }}</span>
-      <span>{% if site.links.substack %}<a href="{{ site.links.substack }}">{{ newsletterLabel }}</a> · {% endif %}<a href="{{ '/en/contact/' if lang == 'en' else '/kontakt/' }}">{{ 'Contact' if lang == 'en' else 'Kontakt' }}</a> · <a href="{{ site.links.linkedin }}">LinkedIn</a> · <a href="{{ feedHref }}">{{ rssLabel }}</a></span>
+      <span>{% if site.links.substack %}<a href="{{ site.links.substack }}">{{ newsletterLabel }}</a> · {% endif %}<a href="{{ L.contact }}">{{ L.nav.contact }}</a> · <a href="{{ site.links.linkedin }}">LinkedIn</a> · <a href="{{ feedHref }}">{{ rssLabel }}</a></span>
     </footer>
   </div>
 

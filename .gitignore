@@ -2,3 +2,9 @@ node_modules/
 _site/
 .cache/
 .lighthouseci/
+
+# Surowy character-alignment z ElevenLabs — cache maszynowy pod mapy czasów
+# (setki kB na esej). Mapa `*.sync.json` jest w repo, alignment nie (spec 0051).
+# Cache leży POZA `src/`, bo `src/assets` idzie passthrough do `_site`.
+_cache/
+*.alignment.json

@@ -2,11 +2,16 @@
 title: "The Vertigo Effect"
 description: "An essay on two waves colliding — AI-driven production costs in freefall and audiences moving to the vertical phone screen — and why the new format doesn't condemn stories to banality, as long as someone guards the craft Hitchcock built."
 date: 2026-07-12
-# pair: /eseje/efekt-vertigo/  — uncomment on publication (the pair is still in draft)
+# work: efekt-vertigo  — uncomment on publication (the pair is still in draft)
 heroLight: ill-vertigo-en-1400
 heroDark: dill-vertigo-en-1400
 heroAlt: "Two trains of ripples cross on open water and a single steep wave rises where they meet — loose pencil and watercolour, vast calm space"
 readingTime: 7
+theses:
+  - "When those two waves meet at once, we don't simply get cheaper film or shorter video."
+  - "The culprit is what people do with the tool when nobody asks them to look for something of their own."
+  - "The story and the human being must stay the same size in the frame."
+  - "The vertical screen and the short episode are just a vessel."
 audio: /assets/audio/the-vertigo-effect-en.mp3
 draft: true
 ---

@@ -1,0 +1,478 @@
+{
+  "version": 1,
+  "slug": "efekt-vertigo",
+  "lang": "pl",
+  "source": "forced-alignment",
+  "duration": 696.06,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.08,
+      "end": 3.32,
+      "text": "Sztorm doskonały nie bierze się z jednej wielkiej fali."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 3.84,
+      "end": 19.44,
+      "text": "Bierze się z dwóch fal średniej wielkości, których osobno nikt by nawet nie zauważył, a które spotykają się w tym samym miejscu i w tym samym momencie i nakładają się na siebie tak, że jedna dokłada energię drugiej."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 20.14,
+      "end": 26.26,
+      "text": "Coś podobnego dzieje się teraz na moich oczach w krótkich, pionowych dramatach robionych pod telefon."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 26.92,
+      "end": 40.3,
+      "text": "Pierwsza fala to koszt: dzięki generatywnej AI produkcja odcinka, który jeszcze niedawno wymagał ekipy, planu zdjęciowego i tygodni pracy, tanieje mniej więcej dziesięciokrotnie."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 40.96,
+      "end": 51.04,
+      "text": "Druga fala to widz, który przeniósł się do telefonu trzymanego pionowo, z uwagą rozciągniętą dokładnie na długość przejazdu metrem między dwiema stacjami."
+    },
+    {
+      "i": 5,
+      "block": 0,
+      "start": 51.66,
+      "end": 59.4,
+      "text": "Kiedy te dwie fale spotykają się naraz, nie dostajemy po prostu tańszego filmu ani po prostu krótszego materiału wideo."
+    },
+    {
+      "i": 6,
+      "block": 0,
+      "start": 59.97,
+      "end": 61.58,
+      "text": "Dostajemy nowy gatunek."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 62.34,
+      "end": 67.06,
+      "text": "Skalę tego, co się rodzi, dobrze pokazują liczby, nie moje wrażenia."
+    },
+    {
+      "i": 8,
+      "block": 1,
+      "start": 67.7,
+      "end": 86.26,
+      "text": "Według szacunków firmy analitycznej Omdia, globalne przychody z mikrodram sięgnęły w 2025 roku około 11 miliardów dolarów, z czego mniej więcej 83 procent wciąż pochodzi z Chin, a prognoza na 2026 rok mówi już o 14 miliardach."
+    },
+    {
+      "i": 9,
+      "block": 1,
+      "start": 86.6,
+      "end": 100.52,
+      "text": "Według branżowych szacunków, cytowanych też przez Deloitte, w Chinach mikrodramy ogląda dziś 662 miliony widzów, a już w połowie 2024 roku sięgało po nie 52 procent chińskich internautów."
+    },
+    {
+      "i": 10,
+      "block": 1,
+      "start": 100.84,
+      "end": 114.02,
+      "text": "Firma badawcza Media Partners Asia policzyła, że w 2025 roku ten rynek wygenerował 9,4 miliarda dolarów przychodu — pierwszy raz w historii więcej niż krajowe wpływy kinowe."
+    },
+    {
+      "i": 11,
+      "block": 1,
+      "start": 114.7,
+      "end": 148.38,
+      "text": "Deloitte w swoich prognozach na 2026 rok pokazuje z kolei, jak szybko rośnie druga strona tego samego rynku, poza Chinami: globalne przychody z zakupów wewnątrz aplikacji z mikroserialami wzrosły z około 3,8 miliarda dolarów w 2025 roku do prognozowanych 7,8 miliarda w 2026, czyli ponad dwukrotnie, a sam pierwszy kwartał urósł ze 178 milionów dolarów na początku 2024 roku do około 700 milionów rok później."
+    },
+    {
+      "i": 12,
+      "block": 1,
+      "start": 148.94,
+      "end": 164.48,
+      "text": "Stany Zjednoczone odpowiadały w 2025 roku za mniej więcej połowę tych globalnych przychodów, choć Deloitte spodziewa się, że ich udział spadnie do około 40 procent w 2026 roku, bo reszta świata nadrabia dystans."
+    },
+    {
+      "i": 13,
+      "block": 1,
+      "start": 165.14,
+      "end": 172.06,
+      "text": "Około 30 procent amerykańskich przedstawicieli pokolenia Z i millenialsów zna już ten format."
+    },
+    {
+      "i": 14,
+      "block": 1,
+      "start": 172.65,
+      "end": 176.36,
+      "text": "To nie jest nisza, którą można spokojnie obserwować z boku."
+    },
+    {
+      "i": 15,
+      "block": 1,
+      "start": 177.1,
+      "end": 180.91,
+      "text": "To fala, która już zalała jeden rynek i szuka kolejnych brzegów."
+    },
+    {
+      "i": 16,
+      "block": 2,
+      "start": 181.62,
+      "end": 186.64,
+      "text": "Najciekawsze porównanie przychodzi jednak ze Stanów i wcale nie jest laurką."
+    },
+    {
+      "i": 17,
+      "block": 2,
+      "start": 187.24,
+      "end": 204.78,
+      "text": "Według lutowej analizy Omdia, opartej na danych Sensor Tower i Similarweb, mobilna aplikacja Netfliksa ma w USA około 12 milionów aktywnych użytkowników miesięcznie, a ReelShort, największa z aplikacji mikrodramowych — 1,2 miliona."
+    },
+    {
+      "i": 18,
+      "block": 2,
+      "start": 205.42,
+      "end": 206.78,
+      "text": "Dziesięć razy mniej."
+    },
+    {
+      "i": 19,
+      "block": 2,
+      "start": 206.84,
+      "end": 225.18,
+      "text": "Tyle że przeciętny użytkownik ReelShort spędza w niej 35,7 minuty dziennie — więcej niż mobilny widz Prime Video (26,9 minuty), Netfliksa (24,8) czy Disney+ (23) — a ta widownia urosła w ciągu roku o 51 procent."
+    },
+    {
+      "i": 20,
+      "block": 2,
+      "start": 225.58,
+      "end": 228.42,
+      "text": "Mikrodramy nie wygrywają jeszcze liczbą widzów."
+    },
+    {
+      "i": 21,
+      "block": 2,
+      "start": 228.43,
+      "end": 233.52,
+      "text": "Wygrywają już ich uwagą — na boisku, na którym streamerzy grają od dekady."
+    },
+    {
+      "i": 22,
+      "block": 3,
+      "start": 233.54,
+      "end": 246.36,
+      "text": "W poprzednim eseju pisałem o chińskim reżyserze, który zamienił plan zdjęciowy na generator obrazu i dziś potrzebuje trzech miesięcy pracy z AI, żeby zarobić tyle, co kiedyś w miesiąc tradycyjnej produkcji."
+    },
+    {
+      "i": 23,
+      "block": 3,
+      "start": 247.08,
+      "end": 262.82,
+      "text": "Jego historia jest ciekawa sama w sobie, ale tutaj interesuje mnie coś szerszego niż warsztat jednego człowieka: co ta fala robi z jakością tego, co powstaje, kiedy pomnożymy ją przez setki tysięcy takich warsztatów naraz."
+    },
+    {
+      "i": 24,
+      "block": 4,
+      "start": 262.94,
+      "end": 270.8,
+      "text": "Zresztą nie trzeba mi wierzyć na słowo, bo reportaż wisi na YouTube i można go sprawdzić moment po momencie."
+    },
+    {
+      "i": 25,
+      "block": 4,
+      "start": 271.44,
+      "end": 292.38,
+      "text": "Wang rozkłada tam nową ekonomię na czynniki pierwsze — trzysta tysięcy juanów, dziesięć produkcji naraz, kilka trafień pokrywa resztę — a chwilę później przyznaje, że generowanie ujęć przypomina mu hazard, bo do ostatniej chwili nie wie, czy maszyna odda mu to, co widzi w głowie."
+    },
+    {
+      "i": 26,
+      "block": 4,
+      "start": 293.14,
+      "end": 299.68,
+      "text": "Opowiada też, czego brakuje mu najbardziej: rozmowy z aktorem, kiedy scena nie gra."
+    },
+    {
+      "i": 27,
+      "block": 4,
+      "start": 300.38,
+      "end": 313.78,
+      "text": "Jego współpracowniczka dorzuca zdanie, które wraca do mnie przy każdej rozmowie o AI w naszej branży: na planie czuła się niezastąpiona, przy AI czuje, że można ją wymienić w każdej chwili."
+    },
+    {
+      "i": 28,
+      "block": 4,
+      "start": 314.34,
+      "end": 323.48,
+      "text": "A swoją własną drogę Wang podsumowuje jednym zdaniem: „Zrozumiałem, że nie mogę walczyć z AI, więc do niej dołączyłem\"."
+    },
+    {
+      "i": 29,
+      "block": 5,
+      "start": 324.06,
+      "end": 337.68,
+      "text": "Odpowiedź, jaką mam pod ręką, nie pochodzi z branży mikrodram, tylko z badania opublikowanego w 2024 roku w czasopiśmie Science Advances przez Doshiego i Hausera."
+    },
+    {
+      "i": 30,
+      "block": 5,
+      "start": 337.7,
+      "end": 346.48,
+      "text": "Badacze dali części piszących dostęp do pomysłów podsuwanych przez model językowy i poprosili o napisanie krótkich opowiadań."
+    },
+    {
+      "i": 31,
+      "block": 5,
+      "start": 346.54,
+      "end": 348.86,
+      "text": "Efekt okazał się podwójny."
+    },
+    {
+      "i": 32,
+      "block": 5,
+      "start": 348.94,
+      "end": 361.32,
+      "text": "Z jednej strony teksty wspomagane przez AI oceniano jako bardziej kreatywne i lepiej napisane niż te bez wsparcia — najbardziej zyskiwali twórcy, którzy wcześniej radzili sobie najsłabiej."
+    },
+    {
+      "i": 33,
+      "block": 5,
+      "start": 362.02,
+      "end": 370.84,
+      "text": "Z drugiej strony te same teksty, zestawione ze sobą, okazywały się bardziej podobne do siebie nawzajem niż opowiadania pisane bez AI."
+    },
+    {
+      "i": 34,
+      "block": 5,
+      "start": 371.46,
+      "end": 375.48,
+      "text": "Podłoga kreatywności podniosła się dla każdego z osobna."
+    },
+    {
+      "i": 35,
+      "block": 5,
+      "start": 375.62,
+      "end": 379.7,
+      "text": "Sufit różnorodności obniżył się dla wszystkich razem."
+    },
+    {
+      "i": 36,
+      "block": 5,
+      "start": 380.36,
+      "end": 398.82,
+      "text": "Dokładnie ten mechanizm widzę, kiedy przewijam kolejne mikrodramy jedną za drugą — nie dlatego, że pionowy ekran wymusza banał, tylko dlatego, że tanie narzędzie, użyte bez własnego głosu, prowadzi tysiące twórców naraz do bardzo podobnych rozwiązań."
+    },
+    {
+      "i": 37,
+      "block": 5,
+      "start": 399.57,
+      "end": 401.14,
+      "text": "Winny nie jest format."
+    },
+    {
+      "i": 38,
+      "block": 5,
+      "start": 401.84,
+      "end": 408.06,
+      "text": "Winne jest to, co ludzie robią z narzędziem, kiedy nikt nie każe im szukać czegoś swojego."
+    },
+    {
+      "i": 39,
+      "block": 7,
+      "start": 408.67,
+      "end": 421.78,
+      "text": "Kiedy Alfred Hitchcock budował gramatykę współczesnego kina, nikt nie potrzebował historii czytelnej na ekranie telefonu trzymanego pionowo, w przerwie między jedną stacją metra a drugą."
+    },
+    {
+      "i": 40,
+      "block": 7,
+      "start": 422.56,
+      "end": 433.5,
+      "text": "A jednak wracam właśnie do niego, bo rzemiosło, które zbudował, powstało wcześniej niż jakikolwiek format i przetrwa dłużej niż którykolwiek z nich."
+    },
+    {
+      "i": 41,
+      "block": 7,
+      "start": 434.5,
+      "end": 464.9,
+      "text": "W „Zawrocie głowy\" z 1958 roku Hitchcock spopularyzował technikę, którą dziś nazywa się dolly zoom albo efektem Vertigo, a po polsku najbliżej jej do transfokacji z jednoczesną jazdą kamery: kamera odjeżdża od bohatera do tyłu, a obiektyw w tym samym czasie dojeżdża do niego, zmieniając ogniskową, tak że twarz zostaje w kadrze dokładnie tej samej wielkości, a całe otoczenie wokół niej rozciąga się i faluje."
+    },
+    {
+      "i": 42,
+      "block": 7,
+      "start": 465.54,
+      "end": 469.08,
+      "text": "Widz nie dostaje informacji, że bohaterowi kręci się w głowie."
+    },
+    {
+      "i": 43,
+      "block": 7,
+      "start": 469.76,
+      "end": 472.52,
+      "text": "Widz to czuje, zanim zrozumie dlaczego."
+    },
+    {
+      "i": 44,
+      "block": 7,
+      "start": 473.16,
+      "end": 486.98,
+      "text": "Łatwo o tym zapomnieć w rozmowach o AI i kosztach produkcji, ale to jest dowód, że sama technika filmowa potrafi nieść emocję, której nie ma w żadnym scenariuszu, jeśli ktoś wie, po co jej używa."
+    },
+    {
+      "i": 45,
+      "block": 9,
+      "start": 487.02,
+      "end": 489.98,
+      "text": "Technologia i rynek są dziś tym ruchem kamery."
+    },
+    {
+      "i": 46,
+      "block": 9,
+      "start": 490.6,
+      "end": 494.34,
+      "text": "Historia i człowiek mają zostać w kadrze tej samej wielkości."
+    },
+    {
+      "i": 47,
+      "block": 10,
+      "start": 495,
+      "end": 499.92,
+      "text": "Traktuję ten sam kadr też jako opis tego, co dzieje się wokół mnie w tej branży."
+    },
+    {
+      "i": 48,
+      "block": 10,
+      "start": 500.42,
+      "end": 502.42,
+      "text": "Technologia tanieje i przyśpiesza."
+    },
+    {
+      "i": 49,
+      "block": 10,
+      "start": 502.9,
+      "end": 507.28,
+      "text": "Rynek się rusza, rośnie, zmienia zasady gry z miesiąca na miesiąc."
+    },
+    {
+      "i": 50,
+      "block": 10,
+      "start": 507.87,
+      "end": 515.22,
+      "text": "To jest ten sam ruch kamery — odjazd i najazd naraz, oba dzieją się w tym samym momencie."
+    },
+    {
+      "i": 51,
+      "block": 10,
+      "start": 515.94,
+      "end": 527.06,
+      "text": "Pytanie, które sobie zadaję, brzmi: co ma zostać w centrum tego kadru, tej samej wielkości, niezależnie od tego, jak bardzo rozciąga się dookoła wszystko inne."
+    },
+    {
+      "i": 52,
+      "block": 10,
+      "start": 527.72,
+      "end": 531.56,
+      "text": "Dla mnie odpowiedź jest prosta — historia i człowiek."
+    },
+    {
+      "i": 53,
+      "block": 10,
+      "start": 532.46,
+      "end": 540.42,
+      "text": "Jeśli pozwolę, żeby ruch kamery wciągnął też ich, zostaje mi tylko zawrót głowy bez żadnej emocji pod spodem."
+    },
+    {
+      "i": 54,
+      "block": 11,
+      "start": 541.3,
+      "end": 563.98,
+      "text": "Piszę to z pozycji kogoś, kto akurat teraz pracuje nad mikrodramami, więc powiem wprost, zamiast owijać w bawełnę: nie uważam, że ten format skazuje twórcę na zemstę, sekretnego miliardera i zwrot akcji co dziesięć sekund, choć wiem, że właśnie z tego kojarzy go dziś większość ludzi, którzy w ogóle o nim słyszeli."
+    },
+    {
+      "i": 55,
+      "block": 11,
+      "start": 564.8,
+      "end": 568.6,
+      "text": "Pion ekranu i krótki odcinek to tylko naczynie."
+    },
+    {
+      "i": 56,
+      "block": 11,
+      "start": 568.62,
+      "end": 590.28,
+      "text": "Da się w nie nalać serial o jakości, jaką kojarzymy z produkcją premium, opowieść, którą marka chce przekazać w sposób, jaki ktoś rzeczywiście obejrzy do końca, albo materiał edukacyjny, który uczy czegoś w czasie jednego przejazdu metrem zamiast czterdziestominutowego wykładu, którego nikt nie skończy oglądać."
+    },
+    {
+      "i": 57,
+      "block": 11,
+      "start": 591.24,
+      "end": 614.84,
+      "text": "Naszym celem w studiu jest produkcja premium w tym formacie — prawdziwi aktorzy i prawdziwe emocje na planie, wirtualne dekoracje zamiast budowania scenografii od zera za każdym razem, a AI dokładnie tam, gdzie faktycznie mnoży możliwości: w lokacjach, w tłach, w wersjach językowych tej samej sceny pod inny rynek."
+    },
+    {
+      "i": 58,
+      "block": 11,
+      "start": 615.58,
+      "end": 618.68,
+      "text": "Nie chcę, żeby AI decydowało, czy dubel jest dobry."
+    },
+    {
+      "i": 59,
+      "block": 11,
+      "start": 619.28,
+      "end": 625.88,
+      "text": "Chcę, żeby wygenerowało za mnie dziesięć wariantów tła, na które i tak nie starczyłoby budżetu."
+    },
+    {
+      "i": 60,
+      "block": 13,
+      "start": 625.92,
+      "end": 642.9,
+      "text": "Prowadzę Veles od 2022 roku, więc ten sam mechanizm oglądam z dwóch stron naraz — jako twórcę, który sięga po nowe narzędzia, i jako kogoś, kto musi zdecydować, gdzie postawić granicę, zanim zrobi to za niego rynek."
+    },
+    {
+      "i": 61,
+      "block": 13,
+      "start": 643.82,
+      "end": 648.94,
+      "text": "Badanie Doshiego i Hausera nie mówi mi, że AI jest złe dla kreatywności."
+    },
+    {
+      "i": 62,
+      "block": 13,
+      "start": 649.62,
+      "end": 657.86,
+      "text": "Mówi mi, że kreatywność bez własnego głosu upodabnia się do siebie, niezależnie od narzędzia, którym akurat się posługujemy."
+    },
+    {
+      "i": 63,
+      "block": 13,
+      "start": 657.9,
+      "end": 664.72,
+      "text": "Hitchcock nie miał AI i mimo to potrafił zrobić kadr, który czuje się, zanim się go zrozumie."
+    },
+    {
+      "i": 64,
+      "block": 13,
+      "start": 664.82,
+      "end": 676.079,
+      "text": "Ja mam AI i chcę używać go dokładnie tam, gdzie pozwala mi zrobić więcej takich kadrów, a nie tam, gdzie pozwala mi zrobić ich więcej sztuk na godzinę."
+    },
+    {
+      "i": 65,
+      "block": 13,
+      "start": 676.2,
+      "end": 686.32,
+      "text": "Nie wiem jeszcze, czy mikrodramy okażą się formatem, w którym uda się to utrzymać na dłuższą metę, czy fala ekonomii ostatecznie zaleje też tę granicę."
+    },
+    {
+      "i": 66,
+      "block": 13,
+      "start": 686.34,
+      "end": 696.06,
+      "text": "Wiem tylko, że wolę spróbować utrzymać w kadrze historię i człowieka tej samej wielkości, niż z góry uznać, że w tym formacie nie warto nawet próbować."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Eseje trzymamy w LF także w drzewie roboczym. Bez tej reguły globalne
+# core.autocrlf=true wydaje świeżemu klonowi (albo maszynie Artura na macOS)
+# pliki .md z CRLF, a build czyta frontmatter esejów własnym, minimalnym
+# czytnikiem — jeden osamotniony \r na końcu linii wyłączał czytanie
+# synchroniczne po cichu, bez ostrzeżenia (spec 0051).
+*.md text eol=lf

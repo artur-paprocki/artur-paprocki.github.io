@@ -1,0 +1,31 @@
+---
+layout: layouts/base.njk
+title: 联系
+description: "写信给我——联系表单。关于创造力、技术与合作的来信，我都会回复。"
+lang: zh
+pageType: page
+permalink: /zh/lianxi/
+---
+<div class="essay-head">
+  <h1>联系</h1>
+</div>
+<article>
+  <p>找我最快的方式是<a href="{{ site.links.linkedin }}">领英</a>。如果你更想写长一点的——就写在这里，信息会直接进我的收件箱。</p>
+</article>
+{#- Temat wiadomości zostaje po polsku z dopiskiem ZH: ląduje w skrzynce Artura,
+    który po chińsku nie czyta — po samym temacie musi poznać, skąd list przyszedł. -#}
+<form class="contact-form" action="https://formsubmit.co/18ebaab67ffcae7aac36e4006799d2e1" method="POST">
+  <input type="hidden" name="_subject" value="Wiadomość z arturpaprocki.com (ZH)">
+  <input type="hidden" name="_next" value="{{ site.publicUrl }}/zh/ganxie/">
+  <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <label for="cf-name">姓名</label>
+  <input id="cf-name" type="text" name="name" required autocomplete="name">
+  <label for="cf-email">你的电子邮箱</label>
+  <input id="cf-email" type="email" name="email" required autocomplete="email">
+  <label for="cf-message">留言</label>
+  <textarea id="cf-message" name="message" rows="7" required></textarea>
+  <button class="btn" type="submit">
+    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
+    发送留言
+  </button>
+</form>

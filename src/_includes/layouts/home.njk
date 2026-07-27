@@ -17,7 +17,7 @@ layout: layouts/base.njk
   <span class="only-dark">{% heroimg "src/assets/ill/dark/" + featured.data.heroDark + ".jpg", featured.data.heroAlt, "cover" %}</span>
   <h2><a href="{{ featured.url }}">{{ featured.data.title }}</a></h2>
   <p>{{ featured.data.description }}</p>
-  <div class="essay-meta">{{ (featured.data.date | pldate) if lang == "pl" else (featured.data.date | endate) }} · {{ featured.data.readingTime }} {{ minLabel }}</div>
+  <div class="essay-meta">{{ featured.data.date | localdate(lang) }} · {{ featured.data.readingTime }} {{ minLabel }}</div>
 </div>
 {%- endif %}
 
@@ -30,7 +30,7 @@ layout: layouts/base.njk
     <div>
       <h3><a href="{{ essay.url }}">{{ essay.data.title }}</a></h3>
       <p>{{ essay.data.description }}</p>
-      <div class="essay-meta">{{ (essay.data.date | pldate) if lang == "pl" else (essay.data.date | endate) }} · {{ essay.data.readingTime }} {{ minLabel }}</div>
+      <div class="essay-meta">{{ essay.data.date | localdate(lang) }} · {{ essay.data.readingTime }} {{ minLabel }}</div>
     </div>
     {%- if essay.data.heroLight %}
     <span class="only-light">{% img "src/assets/ill/light/" + essay.data.heroLight + ".jpg", essay.data.heroAlt, [150, 300], false, "thumb" %}</span>

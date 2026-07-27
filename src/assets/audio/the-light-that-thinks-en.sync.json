@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "slug": "the-light-that-thinks",
+  "lang": "en",
+  "source": "forced-alignment",
+  "duration": 382.96,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.08,
+      "end": 5.92,
+      "text": "In the final cut of a trailer we shipped, a frozen river cuts through an Antarctic wasteland."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 6.72,
+      "end": 14.7,
+      "text": "The light is hard, the snow convincing, mountains stacking up behind it — everything a shot needs to read as real cinema."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 15.56,
+      "end": 17.1,
+      "text": "Nobody in the room paused."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 18.02,
+      "end": 19.78,
+      "text": "Antarctica has no rivers."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 20.68,
+      "end": 29.12,
+      "text": "Our head of technology caught it only while building the slide about this very shot; the frame had passed through the whole production before him and nobody caught it."
+    },
+    {
+      "i": 5,
+      "block": 1,
+      "start": 29.92,
+      "end": 37.11,
+      "text": "That slide belonged to a talk called \"The Light That Thinks,\" which my team gave at the Camerimage festival — the full recording is public on the festival's channel."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 37.18,
+      "end": 54.64,
+      "text": "We walked through three doors AI is currently opening in filmmaking: volumetric capture that carries a real actor's performance straight into a game engine, a feature directed entirely by AI, and the thing we do for a living — building virtual worlds out of Gaussian splats generated from a prompt."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 55.58,
+      "end": 62.3,
+      "text": "I want to spend most of this essay on the third door, because it's our work, and our mistake with the river."
+    },
+    {
+      "i": 8,
+      "block": 2,
+      "start": 62.34,
+      "end": 67.76,
+      "text": "Before generated worlds, building a virtual set was the most expensive stage of any shoot."
+    },
+    {
+      "i": 9,
+      "block": 2,
+      "start": 68.4,
+      "end": 75.86,
+      "text": "An architect designed the space, someone built the textures, the client sent notes, we went back to the start."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 75.92,
+      "end": 79.5,
+      "text": "It could take weeks before anything reached the LED wall."
+    },
+    {
+      "i": 11,
+      "block": 3,
+      "start": 79.56,
+      "end": 98.48,
+      "text": "Now a set designer opens Marble, from World Labs, types a description — sometimes fifty words, sometimes just a reference image — and ten seconds later has a full 3D environment: a Gaussian splat, a cloud of points carrying the color and light of an entire scene at once."
+    },
+    {
+      "i": 12,
+      "block": 3,
+      "start": 99.3,
+      "end": 126.62,
+      "text": "The splat goes through a plugin called Volinga into Unreal Engine, and from there onto our LED wall — 7.5 by 3.5 meters, running GhostFrame so three cameras can shoot it at once."
+    },
+    {
+      "i": 13,
+      "block": 3,
+      "start": 127.38,
+      "end": 139.48,
+      "text": "Into the same environment we can fold a scan captured on a roughly five-thousand-dollar handheld camera, or classic photogrammetry — a splat, a scan, and a physical prop now sharing one scene."
+    },
+    {
+      "i": 14,
+      "block": 4,
+      "start": 140,
+      "end": 140.269,
+      "text": "The team compressed the shift into a single slide: from scan-to-splat to prompt-to-splat."
+    },
+    {
+      "i": 15,
+      "block": 4,
+      "start": 140.269,
+      "end": 140.269,
+      "text": "Until recently a splat had to be scanned from a place that exists."
+    },
+    {
+      "i": 16,
+      "block": 4,
+      "start": 140.269,
+      "end": 140.43,
+      "text": "Now you just describe one — and the difference between those two worlds fits in a single frame: a gallery of finished places on the left, and on the right the raw cloud of points every one of them starts from."
+    },
+    {
+      "i": 17,
+      "block": 6,
+      "start": 140.43,
+      "end": 143.58,
+      "text": "Generating an entire environment now takes ten seconds."
+    },
+    {
+      "i": 18,
+      "block": 6,
+      "start": 144.06,
+      "end": 146.94,
+      "text": "You can throw out a virtual set completely and start over."
+    },
+    {
+      "i": 19,
+      "block": 7,
+      "start": 147.94,
+      "end": 168.7,
+      "text": "Two weeks before our seminar, the method got its first real production test: a music video for a young Polish artist, three or four virtual sets, under three days of prep, a crew of one set designer, one Unreal generalist, and one engineer — plus, naturally, the production and the performers."
+    },
+    {
+      "i": 20,
+      "block": 7,
+      "start": 169.56,
+      "end": 176.56,
+      "text": "Our head of technology called it probably the first commercial use of AI-generated Gaussian splats anywhere in the world."
+    },
+    {
+      "i": 21,
+      "block": 7,
+      "start": 177.44,
+      "end": 183.43,
+      "text": "I'll flag that immediately: it's a claim he's making about himself, not a title anyone outside handed him."
+    },
+    {
+      "i": 22,
+      "block": 7,
+      "start": 183.43,
+      "end": 184.17,
+      "text": "That video also produced the frame that explains, faster than any argument, why we bother with this technology at all: a corridor full of androids that nobody ever built."
+    },
+    {
+      "i": 23,
+      "block": 9,
+      "start": 184.18,
+      "end": 195.46,
+      "text": "The second test was a trailer for a feature still in development: four scenes, six days of prep, one shooting day on an ARRI Alexa Mini with a professional operator."
+    },
+    {
+      "i": 24,
+      "block": 9,
+      "start": 195.56,
+      "end": 204.25,
+      "text": "Normally there's simply no budget for that kind of asset — it's a promotional format production companies don't fund until a film has real financing."
+    },
+    {
+      "i": 25,
+      "block": 9,
+      "start": 205.06,
+      "end": 206.4,
+      "text": "Suddenly it penciled out."
+    },
+    {
+      "i": 26,
+      "block": 11,
+      "start": 207.23,
+      "end": 215.6,
+      "text": "The same seminar hosted a director who'd spent five months with a twelve-person crew making an 80-minute feature entirely generated by AI."
+    },
+    {
+      "i": 27,
+      "block": 11,
+      "start": 216.24,
+      "end": 224.94,
+      "text": "His thesis was simpler than I expected: models don't carry the same subtlety an actor's face can express, so you stop leaning on the face."
+    },
+    {
+      "i": 28,
+      "block": 11,
+      "start": 225.64,
+      "end": 230.9,
+      "text": "You build context instead — set, atmosphere, the world around the character."
+    },
+    {
+      "i": 29,
+      "block": 11,
+      "start": 231.62,
+      "end": 242.6,
+      "text": "He called the model \"a big calculator,\" because — his words — telling it to \"act scared\" works no better on a neural network than it does on an actor."
+    },
+    {
+      "i": 30,
+      "block": 12,
+      "start": 243.3,
+      "end": 245.46,
+      "text": "You don't remember 2001 for the acting."
+    },
+    {
+      "i": 31,
+      "block": 12,
+      "start": 246.06,
+      "end": 248,
+      "text": "You remember it for the world Kubrick built."
+    },
+    {
+      "i": 32,
+      "block": 12,
+      "start": 248.8,
+      "end": 254.72,
+      "text": "That's what I want from AI — to pull the viewer inside the story, not just show them a face."
+    },
+    {
+      "i": 33,
+      "block": 13,
+      "start": 255.32,
+      "end": 264.32,
+      "text": "He pointed out that Pixar and Disney have made cinema without a live actor on screen for decades, and nobody calls that a lesser form."
+    },
+    {
+      "i": 34,
+      "block": 13,
+      "start": 264.38,
+      "end": 277.54,
+      "text": "For anyone trying to make a debut, that's a different set of rules: you no longer wait five or ten years for actors, producers, and money to line up before you can show your own vision of a world."
+    },
+    {
+      "i": 35,
+      "block": 14,
+      "start": 277.6,
+      "end": 278.95,
+      "text": "None of this is easy yet."
+    },
+    {
+      "i": 36,
+      "block": 14,
+      "start": 279.94,
+      "end": 293.88,
+      "text": "The final result of a generated scene is always a guess — move one chair and the whole frame regenerates, and the hardest unsolved problem is keeping a character's emotional state consistent shot to shot."
+    },
+    {
+      "i": 37,
+      "block": 14,
+      "start": 294.84,
+      "end": 305.75,
+      "text": "Interiors hold up well; exteriors built from splats still struggle with perspective, so on set we keep classic 2.5D plates on hand as a fallback."
+    },
+    {
+      "i": 38,
+      "block": 14,
+      "start": 306.42,
+      "end": 316.39,
+      "text": "And none of it is savings without cost: training the team, and our prompt engineers specifically, cost real money before anything started moving faster than the old way."
+    },
+    {
+      "i": 39,
+      "block": 17,
+      "start": 317.4,
+      "end": 322.66,
+      "text": "I keep coming back to that frozen river, because it's the shortest version of what the seminar taught me."
+    },
+    {
+      "i": 40,
+      "block": 17,
+      "start": 323.25,
+      "end": 331.08,
+      "text": "The model generated the mountain, the snow, the light, the whole composition — everything the eye needs to believe the scene."
+    },
+    {
+      "i": 41,
+      "block": 17,
+      "start": 332,
+      "end": 335.43,
+      "text": "It didn't know one thing: that no rivers run on that continent."
+    },
+    {
+      "i": 42,
+      "block": 17,
+      "start": 335.969,
+      "end": 341.5,
+      "text": "That knowledge doesn't sit in training data in a form that activates itself at the right moment."
+    },
+    {
+      "i": 43,
+      "block": 17,
+      "start": 341.6,
+      "end": 347.46,
+      "text": "It sits in someone who has been there, or at least read about it, and has a reason to doubt what they're looking at."
+    },
+    {
+      "i": 44,
+      "block": 18,
+      "start": 348.4,
+      "end": 360.93,
+      "text": "I run a studio that's been building virtual production in Warsaw since 2022 — an LED wall, motion capture, Unreal Engine, and increasingly AI agents helping with the same work."
+    },
+    {
+      "i": 45,
+      "block": 18,
+      "start": 361.64,
+      "end": 371.159,
+      "text": "So I watch up close how fast the light on our wall is starting to think for itself — how readily it can offer up a mountain, a river, an entire sky."
+    },
+    {
+      "i": 46,
+      "block": 18,
+      "start": 371.2,
+      "end": 373.95,
+      "text": "But we still decide whether that river belongs there."
+    },
+    {
+      "i": 47,
+      "block": 18,
+      "start": 374.64,
+      "end": 382.96,
+      "text": "The faster the machine generates worlds, the more time is left for the one question it never asks itself: what shouldn't be in this picture."
+    }
+  ]
+}

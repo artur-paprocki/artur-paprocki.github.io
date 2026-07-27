@@ -20,5 +20,27 @@
 ## Nowy esej ręcznie
 
 Skopiuj istniejący plik z `src/eseje/` jako wzór frontmattera (title,
-description, date, pair, heroLight/heroDark, heroAlt, readingTime, audio?).
-Wersja EN w `src/essays/` + spięcie polami `pair:` w obu plikach.
+description, date, work, heroLight/heroDark, heroAlt, readingTime, theses, audio?).
+Wersja EN w `src/essays/`.
+
+Wersje jednego tekstu wiąże **wspólny klucz `work:`** — ten sam ciąg we frontmatterze
+każdej z nich (zwykle slug polski), nie link do drugiej strony. Kolekcja `works`
+(`eleventy.config.mjs:97`) zbiera po nim uporządkowany zestaw wersji, a z zestawu
+biorą się przełącznik języka, hreflang, `x-default` i JSON-LD
+(`workTranslation`/`translationOfWork`). Dwie wersje czy trzy — ta sama ścieżka.
+
+Klucz trzymaj **zakomentowany** (`# work: <klucz>`), dopóki choć jedna wersja ma
+`draft: true`: kolekcja nie filtruje draftów, więc odkomentowany klucz wciągnąłby
+sekretny adres `/podglad/` do hreflang publicznej strony. Odkomentuj naraz we
+wszystkich plikach zestawu, w tym samym kroku co zdjęcie `draft: true`.
+
+Pola `pair:` w esejach **nie wpisuj**. Zostało tylko w stronach stałych
+(`src/index.njk`, `o-mnie`, `kontakt`, `dziekuje` + odpowiedniki EN), których ten
+model nie dotknął; dla zestawu dwuelementowego build wylicza je sam przez zgodność
+wsteczną (`eleventy.config.mjs:51`), a przy trzech wersjach zostaje puste, bo jeden
+link przestaje opisywać relację.
+
+Para nie jest wprawdzie martwa — `buildLangSet` (`eleventy.config.mjs:36-41`) montuje
+z niej zastępczy zestaw dwuelementowy, więc przełącznik i hreflang działają także dla
+strony opisanej samym `pair:`. Ale ta ścieżka zna **wyłącznie oś PL↔EN**, więc tekst
+opisany parą nie przyjmie trzeciej wersji — i przemilczy ją bez błędu buildu.

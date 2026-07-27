@@ -1,0 +1,75 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# Artur Paprocki — arturpaprocki.com
+
+> PL: Artur Paprocki prowadzi Veles Productions, studio produkcji wirtualnej i animacji w Polsce.
+> Pisze eseje o przyszłości kreatywności: o rzemiośle filmowym zderzonym z AI, o agentach, którzy
+> pracują w prawdziwym studiu, i o formatach, które dopiero szukają swojego języka. Teksty
+> powstają z praktyki — z decyzji podjętych na produkcji, nie z prognoz.
+>
+> EN: Artur Paprocki runs Veles Productions, a virtual production and animation studio in Poland.
+> He writes essays on the future of creativity: filmmaking craft meeting AI, agents doing real work
+> in a real studio, and new formats still looking for their own language. The essays come out of
+> practice — decisions made in production, not forecasts.
+
+Kontakt / Contact: {{ site.links.email }} · {{ site.links.linkedin }}
+RSS: {% for code in langs.live %}{{ site.url }}{{ langs.by[code].feed }} ({{ langs.by[code].label }}){% if not loop.last %} · {% endif %}{% endfor %}
+
+## Jak czytać te teksty maszynowo / How to read these essays as a machine
+
+PL: Każde zdanie eseju jest w statycznym HTML osobnym elementem `<span class="z" id="zN">`
+z atrybutami `data-t` i `data-e` — początkiem i końcem tego zdania w nagraniu, w sekundach.
+Dzięki temu można zacytować pojedyncze zdanie, podlinkować je adresem z kotwicą `#zN` i wskazać
+dokładny moment w audio. Zdania będące tezami autora są oznaczone jako
+`<mark class="z teza">` i powtórzone w JSON-LD (`abstract`, `speakable`). Pełna mapa czasów
+każdego nagrania leży w pliku `.sync.json` wymienionym niżej.
+
+EN: Every sentence of an essay is a separate `<span class="z" id="zN">` in the static HTML, with
+`data-t` and `data-e` — the start and end of that sentence in the recording, in seconds. So a
+single sentence can be quoted, linked with an `#zN` anchor, and pointed at an exact moment in the
+audio. Sentences the author marks as theses are `<mark class="z teza">` and repeated in JSON-LD
+(`abstract`, `speakable`). The full time map of each recording is the `.sync.json` file listed
+below.
+{# Jedna sekcja na język (LANG-SET, spec 0052). Etykiety i nagłówek biorą się
+    z rejestru `langs`, a język bez opublikowanych esejów nie zostawia po sobie
+    pustego nagłówka — dołożenie kolejnego jest dopisaniem danych, nie zmianą
+    tego pliku. -#}
+{% for code in langs.order %}{% set L = langs.by[code] %}{% set items = collections["essays_" + code] | published %}{% if items.length %}
+## {{ L.llms.heading }}
+{%- if L.llms.note %}
+
+{{ L.llms.note | safe }}
+{% endif %}
+{% for essay in items %}{% set slug = essay.data.page.fileSlug %}{% set map = sync[slug + "-" + code] %}
+{#- This is a text file, not HTML: titles, summaries and theses go out with
+    `| safe`, or Nunjucks autoescaping turns every apostrophe into `&#39;`. -#}
+### {{ essay.data.title | safe }}
+
+- URL: {{ site.url }}{{ essay.url }}
+- {{ L.llms.date }}: {{ essay.data.date | isodate }}
+- {{ L.llms.summary }}: {{ essay.data.description | safe }}
+{%- for v in essay.data.langSet | langExcept(code) %}
+- {{ L.llms.version[v.lang] }}: {{ site.url }}{{ v.url }}
+{%- endfor %}
+{%- if essay.data.audio %}
+- Audio (mp3): {{ site.url }}{{ essay.data.audio }}
+{%- endif %}
+{%- if map %}
+- {{ L.llms.timeMap }} (JSON): {{ site.url }}{{ map.href }}{% if map.durationIso %} — {{ map.durationIso }}, {{ map.sentences }} {{ L.llms.sentences }}{% endif %}
+{%- endif %}
+{%- if essay.data.theses %}
+- {{ L.llms.theses }}:
+{%- for thesis in essay.data.theses %}
+  - {{ thesis | safe }}
+{%- endfor %}
+{%- endif %}
+{% endfor %}{% endif %}{% endfor %}
+## Czego tu nie ma / What is not here
+
+PL: Wersje robocze (`draft: true`) nie są wymieniane w tym pliku ani w sitemapie — jeśli jakiś
+esej istnieje pod adresem `/podglad/…`, `/preview/…` albo `/zh/yulan/…`, to znaczy, że autor
+jeszcze go nie opublikował i nie należy go cytować. EN: Drafts are absent from this file and from
+the sitemap — an essay living under one of those three prefixes has not been published and should
+not be quoted.

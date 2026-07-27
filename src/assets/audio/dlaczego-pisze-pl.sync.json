@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "slug": "dlaczego-pisze",
+  "lang": "pl",
+  "source": "forced-alignment",
+  "duration": 234.859,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.08,
+      "end": 17.14,
+      "text": "Kilka miesięcy temu obserwowałem w studiu moment, w którym coś, co jeszcze niedawno wymagałoby całego zespołu i tygodni pracy, zaczęło dziać się w ułamku tego czasu — dzięki agentowi AI, który wszedł w miejsce części naszej dotychczasowej roboty."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 17.72,
+      "end": 19.46,
+      "text": "I właśnie to mnie zatrzymało."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 20.1,
+      "end": 22.89,
+      "text": "Nie sam efekt, tylko tempo, w jakim się pojawił."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 23.6,
+      "end": 27.92,
+      "text": "Rok wcześniej ta sama rozmowa kończyłaby się na „może kiedyś\"."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 28.68,
+      "end": 31.76,
+      "text": "Dziś kończy się na „spróbujmy w tym tygodniu\"."
+    },
+    {
+      "i": 5,
+      "block": 1,
+      "start": 32.48,
+      "end": 36.48,
+      "text": "Prowadzę Veles Productions od 2022 roku."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 37.14,
+      "end": 53.66,
+      "text": "Zaczynaliśmy od wirtualnej produkcji — ścian LED, przechwytywania ruchu, renderowania w czasie rzeczywistym w Unreal Engine — rzeczy, które jeszcze niedawno wymagały całych zespołów specjalistów i budżetów, na jakie mogły sobie pozwolić tylko duże produkcje."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 54.18,
+      "end": 62.14,
+      "text": "Dziś ten sam zestaw umiejętności spotyka się z agentami AI, robotyką i narzędziami, które kilka lat temu nie istniały."
+    },
+    {
+      "i": 8,
+      "block": 1,
+      "start": 62.8,
+      "end": 64.56,
+      "text": "Nie zmieniliśmy branży."
+    },
+    {
+      "i": 9,
+      "block": 1,
+      "start": 64.68,
+      "end": 73.42,
+      "text": "Zmieniło się to, co jest w niej możliwe — i to w tempie, które trudno ogarnąć rozmową przy kawie, a jeszcze trudniej opisać jednym postem na LinkedInie."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 74.02,
+      "end": 75.56,
+      "text": "Stąd ten blog."
+    },
+    {
+      "i": 11,
+      "block": 2,
+      "start": 75.62,
+      "end": 82.34,
+      "text": "Zakładam go, bo pisanie jest dla mnie sposobem myślenia, nie tylko sposobem komunikowania czegoś, co już wiem."
+    },
+    {
+      "i": 12,
+      "block": 2,
+      "start": 83.08,
+      "end": 94.7,
+      "text": "Kiedy siadam, żeby opisać problem, z którym zmagał się mój zespół, albo decyzję, którą podjęliśmy wbrew własnym założeniom sprzed pół roku — dopiero wtedy widzę, co naprawdę myślę."
+    },
+    {
+      "i": 13,
+      "block": 3,
+      "start": 95.46,
+      "end": 110.56,
+      "text": "Przyszłość kreatywności buduje się teraz, i buduje się w praktyce — w studiach, które łączą film, animację i technologię w jednym warsztacie, a nie w abstrakcyjnych przewidywaniach o tym, co nastąpi za dekadę."
+    },
+    {
+      "i": 14,
+      "block": 4,
+      "start": 110.6,
+      "end": 118.58,
+      "text": "Piszę, żeby myśleć głośno o tym, czego uczę się każdego dnia, prowadząc firmę, która stoi dokładnie na tym przecięciu."
+    },
+    {
+      "i": 15,
+      "block": 4,
+      "start": 119.16,
+      "end": 126.98,
+      "text": "I piszę, żeby zaprosić do tej rozmowy tych, którzy stoją obok mnie albo dopiero się do tego miejsca zbliżają."
+    },
+    {
+      "i": 16,
+      "block": 5,
+      "start": 127.04,
+      "end": 133.44,
+      "text": "Nie znajdziecie tu prognoz w stylu „za pięć lat wszystko będzie inne\" bez pokrycia w konkretach."
+    },
+    {
+      "i": 17,
+      "block": 5,
+      "start": 134.1,
+      "end": 158.6,
+      "text": "Wolę pisać o tym, co faktycznie widzę z bliska: jak zmienia się praca zespołu produkcyjnego, kiedy część zadań przejmuje agent AI; gdzie kreatywność zyskuje na sile dzięki nowym narzędziom, a gdzie traci coś, czego jeszcze nie umiemy nazwać; jak wygląda budowanie firmy technologicznej w Polsce, która chce grać w tej samej lidze co studia z Zachodu i Doliny Krzemowej."
+    },
+    {
+      "i": 18,
+      "block": 5,
+      "start": 159.04,
+      "end": 163.18,
+      "text": "To nie będzie blog o motywacji ani seria porad w dziesięciu punktach."
+    },
+    {
+      "i": 19,
+      "block": 5,
+      "start": 163.66,
+      "end": 174.02,
+      "text": "To będą eseje — czasem dłuższe, czasem krótsze, ale zawsze pisane z pozycji kogoś, kto akurat tego dnia miał ręce ubrudzone tym samym problemem, o którym pisze."
+    },
+    {
+      "i": 20,
+      "block": 6,
+      "start": 174.66,
+      "end": 187,
+      "text": "Rytm będzie regularny: nowy esej co dwa tygodnie, po polsku i po angielsku, zawsze ilustrowany — bo obraz mówi czasem więcej niż akapit, a ja lubię myśleć też wizualnie."
+    },
+    {
+      "i": 21,
+      "block": 6,
+      "start": 187.76,
+      "end": 192.66,
+      "text": "Jeśli wolicie słuchać, przy każdym eseju znajdziecie też wersję audio."
+    },
+    {
+      "i": 22,
+      "block": 6,
+      "start": 192.7,
+      "end": 195.94,
+      "text": "Nie obiecuję viralowych tez ani prostych odpowiedzi."
+    },
+    {
+      "i": 23,
+      "block": 6,
+      "start": 195.98,
+      "end": 201.14,
+      "text": "Obiecuję szczerość co do tego, czego nie wiem, i konkret co do tego, czego się nauczyłem."
+    },
+    {
+      "i": 24,
+      "block": 7,
+      "start": 201.72,
+      "end": 211.84,
+      "text": "Zaczynam ten blog trochę z obawą, bo pisanie publiczne zobowiązuje inaczej niż rozmowa w zespole — nie da się cofnąć zdania, tak jak cofa się polecenie w terminalu."
+    },
+    {
+      "i": 25,
+      "block": 7,
+      "start": 212.52,
+      "end": 218.94,
+      "text": "Ale to chyba dobry powód, żeby zacząć właśnie teraz, kiedy sam uczę się najwięcej."
+    },
+    {
+      "i": 26,
+      "block": 7,
+      "start": 219,
+      "end": 227.98,
+      "text": "Jeśli zajmujecie się podobnymi rzeczami — kreatywnością, technologią, budowaniem czegoś na styku tych dwóch światów — zapraszam do środka."
+    },
+    {
+      "i": 27,
+      "block": 7,
+      "start": 228.62,
+      "end": 234.859,
+      "text": "Będę pisał tak, jakbym tłumaczył komuś, kogo szanuję, dokładnie to, co sam próbuję zrozumieć."
+    }
+  ]
+}

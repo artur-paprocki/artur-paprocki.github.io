@@ -1,0 +1,366 @@
+{
+  "version": 1,
+  "slug": "rezyser-ktory-dolaczyl-do-maszyny",
+  "lang": "pl",
+  "source": "forced-alignment",
+  "duration": 375.26,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0.14,
+      "end": 6.56,
+      "text": "W reportażu CNA Insider jest ujęcie, które zostało mi w głowie dłużej, niż powinno."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 6.66,
+      "end": 11.42,
+      "text": "Reżyser siedzi przed ekranem i czeka, aż wygenerowany kadr go zadowoli."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 12.28,
+      "end": 13.42,
+      "text": "Nie patrzy na aktora."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 14.18,
+      "end": 17.46,
+      "text": "Nie mówi „jeszcze raz, ale z większym uczuciem\"."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 18.14,
+      "end": 23.18,
+      "text": "Patrzy na wynik, który wypluła maszyna, i decyduje, czy próbować dalej."
+    },
+    {
+      "i": 5,
+      "block": 1,
+      "start": 24.14,
+      "end": 31.2,
+      "text": "Bohater reportażu, Wang Jinfei, jeszcze kilka lat temu kręcił w Chinach tradycyjne filmy."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 31.22,
+      "end": 42.16,
+      "text": "Dziś reżyseruje mikrodramy — krótkie, pionowe historie robione pod telefon, dzielone na odcinki po kilkadziesiąt sekund — z których większość generuje AI."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 42.74,
+      "end": 45.56,
+      "text": "To nie jest jego dorobek uboczny na boku etatu."
+    },
+    {
+      "i": 8,
+      "block": 1,
+      "start": 46.06,
+      "end": 48.14,
+      "text": "To jest teraz cała jego praca."
+    },
+    {
+      "i": 9,
+      "block": 2,
+      "start": 48.78,
+      "end": 54.9,
+      "text": "Liczby, które podaje w reportażu, tłumaczą, dlaczego cała branża się w to rzuciła."
+    },
+    {
+      "i": 10,
+      "block": 2,
+      "start": 54.94,
+      "end": 62.58,
+      "text": "Wcześniej jedna tradycyjna produkcja potrafiła kosztować tyle, że jedna wpadka oznaczała stratę budżetu na cały rok."
+    },
+    {
+      "i": 11,
+      "block": 2,
+      "start": 63.26,
+      "end": 70.36,
+      "text": "Dziś, jak mówi, za trzysta tysięcy juanów można zrobić naraz dziesięć produkcji AI."
+    },
+    {
+      "i": 12,
+      "block": 2,
+      "start": 70.5,
+      "end": 77.62,
+      "text": "Nawet jeśli kilka z nich się nie uda, wystarczy, że kilka odniesie sukces, żeby odzyskać inwestycję."
+    },
+    {
+      "i": 13,
+      "block": 2,
+      "start": 77.66,
+      "end": 80.32,
+      "text": "To nie jest opowieść o tańszym filmie."
+    },
+    {
+      "i": 14,
+      "block": 2,
+      "start": 80.33,
+      "end": 85.96,
+      "text": "To jest zmiana modelu biznesowego — z jednego drogiego zakładu na portfel tanich prób."
+    },
+    {
+      "i": 15,
+      "block": 4,
+      "start": 86.56,
+      "end": 94.56,
+      "text": "Tyle że ten sam reportaż pokazuje też drugą stronę rachunku, tę, o której rzadziej się mówi przy okazji ekscytacji nowym narzędziem."
+    },
+    {
+      "i": 16,
+      "block": 4,
+      "start": 95.14,
+      "end": 103.56,
+      "text": "Żeby zarobić tyle, co wcześniej w miesiąc tradycyjnej produkcji, Wang Jinfei potrzebuje dziś około trzech miesięcy pracy z AI."
+    },
+    {
+      "i": 17,
+      "block": 4,
+      "start": 104.28,
+      "end": 111.26,
+      "text": "Zniknęła większość stanowisk, które kiedyś stały wokół kamery — operator, oświetleniowiec, rekwizytor."
+    },
+    {
+      "i": 18,
+      "block": 4,
+      "start": 112.08,
+      "end": 121.98,
+      "text": "Jedna z jego współpracowniczek mówi wprost, że na planie czuła się niezastąpiona, a przy AI czuje, że w każdej chwili może zostać zastąpiona."
+    },
+    {
+      "i": 19,
+      "block": 4,
+      "start": 122.06,
+      "end": 132.97,
+      "text": "Narrator reportażu podsumowuje to jednym zdaniem, które warto zapamiętać: „technologia niekoniecznie zastępuje pracowników, ale zmienia wartość ich pracy\"."
+    },
+    {
+      "i": 20,
+      "block": 4,
+      "start": 133.82,
+      "end": 135.38,
+      "text": "Nie mniej ludzi."
+    },
+    {
+      "i": 21,
+      "block": 4,
+      "start": 135.46,
+      "end": 138.06,
+      "text": "Inna cena tego, co ludzie umieją."
+    },
+    {
+      "i": 22,
+      "block": 5,
+      "start": 138.08,
+      "end": 140.2,
+      "text": "Zmienia się też sama praca reżysera."
+    },
+    {
+      "i": 23,
+      "block": 5,
+      "start": 140.94,
+      "end": 149.78,
+      "text": "Wang Jinfei mówi, że kiedyś największym wyzwaniem była rozmowa z aktorem — jeśli scena nie grała, siadał z nim i szukali razem, co poprawić."
+    },
+    {
+      "i": 24,
+      "block": 5,
+      "start": 150.48,
+      "end": 151.74,
+      "text": "Dziś tej rozmowy nie ma."
+    },
+    {
+      "i": 25,
+      "block": 5,
+      "start": 152.44,
+      "end": 159.32,
+      "text": "Jest generowanie ujęcia, ocena, czy wynik satysfakcjonuje, i kolejna próba, jeśli nie."
+    },
+    {
+      "i": 26,
+      "block": 5,
+      "start": 159.96,
+      "end": 167.42,
+      "text": "Sam nazywa to hazardem — nie wie z góry, czy dane polecenie da mu to, czego szuka, dopóki nie zobaczy rezultatu."
+    },
+    {
+      "i": 27,
+      "block": 5,
+      "start": 168,
+      "end": 173.78,
+      "text": "Reżyseria przestaje być rzemiosłem, w którym doświadczenie daje kontrolę nad efektem."
+    },
+    {
+      "i": 28,
+      "block": 5,
+      "start": 173.88,
+      "end": 178.74,
+      "text": "Staje się iterowaniem na maszynie, która czasem trafia, a czasem nie."
+    },
+    {
+      "i": 29,
+      "block": 7,
+      "start": 179.66,
+      "end": 183.04,
+      "text": "A widza to wszystko właściwie nie obchodzi."
+    },
+    {
+      "i": 30,
+      "block": 7,
+      "start": 183.08,
+      "end": 191.3,
+      "text": "Reportaż zauważa, że jeśli historia jest dobra, nikt nie pyta, ile w niej ludzkiej ręki, a ile pracy maszyny."
+    },
+    {
+      "i": 31,
+      "block": 7,
+      "start": 191.9,
+      "end": 205.42,
+      "text": "To chyba najbardziej niewygodne zdanie z całego materiału — nie dlatego, że jest fałszywe, tylko dlatego, że jest prawdziwe od zawsze, tylko wcześniej nie mieliśmy powodu się nad tym zastanawiać."
+    },
+    {
+      "i": 32,
+      "block": 8,
+      "start": 205.46,
+      "end": 210.56,
+      "text": "Chińska fala mikrodram AI to nie ciekawostka z drugiego końca świata."
+    },
+    {
+      "i": 33,
+      "block": 8,
+      "start": 210.62,
+      "end": 217.02,
+      "text": "To podgląd mechanizmu, który prędzej czy później dotknie każdą pracę kreatywną — także moją."
+    },
+    {
+      "i": 34,
+      "block": 9,
+      "start": 217.74,
+      "end": 230.34,
+      "text": "Prowadzę studio, które od 2022 roku buduje produkcję wirtualną — ściany LED, przechwytywanie ruchu, renderowanie w czasie rzeczywistym w Unreal Engine."
+    },
+    {
+      "i": 35,
+      "block": 9,
+      "start": 231.4,
+      "end": 235.26,
+      "text": "Od jakiegoś czasu do tego zestawu dochodzą agenci AI."
+    },
+    {
+      "i": 36,
+      "block": 9,
+      "start": 235.82,
+      "end": 240.26,
+      "text": "Widzę więc z bliska, jak ten sam mechanizm wygląda z drugiej strony biurka."
+    },
+    {
+      "i": 37,
+      "block": 9,
+      "start": 240.82,
+      "end": 247.06,
+      "text": "Klient, który kiedyś akceptował jeden drogi zakład, coraz chętniej pyta o kilka tańszych wariantów."
+    },
+    {
+      "i": 38,
+      "block": 9,
+      "start": 247.16,
+      "end": 256.019,
+      "text": "Zespół, który kiedyś specjalizował się w jednej rzeczy, uczy się dziś obsługiwać narzędzia, których jeszcze rok temu nie było w naszym warsztacie."
+    },
+    {
+      "i": 39,
+      "block": 9,
+      "start": 256.04,
+      "end": 272.1,
+      "text": "Przyglądam się formatowi mikrodram z tego samego powodu, dla którego przyglądam się każdemu narzędziu, które nagle robi coś dziesięć razy taniej — nie żeby go skopiować, tylko żeby zrozumieć, co dokładnie tanieje, a co nie."
+    },
+    {
+      "i": 40,
+      "block": 10,
+      "start": 272.16,
+      "end": 282.82,
+      "text": "Nie traktuję tego jako zagrożenia, z którym trzeba walczyć, ani jako pretekstu, żeby zalać rynek tanim, nierozróżnialnym materiałem, byle szybciej."
+    },
+    {
+      "i": 41,
+      "block": 10,
+      "start": 282.94,
+      "end": 294.859,
+      "text": "Obie postawy prowadzą w ślepą uliczkę — pierwsza kończy się tym, że ktoś inny zrobi to za mnie i taniej, druga tym, że robię coraz więcej rzeczy, których nikt nie zapamięta."
+    },
+    {
+      "i": 42,
+      "block": 10,
+      "start": 294.94,
+      "end": 303.56,
+      "text": "Interesuje mnie trzecia droga: świadomy wybór, co w łańcuchu produkcji zostaje przy człowieku, a co oddaję maszynie."
+    },
+    {
+      "i": 43,
+      "block": 10,
+      "start": 304.08,
+      "end": 319.54,
+      "text": "Emocja aktora, jego reakcja na partnera scenicznego, decyzja, czy dubel jest dobry — to zostaje po naszej stronie, bo tam mieszka coś, czego żaden model jeszcze nie potrafi podrobić tak, żeby nie było tego widać."
+    },
+    {
+      "i": 44,
+      "block": 10,
+      "start": 320.24,
+      "end": 332.6,
+      "text": "Lokacja, tło, wariant językowy sceny pod inny rynek — to praca, którą AI wykonuje dziś szybciej i taniej, niż zrobiłby to człowiek z dekoracją z płyty."
+    },
+    {
+      "i": 45,
+      "block": 11,
+      "start": 332.64,
+      "end": 336.06,
+      "text": "Nie mam złudzeń, że ta granica jest ustawiona raz na zawsze."
+    },
+    {
+      "i": 46,
+      "block": 11,
+      "start": 336.66,
+      "end": 345.12,
+      "text": "Za rok AI może poradzić sobie też z częścią tego, co dziś rezerwuję dla człowieka, i będę musiał przesunąć linię jeszcze raz."
+    },
+    {
+      "i": 47,
+      "block": 11,
+      "start": 345.92,
+      "end": 355.32,
+      "text": "Ale dopóki przesuwam ją świadomie, a nie dlatego, że ktoś przesunął ją za mnie, czuję, że wciąż prowadzę tę pracę, a nie ona mnie."
+    },
+    {
+      "i": 48,
+      "block": 11,
+      "start": 355.36,
+      "end": 363.04,
+      "text": "Wang Jinfei w pewnym momencie przestał się bronić i wszedł w to samo narzędzie, które go najpierw przestraszyło."
+    },
+    {
+      "i": 49,
+      "block": 11,
+      "start": 363.08,
+      "end": 367.04,
+      "text": "Rozumiem tę decyzję lepiej, niż chciałbym przyznać."
+    },
+    {
+      "i": 50,
+      "block": 11,
+      "start": 367.14,
+      "end": 375.26,
+      "text": "Różnica, którą staram się utrzymać, jest taka, że to ja mam decydować, w co dokładnie wchodzę — nie okoliczności."
+    }
+  ]
+}

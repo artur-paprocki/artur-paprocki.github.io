@@ -1,34 +1,52 @@
 ---
 layout: layouts/base.njk
 ---
-{%- set dateDisplay = date | pldate if lang == "pl" else date | endate -%}
-{%- set readingLabel = (readingTime | string) + " minut czytania" if lang == "pl" else (readingTime | string) + " min read" -%}
-{%- set pairLabel = "Read in English →" if lang == "pl" else "Czytaj po polsku →" -%}
-{%- set listenLabel = ("Posłuchaj — " + (readingTime | string) + " min · głos autora") if lang == "pl" else ("Listen — " + (readingTime | string) + " min · author's voice") -%}
-{%- set subscribeTitle = "Nowe eseje co dwa tygodnie" if lang == "pl" else "New essays every two weeks" -%}
-{%- set subscribeBody = "Bez spamu — tylko kolejny esej, prosto do skrzynki. Po polsku lub po angielsku, jak wolisz." if lang == "pl" else "No spam — just the next essay, straight to your inbox. In Polish or English, your choice." -%}
-{%- set subscribeCta = "Subskrybuj newsletter" if lang == "pl" else "Subscribe to the newsletter" -%}
+{#- Napisy interfejsu idą z rejestru języków (LANG-SET, spec 0052), a nie
+    z warunku `X if lang == "pl" else Y`: dwustanowy warunek robił z każdego
+    języka poza polskim angielski, więc strona chińska pokazywała
+    „July 11, 2026 · 5 min read" i angielski baner podglądu. Czwarty język
+    dokłada się wpisem w `src/_data/langs.mjs`, bez dotykania tego pliku.
+    `UI` bierze wpis języka strony; `langs.by.pl.ui` to zapas na wypadek
+    strony bez rozpoznanego `lang` (dziś nie ma takiej). -#}
+{%- set UI = langs.by[lang].ui if langs.by[lang] else langs.by.pl.ui -%}
+{%- set dateDisplay = date | localdate(lang) -%}
+{%- set readingLabel = UI.reading | replace("{n}", readingTime) -%}
+{#- Odnośniki do pozostałych wersji tego samego tekstu. Idą z zestawu
+    (LANG-SET), a nie z jednego pola `pair`: przy trzech wersjach jeden link
+    przestaje opisywać relację i znikał — nagłówek gubił wtedy odsyłacz na
+    WSZYSTKICH stronach utworu. Etykieta pochodzi z rejestru języków, więc
+    strona chińska nie dostanie polskiego napisu. -#}
+{%- set langOthers = langSet | langExcept(lang) -%}
+{%- set listenLabel = UI.listen | replace("{n}", readingTime) -%}
 
 {%- if draft -%}
-<div class="draft-banner">{{ "PODGLĄD — wersja robocza. Ta strona nie jest publiczna: brak jej na liście esejów, w RSS i w Google." if lang == "pl" else "PREVIEW — draft. This page is not public: absent from the essay list, RSS, and Google." }}</div>
+<div class="draft-banner">{{ UI.draftBanner }}</div>
 {%- endif -%}
 <div class="essay-head">
   <h1>{{ title }}</h1>
   <div class="meta">
-    <time datetime="{{ date | isodate }}">{{ dateDisplay }}</time> · {{ readingLabel }}{% if pair %} · <a class="gesture-link" href="{{ pair }}">{{ pairLabel }}{% gesture "underline", 120, 10 %}</a>{% endif %}
+    <time datetime="{{ date | isodate }}">{{ dateDisplay }}</time> · {{ readingLabel }}{% for v in langOthers %}{% if langs.by[v.lang] %} · <a class="gesture-link" href="{{ v.url }}" hreflang="{{ langs.by[v.lang].hreflang }}" lang="{{ langs.by[v.lang].hreflang }}">{{ langs.by[v.lang].readVersion }}{% gesture "underline", 120, 10 %}</a>{% endif %}{% endfor %}
   </div>
 </div>
 
 {%- if audio %}
+{#- Zero-height marker: reading.mjs watches it to learn when the player pins
+    itself to the top of the viewport (see .sticky-sentinel in base.css). -#}
+<div class="sticky-sentinel"></div>
 <div class="player-slot">
   <div class="player" hidden>
     <button type="button" class="play"
-      aria-label="{{ 'Odtwórz' if lang == 'pl' else 'Play' }}"
-      data-label-play="{{ 'Odtwórz' if lang == 'pl' else 'Play' }}"
-      data-label-pause="{{ 'Pauza' if lang == 'pl' else 'Pause' }}">▶</button>
+      aria-label="{{ UI.play }}"
+      data-label-play="{{ UI.play }}"
+      data-label-pause="{{ UI.pause }}">▶</button>
     <input type="range" class="bar" value="0" min="0" step="0.1"
-      aria-label="{{ 'Postęp odtwarzania' if lang == 'pl' else 'Playback progress' }}">
+      aria-label="{{ UI.progress }}">
     <span class="time">0:00</span>
+    {#- Revealed by reading.mjs only when the essay actually carries theses.
+        Pressing it is the ONLY way the marks appear: listening to the end no
+        longer reveals them (Artur, 26.07) — the reader decides when the essay
+        shows its hand. -#}
+    <button type="button" class="tezy-toggle" aria-pressed="false" hidden>{{ UI.theses }}</button>
     <audio preload="none" controls src="{{ audio }}"></audio>
   </div>
   <noscript>
@@ -43,7 +61,14 @@ layout: layouts/base.njk
   <span class="only-dark">{% heroimg "src/assets/ill/dark/" + heroDark + ".jpg", heroAlt %}</span>
 </figure>
 
-<article>
+{#- data-slug: reading.mjs remembers revealed theses under the slug, so the
+    memory survives publication (the preview address dies, the slug does not).
+    data-draft: bramka `lib/check-essays.mjs` czyta z niego, że ta strona jest
+    wersją roboczą, i wtedy nie wymaga tez ani mapy czasów. Wcześniej wnioskowała
+    to z adresu (`/podglad/`, `/preview/` na pierwszym poziomie), więc chiński
+    draft (`/zh/yulan/<kod>/<slug>/`) był spod niej wyjęty przez przypadek, a nie
+    z zasady. Stan roboczy jest cechą strony, nie jej ścieżki. -#}
+<article data-slug="{{ page.fileSlug }}"{% if draft %} data-draft="true"{% endif %}>
   {{ content | safe | replace("<blockquote>", '<blockquote class="pull">') }}
 </article>
 
@@ -53,13 +78,17 @@ layout: layouts/base.njk
   <span class="bird" data-awake aria-hidden="true"></span>
 </div>
 
+{%- if audio %}
+<script type="module" src="/js/reading.mjs"></script>
+{%- endif %}
+
 {%- if site.links.substack %}
 <div class="subscribe">
-  <h2>{{ subscribeTitle }}</h2>
-  <p>{{ subscribeBody }}</p>
+  <h2>{{ UI.subscribeTitle }}</h2>
+  <p>{{ UI.subscribeBody }}</p>
   <a class="btn" href="{{ site.links.substack }}">
     <span class="flourish">{% gesture "frame", 240, 60 %}</span>
-    {{ subscribeCta }}
+    {{ UI.subscribeCta }}
   </a>
 </div>
 {%- endif %}

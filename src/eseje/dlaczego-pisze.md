@@ -2,11 +2,15 @@
 title: "Dlaczego piszę"
 description: "Manifest otwierający: przyszłość kreatywności buduje się teraz, w praktyce — piszę, żeby myśleć głośno o tym, czego uczę się prowadząc studio na styku filmu, animacji i AI."
 date: 2026-07-05
-pair: /essays/why-i-write/
+work: dlaczego-pisze
 heroLight: ill-hero-1400
 heroDark: dill-hero-1400
 heroAlt: "Dłoń rysująca linię, którą kończy ramię robota; linia zrywa się w stado ptaków — ołówek i akwarela"
 readingTime: 4
+theses:
+  - "Zakładam go, bo pisanie jest dla mnie sposobem myślenia, nie tylko sposobem komunikowania czegoś, co już wiem."
+  - "Przyszłość kreatywności buduje się teraz, i buduje się w praktyce — w studiach, które łączą film, animację i technologię w jednym warsztacie, a nie w abstrakcyjnych przewidywaniach o tym, co nastąpi za dekadę."
+  - "Obiecuję szczerość co do tego, czego nie wiem, i konkret co do tego, czego się nauczyłem."
 audio: /assets/audio/dlaczego-pisze-pl.mp3
 ---
 
