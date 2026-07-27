@@ -62,7 +62,7 @@ The comic book shows a despised format can carry literacy. There's another threa
 
 <figure class="still-ill natural">
 {% img "src/assets/stills/hitchcock-radio-1943-712.jpg", "A girl rests her chin on her hand listening to a large console radio, still holding a broom handle in her other hand" %}
-<figcaption>A listener stopped halfway through sweeping. Buffalo, 1943 — photo by Marjory Collins, <a href="https://www.loc.gov/item/2017853629/">Library of Congress</a> (FSA/OWI), no known restrictions.</figcaption>
+<figcaption>A listener stopped halfway through sweeping. Buffalo, 1943 — photo by Marjory Collins, <a href="https://www.loc.gov/pictures/item/2017853629/">Library of Congress</a> (FSA/OWI), no known restrictions.</figcaption>
 </figure>
 
 The micro-drama takes the viewer further: out of the living room, onto a phone held upright on the subway. And again, just elsewhere. In Japan, manga is commuter reading: [during rush hour, subway cars are full of salarymen reading](https://factsanddetails.com/Japan/cat20/sub135/item739.html). At its peak, [Weekly Shōnen Jump sold 6.53 million copies weekly](https://en.wikipedia.org/wiki/Weekly_Sh%C5%8Dnen_Jump). In the 2000s, the same thing happened on the phone: keitai shōsetsu, novels written and read on a mobile, took off so hard that in 2007, [five of Japan's ten best-selling novels](https://en.wikipedia.org/wiki/Cell_phone_novel) had started life there. Nobody spoke of it with pride — people just read, because they had the text in hand when they had the time.

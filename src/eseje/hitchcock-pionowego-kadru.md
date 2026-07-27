@@ -62,7 +62,7 @@ Komiks pokazuje, że pogardzany format bywa wehikułem czytelnictwa. Jest tu jes
 
 <figure class="still-ill natural">
 {% img "src/assets/stills/hitchcock-radio-1943-712.jpg", "Dziewczynka opiera podbródek na dłoni i słucha dużego radia-komody, w drugiej ręce wciąż trzyma trzonek miotły" %}
-<figcaption>Słuchaczka przerwana w połowie zamiatania. Buffalo, 1943 — fot. Marjory Collins, <a href="https://www.loc.gov/item/2017853629/">Library of Congress</a> (FSA/OWI), brak znanych ograniczeń.</figcaption>
+<figcaption>Słuchaczka przerwana w połowie zamiatania. Buffalo, 1943 — fot. Marjory Collins, <a href="https://www.loc.gov/pictures/item/2017853629/">Library of Congress</a> (FSA/OWI), brak znanych ograniczeń.</figcaption>
 </figure>
 
 Mikrodrama zabiera widza dalej: z salonu do metra, do telefonu trzymanego pionowo. I znów, tylko gdzie indziej. W Japonii manga jest lekturą dojazdów: [w godzinach szczytu wagony metra są pełne pracowników korporacji czytających mangę](https://factsanddetails.com/Japan/cat20/sub135/item739.html). Magazyn [Weekly Shōnen Jump sprzedawał w szczycie 6,53 miliona egzemplarzy tygodniowo](https://en.wikipedia.org/wiki/Weekly_Sh%C5%8Dnen_Jump). W latach dwutysięcznych zjawisko powtórzyło się na telefonie: gatunek keitai shōsetsu, powieści pisane i czytane na komórce, wystrzelił tak mocno, że [w 2007 roku 5 z 10 bestsellerów w Japonii](https://en.wikipedia.org/wiki/Cell_phone_novel) zaczęło życie na komórce. Nikt wtedy nie mówił o tym z dumą. Ludzie po prostu czytali, bo mieli tekst pod ręką, kiedy mieli czas.
