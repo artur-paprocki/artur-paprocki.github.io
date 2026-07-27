@@ -38,7 +38,7 @@ Efekt był taki, że Voyager zebrał więcej umiejętności i lepiej radził sob
 
 ## Potrójne salto, którego nikt jeszcze nie zrobił
 
-Mam na ten moment swój ulubiony obraz. 28 maja 2011 roku, w miasteczku Taupo w Nowej Zelandii, rowerzysta BMX Jed Mildon jako pierwszy człowiek w historii wykonał i wylądował potrójne salto w tył na rowerze ([relacja z rekordu](https://www.pinkbike.com/news/World-First-BMX-Triple-Backflip-Jed-Mildon-May-28-2011.html)). Podwójne robiono od lat. Potrójne uchodziło za granicę — nie „bardzo trudne", tylko po prostu „nierobione". Aż ktoś je zrobił i granica przesunęła się na zawsze. Dziś kolejni zawodnicy lądują trzy obroty, bo Mildon udowodnił, że fizyka na to pozwala.
+Mam na ten moment swój ulubiony obraz. 28 maja 2011 roku, w miasteczku Taupo w Nowej Zelandii, rowerzysta BMX Jed Mildon jako pierwszy człowiek w historii wykonał i wylądował potrójne salto w tył na rowerze ([relacja z rekordu](https://www.espn.com/action/bmx/news/story?id=6602716)). Podwójne robiono od lat. Potrójne uchodziło za granicę — nie „bardzo trudne", tylko po prostu „nierobione". Aż ktoś je zrobił i granica przesunęła się na zawsze. Dziś kolejni zawodnicy lądują trzy obroty, bo Mildon udowodnił, że fizyka na to pozwala.
 
 <figure class="still-ill">
   <iframe src="https://www.youtube-nocookie.com/embed/d2bbf5xDdoo" loading="lazy" title="World First BMX Triple Backflip — Jed Mildon, Taupo, 28 maja 2011" allowfullscreen></iframe>

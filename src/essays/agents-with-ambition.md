@@ -38,7 +38,7 @@ The result was that Voyager collected more skills and handled new, unfamiliar si
 
 ## The Triple Backflip Nobody Has Landed Yet
 
-I have a favorite image for this moment. On May 28, 2011, in the town of Taupo, New Zealand, BMX rider Jed Mildon became the first person in history to land a triple backflip on a bike ([record account](https://www.pinkbike.com/news/World-First-BMX-Triple-Backflip-Jed-Mildon-May-28-2011.html)). Riders had been doing doubles for years. The triple was considered a limit — not "very hard," just "not done." Then someone did it, and the limit moved for good. Riders keep landing three rotations today because Mildon proved the physics allows it.
+I have a favorite image for this moment. On May 28, 2011, in the town of Taupo, New Zealand, BMX rider Jed Mildon became the first person in history to land a triple backflip on a bike ([record account](https://www.espn.com/action/bmx/news/story?id=6602716)). Riders had been doing doubles for years. The triple was considered a limit — not "very hard," just "not done." Then someone did it, and the limit moved for good. Riders keep landing three rotations today because Mildon proved the physics allows it.
 
 <figure class="still-ill">
   <iframe src="https://www.youtube-nocookie.com/embed/d2bbf5xDdoo" loading="lazy" title="World First BMX Triple Backflip — Jed Mildon, Taupo, May 28, 2011" allowfullscreen></iframe>
