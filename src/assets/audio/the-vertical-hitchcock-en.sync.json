@@ -1,0 +1,590 @@
+{
+  "version": 1,
+  "slug": "hitchcock-pionowego-kadru",
+  "lang": "en",
+  "source": "with-timestamps",
+  "duration": 669.941,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0,
+      "end": 24.428,
+      "text": "More than two million people in Poland now watch vertical drama series on their phones — not in some niche app, but in ReelShort, where in May 2026 1.9 million people in Poland spent an average of five and a half hours a month, a scale confirmed by Poland's internet-audience measurement study, run by the Polskie Badania Internetu institute; Tygodnik Powszechny wrote about it too."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 24.811,
+      "end": 34.993,
+      "text": "The quality is embarrassing: the same narrative beats every episode — the secret billionaire, the betrayal, a twist every few seconds so nobody swipes away."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 35.318,
+      "end": 40.101,
+      "text": "Every episode ends on a hook that shoves the viewer into the next one, on and on."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 40.484,
+      "end": 52.744,
+      "text": "WoW, a Polish platform, already has its own original productions for the local market, including \"Krzyżacy\" (\"The Teutonic Knights\"), an adaptation generated entirely by AI."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 53.127,
+      "end": 64.064,
+      "text": "In China the machine turns almost without a human hand: DataEye data cited by MIT Technology Review puts output at roughly 470 micro-dramas a day."
+    },
+    {
+      "i": 5,
+      "block": 0,
+      "start": 64.447,
+      "end": 68.394,
+      "text": "An assembly line, not a craft — and yet people watch."
+    },
+    {
+      "i": 6,
+      "block": 1,
+      "start": 68.777,
+      "end": 75.79,
+      "text": "Here's what makes it interesting: this crude format beats streaming exactly where it should hurt most — viewer attention."
+    },
+    {
+      "i": 7,
+      "block": 1,
+      "start": 76.486,
+      "end": 93.472,
+      "text": "Omdia found that in the fourth quarter of 2025, a ReelShort user spent 35.7 minutes a day inside the app, a Netflix user 24.8; on mobile, ReelShort already closes in on half of Netflix's number, despite a far smaller audience."
+    },
+    {
+      "i": 8,
+      "block": 1,
+      "start": 93.751,
+      "end": 95.353,
+      "text": "So the format isn't the problem."
+    },
+    {
+      "i": 9,
+      "block": 1,
+      "start": 95.736,
+      "end": 110.004,
+      "text": "Nobody has yet done for the vertical rectangle what the masters of cinema did for the horizontal screen: they turned the constraints of frame, cut, and time into a language, and the 9:16 portrait is still waiting for its own."
+    },
+    {
+      "i": 10,
+      "block": 1,
+      "start": 110.446,
+      "end": 112.106,
+      "text": "It has no Hitchcock yet."
+    },
+    {
+      "i": 11,
+      "block": 1,
+      "start": 112.617,
+      "end": 117.087,
+      "text": "I've written before that craft outlives format — that was only half the thought."
+    },
+    {
+      "i": 12,
+      "block": 1,
+      "start": 117.412,
+      "end": 121.777,
+      "text": "The other half: the format itself still has nobody to fit that craft to."
+    },
+    {
+      "i": 13,
+      "block": 2,
+      "start": 122.102,
+      "end": 135.5,
+      "text": "In Vertigo (1958), Hitchcock needed a shot the camera couldn't yet take: looking straight down a bell-tower stairwell so the audience would feel the height and the character's vertigo, not understand it."
+    },
+    {
+      "i": 14,
+      "block": 2,
+      "start": 135.883,
+      "end": 150.605,
+      "text": "The fix came from Irmin Roberts, a second-unit cameraman at Paramount: the camera pulls back while the lens zooms in, changing focal length — the figure stays the same size in frame, only the background perspective stretches and warps."
+    },
+    {
+      "i": 15,
+      "block": 2,
+      "start": 151.046,
+      "end": 158.372,
+      "text": "It didn't work on the full-size set, so the crew shot the stairwell miniature lying on its side, horizontal instead of vertical."
+    },
+    {
+      "i": 16,
+      "block": 2,
+      "start": 158.697,
+      "end": 160.276,
+      "text": "They didn't route around the limit."
+    },
+    {
+      "i": 17,
+      "block": 2,
+      "start": 160.717,
+      "end": 163.655,
+      "text": "They turned it into a sentence cinema's grammar didn't have yet."
+    },
+    {
+      "i": 18,
+      "block": 2,
+      "start": 163.98,
+      "end": 167.439,
+      "text": "Today it's called the Vertigo effect, or the dolly zoom."
+    },
+    {
+      "i": 19,
+      "block": 3,
+      "start": 167.88,
+      "end": 171.654,
+      "text": "The proof of that vacancy is almost comically literal."
+    },
+    {
+      "i": 20,
+      "block": 3,
+      "start": 172.164,
+      "end": 184.296,
+      "text": "Chinese screenwriter Phoenix Zhu told MIT Technology Review that writing for today's AI models, he can no longer put \"he gave her a cold stare\" into a script — the model can't act it."
+    },
+    {
+      "i": 21,
+      "block": 3,
+      "start": 184.679,
+      "end": 190.949,
+      "text": "He has to spell it out — \"Cold beams of light shot out from his eyes\" — or the emotion never reaches the screen."
+    },
+    {
+      "i": 22,
+      "block": 3,
+      "start": 191.332,
+      "end": 200.98,
+      "text": "Faces have the same problem — models lose an actor's identity between shots, so studios that want a viewer back for the next episode go back to real people on set."
+    },
+    {
+      "i": 23,
+      "block": 3,
+      "start": 201.305,
+      "end": 202.593,
+      "text": "The hardware is ready."
+    },
+    {
+      "i": 24,
+      "block": 3,
+      "start": 202.837,
+      "end": 204.416,
+      "text": "The craft is still missing."
+    },
+    {
+      "i": 25,
+      "block": 4,
+      "start": 204.857,
+      "end": 214.586,
+      "text": "But this pattern isn't showing up here for the first time — a despised format, branded dangerous for young minds, that turns out to carry something bigger anyway."
+    },
+    {
+      "i": 26,
+      "block": 4,
+      "start": 215.027,
+      "end": 221.54,
+      "text": "History doesn't repeat itself, it rhymes, and the clearest rhyme sounds in the comic book."
+    },
+    {
+      "i": 27,
+      "block": 5,
+      "start": 222.237,
+      "end": 236.354,
+      "text": "On April 19, 1954, American psychiatrist Fredric Wertham published Seduction of the Innocent, declaring the comic book \"a harmful form of popular literature and a serious cause of juvenile delinquency\"."
+    },
+    {
+      "i": 28,
+      "block": 5,
+      "start": 237.051,
+      "end": 238.711,
+      "text": "The result: U.S."
+    },
+    {
+      "i": 29,
+      "block": 5,
+      "start": 238.734,
+      "end": 249.184,
+      "text": "Senate hearings that same year, and the Comics Code Authority — self-censorship that gutted the medium of anything beyond polite superhero adventures for decades."
+    },
+    {
+      "i": 30,
+      "block": 5,
+      "start": 249.787,
+      "end": 267.725,
+      "text": "It took half a century for Carol Tilley, a researcher at the University of Illinois, to go through Wertham's notes and show he had \"manipulated, overstated, compromised and fabricated evidence\" — changing children's ages, splicing quotes to fit a thesis decided in advance."
+    },
+    {
+      "i": 31,
+      "block": 5,
+      "start": 268.108,
+      "end": 272.555,
+      "text": "The moral panic had the trappings of science and none of the substance."
+    },
+    {
+      "i": 32,
+      "block": 6,
+      "start": 272.938,
+      "end": 281.495,
+      "text": "Contempt for a new medium always arrives first, and it's always wrong — the only question is how many decades it takes before someone checks."
+    },
+    {
+      "i": 33,
+      "block": 7,
+      "start": 281.936,
+      "end": 289.68,
+      "text": "Parallel to that panic, the comic book was quietly doing the last thing anyone expected of it: teaching people to read."
+    },
+    {
+      "i": 34,
+      "block": 7,
+      "start": 290.377,
+      "end": 295.88,
+      "text": "The Swiss schoolteacher Rodolphe Töpffer began drawing his picture stories back in the 1820s."
+    },
+    {
+      "i": 35,
+      "block": 7,
+      "start": 296.158,
+      "end": 304.692,
+      "text": "He drew the first of them, \"Histoire de Mr. Vieux Bois,\" in 1827, and published it in print ten years later."
+    },
+    {
+      "i": 36,
+      "block": 7,
+      "start": 305.075,
+      "end": 317.579,
+      "text": "He called them \"littérature en estampes\" — literature in prints — and wrote that they had found their way to a wide audience, to people who would never have picked up a sermon or a serious book."
+    },
+    {
+      "i": 37,
+      "block": 7,
+      "start": 318.02,
+      "end": 333.426,
+      "text": "A hundred and fifty years later, researchers Ujiie and Krashen studied a group of seventh-grade boys and reached a conclusion simpler than anyone expected: children who read more comics also read more books, and got more pleasure out of reading in general."
+    },
+    {
+      "i": 38,
+      "block": 7,
+      "start": 333.81,
+      "end": 336.027,
+      "text": "The picture doesn't pull you away from the word."
+    },
+    {
+      "i": 39,
+      "block": 7,
+      "start": 336.352,
+      "end": 337.641,
+      "text": "It leads you to it."
+    },
+    {
+      "i": 40,
+      "block": 8,
+      "start": 338.454,
+      "end": 341.902,
+      "text": "The comic book also had its moment in the war for the mass reader."
+    },
+    {
+      "i": 41,
+      "block": 8,
+      "start": 342.343,
+      "end": 354.672,
+      "text": "In 1895, Richard F. Outcault drew the Yellow Kid for Pulitzer's paper; a year later, Pulitzer and Hearst fought over the character — a circulation war that gave us the term \"yellow journalism.\""
+    },
+    {
+      "i": 42,
+      "block": 8,
+      "start": 355.056,
+      "end": 358.26,
+      "text": "A picture story drove the era's most mass medium."
+    },
+    {
+      "i": 43,
+      "block": 8,
+      "start": 358.643,
+      "end": 359.967,
+      "text": "Nobody praised it for that."
+    },
+    {
+      "i": 44,
+      "block": 8,
+      "start": 360.35,
+      "end": 361.372,
+      "text": "It worked anyway."
+    },
+    {
+      "i": 45,
+      "block": 9,
+      "start": 361.883,
+      "end": 365.609,
+      "text": "The comic book shows a despised format can carry literacy."
+    },
+    {
+      "i": 46,
+      "block": 9,
+      "start": 365.888,
+      "end": 369.998,
+      "text": "There's another thread here — not just what people read, but where."
+    },
+    {
+      "i": 47,
+      "block": 9,
+      "start": 370.439,
+      "end": 386.728,
+      "text": "Before the micro-drama took the viewer into the subway, Netflix took them out of the cinema and into the living room: the service launched streaming in 2007, and six years later released House of Cards, an entire season dropped at once — coining binge-watching."
+    },
+    {
+      "i": 48,
+      "block": 9,
+      "start": 387.239,
+      "end": 389.944,
+      "text": "But someone else had ruled that room for decades."
+    },
+    {
+      "i": 49,
+      "block": 9,
+      "start": 390.455,
+      "end": 400.904,
+      "text": "The \"soap opera\" took its name literally from its sponsors — radio dramas from the 1930s were financed by soap manufacturers, aired in the daytime slot for housewives."
+    },
+    {
+      "i": 50,
+      "block": 9,
+      "start": 401.415,
+      "end": 406.988,
+      "text": "The first was Irna Phillips's Painted Dreams — a fifteen-minute daily family drama."
+    },
+    {
+      "i": 51,
+      "block": 9,
+      "start": 407.591,
+      "end": 418.284,
+      "text": "That room has been ruled by the woman of the house for a hundred years — I say it without a trace of contempt, since I work the same emotional register today, just in a different vessel."
+    },
+    {
+      "i": 52,
+      "block": 10,
+      "start": 418.888,
+      "end": 424.925,
+      "text": "The micro-drama takes the viewer further: out of the living room, onto a phone held upright on the subway."
+    },
+    {
+      "i": 53,
+      "block": 10,
+      "start": 425.25,
+      "end": 427.352,
+      "text": "And again, just elsewhere."
+    },
+    {
+      "i": 54,
+      "block": 10,
+      "start": 427.956,
+      "end": 434.004,
+      "text": "In Japan, manga is commuter reading: during rush hour, subway cars are full of salarymen reading."
+    },
+    {
+      "i": 55,
+      "block": 10,
+      "start": 434.387,
+      "end": 439.728,
+      "text": "At its peak, Weekly Shōnen Jump sold 6.53 million copies weekly."
+    },
+    {
+      "i": 56,
+      "block": 10,
+      "start": 440.169,
+      "end": 453.776,
+      "text": "In the 2000s, the same thing happened on the phone: keitai shōsetsu, novels written and read on a mobile, took off so hard that in 2007, five of Japan's ten best-selling novels had started life there."
+    },
+    {
+      "i": 57,
+      "block": 10,
+      "start": 454.217,
+      "end": 460.138,
+      "text": "Nobody spoke of it with pride — people just read, because they had the text in hand when they had the time."
+    },
+    {
+      "i": 58,
+      "block": 11,
+      "start": 460.463,
+      "end": 462.646,
+      "text": "Europe is just getting its first taste."
+    },
+    {
+      "i": 59,
+      "block": 11,
+      "start": 463.029,
+      "end": 473.35,
+      "text": "Spain's Atresmedia released a vertical micro-drama on Atresplayer, \"Una Novia por Navidad\" — more than twenty million plays and a commissioned sequel."
+    },
+    {
+      "i": 60,
+      "block": 11,
+      "start": 473.675,
+      "end": 476.693,
+      "text": "Too early to call a direction, but worth asking already."
+    },
+    {
+      "i": 61,
+      "block": 12,
+      "start": 477.076,
+      "end": 478.574,
+      "text": "Cinema had its authors."
+    },
+    {
+      "i": 62,
+      "block": 12,
+      "start": 478.853,
+      "end": 480.618,
+      "text": "The living room had the soap opera."
+    },
+    {
+      "i": 63,
+      "block": 12,
+      "start": 480.896,
+      "end": 486.678,
+      "text": "The subway is waiting for someone who understands that the picture leads to the word, instead of pulling you away from it."
+    },
+    {
+      "i": 64,
+      "block": 13,
+      "start": 487.003,
+      "end": 509.376,
+      "text": "That it can be done differently — sensuously, wisely — is shown by \"The Butterfly Effect\", Anne Horel's five-minute film, produced by Partizan, France, 2026. She says outright she built it end-to-end in AI, yet not one glossy plastic face appears on screen, only gouache, line, painterly texture."
+    },
+    {
+      "i": 65,
+      "block": 13,
+      "start": 509.887,
+      "end": 527.243,
+      "text": "The look comes from her own models, trained on her analog collages and on public-domain archives: Maria Sibylla Merian's 1705 botanical plates, John Gould's natural-history illustrations — a European bestiary and herbarium, the European comic book's lineage."
+    },
+    {
+      "i": 66,
+      "block": 13,
+      "start": 527.568,
+      "end": 541.861,
+      "text": "Le Lombard, the house that launched Tintin magazine, rejects AI in comics outright, on the grounds that such art is generated through theft from artists; Horel answers with craft, training on herself and on what is public."
+    },
+    {
+      "i": 67,
+      "block": 13,
+      "start": 542.302,
+      "end": 546.563,
+      "text": "Even the sound she recorded with her own mouth, then ran through a processor."
+    },
+    {
+      "i": 68,
+      "block": 13,
+      "start": 547.004,
+      "end": 553.9,
+      "text": "The frame that stays with me: a black cat curled up with a white kitten among garlic bulbs and painted raindrops."
+    },
+    {
+      "i": 69,
+      "block": 14,
+      "start": 554.341,
+      "end": 565.069,
+      "text": "Veles, the company I run, produces micro-dramas today — with real actors, not a pure AI assembly line, and I say that openly, it's no secret."
+    },
+    {
+      "i": 70,
+      "block": 14,
+      "start": 565.58,
+      "end": 575.007,
+      "text": "Veles Productions, with a Story Room at its disposal and using XR and AI technology, can produce both illustrated animated comics and dramas."
+    },
+    {
+      "i": 71,
+      "block": 14,
+      "start": 575.611,
+      "end": 580.847,
+      "text": "I see up close how low the bar can be, and how much viewers keep coming back anyway."
+    },
+    {
+      "i": 72,
+      "block": 14,
+      "start": 581.288,
+      "end": 584.539,
+      "text": "Two facts at once, not one contradicting the other."
+    },
+    {
+      "i": 73,
+      "block": 15,
+      "start": 584.922,
+      "end": 590.111,
+      "text": "The lineage that interests me most in all this isn't cinema, and it isn't the soap opera."
+    },
+    {
+      "i": 74,
+      "block": 15,
+      "start": 590.494,
+      "end": 598.575,
+      "text": "It's the comic book — a picture story that reached people wherever they happened to be, and led them back to reading instead of pulling them away from it."
+    },
+    {
+      "i": 75,
+      "block": 15,
+      "start": 599.272,
+      "end": 607.341,
+      "text": "Watching a European market just taking its first steps in this format, the question I keep asking is what the micro-drama becomes here."
+    },
+    {
+      "i": 76,
+      "block": 15,
+      "start": 607.724,
+      "end": 612.728,
+      "text": "Another soap opera turned vertical, a telenovela copied from the living room into your pocket?"
+    },
+    {
+      "i": 77,
+      "block": 15,
+      "start": 612.972,
+      "end": 620.286,
+      "text": "Or a renaissance of the animated comic strip — a picture story for someone with twenty minutes on the subway and nothing else."
+    },
+    {
+      "i": 78,
+      "block": 15,
+      "start": 620.89,
+      "end": 622.55,
+      "text": "I don't know the answer."
+    },
+    {
+      "i": 79,
+      "block": 15,
+      "start": 623.061,
+      "end": 638.954,
+      "text": "Today the European vertical is claimed almost entirely by photorealistic romance and thriller, and the drawing hand — the same one the European comic book grew out of — I haven't yet seen in it; maybe because these two worlds simply haven't met yet."
+    },
+    {
+      "i": 80,
+      "block": 15,
+      "start": 639.279,
+      "end": 650.646,
+      "text": "But maybe Veles Productions will turn out to be the Hitchcock of the vertical format — not because it already is one, only because someone, eventually, has to be the first to try."
+    },
+    {
+      "i": 81,
+      "block": 15,
+      "start": 651.249,
+      "end": 662.151,
+      "text": "Someone has to invent, for the vertical frame, the shot that doesn't exist yet — the way someone had to invent that one, in 1958, in a bell-tower stairwell."
+    },
+    {
+      "i": 82,
+      "block": 15,
+      "start": 662.662,
+      "end": 669.941,
+      "text": "If you're searching for a grammar in this format yourself, not just a hook for the next episode, I have a feeling we'd have something to talk about."
+    }
+  ]
+}

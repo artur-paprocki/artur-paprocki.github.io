@@ -1,0 +1,688 @@
+{
+  "version": 1,
+  "slug": "hitchcock-pionowego-kadru",
+  "lang": "pl",
+  "source": "with-timestamps",
+  "duration": 775.961,
+  "sentences": [
+    {
+      "i": 0,
+      "block": 0,
+      "start": 0,
+      "end": 4.911,
+      "text": "Ponad dwa miliony Polaków ogląda dziś regularnie pionowe seriale na telefonie."
+    },
+    {
+      "i": 1,
+      "block": 0,
+      "start": 5.294,
+      "end": 28.944,
+      "text": "Nie w jakiejś niszowej aplikacji, tylko w ReelShort — w maju 2026 roku 1,9 miliona osób w Polsce spędzało tam średnio pięć i pół godziny miesięcznie, a skalę tę potwierdza badanie oglądalności internetu w Polsce, które prowadzi instytut Polskie Badania Internetu; pisał o tym też Tygodnik Powszechny."
+    },
+    {
+      "i": 2,
+      "block": 0,
+      "start": 29.269,
+      "end": 33.948,
+      "text": "Poziom tych historii jest, powiedzmy to wprost, żenująco niski."
+    },
+    {
+      "i": 3,
+      "block": 0,
+      "start": 34.273,
+      "end": 44.664,
+      "text": "Te same elementy narracyjne w każdym odcinku: sekretny miliarder, zdrada, zwrot akcji co kilkanaście sekund, żeby nikt nie zdążył kliknąć dalej."
+    },
+    {
+      "i": 4,
+      "block": 0,
+      "start": 44.989,
+      "end": 51.037,
+      "text": "Każdy odcinek kończy się hakiem, który przerzuca widza do następnego — i tak w kółko."
+    },
+    {
+      "i": 5,
+      "block": 0,
+      "start": 51.316,
+      "end": 60.522,
+      "text": "Polska platforma WoW ma już swoje autorskie produkcje na rynek lokalny, w tym „Krzyżaków\" — adaptację w pełni wygenerowaną przez AI."
+    },
+    {
+      "i": 6,
+      "block": 0,
+      "start": 60.905,
+      "end": 74.199,
+      "text": "A w Chinach ta maszyna kręci się już bez większego udziału ludzkiej ręki: według danych DataEye cytowanych przez MIT Technology Review powstaje tam dziś około 470 mikrodram dziennie."
+    },
+    {
+      "i": 7,
+      "block": 0,
+      "start": 74.524,
+      "end": 77.113,
+      "text": "Taśma produkcyjna, nie rzemiosło."
+    },
+    {
+      "i": 8,
+      "block": 0,
+      "start": 77.438,
+      "end": 79.122,
+      "text": "A jednak ludzie oglądają."
+    },
+    {
+      "i": 9,
+      "block": 0,
+      "start": 79.563,
+      "end": 83.312,
+      "text": "To nie jest nisza, którą można sobie spokojnie obserwować z boku."
+    },
+    {
+      "i": 10,
+      "block": 1,
+      "start": 83.591,
+      "end": 92.089,
+      "text": "I tu robi się ciekawie, bo ten prymitywny format bije streaming dokładnie tam, gdzie powinno boleć najbardziej — w czasie uwagi widza."
+    },
+    {
+      "i": 11,
+      "block": 1,
+      "start": 92.333,
+      "end": 107.949,
+      "text": "Omdia policzyła, że w czwartym kwartale 2025 roku użytkownik ReelShort spędzał w aplikacji 35,7 minuty dziennie, użytkownik Netflixa — 24,8 minuty."
+    },
+    {
+      "i": 12,
+      "block": 1,
+      "start": 108.332,
+      "end": 115.309,
+      "text": "Na komórce ReelShort dobija już do połowy wyniku Netflixa, mimo bazy widzów wielokrotnie mniejszej."
+    },
+    {
+      "i": 13,
+      "block": 1,
+      "start": 115.634,
+      "end": 117.48,
+      "text": "Więc problemem nie jest format."
+    },
+    {
+      "i": 14,
+      "block": 1,
+      "start": 117.759,
+      "end": 128.475,
+      "text": "Problemem jest to, że nikt jeszcze nie zrobił dla wąskiego, pionowego ekranu telefonu tego, co mistrzowie kina zrobili kiedyś dla szerokiego, poziomego płótna sali kinowej."
+    },
+    {
+      "i": 15,
+      "block": 1,
+      "start": 128.719,
+      "end": 138.367,
+      "text": "Kino miało autorów, którzy z ograniczeń kadru, montażu i czasu zbudowali język — format 9:16 wciąż czeka na kogoś takiego."
+    },
+    {
+      "i": 16,
+      "block": 1,
+      "start": 138.75,
+      "end": 140.678,
+      "text": "Nie ma jeszcze swojego Hitchcocka."
+    },
+    {
+      "i": 17,
+      "block": 1,
+      "start": 141.003,
+      "end": 146.854,
+      "text": "Pisałem już, że rzemiosło przetrwa format — ale to była tylko połowa tej myśli."
+    },
+    {
+      "i": 18,
+      "block": 1,
+      "start": 147.237,
+      "end": 153.692,
+      "text": "Druga połowa brzmi tak: sam format wciąż nie ma nikogo, kto by to rzemiosło do niego dopasował."
+    },
+    {
+      "i": 19,
+      "block": 2,
+      "start": 154.134,
+      "end": 172.326,
+      "text": "W „Zawrocie głowy\" z 1958 roku Hitchcock potrzebował ujęcia, którego kamera jeszcze nie umiała nakręcić: spojrzenia w dół szybu dzwonnicy, po którym widz nie zrozumie wysokości, tylko ją poczuje — tak jak dezorientację i lęk bohatera."
+    },
+    {
+      "i": 20,
+      "block": 2,
+      "start": 172.768,
+      "end": 184.807,
+      "text": "Rozwiązanie wymyślił Irmin Roberts, operator drugiej ekipy w wytwórni Paramount: kamera odjeżdża od bohatera, a obiektyw w tym samym czasie dojeżdża, zmieniając ogniskową."
+    },
+    {
+      "i": 21,
+      "block": 2,
+      "start": 185.318,
+      "end": 192.145,
+      "text": "Postać zostaje w kadrze dokładnie tej samej wielkości, tylko perspektywa tła rozciąga się i faluje."
+    },
+    {
+      "i": 22,
+      "block": 2,
+      "start": 192.528,
+      "end": 203.79,
+      "text": "Na pełnowymiarowej dekoracji ujęcie nie wychodziło, więc makietę szybu wieży nakręcono poziomo, na leżąco — brudna robota warsztatowa, nie olśnienie."
+    },
+    {
+      "i": 23,
+      "block": 2,
+      "start": 204.289,
+      "end": 206.042,
+      "text": "Ograniczenia nie obeszli."
+    },
+    {
+      "i": 24,
+      "block": 2,
+      "start": 206.483,
+      "end": 208.469,
+      "text": "Zrobili z niego środek wyrazu."
+    },
+    {
+      "i": 25,
+      "block": 2,
+      "start": 208.794,
+      "end": 212.985,
+      "text": "Dziś nazywa się to efektem Vertigo albo dolly zoomem."
+    },
+    {
+      "i": 26,
+      "block": 3,
+      "start": 213.496,
+      "end": 216.259,
+      "text": "Dowód na tę pustkę jest wręcz obrazowy."
+    },
+    {
+      "i": 27,
+      "block": 3,
+      "start": 216.7,
+      "end": 231.119,
+      "text": "Chiński scenarzysta Phoenix Zhu tłumaczył MIT Technology Review, że pisząc pod dzisiejsze modele AI, nie może już napisać w scenariuszu „spojrzał na nią chłodno\" — model tego nie zagra aktorsko."
+    },
+    {
+      "i": 28,
+      "block": 3,
+      "start": 231.363,
+      "end": 238.666,
+      "text": "Musi napisać wprost, że „z jego oczu wystrzeliły zimne promienie światła\", bo inaczej emocja nie przejdzie przez ekran."
+    },
+    {
+      "i": 29,
+      "block": 3,
+      "start": 239.049,
+      "end": 250.415,
+      "text": "Ten sam problem dotyczy twarzy: modele gubią tożsamość aktora między ujęciami, więc studia, którym zależy na widzu wracającym na kolejny odcinek, wracają do prawdziwych ludzi na planie."
+    },
+    {
+      "i": 30,
+      "block": 3,
+      "start": 250.659,
+      "end": 252.029,
+      "text": "Sprzęt jest gotowy."
+    },
+    {
+      "i": 31,
+      "block": 3,
+      "start": 252.354,
+      "end": 253.91,
+      "text": "Rzemiosła wciąż brakuje."
+    },
+    {
+      "i": 32,
+      "block": 4,
+      "start": 254.119,
+      "end": 264.057,
+      "text": "Ale ten wzorzec nie pojawia się tu po raz pierwszy — format pogardzany, uznawany za groźny dla młodzieży, który mimo to okazuje się wehikułem czegoś większego."
+    },
+    {
+      "i": 33,
+      "block": 4,
+      "start": 264.382,
+      "end": 269.479,
+      "text": "Historia się nie powtarza, tylko rymuje, a najwyraźniejszy rym słyszę w komiksie."
+    },
+    {
+      "i": 34,
+      "block": 5,
+      "start": 270.175,
+      "end": 287.753,
+      "text": "19 kwietnia 1954 roku amerykański psychiatra Fredric Wertham wydał książkę „Seduction of the Innocent\", w której ogłosił komiks „szkodliwą formą literatury popularnej i poważną przyczyną przestępczości nieletnich\"."
+    },
+    {
+      "i": 35,
+      "block": 5,
+      "start": 288.356,
+      "end": 303.194,
+      "text": "Efekt: przesłuchania w amerykańskim Senacie tego samego roku i Comics Code Authority — branżowa samocenzura, która na dekady wykastrowała medium z czegokolwiek poza grzecznymi przygodami superbohaterów."
+    },
+    {
+      "i": 36,
+      "block": 5,
+      "start": 303.636,
+      "end": 324.359,
+      "text": "Dopiero pół wieku później Carol Tilley, badaczka z University of Illinois, prześwietliła notatki Werthama i wykazała, że „manipulował, wyolbrzymiał, naciągał i fabrykował dowody\" — zmieniał wiek badanych dzieci, sklejał cytaty, żeby pasowały do tezy założonej z góry."
+    },
+    {
+      "i": 37,
+      "block": 5,
+      "start": 324.743,
+      "end": 327.657,
+      "text": "Panika moralna miała pozory nauki."
+    },
+    {
+      "i": 38,
+      "block": 5,
+      "start": 327.982,
+      "end": 329.921,
+      "text": "Samej nauki w niej zabrakło."
+    },
+    {
+      "i": 39,
+      "block": 6,
+      "start": 330.164,
+      "end": 339.289,
+      "text": "Pogarda dla nowego medium zawsze przychodzi pierwsza i zawsze się myli — pytanie tylko, ile dekad zajmie, zanim ktoś to sprawdzi."
+    },
+    {
+      "i": 40,
+      "block": 7,
+      "start": 339.614,
+      "end": 348.067,
+      "text": "A równolegle do tej paniki komiks po cichu robił dokładnie to, czego się po nim najmniej spodziewano: uczył ludzi czytać."
+    },
+    {
+      "i": 41,
+      "block": 7,
+      "start": 348.577,
+      "end": 357.308,
+      "text": "Szwajcarski nauczyciel Rodolphe Töpffer zaczął rysować swoje historyjki obrazkowe jeszcze w latach 20. XIX wieku."
+    },
+    {
+      "i": 42,
+      "block": 7,
+      "start": 357.517,
+      "end": 360.21,
+      "text": "Pierwszą z nich, „Histoire de Mr."
+    },
+    {
+      "i": 43,
+      "block": 7,
+      "start": 360.257,
+      "end": 368.337,
+      "text": "Vieux Bois\", narysował w 1827 roku, a wydał drukiem dziesięć lat później."
+    },
+    {
+      "i": 44,
+      "block": 7,
+      "start": 368.72,
+      "end": 373.388,
+      "text": "Nazwał je „littérature en estampes\" — literaturą w sztychach."
+    },
+    {
+      "i": 45,
+      "block": 7,
+      "start": 373.713,
+      "end": 382.025,
+      "text": "Sam pisał, że jego opowieści trafiły do szerokiej publiczności, do ludzi, którzy nigdy nie sięgnęliby po kazanie czy poważną książkę."
+    },
+    {
+      "i": 46,
+      "block": 7,
+      "start": 382.35,
+      "end": 400.659,
+      "text": "Sto pięćdziesiąt lat później badacze Ujiie i Krashen przebadali grupę chłopców z siódmej klasy i doszli do wniosku prostszego, niż ktokolwiek się spodziewał: dzieci czytające więcej komiksów czytały też więcej książek i czerpały z czytania większą przyjemność."
+    },
+    {
+      "i": 47,
+      "block": 7,
+      "start": 401.042,
+      "end": 403.028,
+      "text": "Obrazek nie odciąga od słowa."
+    },
+    {
+      "i": 48,
+      "block": 7,
+      "start": 403.237,
+      "end": 404.514,
+      "text": "Prowadzi do niego."
+    },
+    {
+      "i": 49,
+      "block": 8,
+      "start": 404.839,
+      "end": 408.566,
+      "text": "Komiks miał swój moment w wojnie o masowego czytelnika."
+    },
+    {
+      "i": 50,
+      "block": 8,
+      "start": 408.844,
+      "end": 425.609,
+      "text": "W 1895 roku Richard F. Outcault narysował dla gazety Pulitzera Żółtego Chłopca; rok później Pulitzer i Hearst pokłócili się o postać — wojna nakładów, która ukuła termin „yellow journalism\"."
+    },
+    {
+      "i": 51,
+      "block": 8,
+      "start": 426.051,
+      "end": 429.975,
+      "text": "Obrazkowa opowieść napędzała najbardziej masowe medium epoki."
+    },
+    {
+      "i": 52,
+      "block": 8,
+      "start": 430.416,
+      "end": 431.693,
+      "text": "Nikt jej nie chwalił."
+    },
+    {
+      "i": 53,
+      "block": 8,
+      "start": 432.076,
+      "end": 433.411,
+      "text": "Działała mimo to."
+    },
+    {
+      "i": 54,
+      "block": 9,
+      "start": 433.737,
+      "end": 437.939,
+      "text": "Komiks pokazuje, że pogardzany format bywa wehikułem czytelnictwa."
+    },
+    {
+      "i": 55,
+      "block": 9,
+      "start": 438.264,
+      "end": 442.966,
+      "text": "Jest tu jeszcze jeden trop: nie tylko co ludzie czytali, ale i gdzie."
+    },
+    {
+      "i": 56,
+      "block": 9,
+      "start": 443.408,
+      "end": 449.015,
+      "text": "Zanim mikrodrama zabrała widza do metra, Netflix zabrał go z sali kinowej do salonu."
+    },
+    {
+      "i": 57,
+      "block": 9,
+      "start": 449.456,
+      "end": 461.217,
+      "text": "Serwis uruchomił strumieniowanie w 2007 roku, a sześć lat później wypuścił „House of Cards\" — cały sezon naraz, co ukuło nawyk oglądania maratonem."
+    },
+    {
+      "i": 58,
+      "block": 9,
+      "start": 461.542,
+      "end": 466.035,
+      "text": "Ale w salonie, dokąd trafił ten widz, od dekad rządził ktoś inny."
+    },
+    {
+      "i": 59,
+      "block": 9,
+      "start": 466.314,
+      "end": 477.901,
+      "text": "„Opera mydlana\" wzięła swoją nazwę od sponsorów — radiowe dramaty z lat 30. XX wieku finansowali producenci mydła, nadawane w paśmie dziennym dla gospodyń domowych."
+    },
+    {
+      "i": 60,
+      "block": 9,
+      "start": 478.075,
+      "end": 486.074,
+      "text": "Pierwszą taką audycją była „Painted Dreams\" Irny Phillips — piętnastominutowy dzienny dramat rodzinny."
+    },
+    {
+      "i": 61,
+      "block": 9,
+      "start": 486.353,
+      "end": 497.498,
+      "text": "To jest ten pokój, w którym od stu lat rządzą kury domowe — mówię to bez cienia pogardy, bo sam dziś kręcę w tym samym rejestrze emocji, tylko w innym naczyniu."
+    },
+    {
+      "i": 62,
+      "block": 10,
+      "start": 497.939,
+      "end": 503.524,
+      "text": "Mikrodrama zabiera widza dalej: z salonu do metra, do telefonu trzymanego pionowo."
+    },
+    {
+      "i": 63,
+      "block": 10,
+      "start": 503.698,
+      "end": 505.915,
+      "text": "I znów, tylko gdzie indziej."
+    },
+    {
+      "i": 64,
+      "block": 10,
+      "start": 506.426,
+      "end": 514.541,
+      "text": "W Japonii manga jest lekturą dojazdów: w godzinach szczytu wagony metra są pełne pracowników korporacji czytających mangę."
+    },
+    {
+      "i": 65,
+      "block": 10,
+      "start": 514.867,
+      "end": 521.832,
+      "text": "Magazyn Weekly Shōnen Jump sprzedawał w szczycie 6,53 miliona egzemplarzy tygodniowo."
+    },
+    {
+      "i": 66,
+      "block": 10,
+      "start": 522.216,
+      "end": 539.468,
+      "text": "W latach dwutysięcznych zjawisko powtórzyło się na telefonie: gatunek keitai shōsetsu, powieści pisane i czytane na komórce, wystrzelił tak mocno, że w 2007 roku 5 z 10 bestsellerów w Japonii zaczęło życie na komórce."
+    },
+    {
+      "i": 67,
+      "block": 10,
+      "start": 539.793,
+      "end": 541.766,
+      "text": "Nikt wtedy nie mówił o tym z dumą."
+    },
+    {
+      "i": 68,
+      "block": 10,
+      "start": 542.208,
+      "end": 546.271,
+      "text": "Ludzie po prostu czytali, bo mieli tekst pod ręką, kiedy mieli czas."
+    },
+    {
+      "i": 69,
+      "block": 11,
+      "start": 546.596,
+      "end": 548.721,
+      "text": "Europa dopiero próbuje tego smaku."
+    },
+    {
+      "i": 70,
+      "block": 11,
+      "start": 548.93,
+      "end": 559.727,
+      "text": "Hiszpańska Atresmedia wypuściła na Atresplayer pionową mikrodramę „Una Novia por Navidad\" — ponad 20 milionów odtworzeń i zamówiona kontynuacja."
+    },
+    {
+      "i": 71,
+      "block": 11,
+      "start": 560.005,
+      "end": 562.107,
+      "text": "Za wcześnie, żeby mówić o kierunku."
+    },
+    {
+      "i": 72,
+      "block": 11,
+      "start": 562.316,
+      "end": 564.359,
+      "text": "Ale pytanie już warto sobie zadać."
+    },
+    {
+      "i": 73,
+      "block": 12,
+      "start": 564.603,
+      "end": 566.379,
+      "text": "Kino miało swoich autorów."
+    },
+    {
+      "i": 74,
+      "block": 12,
+      "start": 566.762,
+      "end": 568.759,
+      "text": "Salon miał operę mydlaną."
+    },
+    {
+      "i": 75,
+      "block": 12,
+      "start": 569.084,
+      "end": 574.762,
+      "text": "Metro czeka na kogoś, kto zrozumie, że obrazek prowadzi do słowa, nie od niego odciąga."
+    },
+    {
+      "i": 76,
+      "block": 13,
+      "start": 575.203,
+      "end": 587.916,
+      "text": "Że da się to zrobić inaczej, zmysłowo i mądrze, pokazuje „The Butterfly Effect\" Anne Horel — pięciominutowy film produkcji Partizan, Francja, dwa tysiące dwudziesty szósty."
+    },
+    {
+      "i": 77,
+      "block": 13,
+      "start": 588.299,
+      "end": 601.394,
+      "text": "Autorka mówi wprost, że zbudowała go od początku do końca w AI, a mimo to na ekranie nie ma ani jednej lśniącej plastikowej twarzy, tylko gwasz, kreska, faktura malarska."
+    },
+    {
+      "i": 78,
+      "block": 13,
+      "start": 601.836,
+      "end": 617.102,
+      "text": "Ten wygląd wziął się z własnych modeli, wytrenowanych na analogowych kolażach i na archiwach domeny publicznej: tablicach botanicznych Marii Sibylli Merian z tysiąc siedemset piątego roku, ilustracjach Johna Goulda."
+    },
+    {
+      "i": 79,
+      "block": 13,
+      "start": 617.346,
+      "end": 622.466,
+      "text": "To europejski bestiariusz i zielnik, rodowód komiksu europejskiego."
+    },
+    {
+      "i": 80,
+      "block": 13,
+      "start": 622.745,
+      "end": 637.768,
+      "text": "Le Lombard, wydawnictwo, od którego zaczął się magazyn „Tintin\", odrzuca AI w komiksie całkowicie, bo „ta sztuka jest generowana przez kradzież artystom\" — Horel odpowiada warsztatem, trenując na sobie i na tym, co publiczne."
+    },
+    {
+      "i": 81,
+      "block": 13,
+      "start": 638.093,
+      "end": 642.377,
+      "text": "Nawet dźwięk nagrała ustami, potem przepuściła przez przetwornik."
+    },
+    {
+      "i": 82,
+      "block": 13,
+      "start": 642.655,
+      "end": 650.62,
+      "text": "Kadr, który zostaje w pamięci, to czarny kot zwinięty z białym kociakiem wśród główek czosnku i malowanych kropli deszczu."
+    },
+    {
+      "i": 83,
+      "block": 14,
+      "start": 650.863,
+      "end": 662.427,
+      "text": "Veles, firma, którą prowadzę, produkuje dziś mikrodramy — z prawdziwymi aktorami, nie samą taśmą AI — mówię to otwarcie, bo to już nie tajemnica."
+    },
+    {
+      "i": 84,
+      "block": 14,
+      "start": 662.752,
+      "end": 674.688,
+      "text": "Veles Productions, dysponując Story Roomem i wykorzystując technologie XR oraz AI, jest w stanie produkować zarówno ilustrowane komiksy animowane, jak i dramaty."
+    },
+    {
+      "i": 85,
+      "block": 14,
+      "start": 675.071,
+      "end": 682.571,
+      "text": "Widzę z bliska, jak niski bywa dzisiejszy poziom tego formatu, i widzę też, jak bardzo widzowie mimo to za nim tęsknią."
+    },
+    {
+      "i": 86,
+      "block": 14,
+      "start": 682.896,
+      "end": 686.75,
+      "text": "To dwa fakty naraz, nie jeden zaprzeczający drugiemu."
+    },
+    {
+      "i": 87,
+      "block": 15,
+      "start": 687.261,
+      "end": 693.461,
+      "text": "Rodowód, który najbardziej mnie w tym wszystkim ciekawi, to nie kino i nie opera mydlana."
+    },
+    {
+      "i": 88,
+      "block": 15,
+      "start": 693.67,
+      "end": 703.33,
+      "text": "To komiks — obrazkowa opowieść, która trafiała do ludzi tam, gdzie akurat byli, i prowadziła ich z powrotem do lektury, zamiast ich od niej odciągać."
+    },
+    {
+      "i": 89,
+      "block": 15,
+      "start": 703.608,
+      "end": 712.246,
+      "text": "Pytanie, które sobie zadaję, patrząc na europejski rynek dopiero raczkujący w tym formacie, brzmi: czym się stanie u nas mikrodrama."
+    },
+    {
+      "i": 90,
+      "block": 15,
+      "start": 712.455,
+      "end": 718.736,
+      "text": "Kolejną operą mydlaną w pionie, kalką telenoweli przeniesioną z salonu do kieszeni?"
+    },
+    {
+      "i": 91,
+      "block": 15,
+      "start": 719.061,
+      "end": 727.165,
+      "text": "Czy raczej renesansem animowanego komiksu — obrazkową opowieścią dla kogoś, kto ma przed sobą dwadzieścia minut w metrze i nic więcej."
+    },
+    {
+      "i": 92,
+      "block": 15,
+      "start": 727.606,
+      "end": 728.802,
+      "text": "Nie znam odpowiedzi."
+    },
+    {
+      "i": 93,
+      "block": 15,
+      "start": 729.127,
+      "end": 745.265,
+      "text": "Dziś europejski pion zajmują niemal wyłącznie fotorealistyczne romanse i dreszczowce, a ręki rysunkowej, tej samej, z której wyrósł komiks europejski, jeszcze w nim nie widziałem — może dlatego, że te dwa światy po prostu jeszcze się nie spotkały."
+    },
+    {
+      "i": 94,
+      "block": 15,
+      "start": 745.648,
+      "end": 756.305,
+      "text": "Ale być może to właśnie Veles Productions stanie się Hitchcockiem pionowego formatu — nie dlatego, że już nim jest, tylko dlatego, że ktoś kiedyś musi spróbować pierwszy."
+    },
+    {
+      "i": 95,
+      "block": 15,
+      "start": 756.688,
+      "end": 768.124,
+      "text": "Ktoś musi wymyślić dla pionowego kadru ujęcie, którego jeszcze nie ma — tak jak w 1958 roku trzeba było wymyślić tamto, w szybie dzwonnicy."
+    },
+    {
+      "i": 96,
+      "block": 15,
+      "start": 768.507,
+      "end": 775.961,
+      "text": "Jeśli sam szukasz w tym formacie gramatyki, a nie tylko haka na następny odcinek, mam wrażenie, że mielibyśmy o czym rozmawiać."
+    }
+  ]
+}
