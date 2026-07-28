@@ -1,5 +1,8 @@
 {
   "recurse": true,
   "silent": true,
-  "skip": ["https://arturpaprocki.com"]
+  "skip": [
+    "https://arturpaprocki.com",
+    "https://www.decodetv.com"
+  ]
 }

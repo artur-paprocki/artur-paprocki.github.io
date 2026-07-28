@@ -35,7 +35,7 @@ jobs:
         run: npx --yes html-validate "_site/**/*.html"
 
       - name: Check internal links
-        run: npx --yes linkinator _site
+        run: npx --yes linkinator _site --config linkinator.config.json
 
       - name: Lighthouse CI
         run: npx --yes @lhci/cli autorun --config=lighthouserc.json
