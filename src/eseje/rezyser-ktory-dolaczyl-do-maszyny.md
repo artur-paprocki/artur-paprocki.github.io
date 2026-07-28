@@ -1,8 +1,8 @@
 ---
 title: "Reżyser, który dołączył do maszyny"
 description: "Historia chińskiego reżysera, który zamienił plan filmowy na generator AI, pokazuje mechanizm, który dotknie każdą pracę kreatywną — piszę o nim z perspektywy kogoś, kto sam prowadzi studio na tym samym pograniczu."
-date: 2026-07-11
-# work: rezyser-ktory-dolaczyl-do-maszyny  — odkomentować przy publikacji (para jest w drafcie)
+date: 2026-07-28
+work: rezyser-ktory-dolaczyl-do-maszyny
 heroLight: ill-rezyser-ktory-dolaczyl-do-maszyny-1400
 heroDark: dill-rezyser-ktory-dolaczyl-do-maszyny-1400
 heroAlt: "Dłoń z ołówkiem przesuwa linię granicy na pustej podłodze studia: krzesło reżyserskie po jednej stronie, maszyna po drugiej — luźny szkic ołówkiem z akwarelą"
@@ -12,7 +12,6 @@ theses:
   - "Chińska fala mikrodram AI to nie ciekawostka z drugiego końca świata."
   - "Interesuje mnie trzecia droga: świadomy wybór, co w łańcuchu produkcji zostaje przy człowieku, a co oddaję maszynie."
 audio: /assets/audio/rezyser-ktory-dolaczyl-do-maszyny-pl.mp3
-draft: true
 ---
 
 W [reportażu CNA Insider](https://www.youtube.com/watch?v=uWSB7s_DQHw) jest ujęcie, które zostało mi w głowie dłużej, niż powinno. Reżyser siedzi przed ekranem i czeka, aż wygenerowany kadr go zadowoli. Nie patrzy na aktora. Nie mówi „jeszcze raz, ale z większym uczuciem". Patrzy na wynik, który wypluła maszyna, i decyduje, czy próbować dalej.
@@ -40,6 +39,11 @@ A widza to wszystko właściwie nie obchodzi. Reportaż zauważa, że jeśli his
 > Chińska fala mikrodram AI to nie ciekawostka z drugiego końca świata. To podgląd mechanizmu, który prędzej czy później dotknie każdą pracę kreatywną — także moją.
 
 Prowadzę studio, które od 2022 roku buduje produkcję wirtualną — ściany LED, przechwytywanie ruchu, renderowanie w czasie rzeczywistym w Unreal Engine. Od jakiegoś czasu do tego zestawu dochodzą agenci AI. Widzę więc z bliska, jak ten sam mechanizm wygląda z drugiej strony biurka. Klient, który kiedyś akceptował jeden drogi zakład, coraz chętniej pyta o kilka tańszych wariantów. Zespół, który kiedyś specjalizował się w jednej rzeczy, uczy się dziś obsługiwać narzędzia, których jeszcze rok temu nie było w naszym warsztacie. Przyglądam się formatowi mikrodram z tego samego powodu, dla którego przyglądam się każdemu narzędziu, które nagle robi coś dziesięć razy taniej — nie żeby go skopiować, tylko żeby zrozumieć, co dokładnie tanieje, a co nie.
+
+<figure class="hero-ill">
+<span class="only-light">{% img "src/assets/ill/light/ill-rezyser-ktory-dolaczyl-do-maszyny-1-1400.jpg", "Na pustej podłodze studia jeden duży, pusty kadr storyboardu stoi samotnie naprzeciw wachlarza dziesięciu małych, pustych kadrów rozłożonych na podłodze — ołówek i akwarela" %}</span>
+<span class="only-dark">{% img "src/assets/ill/dark/dill-rezyser-ktory-dolaczyl-do-maszyny-1-1400.jpg", "Na pustej podłodze studia jeden duży, pusty kadr storyboardu stoi samotnie naprzeciw wachlarza dziesięciu małych, pustych kadrów rozłożonych na podłodze — kreda na ciemnym papierze" %}</span>
+</figure>
 
 Nie traktuję tego jako zagrożenia, z którym trzeba walczyć, ani jako pretekstu, żeby zalać rynek tanim, nierozróżnialnym materiałem, byle szybciej. Obie postawy prowadzą w ślepą uliczkę — pierwsza kończy się tym, że ktoś inny zrobi to za mnie i taniej, druga tym, że robię coraz więcej rzeczy, których nikt nie zapamięta. Interesuje mnie trzecia droga: świadomy wybór, co w łańcuchu produkcji zostaje przy człowieku, a co oddaję maszynie. Emocja aktora, jego reakcja na partnera scenicznego, decyzja, czy dubel jest dobry — to zostaje po naszej stronie, bo tam mieszka coś, czego żaden model jeszcze nie potrafi podrobić tak, żeby nie było tego widać. Lokacja, tło, wariant językowy sceny pod inny rynek — to praca, którą AI wykonuje dziś szybciej i taniej, niż zrobiłby to człowiek z dekoracją z płyty.
 

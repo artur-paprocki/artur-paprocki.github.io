@@ -1,18 +1,17 @@
 ---
 title: "The Director Who Joined the Machine"
 description: "The story of a Chinese film director who traded the set for an AI generator previews a mechanism that will reach every kind of creative work — I write about it as someone running a studio on the same frontier."
-date: 2026-07-11
-# work: rezyser-ktory-dolaczyl-do-maszyny  — uncomment on publication (the pair is still in draft)
-heroLight: ill-hero-1400
-heroDark: dill-hero-1400
-heroAlt: "Temporary illustration — the essay's final artwork is in preparation"
+date: 2026-07-28
+work: rezyser-ktory-dolaczyl-do-maszyny
+heroLight: ill-rezyser-ktory-dolaczyl-do-maszyny-1400
+heroDark: dill-rezyser-ktory-dolaczyl-do-maszyny-1400
+heroAlt: "A hand with a pencil redraws a boundary line on the empty floor of a studio: a director's chair on one side, a machine on the other — a loose pencil sketch with watercolour"
 readingTime: 5
 theses:
   - "Directing stops being a craft in which experience gives you control over the outcome."
   - "The Chinese wave of AI micro-dramas is not a curiosity from the other side of the world."
   - "What interests me is a third way: deliberately choosing what in the production chain stays with the human, and what I hand over to the machine."
 audio: /assets/audio/the-director-who-joined-the-machine-en.mp3
-draft: true
 ---
 
 There is a shot in a CNA Insider documentary that has stayed with me longer than it should have. A director sits in front of a screen, waiting for a generated frame to satisfy him. He is not looking at an actor. He is not saying "once more, but with more feeling." He is looking at whatever the machine has produced and deciding whether to try again.
@@ -21,15 +20,30 @@ The film's subject, Wang Jinfei, was shooting traditional features in China only
 
 The numbers he quotes explain why an entire industry has thrown itself at this. A single traditional production used to cost enough that one failure could wipe out a year's budget. Today, he says, three hundred thousand yuan buys you ten AI productions at once. Even if several of them fail, a few successes are enough to recover the investment. This is not a story about cheaper filmmaking. It is a change of business model — from one expensive bet to a portfolio of cheap experiments.
 
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/uWSB7s_DQHw?start=146" title="Video quote: the new economics of micro-dramas" loading="lazy" allowfullscreen></iframe>
+<figcaption>Wang Jinfei breaks the new economics of micro-dramas down to first principles — from 2:26. <a href="https://www.youtube.com/watch?v=uWSB7s_DQHw">The full CNA Insider documentary</a>.</figcaption>
+</figure>
+
 But the same documentary shows the other side of the ledger, the one that comes up less often amid the excitement about a new tool. To earn what one month of traditional production used to pay him, Wang Jinfei now needs roughly three months of AI work. Most of the jobs that used to stand around the camera have disappeared — cinematographer, gaffer, props. One of his collaborators says plainly that on a film crew she felt irreplaceable, and in AI work she feels she could be replaced at any moment. The narrator sums it up in a single sentence worth remembering: technology "doesn't necessarily replace workers, but changes what their work is worth." Not fewer people. A different price on what people know how to do.
 
 The director's own craft is changing too. Wang Jinfei says the hardest part of his old job was talking to actors — when a scene wasn't working, he would sit down with them and search for the fix together. That conversation is gone. What remains is generating a shot, judging whether the result satisfies you, and trying again if it doesn't. He calls it gambling — he cannot know in advance whether a given prompt will produce what he is looking for until he sees the output. Directing stops being a craft in which experience gives you control over the outcome. It becomes iterating on a machine that sometimes hits and sometimes doesn't.
+
+<figure class="still-ill">
+<iframe src="https://www.youtube-nocookie.com/embed/uWSB7s_DQHw?start=316" title="Video quote: generating shots as gambling" loading="lazy" allowfullscreen></iframe>
+<figcaption>Generating shots feels to him like gambling, and the conversation with the actor is gone — from 5:16 (the actor thread from 5:31).</figcaption>
+</figure>
 
 And the audience, it turns out, hardly cares. The documentary observes that if the story is good, nobody asks how much of it was made by human hands and how much by the machine. That may be the most uncomfortable sentence in the whole film — not because it is false, but because it has been true all along; we simply never had a reason to think about it.
 
 > The Chinese wave of AI micro-dramas is not a curiosity from the other side of the world. It is a preview of a mechanism that will sooner or later reach every kind of creative work — including mine.
 
 I run a studio that has been building virtual production since 2022 — LED walls, motion capture, real-time rendering in Unreal Engine. For some time now, AI agents have been joining that toolkit. So I see the same mechanism from the other side of the desk. A client who used to sign off on one expensive bet increasingly asks for several cheaper variants instead. A team that used to specialise in one thing is now learning tools that did not exist in our workshop a year ago. I study the micro-drama format for the same reason I study any tool that suddenly does something ten times cheaper — not to copy it, but to understand precisely what is getting cheaper and what is not.
+
+<figure class="hero-ill">
+<span class="only-light">{% img "src/assets/ill/light/ill-rezyser-ktory-dolaczyl-do-maszyny-1-1400.jpg", "On the bare floor of an empty studio, one large blank storyboard frame stands alone, facing a fan of ten small blank frames spread across the floor — pencil and watercolour" %}</span>
+<span class="only-dark">{% img "src/assets/ill/dark/dill-rezyser-ktory-dolaczyl-do-maszyny-1-1400.jpg", "On the bare floor of an empty studio, one large blank storyboard frame stands alone, facing a fan of ten small blank frames spread across the floor — chalk on dark paper" %}</span>
+</figure>
 
 I don't treat this as a threat to fight, nor as a licence to flood the market with cheap, indistinguishable material as fast as possible. Both attitudes lead to a dead end — the first ends with someone else doing it instead of me, and for less; the second with me making more and more things that nobody will remember. What interests me is a third way: deliberately choosing what in the production chain stays with the human, and what I hand over to the machine. The actor's emotion, their reaction to a scene partner, the judgement of whether a take is good — that stays on our side, because that is where something lives that no model can yet fake without it showing. The location, the backdrop, the language variant of a scene for another market — that is work AI already does faster and cheaper than a person with a plywood set ever could.
 
