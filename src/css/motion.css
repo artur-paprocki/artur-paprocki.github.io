@@ -108,72 +108,62 @@ body {
   transition: background .3s ease, color .3s ease;
 }
 
-/* 5 · Button: clean solid design at rest; fleeting rough.js outline on
-   hover, drawn and dissolved in a single gesture. */
+/* 5 · Button: the label in ink, signed underneath by a real brush stroke —
+   the same stroke as the footer separator, cut free of its paper into a
+   transparent PNG (ill-stroke-btn / dill-stroke-btn), so it sits on any
+   ground without a blend mode. The only painted trace the interface carries
+   (Artur, 2026-11-01). Hover: the stroke fills in and widens a touch. The
+   stroke lives on ::before behind the label; isolation keeps it above the
+   parent's background. */
 .btn {
   position: relative;
+  isolation: isolate;
   display: inline-block;
-  background: var(--btn-accent);
-  color: #fff;
+  background: none;
+  color: var(--ink);
   border: none;
   cursor: pointer;
   text-decoration: none;
   font-family: var(--sans);
   font-size: 14px;
-  padding: 12px 26px;
-  border-radius: 7px;
-  transition: background .3s ease, transform .25s var(--ease-gesture-fallback);
+  line-height: 1.4;
+  padding: 8px 28px 24px;
+  transition: transform .25s var(--ease-gesture-fallback);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 18px;
+  background: url("/assets/ill/light/ill-stroke-btn.png") no-repeat center / 100% 100%;
+  opacity: .78;
+  transform-origin: left center;
+  transition: opacity .45s var(--ease-gesture-fallback), transform .45s var(--ease-gesture-fallback);
+  transition-timing-function: var(--ease-gesture);
+}
+
+[data-theme="dark"] .btn::before {
+  background-image: url("/assets/ill/dark/dill-stroke-btn.png");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn::before {
+    background-image: url("/assets/ill/dark/dill-stroke-btn.png");
+  }
+}
+
+.btn:hover::before,
+.btn:focus-visible::before {
+  opacity: 1;
+  transform: scaleX(1.04);
 }
 
 .btn:active {
   transform: scale(.98);
-}
-
-.btn .flourish,
-.btn .gesture-path {
-  position: absolute;
-  inset: -9px -11px;
-  width: calc(100% + 22px);
-  height: calc(100% + 18px);
-  overflow: visible;
-  pointer-events: none;
-}
-
-.btn .flourish path,
-.btn .gesture-path path {
-  fill: none;
-  stroke: var(--ink);
-  stroke-width: 1.6;
-  stroke-linecap: round;
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  opacity: 0;
-}
-
-.btn:hover .flourish path,
-.btn:focus-visible .flourish path,
-.btn:hover .gesture-path path,
-.btn:focus-visible .gesture-path path {
-  animation: flourish .9s var(--ease-gesture-fallback) forwards;
-  animation-timing-function: var(--ease-gesture);
-}
-
-@keyframes flourish {
-  0% {
-    stroke-dashoffset: 1;
-    opacity: 0;
-  }
-  12% {
-    opacity: .9;
-  }
-  62% {
-    stroke-dashoffset: 0;
-    opacity: .85;
-  }
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 0;
-  }
 }
 
 /* 6 · Draw-in: a loose stroke sketches an element's place on first

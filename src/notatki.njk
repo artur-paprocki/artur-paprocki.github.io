@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
-title: Notatki
-description: "Krótsze, luźniejsze wpisy obok esejów."
+title: Na marginesie
+description: "Krótkie zapiski z pracy w studiu — jedna obserwacja, jeden wniosek."
 lang: pl
 pageType: page
 permalink: /notatki/
@@ -9,11 +9,12 @@ permalink: /notatki/
 {%- set notes = collections.notatki | published -%}
 <div class="essay-head">
   <h1>{{ site.notesLabel }}</h1>
+  <p class="meta">Krótkie zapiski z pracy w studiu — jedna obserwacja, jeden wniosek.</p>
 </div>
 {%- if notes.length > 0 %}
 <div class="list-block">
   {%- for note in notes %}
-  <div class="essay-item">
+  <div class="essay-item text-only">
     <div>
       <h3><a href="{{ note.url }}">{{ note.data.title }}</a></h3>
       <p>{{ note.data.description }}</p>
@@ -24,6 +25,6 @@ permalink: /notatki/
 </div>
 {%- else %}
 <article>
-  <p>Wkrótce pojawią się tu krótsze, luźniejsze wpisy obok esejów — na razie ta sekcja czeka na pierwszą notatkę.</p>
+  <p>Wkrótce pojawią się tu krótsze, luźniejsze wpisy obok esejów — na razie ta sekcja czeka na pierwszy wpis.</p>
 </article>
 {%- endif %}

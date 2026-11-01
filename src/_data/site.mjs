@@ -5,9 +5,10 @@ export default {
   author: "Artur Paprocki",
   // Single switch: while true, every page gets meta robots noindex,nofollow.
   noindex: true,
-  // Nazwa sekcji krótkich form obok esejów (robocza — decyzja D4 może ją zmienić).
-  // Trzymana w jednym miejscu: layouty i strona listingu czytają stąd.
-  notesLabel: "Notatki",
+  // Nazwa sekcji krótkich form obok esejów — „Na marginesie” (decyzja Artura
+  // 2026-11-01; po angielsku „Marginalia”, gdy powstanie pierwszy wpis EN).
+  // Adres /notatki/ zostaje, żeby nie zerwać udostępnionych linków.
+  notesLabel: "Na marginesie",
   links: {
     linkedin: "https://www.linkedin.com/in/arturpaprocki",
     // Empty until the Substack account exists — templates hide the

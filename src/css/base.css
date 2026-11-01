@@ -221,18 +221,68 @@ a {
 header.site {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   padding: 48px 0 0;
   gap: 16px;
 }
 
+/* The site's mark: the painted AP monogram that seals every essay, cut free
+   of its paper (ill-/dill-monogram-mark.png), beside the name set lighter. */
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--display);
-  font-size: 19px;
+  font-size: 18px;
   letter-spacing: .005em;
   color: var(--ink);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+.brand .mark {
+  height: 38px;
+  width: auto;
+}
+
+.brand span {
+  white-space: nowrap;
+}
+
+/* On a phone the mark, the name and the whole nav do not share one line:
+   the mark keeps its row and the nav takes the next, spread to full width. */
+@media (max-width: 520px) {
+  header.site {
+    flex-wrap: wrap;
+    row-gap: 18px;
+  }
+
+  nav.top {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav.top > a {
+    white-space: nowrap;
+  }
+
+  /* Three links plus the switches outgrow a phone: the links keep the first
+     row, the language pill and theme toggle take the next, right-aligned. */
+  nav.top {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 12px 18px;
+  }
+
+  nav.top .lang-pill {
+    margin-left: auto;
+  }
+
+  /* Items wrap instead of shrinking: squeezed, the theme toggle fell to 14px
+     and slid past the right edge. */
+  nav.top > * {
+    flex-shrink: 0;
+  }
 }
 
 nav.top {
@@ -287,10 +337,12 @@ nav.top a:hover {
   margin-bottom: 18px;
 }
 
+/* Illustrations carry no corner radius: their paper is matched to the page at
+   build time (lib/paper.mjs), so a rounded corner would only draw the frame
+   back in. Stills and photos keep theirs. */
 .featured .cover {
   width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
 .featured h2 {
@@ -338,6 +390,17 @@ nav.top a:hover {
   margin: 0 0 9px;
 }
 
+/* Short pieces („Na marginesie”) have no thumbnail: the text takes the whole
+   row, and the title link reads like the essay titles, not like a link. */
+.essay-item.text-only {
+  grid-template-columns: 1fr;
+}
+
+.essay-item h3 a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
 .essay-item p {
   margin: 0;
   font-size: 16.5px;
@@ -373,6 +436,12 @@ footer.site a {
   margin-top: 64px;
 }
 
+/* A page that ends on a button already carries a brush stroke; a second one
+   in the footer just below read as a stutter. The zone keeps its space. */
+body:has(main .btn) .footer-zone {
+  visibility: hidden;
+}
+
 .stroke-sep {
   height: 26px;
   margin: 8px auto 0;
@@ -401,10 +470,11 @@ footer.site a {
   margin: 6px 0 18px 28px;
 }
 
+/* The portrait is cut out of its studio wall and fades out below the belt
+   (transparent PNG), so it stands on the page itself, no frame, no corners. */
 .about-photo img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
 }
 
 /* Dim the photographic print slightly on the dark edition so it doesn't glare. */
@@ -428,9 +498,29 @@ footer.site a {
 
 /* ——— contact form ——— */
 
-.contact-form {
-  margin: 34px 0 24px;
+/* The contact page is a letter, not an essay: title, sentence and button sit
+   on the centre line, the form in a narrower centred column. Scoped by the
+   form itself, so every language version follows without a template flag. */
+main:has(> .contact-form) .essay-head,
+main:has(> .contact-form) article {
+  text-align: center;
   max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main:has(> .contact-form) .essay-head h1 {
+  margin-bottom: 18px;
+}
+
+.contact-form {
+  margin: 34px auto 24px;
+  max-width: 440px;
+  text-align: center;
+}
+
+.contact-form label {
+  text-align: left;
 }
 
 .contact-form label {
@@ -520,7 +610,6 @@ footer.site a {
      reserves the box before the lazy image (and web fonts) arrive — without
      it the swap reflows the page and Lighthouse reports CLS on the hero. */
   aspect-ratio: 1400 / 792;
-  border-radius: 5px;
 }
 
 /* Source stills (video frames quoted in essays) share the .hero-ill bleed;

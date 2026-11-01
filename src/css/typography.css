@@ -58,7 +58,10 @@ article p {
   color: var(--ink-article);
 }
 
-article p:first-of-type::first-letter {
+/* The initial belongs to essays and notes only (article.prose). On short
+   pages — contact, about — it spanned more lines than the opening paragraph
+   had and hung below the text. */
+article.prose p:first-of-type::first-letter {
   font-family: var(--display);
   font-size: 58px;
   line-height: .86;
@@ -68,12 +71,32 @@ article p:first-of-type::first-letter {
   font-weight: 400;
 }
 
+/* Where the browser can sink an initial properly (Chrome, Edge, Safari), the
+   cap spans three lines: its top on the first line's cap height, its foot on
+   the third baseline. The floated 58px cap above floated loose — its top rose
+   above the first line and the letter read as apart from its word. Firefox
+   keeps the float. */
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  article.prose p:first-of-type::first-letter {
+    -webkit-initial-letter: 3;
+    initial-letter: 3;
+    float: none;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+    margin-right: 10px;
+  }
+}
+
 /* No drop cap in Chinese. A Latin initial takes one letter out of a word and the
    word survives; a Chinese one takes a whole morpheme — the pull quote opened
    with 生成 ("to generate") and the cap left 生 in the margin and 成 in the line,
    splitting the word in half. Caught on a screenshot, not by any gate: every
    check passes on a page that reads wrong. */
 article:lang(zh) p:first-of-type::first-letter {
+  -webkit-initial-letter: normal;
+  initial-letter: normal;
+  margin-right: 0;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

@@ -62,6 +62,9 @@ const by = {
     feed: "/feed.xml",
     nav: {
       essays: "Eseje",
+      // Sekcja krótkich wpisów istnieje tylko po polsku; języki bez niej nie mają
+      // tego klucza, więc nie pokazują pozycji w menu.
+      notes: "Na marginesie",
       about: "O mnie",
       contact: "Kontakt",
       themeToggle: "Przełącz motyw",

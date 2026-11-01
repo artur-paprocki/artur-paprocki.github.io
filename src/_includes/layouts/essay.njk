@@ -68,7 +68,7 @@ layout: layouts/base.njk
     to z adresu (`/podglad/`, `/preview/` na pierwszym poziomie), więc chiński
     draft (`/zh/yulan/<kod>/<slug>/`) był spod niej wyjęty przez przypadek, a nie
     z zasady. Stan roboczy jest cechą strony, nie jej ścieżki. -#}
-<article data-slug="{{ page.fileSlug }}"{% if draft %} data-draft="true"{% endif %}>
+<article class="prose" data-slug="{{ page.fileSlug }}"{% if draft %} data-draft="true"{% endif %}>
   {{ content | safe | replace("<blockquote>", '<blockquote class="pull">') }}
 </article>
 
@@ -87,7 +87,6 @@ layout: layouts/base.njk
   <h2>{{ UI.subscribeTitle }}</h2>
   <p>{{ UI.subscribeBody }}</p>
   <a class="btn" href="{{ site.links.substack }}">
-    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
     {{ UI.subscribeCta }}
   </a>
 </div>

@@ -5,7 +5,7 @@ layout: layouts/base.njk
 {%- set readingLabel = (readingTime | string) + " minut czytania" -%}
 
 {%- if draft -%}
-<div class="draft-banner">PODGLĄD — wersja robocza. Ta strona nie jest publiczna: brak jej na liście notatek, w RSS i w Google.</div>
+<div class="draft-banner">PODGLĄD — wersja robocza. Ta strona nie jest publiczna: brak jej na liście „Na marginesie”, w RSS i w Google.</div>
 {%- endif -%}
 <div class="essay-head">
   <h1>{{ title }}</h1>
@@ -21,7 +21,7 @@ layout: layouts/base.njk
 </figure>
 {%- endif %}
 
-<article>
+<article class="prose">
   {{ content | safe | replace("<blockquote>", '<blockquote class="pull">') }}
 </article>
 
@@ -36,7 +36,6 @@ layout: layouts/base.njk
   <h2>Nowe eseje co dwa tygodnie</h2>
   <p>Bez spamu — tylko kolejny esej, prosto do skrzynki. Po polsku lub po angielsku, jak wolisz.</p>
   <a class="btn" href="{{ site.links.substack }}">
-    <span class="flourish">{% gesture "frame", 240, 60 %}</span>
     Subskrybuj newsletter
   </a>
 </div>

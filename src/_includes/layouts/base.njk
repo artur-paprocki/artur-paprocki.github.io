@@ -87,9 +87,12 @@
 <body>
   <div class="wrap">
     <header class="site">
-      <a class="brand" href="{{ homeHref }}">{{ site.author }}</a>
+      <a class="brand" href="{{ homeHref }}"><img class="mark only-light" src="/assets/ill/light/ill-monogram-mark.png" alt="" width="35" height="38"><img class="mark only-dark" src="/assets/ill/dark/dill-monogram-mark.png" alt="" width="39" height="38"><span>{{ site.author }}</span></a>
       <nav class="top">
         <a href="{{ homeHref }}">{{ navEssays }}</a>
+        {%- if L.nav.notes %}
+        <a href="/notatki/">{{ L.nav.notes }}</a>
+        {%- endif %}
         <a href="{{ aboutHref }}">{{ navAbout }}</a>
         <div class="lang-pill" data-count="{{ langSwitch.length }}" data-index="{{ langSwitchIndex }}">
           <span class="thumb-slide" aria-hidden="true"></span>
