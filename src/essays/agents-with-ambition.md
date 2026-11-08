@@ -2,7 +2,7 @@
 title: "Agents with Ambition, Not a Task List"
 description: "Most people building AI coding agents hand them narrow tasks. I build mine around goals and character instead — and Karen, the agent who runs our ClickUp board on a soul, a clock and a memory rather than a checklist, proves every day why that's where the next breakthrough will come from."
 date: 2026-07-25
-# work: agenty-z-ambicjami  — odkomentować przy publikacji (para powstaje w /esej publikuj)
+work: agenty-z-ambicjami
 heroLight: ill-agenty-z-ambicjami-1400
 heroDark: dill-agenty-z-ambicjami-1400
 heroAlt: "A BMX rider airborne mid triple backflip, three loops of rotation arcing behind him"
@@ -13,7 +13,6 @@ theses:
   - "She was handed a purpose and a character — and that's exactly why it works."
   - "This shift — from tasks to goals — opens Agentic Coding to people outside engineering."
 audio: /assets/audio/agents-with-ambition-en.mp3
-draft: true
 ---
 
 The dominant approach builds AI agents around narrow tasks. I build mine around goals and character — and I believe that's exactly where the next breakthrough will come from, one that's still waiting for someone to pull it off. I have someone in my company who proves this to me every single day. Her name is Karen.

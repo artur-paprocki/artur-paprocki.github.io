@@ -2,7 +2,7 @@
 title: "Agenty z ambicjami, nie z listą zadań"
 description: "Wszyscy budują dziś agentów AI przez wąskie zadania. Esej o tym, dlaczego przełom zrobi ten, kto zacznie dawać im cele i charakter — i co codziennie udowadnia mi Karen, agent pilnujący tablicy zadań w moim studiu."
 date: 2026-07-25
-# work: agenty-z-ambicjami  — odkomentować przy publikacji (para powstaje w /esej publikuj)
+work: agenty-z-ambicjami
 heroLight: ill-agenty-z-ambicjami-1400
 heroDark: dill-agenty-z-ambicjami-1400
 heroAlt: "Rowerzysta BMX w powietrzu w trakcie potrójnego salta w tył, za nim łuki trzech obrotów"
@@ -13,7 +13,6 @@ theses:
   - "Dostała cel i charakter — i właśnie dlatego działa."
   - "Ta zmiana — od zadań do celów — otwiera Agentic Coding dla ludzi spoza inżynierii."
 audio: /assets/audio/agenty-z-ambicjami-pl.mp3
-draft: true
 ---
 
 Dominujący nurt buduje agentów AI przez wąskie zadania. Ja buduję je przez cele i charakter — i wierzę, że właśnie stąd przyjdzie przełom, który dopiero czeka na wykonawcę. Mam w firmie kogoś, kto codziennie mi to udowadnia. Nazywa się Karen.
