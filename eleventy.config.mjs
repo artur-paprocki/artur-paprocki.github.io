@@ -65,6 +65,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/canal");
   // Klucz IndexNow (lib/indexnow.mjs): plik musi leżeć w korzeniu domeny.
+  // Weryfikacja Google Search Console (prefiks https://arturpaprocki.com/).
+  eleventyConfig.ignores.add("src/googlebf8fa0a14dc958df.html");
+  eleventyConfig.addPassthroughCopy({ "src/googlebf8fa0a14dc958df.html": "googlebf8fa0a14dc958df.html" });
   eleventyConfig.addPassthroughCopy({ "src/4b92fff34b11681c5c662cbd013fdb1a.txt": "4b92fff34b11681c5c662cbd013fdb1a.txt" });
 
   imageShortcode(eleventyConfig);
