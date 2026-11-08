@@ -64,6 +64,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/canal");
+  // Klucz IndexNow (lib/indexnow.mjs): plik musi leżeć w korzeniu domeny.
+  eleventyConfig.addPassthroughCopy({ "src/4b92fff34b11681c5c662cbd013fdb1a.txt": "4b92fff34b11681c5c662cbd013fdb1a.txt" });
 
   imageShortcode(eleventyConfig);
   gestureShortcode(eleventyConfig);
