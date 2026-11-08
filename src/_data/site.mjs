@@ -4,7 +4,7 @@ export default {
   publicUrl: "https://arturpaprocki.com",
   author: "Artur Paprocki",
   // Single switch: while true, every page gets meta robots noindex,nofollow.
-  noindex: true,
+  noindex: false,
   // Nazwa sekcji krótkich form obok esejów — „Na marginesie” (decyzja Artura
   // 2026-11-01; po angielsku „Marginalia”, gdy powstanie pierwszy wpis EN).
   // Adres /notatki/ zostaje, żeby nie zerwać udostępnionych linków.
