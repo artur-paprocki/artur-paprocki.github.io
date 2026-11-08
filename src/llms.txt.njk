@@ -17,6 +17,18 @@ eleventyExcludeFromCollections: true
 Kontakt / Contact: {{ site.links.email }} · {{ site.links.linkedin }}
 RSS: {% for code in langs.live %}{{ site.url }}{{ langs.by[code].feed }} ({{ langs.by[code].label }}){% if not loop.last %} · {% endif %}{% endfor %}
 
+Tematy / Topics: sztuczna inteligencja i agenci AI · film, animacja i sztuka w epoce AI ·
+widzenie maszynowe i robotyka · produkcja wirtualna / AI and AI agents · film, animation and art
+in the age of AI · machine vision and robotics · virtual production.
+
+Pełne teksty / Full texts: {{ site.url }}/llms-full.txt — wszystkie opublikowane eseje i notatki
+w jednym pliku markdown. Każda strona tekstu ma też własny bliźniak markdown: dopisz `index.md`
+do jej adresu (np. `{{ site.url }}/eseje/<slug>/index.md`). / Every text page has a markdown twin
+at `<page URL>index.md`.
+
+Agenci mile widziani / Agents welcome: można czytać, streszczać i cytować z podaniem autora
+i linku. / You may read, summarise and quote with attribution and a link.
+
 ## Jak czytać te teksty maszynowo / How to read these essays as a machine
 
 PL: Każde zdanie eseju jest w statycznym HTML osobnym elementem `<span class="z" id="zN">`
@@ -48,6 +60,7 @@ below.
 ### {{ essay.data.title | safe }}
 
 - URL: {{ site.url }}{{ essay.url }}
+- Markdown: {{ site.url }}{{ essay.url }}index.md
 - {{ L.llms.date }}: {{ essay.data.date | isodate }}
 - {{ L.llms.summary }}: {{ essay.data.description | safe }}
 {%- for v in essay.data.langSet | langExcept(code) %}
@@ -66,6 +79,16 @@ below.
 {%- endfor %}
 {%- endif %}
 {% endfor %}{% endif %}{% endfor %}
+{%- set notes = collections.notatki | published %}{% if notes.length %}
+## {{ site.notesLabel }} — krótkie notatki / Short notes (PL)
+{% for note in notes %}
+### {{ note.data.title | safe }}
+
+- URL: {{ site.url }}{{ note.url }}
+- Markdown: {{ site.url }}{{ note.url }}index.md
+- Data: {{ note.data.date | isodate }}
+- Streszczenie: {{ note.data.description | safe }}
+{% endfor %}{% endif %}
 ## Czego tu nie ma / What is not here
 
 PL: Wersje robocze (`draft: true`) nie są wymieniane w tym pliku ani w sitemapie — jeśli jakiś

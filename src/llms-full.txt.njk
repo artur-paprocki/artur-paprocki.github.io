@@ -1,0 +1,25 @@
+---
+# Pełny tekst wszystkich opublikowanych esejów i notatek w jednym pliku —
+# konwencja llms-full.txt. Agent, który chce znać całość, pobiera jeden adres.
+permalink: /llms-full.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.author }} — arturpaprocki.com — pełne teksty / full texts
+
+> Wszystkie opublikowane eseje i notatki, od najnowszych. Każdy tekst ma też własny plik
+> markdown pod adresem `<URL strony>index.md`. Spis: {{ site.url }}/llms.txt
+> All published essays and notes, newest first. Index: {{ site.url }}/llms.txt
+{% for doc in collections.agentDocs %}
+================================================================================
+
+# {{ doc.data.title | safe }}
+
+- URL: {{ site.url }}{{ doc.url }}
+- Data / Date: {{ doc.data.date | isodate }}
+- Język / Language: {{ doc.data.lang }}
+- Autor / Author: {{ site.author }}
+
+> {{ doc.data.description | safe }}
+
+{{ doc.inputPath | agentMarkdown | safe }}
+{% endfor %}

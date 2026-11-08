@@ -1,0 +1,35 @@
+---
+# Bliźniak markdown każdego opublikowanego tekstu: /eseje/<slug>/index.md
+# i /notatki/<slug>/index.md. Agent AI dostaje czysty tekst ze źródłami,
+# bez HTML-a strony. Wskazuje na niego <link rel="alternate"> w head.njk.
+pagination:
+  data: collections.agentDocs
+  size: 1
+  alias: doc
+permalink: "{{ doc.url }}index.md"
+eleventyExcludeFromCollections: true
+---
+# {{ doc.data.title | safe }}
+
+- Autor / Author: {{ site.author }} — {{ site.url }}/o-mnie/
+- URL: {{ site.url }}{{ doc.url }}
+- Data / Date: {{ doc.data.date | isodate }}
+- Język / Language: {{ doc.data.lang }}
+- Rodzaj / Type: {{ "esej / essay" if doc.data.pageType == "essay" else "notatka / note" }}
+{%- if doc.data.audio %}
+- Audio (mp3): {{ site.url }}{{ doc.data.audio }}
+{%- endif %}
+- Cytowanie / Citation: {{ site.author }}, „{{ doc.data.title | safe }}”, {{ site.url }}{{ doc.url }}
+
+> {{ doc.data.description | safe }}
+{%- if doc.data.theses and doc.data.theses.length %}
+
+## Tezy autora / Author's theses
+{% for t in doc.data.theses %}
+- {{ t | safe }}
+{%- endfor %}
+{%- endif %}
+
+---
+
+{{ doc.inputPath | agentMarkdown | safe }}

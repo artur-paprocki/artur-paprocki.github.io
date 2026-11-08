@@ -4,6 +4,7 @@ import { dateFilters } from "./lib/dates.mjs";
 import { faviconPlugin } from "./lib/favicon.mjs";
 import { cjkFontsPlugin } from "./lib/fonts-cjk.mjs";
 import { readingSyncTransform } from "./lib/reading-sync.mjs";
+import { agentTextPlugin } from "./lib/agent-text.mjs";
 import langs from "./src/_data/langs.mjs";
 
 // ——— Zestaw językowy (LANG-SET, spec 0052) ———
@@ -70,6 +71,9 @@ export default function (eleventyConfig) {
   // Czytanie synchroniczne: zdania + czasy pieczone w HTML (spec 0051).
   // Bez pliku <slug>-<lang>.sync.json strona wychodzi z buildu nietknieta.
   readingSyncTransform(eleventyConfig);
+  // Warstwa dla agentów AI: filtr `agentMarkdown` (bliźniaki index.md
+  // i llms-full.txt czytają z niego czysty tekst źródła).
+  agentTextPlugin(eleventyConfig);
 
   // Drafty (draft: true) zostaja poza listami, feedami i sitemapa.
   eleventyConfig.addFilter("published", (items) =>
@@ -142,6 +146,17 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("notatki", (collection) =>
     collection.getFilteredByTag("notatki").sort((a, b) => b.date - a.date)
   );
+  // Wszystko, co agent AI może przeczytać i zacytować: opublikowane eseje
+  // każdego języka i notatki, od najnowszych. Drafty nigdy tu nie trafiają.
+  eleventyConfig.addCollection("agentDocs", (collection) =>
+    [
+      ...langs.order.flatMap((code) => collection.getFilteredByTag(`essays_${code}`)),
+      ...collection.getFilteredByTag("notatki"),
+    ]
+      .filter((it) => !it.data.draft)
+      .sort((a, b) => b.date - a.date)
+  );
+
   // Feed PL scala eseje i notatki w jedną chronologiczną oś.
   eleventyConfig.addCollection("content_pl", (collection) =>
     [

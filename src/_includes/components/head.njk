@@ -1,7 +1,25 @@
 {%- set pageTitle = title + " — " + site.author -%}
 {%- set pageDescription = description or "Eseje o przyszłości kreatywności — Artur Paprocki." -%}
 {%- set canonical = site.url + page.url -%}
-{%- set ogType = "article" if pageType == "essay" else "website" -%}
+{%- set isText = pageType == "essay" or pageType == "note" -%}
+{%- set ogType = "article" if isText else "website" -%}
+{#- Autor jako jeden obiekt dla każdego JSON-LD: agent łączy teksty z osobą
+    i wie, na czym ta osoba się zna (knowsAbout). -#}
+{%- set authorLd -%}
+{
+    "@type": "Person",
+    "@id": {{ (site.url + "/#autor") | dump | safe }},
+    "name": {{ site.author | dump | safe }},
+    "url": {{ site.url | dump | safe }},
+    "sameAs": [{{ site.links.linkedin | dump | safe }}],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Veles Productions",
+      "url": "https://www.velesproductions.com/"
+    },
+    "knowsAbout": ["sztuczna inteligencja", "agenci AI", "robotyka", "widzenie maszynowe", "sztuka i AI", "film", "animacja", "produkcja wirtualna", "artificial intelligence", "AI agents", "robotics", "machine vision", "AI art", "virtual production"]
+  }
+{%- endset -%}
 {%- set ogHeroName = heroLight or "ill-hero-1400" -%}
 {%- set ogImageSrc = "src/assets/ill/light/" + ogHeroName + ".jpg" -%}
 {#- Time map of the recording, when one exists (spec 0051, SYNC-1). It carries
@@ -40,6 +58,11 @@
   {%- endif -%}
 {%- endif %}
 
+{%- if isText and not draft %}
+<link rel="alternate" type="text/markdown" href="{{ page.url }}index.md" title="Markdown">
+{%- endif %}
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+
 {%- if syncEntry %}
 <link rel="alternate" type="application/json" href="{{ syncEntry.href }}" title="{{ langs.by[lang].ui.transcript if langs.by[lang] else langs.by.pl.ui.transcript }}">
 {%- endif %}
@@ -64,7 +87,7 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": {{ ("Article" if pageType == "essay" else "BlogPosting") | dump | safe }},
   "headline": {{ title | dump | safe }},
   "description": {{ pageDescription | dump | safe }},
   "datePublished": {{ date | isodate | dump | safe }},
@@ -72,11 +95,7 @@
   "isAccessibleForFree": true,
   "url": {{ canonical | dump | safe }},
   "mainEntityOfPage": {{ canonical | dump | safe }},
-  "author": {
-    "@type": "Person",
-    "name": {{ site.author | dump | safe }},
-    "url": {{ site.url | dump | safe }}
-  },
+  "author": {{ authorLd | safe }},
   "image": {{ (site.url + '/assets/ill/light/' + ogHeroName + '.jpg') | dump | safe }}
   {%- if thesesList.length %},
   {# The theses are the author's own sentences, marked in the text as
@@ -135,12 +154,6 @@
 }
 </script>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": {{ site.author | dump | safe }},
-  "url": {{ site.url | dump | safe }},
-  "sameAs": [{{ site.links.linkedin | dump | safe }}]
-}
+{{ authorLd | replace('{', '{ "@context": "https://schema.org",', 1) | safe }}
 </script>
 {%- endif %}
