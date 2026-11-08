@@ -3,7 +3,6 @@ title: "Co Netflix kupił za InterPositive"
 description: "Netflix zapłacił za dyscyplinę trenowania modelu na materiale jednej produkcji, nie za gotowy fundament — dokładnie tę dyscyplinę budujemy dziś w Catharsis, bez cudzego patentu."
 date: 2026-07-25
 readingTime: 2
-draft: true
 ---
 Netflix nie kupił twórcy filmów. Kupił twórcę narzędzia do poprawiania tego, co ktoś już nakręcił. Różnica jest istotna, bo większość nagłówków sugerowała inaczej — „AI, które robi filmy Netflixa". InterPositive tego nie robi.
 
