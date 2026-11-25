@@ -4,9 +4,14 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for page in collections.all %}{% if not page.data.draft %}
+{#- Poza mapą: szkice, strony z `noindex: true` (podziękowania po formularzu)
+    i /canal/ — prezentacja dla jednego odbiorcy, nie treść do wyszukiwarki. -#}
+{%- for page in collections.all %}{% if not page.data.draft and not page.data.noindex and page.url.indexOf("/canal/") != 0 %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>
+    {%- if page.data.date %}
+    <lastmod>{{ page.date | isodate }}</lastmod>
+    {%- endif %}
   </url>
 {% endif %}{%- endfor %}
 </urlset>

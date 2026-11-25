@@ -1,4 +1,6 @@
-{%- set pageTitle = title + " — " + site.author -%}
+{#- `seoTitle` zastępuje cały tytuł tam, gdzie `title` to samo nazwisko
+    (strony główne) — inaczej wychodzi „Artur Paprocki — Artur Paprocki”. -#}
+{%- set pageTitle = seoTitle if seoTitle else (title + " — " + site.author) -%}
 {%- set pageDescription = description or "Eseje o przyszłości kreatywności — Artur Paprocki." -%}
 {%- set canonical = site.url + page.url -%}
 {%- set isText = pageType == "essay" or pageType == "note" -%}
@@ -41,7 +43,7 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-{%- if site.noindex or draft %}
+{%- if site.noindex or draft or noindex %}
 <meta name="robots" content="noindex, nofollow">
 {%- else %}
 <meta name="robots" content="index, follow">
