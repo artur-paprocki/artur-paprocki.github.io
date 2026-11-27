@@ -1,0 +1,1824 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ostrowski Arms — Government Relations i obrót specjalny</title>
+<meta name="description" content="Koncepcja „Gabinet” — propozycja projektu strony Ostrowski Arms Sp. z o.o.">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__oaMotion){document.documentElement.classList.add("no-anim");}},3000);</script>
+<link rel="preload" as="image" href="../img/study.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-950:#08140f;
+  --green-900:#0c2119;
+  --green-800:#12302a;
+  --green-700:#1b4137;
+  --black:#070908;
+  --ivory:#ece5d4;
+  --ivory-soft:#c9c2b0;
+  --paper:#f2ede1;
+  --paper-2:#e8e1d0;
+  --ink:#18211d;
+  --ink-soft:#46504a;
+  --brass:#c8a96b;
+  --brass-hi:#e1c88f;
+  --brass-ink:#7a5c26;
+  --rule:rgba(200,169,107,.38);
+  --rule-ink:rgba(122,92,38,.35);
+  --serif:"Cormorant Garamond", "Noto Serif KR", Georgia, serif;
+  --sans:"Jost", "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+  --gutter:clamp(16px, 4vw, 64px);
+  --maxw:1320px;
+}
+:lang(ko){
+  --serif:"Noto Serif KR", "Cormorant Garamond", serif;
+  --sans:"Noto Sans KR", "Jost", sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{
+  margin:0;background:var(--green-900);color:var(--ivory);
+  font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.7;
+  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+:lang(ko) body, body:lang(ko){word-break:keep-all;line-break:strict;font-weight:300;line-height:1.85}
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) blockquote{word-break:keep-all;letter-spacing:-.01em}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+:focus-visible{outline:1px solid var(--brass-hi);outline-offset:4px}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--brass);color:var(--black);padding:8px 14px;z-index:100;text-decoration:none;font-size:14px}
+.skip:focus{left:16px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(8,20,15,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--rule);
+}
+.site-header .wrap{display:flex;align-items:center;gap:24px;min-height:76px}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1;margin-right:auto}
+.brand-word{--ls:.34em;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:21px;letter-spacing:var(--ls);color:var(--ivory);white-space:nowrap;transform-origin:0 50%}
+.brand-sub{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-top:5px}
+:lang(ko) .brand-sub{letter-spacing:.08em;font-size:11px}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:26px}
+.nav a{position:relative;text-decoration:none;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-soft);padding:6px 0;transition:color .4s ease}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:100% 50%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+:lang(ko) .nav a{letter-spacing:.04em;font-size:14px}
+.nav a:hover,.nav a:focus-visible{color:var(--brass-hi)}
+.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
+.lang{display:flex;border:1px solid var(--rule)}
+.lang button{
+  font:inherit;font-size:12px;letter-spacing:.12em;background:transparent;color:var(--ivory-soft);
+  border:0;padding:8px 11px;cursor:pointer;min-width:44px;min-height:36px;white-space:nowrap
+}
+.lang button + button{border-left:1px solid var(--rule)}
+.lang button[aria-pressed="true"]{background:var(--brass);color:var(--black);font-weight:500}
+.lang button:hover:not([aria-pressed="true"]){color:var(--brass-hi)}
+.lang button[data-lang="ko"]{font-family:"Noto Sans KR",sans-serif;letter-spacing:0}
+.menu-btn{display:none;font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--ivory);padding:9px 14px;cursor:pointer;min-height:36px}
+@media (max-width:1080px){
+  .menu-btn{display:block}
+  .nav{position:absolute;left:0;right:0;top:100%;background:var(--green-950);border-bottom:1px solid var(--rule);display:none}
+  .nav[data-open="true"]{display:block}
+  .nav ul{flex-direction:column;gap:0;padding:8px var(--gutter) 20px}
+  .nav li{border-top:1px solid rgba(200,169,107,.15)}
+  .nav a{display:block;padding:14px 0;font-size:13px}
+  .nav a::after{display:none}
+}
+@media (max-width:520px){
+  .brand-word{font-size:16px;--ls:.24em}
+  .brand-sub{font-size:9.5px;letter-spacing:.16em}
+  .site-header .wrap{gap:10px}
+  .lang button{padding:8px 7px;min-width:38px;font-size:11px}
+  .menu-btn{padding:9px 10px}
+}
+@media (max-width:420px){
+  .brand{min-width:0}
+  .brand-word{font-size:14px;--ls:.14em}
+  .brand-sub{font-size:9px;letter-spacing:.08em}
+  .site-header .wrap{gap:8px}
+  .lang button{padding:8px 5px;min-width:34px}
+  .menu-btn{padding:9px 8px;letter-spacing:.08em}
+}
+
+/* ---------- Shared type ---------- */
+.kicker{display:flex;align-items:baseline;gap:14px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass);margin:0 0 28px}
+:lang(ko) .kicker{letter-spacing:.08em;font-size:13px}
+.kicker .num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none}
+.kicker::after{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.6;align-self:center}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.08;letter-spacing:-.005em}
+h2{font-size:clamp(34px,4.6vw,60px)}
+:lang(ko) h2{font-size:clamp(28px,3.6vw,46px);line-height:1.3}
+h3{font-size:clamp(23px,2.2vw,29px);line-height:1.2}
+:lang(ko) h3{font-size:clamp(19px,1.8vw,23px);line-height:1.45}
+p{margin:0 0 1.1em}
+.section{padding:clamp(80px,11vw,150px) 0;position:relative}
+.ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--brass);margin:0 auto}
+.ornament::before,.ornament::after{content:"";height:1px;width:72px;background:currentColor;opacity:.55}
+.ornament span{width:7px;height:7px;transform:rotate(45deg);border:1px solid currentColor}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:0;background:var(--green-950);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-2;overflow:hidden;background:var(--green-950)}
+.hero-bg .px{position:absolute;left:0;right:0;top:-8%;bottom:-8%;will-change:transform}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:64% 50%;filter:saturate(.82) sepia(.08) contrast(1.04) brightness(.94);transform-origin:62% 55%}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:
+  linear-gradient(90deg,rgba(8,20,15,.95) 0%,rgba(8,20,15,.88) 36%,rgba(8,20,15,.5) 62%,rgba(8,20,15,.2) 100%),
+  linear-gradient(180deg,rgba(8,20,15,.5) 0%,transparent 20%,transparent 72%,rgba(8,20,15,.92) 100%)}
+.hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gutter);align-items:center;min-height:min(84vh,860px);padding-top:clamp(64px,9vw,120px);padding-bottom:clamp(56px,7vw,100px)}
+.hero-copy{grid-column:1 / span 7}
+.hero-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0 0 22px;max-width:34em;line-height:1.8}
+:lang(ko) .hero-kicker{letter-spacing:.06em}
+.hero-rule{display:block;width:88px;height:1px;background:var(--brass);margin:0 0 34px;transform-origin:0 50%}
+.hero h1{font-size:clamp(46px,7.2vw,104px);line-height:.98;font-weight:400;letter-spacing:-.015em}
+.hero h1 .line{display:block;overflow:hidden;padding:0 .14em .08em 0;margin:0 -.14em -.08em 0}
+.hero h1 .li{display:block}
+.hero h1 em{display:block;font-style:italic;color:var(--brass-hi);font-weight:400}
+:lang(ko) .hero h1{font-size:clamp(34px,5.2vw,68px);line-height:1.25;letter-spacing:-.02em}
+:lang(ko) .hero h1 em{font-style:normal}
+.hero-lead{max-width:36em;margin:38px 0 44px;font-size:18px;color:var(--ivory-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:14px}
+.btn{
+  display:inline-flex;align-items:center;gap:12px;text-decoration:none;
+  font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;padding:16px 26px;min-height:48px;
+  border:1px solid var(--brass);transition:background .25s,color .25s
+}
+:lang(ko) .btn{letter-spacing:.06em;font-size:14px}
+.btn-solid{background:var(--brass);color:var(--black);font-weight:500}
+.btn-solid:hover{background:var(--brass-hi)}
+.btn-ghost{color:var(--brass-hi)}
+.btn-ghost:hover{background:rgba(200,169,107,.12)}
+.portrait{
+  position:relative;margin:0;background:var(--green-700);
+  aspect-ratio:768/993;overflow:hidden
+}
+.portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.96);mix-blend-mode:luminosity;transform:scale(var(--z,1));transition:transform 1.8s cubic-bezier(.16,.84,.24,1)}
+.portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,20,15,.75) 100%);pointer-events:none}
+figcaption{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory-soft);margin-top:14px;display:flex;gap:10px;align-items:center}
+:lang(ko) figcaption{letter-spacing:.03em;font-size:13px}
+figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
+.ledger{
+  position:relative;border-top:1px solid var(--rule);margin-top:0;background:var(--green-950);
+}
+.ledger::before{content:"";position:absolute;left:0;right:0;top:-1px;height:1px;background:linear-gradient(90deg,transparent 0%,var(--brass-hi) 30%,var(--brass) 70%,transparent 100%);transform-origin:0 50%;pointer-events:none}
+.ledger dl{margin:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.ledger div{padding:28px 28px 30px 0}
+.ledger div + div{padding-left:28px;border-left:1px solid var(--rule)}
+.ledger dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+:lang(ko) .ledger dt{letter-spacing:.06em;font-size:12.5px}
+.ledger dd{margin:0;font-family:var(--serif);font-size:clamp(20px,2vw,27px);line-height:1.2;color:var(--ivory)}
+:lang(ko) .ledger dd{font-size:clamp(17px,1.6vw,21px);line-height:1.45}
+@media (max-width:900px){
+  .hero-copy{grid-column:1 / -1}
+  .hero-grid{min-height:0}
+  .hero-bg img{object-position:58% 50%}
+  .hero::before{background:linear-gradient(180deg,rgba(8,20,15,.74) 0%,rgba(8,20,15,.84) 45%,rgba(8,20,15,.94) 100%)}
+  .ledger dl{grid-template-columns:1fr 1fr}
+  .ledger div:nth-child(3){padding-left:0;border-left:0}
+  .ledger div:nth-child(n+3){border-top:1px solid var(--rule)}
+}
+@media (max-width:460px){
+  .ledger dl{grid-template-columns:1fr}
+  .ledger div,.ledger div + div{padding:20px 0;border-left:0}
+  .ledger div + div{border-top:1px solid var(--rule)}
+}
+
+/* ---------- About ---------- */
+.about{background:var(--green-900)}
+.about-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:48px var(--gutter)}
+.about-head{grid-column:1 / span 5}
+.about-body{grid-column:7 / span 6}
+.about-body .lede{font-size:19px;color:var(--ivory)}
+.about-body .lede::first-letter{
+  font-family:"Cormorant Garamond",serif;float:left;font-size:88px;line-height:.82;
+  padding:8px 14px 0 0;color:var(--brass-hi)
+}
+:lang(ko) .about-body .lede::first-letter{font-family:inherit;float:none;font-size:inherit;padding:0;line-height:inherit;color:inherit}
+.about-body p{color:var(--ivory-soft)}
+.facts{margin:44px 0 0;border-top:1px solid var(--rule)}
+.facts div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.facts dt{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);padding-top:5px}
+:lang(ko) .facts dt{letter-spacing:.05em;font-size:13px}
+.facts dd{margin:0;font-family:var(--serif);font-size:21px;line-height:1.35;color:var(--ivory)}
+:lang(ko) .facts dd{font-size:17px;line-height:1.6}
+@media (max-width:900px){
+  .about-head,.about-body{grid-column:1 / -1}
+  .facts div{grid-template-columns:1fr;gap:4px}
+}
+
+/* ---------- Scope (paper) ---------- */
+.scope{background:var(--paper);color:var(--ink)}
+.scope .kicker{color:var(--brass-ink)}
+.scope-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:56px var(--gutter)}
+.scope-aside{grid-column:1 / span 4}
+.scope-aside .sticky{position:sticky;top:120px}
+.scope-aside h2{color:var(--ink)}
+.scope-figure{margin:44px 0 0;aspect-ratio:4/5}
+.scope-main{grid-column:6 / span 7}
+.scope-list{list-style:none;margin:0;padding:0;counter-reset:area}
+.area{display:grid;grid-template-columns:72px 1fr;gap:20px;padding:38px 0;border-top:1px solid var(--rule-ink)}
+.area:last-child{border-bottom:1px solid var(--rule-ink)}
+.area .n{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:40px;line-height:1;color:var(--brass-ink)}
+.area h3{color:var(--ink);margin-bottom:14px}
+.area p{color:var(--ink-soft);margin:0;max-width:40em}
+.area.secondary{grid-template-columns:72px 1fr;padding:30px 0}
+.area.secondary h3{font-size:21px}
+:lang(ko) .area.secondary h3{font-size:18px}
+.area.secondary .n{font-size:30px;opacity:.75}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-ink);border:1px solid var(--rule-ink);padding:3px 9px;margin-bottom:12px}
+:lang(ko) .tag{letter-spacing:.04em;font-size:12px}
+.note{
+  margin:52px 0 0;padding:34px 34px 30px;background:var(--paper-2);
+  border-left:2px solid var(--brass-ink);position:relative
+}
+.note .tag{border:0;padding:0}
+.note p{font-family:var(--serif);font-size:22px;line-height:1.45;color:var(--ink);margin:0}
+:lang(ko) .note p{font-size:17px;line-height:1.8}
+@media (max-width:900px){
+  .scope-aside,.scope-main{grid-column:1 / -1}
+  .scope-aside .sticky{position:static}
+  .scope-figure{aspect-ratio:16/10}
+  .area,.area.secondary{grid-template-columns:48px 1fr;gap:14px}
+  .area .n{font-size:30px}
+  .note{padding:26px 22px}
+}
+
+/* ---------- Bridge ---------- */
+.bridge{
+  background:var(--black);text-align:center;overflow:hidden;
+}
+.bridge-bg{position:absolute;inset:0;overflow:hidden;z-index:0}
+.bridge-bg .px{position:absolute;left:0;right:0;top:-10%;bottom:-10%;will-change:transform}
+.bridge-bg img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;filter:saturate(.7) sepia(.15) brightness(.74)}
+.bridge::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse 72% 68% at 50% 50%, rgba(7,9,8,.93) 0%, rgba(7,9,8,.87) 58%, rgba(7,9,8,.7) 100%)
+}
+.bridge .wrap{position:relative;z-index:2;max-width:980px}
+.arch{display:block;width:min(520px,82%);height:auto;margin:0 auto 34px;overflow:visible}
+.arch path{fill:none;stroke:var(--brass);stroke-width:1;vector-effect:non-scaling-stroke;opacity:.8}
+.bridge .kicker{justify-content:center}
+.bridge .kicker::before{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.6;align-self:center}
+.bridge blockquote{
+  margin:0 0 36px;font-family:var(--serif);font-style:italic;font-weight:400;
+  font-size:clamp(56px,10vw,140px);line-height:1;color:var(--brass-hi);letter-spacing:-.02em
+}
+:lang(ko) .bridge blockquote{font-style:normal;font-size:clamp(40px,7vw,90px);line-height:1.2}
+.bridge p{max-width:46em;margin:0 auto 44px;color:var(--ivory-soft);font-size:18px}
+
+/* ---------- Board ---------- */
+.board{background:var(--green-900)}
+.board-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:56px var(--gutter);align-items:start}
+.board-media{grid-column:1 / span 5;position:relative;isolation:isolate}
+.board-figure{margin:0;position:relative}
+.board-figure .portrait{aspect-ratio:768/976}
+.board-figure .frame{position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--rule);pointer-events:none;z-index:-1}
+.board-figure:not(.second) figcaption{position:absolute;left:20px;right:54%;bottom:16px;margin:0;color:var(--ivory);z-index:1;align-items:flex-start}
+.board-figure:not(.second) figcaption::before{flex:0 0 22px;margin-top:.7em}
+.board-figure.second{width:52%;margin:-24% -10px 0 auto;padding:10px 10px 0;background:var(--green-900);z-index:2}
+.board-figure.second .portrait{aspect-ratio:768/993}
+.board-body{grid-column:7 / span 6}
+.board-name{font-size:clamp(46px,6vw,82px);line-height:1;margin-bottom:14px}
+:lang(ko) .board-name{font-size:clamp(32px,4.4vw,54px);line-height:1.25}
+.board-role{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 48px}
+:lang(ko) .board-role{letter-spacing:.04em;font-size:15px}
+.cv{border-top:1px solid var(--rule)}
+.cv section{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.cv h3{font-family:var(--sans);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:400;line-height:1.6;padding-top:3px}
+:lang(ko) .cv h3{letter-spacing:.05em;font-size:13px}
+.cv ul{list-style:none;margin:0;padding:0}
+.cv li{position:relative;padding-left:22px;color:var(--ivory);margin-bottom:12px}
+.cv li:last-child{margin-bottom:0}
+.cv li::before{content:"";position:absolute;left:0;top:.8em;width:9px;height:1px;background:var(--brass)}
+@media (max-width:900px){
+  .board-media,.board-body{grid-column:1 / -1}
+  .board-media{max-width:460px;width:calc(100% - 18px)}
+  .cv section{grid-template-columns:1fr;gap:10px}
+}
+
+/* ---------- References ---------- */
+.refs{background:var(--green-950);border-top:1px solid var(--rule)}
+.pull{
+  margin:0 0 clamp(64px,8vw,110px);padding:0;max-width:1080px;
+}
+.pull blockquote{
+  margin:0;font-family:var(--serif);font-weight:400;font-style:italic;
+  font-size:clamp(36px,5.4vw,78px);line-height:1.08;color:var(--ivory);letter-spacing:-.01em;
+  text-indent:-.42em
+}
+.pull blockquote::before{content:"“";color:var(--brass)}
+.pull blockquote::after{content:"”";color:var(--brass)}
+:lang(ko) .pull blockquote{font-style:normal;font-size:clamp(28px,4vw,52px);line-height:1.4;text-indent:0}
+:lang(ko) .pull blockquote::before{content:"“"}
+.pull figcaption{margin-top:28px}
+.refs-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:48px var(--gutter)}
+.ref-main{grid-column:1 / span 7}
+.ref-side{grid-column:9 / span 4}
+.ref-label{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0 0 16px}
+:lang(ko) .ref-label{letter-spacing:.06em;font-size:13px}
+.ref-main h3{margin-bottom:26px;font-size:clamp(26px,2.6vw,36px)}
+:lang(ko) .ref-main h3{font-size:clamp(20px,2vw,26px)}
+.ref-main p{color:var(--ivory-soft)}
+.thanks{border:1px solid var(--rule);padding:34px 30px;position:relative;background:linear-gradient(180deg,rgba(18,48,42,.55),rgba(8,20,15,0))}
+.thanks::before{content:"";position:absolute;inset:6px;border:1px solid rgba(200,169,107,.16);pointer-events:none}
+.thanks h3{font-size:34px;margin-bottom:18px;color:var(--brass-hi)}
+:lang(ko) .thanks h3{font-size:24px}
+.thanks p{color:var(--ivory-soft);margin:0}
+@media (max-width:900px){
+  .ref-main,.ref-side{grid-column:1 / -1}
+}
+
+/* ---------- Licences ---------- */
+.lic{background:var(--paper);color:var(--ink)}
+.lic .kicker{color:var(--brass-ink)}
+.lic-head{display:grid;grid-template-columns:repeat(12,1fr);gap:24px var(--gutter);margin-bottom:64px}
+.lic-head h2{grid-column:1 / span 8;color:var(--ink)}
+.lic-cards{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:24px}
+.cert{
+  position:relative;padding:44px 34px 38px;background:#f7f3ea;
+  border:1px solid var(--rule-ink);min-height:300px;display:flex;flex-direction:column
+}
+.cert::before{
+  content:"";position:absolute;inset:8px;border:1px solid rgba(122,92,38,.22);pointer-events:none;
+  background:
+    repeating-radial-gradient(circle at 100% 0%, rgba(122,92,38,.07) 0 1px, transparent 1px 9px);
+}
+.cert > *{position:relative}
+.cert .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-ink);margin:0 0 auto;padding-bottom:40px;line-height:1.6}
+:lang(ko) .cert .k{letter-spacing:.04em;font-size:12.5px}
+.cert h3{color:var(--ink);font-size:clamp(28px,2.6vw,38px);margin-bottom:14px}
+:lang(ko) .cert h3{font-size:clamp(21px,2vw,26px)}
+.cert p{margin:0;color:var(--ink-soft)}
+.cert.first{background:var(--green-900);color:var(--ivory);border-color:var(--rule)}
+.cert.first::before{border-color:rgba(200,169,107,.25);background:repeating-radial-gradient(circle at 100% 0%, rgba(200,169,107,.07) 0 1px, transparent 1px 9px)}
+.cert.first .k{color:var(--brass)}
+.cert.first h3{color:var(--brass-hi);font-family:"Cormorant Garamond",serif;letter-spacing:.04em}
+.cert.first p{color:var(--ivory-soft)}
+@media (max-width:980px){
+  .lic-head h2{grid-column:1 / -1}
+  .lic-cards{grid-template-columns:1fr}
+  .cert{min-height:0}
+  .cert .k{padding-bottom:28px}
+}
+
+/* ---------- Studio (Veles Productions partner offer) ---------- */
+@media (min-width:1081px) and (max-width:1340px){
+  .nav ul{gap:18px}
+  .nav a{letter-spacing:.1em;font-size:12px}
+}
+.studio{background:var(--black);border-top:1px solid var(--rule);overflow:hidden}
+.studio::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 80% 46% at 50% 0%,rgba(27,65,55,.5),transparent 72%)}
+.studio .wrap{position:relative}
+.st-head{display:grid;grid-template-columns:repeat(12,1fr);gap:32px var(--gutter);align-items:end;margin-bottom:clamp(48px,6vw,80px)}
+.st-title{grid-column:1 / span 6}
+.st-intro{grid-column:8 / span 5}
+.st-intro p{color:var(--ivory-soft)}
+.st-intro .st-lead{font-size:19px;color:var(--ivory)}
+.st-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;margin:0 0 18px}
+.st-switch{display:flex;border:1px solid var(--rule);max-width:100%}
+.st-switch button{font:inherit;font-size:12px;letter-spacing:.16em;text-transform:uppercase;background:transparent;color:var(--ivory-soft);border:0;padding:12px 18px;min-height:44px;cursor:pointer;transition:color .3s ease,background .3s ease}
+.st-switch button + button{border-left:1px solid var(--rule)}
+.st-switch button[aria-selected="true"]{background:var(--brass);color:var(--black);font-weight:500}
+.st-switch button:hover:not([aria-selected="true"]){color:var(--brass-hi)}
+:lang(ko) .st-switch button{letter-spacing:.04em;font-size:14px}
+.st-hint{font-size:13.5px;color:var(--ivory-soft);margin:0}
+.st-compare{margin:0}
+.st-stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--green-950);border:1px solid var(--rule);touch-action:pan-y;-webkit-user-select:none;user-select:none;cursor:ew-resize;--pos:55%}
+.st-stage img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.st-top{position:absolute;inset:0;z-index:1;clip-path:inset(0 calc(100% - var(--pos)) 0 0)}
+.st-tag{position:absolute;top:14px;z-index:3;max-width:42%;font-size:11px;line-height:1.4;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory);background:rgba(7,9,8,.78);border:1px solid var(--rule);padding:6px 10px;pointer-events:none;transition:opacity .3s ease}
+.st-tag-a{left:14px}
+.st-tag-b{right:14px;text-align:right}
+:lang(ko) .st-tag{letter-spacing:.03em;font-size:12px}
+.st-handle{position:absolute;top:0;bottom:0;left:var(--pos);width:48px;margin-left:-24px;z-index:4;display:flex;align-items:center;justify-content:center;cursor:ew-resize;outline:none}
+.st-handle::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;margin-left:-.5px;background:var(--brass-hi);box-shadow:0 0 14px rgba(0,0,0,.55)}
+.st-knob{position:relative;width:46px;height:46px;border-radius:50%;background:rgba(7,9,8,.8);border:1px solid var(--brass-hi);display:flex;align-items:center;justify-content:center;gap:9px;transition:transform .4s cubic-bezier(.2,.7,.2,1),background .3s ease}
+.st-knob::before,.st-knob::after{content:"";width:7px;height:7px;border:solid var(--brass-hi);border-width:0 0 1.5px 1.5px}
+.st-knob::before{transform:rotate(45deg)}
+.st-knob::after{transform:rotate(-135deg)}
+.st-handle:focus-visible .st-knob{outline:1px solid var(--brass-hi);outline-offset:4px}
+.st-stage:hover .st-knob,.st-stage.is-drag .st-knob{transform:scale(1.08);background:rgba(18,48,42,.92)}
+.st-sub{font-size:clamp(26px,2.6vw,36px);margin:clamp(64px,8vw,104px) 0 30px}
+:lang(ko) .st-sub{font-size:clamp(20px,2vw,26px)}
+.st-uses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
+.st-uses li{padding:30px 28px 32px 0;border-bottom:1px solid var(--rule)}
+.st-uses li:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--rule)}
+.st-uses .n{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:24px;line-height:1;color:var(--brass);margin-bottom:14px}
+.st-uses h4{font-family:var(--serif);font-weight:400;font-size:clamp(21px,1.9vw,25px);line-height:1.2;margin:0 0 10px;color:var(--ivory)}
+:lang(ko) .st-uses h4{font-size:clamp(18px,1.6vw,20px);line-height:1.45}
+.st-uses p{margin:0;color:var(--ivory-soft);font-size:16px}
+.st-plate{display:grid;grid-template-columns:repeat(12,1fr);gap:40px var(--gutter);align-items:center;margin-top:clamp(64px,8vw,110px)}
+.st-plate figure{grid-column:1 / span 7;margin:0}
+.st-plate-media{position:relative;aspect-ratio:16/9;overflow:hidden;border:1px solid var(--rule);background:var(--green-950)}
+.st-plate-media img{width:100%;height:100%;object-fit:cover}
+.st-plate-body{grid-column:9 / span 4}
+.st-plate-body h3{margin-bottom:20px}
+.st-plate-body p{color:var(--ivory-soft)}
+.st-details{display:grid;grid-template-columns:repeat(12,1fr);gap:48px var(--gutter);margin-top:clamp(64px,8vw,110px)}
+.st-facts-wrap{grid-column:1 / span 7}
+.st-steps-wrap{grid-column:9 / span 4}
+.st-details .st-sub{margin-top:0}
+.st-facts{margin-top:0}
+.st-facts dd{font-size:20px}
+.st-steps{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.st-steps li{display:grid;grid-template-columns:40px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid var(--rule);color:var(--ivory-soft)}
+.st-steps .n{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:24px;line-height:1.2;color:var(--brass)}
+.st-cta{position:relative;margin-top:clamp(56px,7vw,96px);display:grid;grid-template-columns:1fr auto;gap:24px 48px;align-items:center;padding:40px;border:1px solid var(--rule);background:linear-gradient(180deg,rgba(18,48,42,.6),rgba(8,20,15,.2))}
+.st-cta::before{content:"";position:absolute;inset:6px;border:1px solid rgba(200,169,107,.16);pointer-events:none}
+.st-cta > *{position:relative}
+.st-cta h3{color:var(--brass-hi);margin-bottom:12px}
+.st-cta p{color:var(--ivory-soft);margin:0 0 14px}
+.st-cta .st-partner{margin:0;font-size:15px;overflow-wrap:anywhere}
+.st-partner-k{display:block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:4px}
+:lang(ko) .st-partner-k{letter-spacing:.05em;font-size:12.5px}
+.st-partner a{color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--rule)}
+.st-partner a:hover,.st-partner a:focus-visible{color:var(--brass-hi)}
+@media (max-width:900px){
+  .st-title,.st-intro,.st-plate figure,.st-plate-body,.st-facts-wrap,.st-steps-wrap{grid-column:1 / -1}
+  .st-uses{grid-template-columns:1fr 1fr}
+  .st-uses li,.st-uses li:not(:nth-child(3n+1)){padding:26px 20px 28px 0;border-left:0}
+  .st-uses li:nth-child(even){padding-left:20px;border-left:1px solid var(--rule)}
+  .st-cta{grid-template-columns:1fr;padding:30px 22px}
+}
+@media (max-width:560px){
+  .st-switch{width:100%}
+  .st-switch button{flex:1 1 0;padding:10px 8px;letter-spacing:.06em;font-size:11.5px}
+  .st-uses{grid-template-columns:1fr}
+  .st-uses li,.st-uses li:nth-child(even),.st-uses li:not(:nth-child(3n+1)){padding:24px 0;border-left:0}
+  .st-tag{top:8px;font-size:9.5px;letter-spacing:.1em;padding:4px 7px}
+  .st-tag-a{left:8px}
+  .st-tag-b{right:8px}
+  .st-knob{width:40px;height:40px}
+}
+
+/* Studio without JS: concept composite with caption, both visualisations stacked, no dead controls */
+html.js .st-panel.st-off{display:none}
+html:not(.js) .st-top{clip-path:none}
+html:not(.js) .st-handle,html:not(.js) .st-tag-b,html:not(.js) .st-bar{display:none}
+html:not(.js) .st-panel + .st-panel{margin-top:40px}
+html:not(.js) .st-stage{cursor:auto}
+
+/* ---------- Contact ---------- */
+.contact{background:var(--green-900)}
+.contact-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:56px var(--gutter)}
+.contact-info{grid-column:1 / span 5}
+.contact-info h2{margin-bottom:48px}
+.contact-info address{font-style:normal}
+.ci{padding:22px 0;border-top:1px solid var(--rule)}
+.ci:last-child{border-bottom:1px solid var(--rule)}
+.ci .lbl{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:6px}
+:lang(ko) .ci .lbl{letter-spacing:.05em;font-size:12.5px}
+.ci .val{font-family:var(--serif);font-size:25px;line-height:1.35;color:var(--ivory)}
+.ci a.val{position:relative;text-decoration:none;border-bottom:1px solid var(--rule);transition:color .4s ease}
+.ci a.val::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--brass-hi);transform:scaleX(0);transform-origin:100% 50%;transition:transform .7s cubic-bezier(.65,0,.35,1)}
+.ci a.val:hover,.ci a.val:focus-visible{color:var(--brass-hi)}
+.ci a.val:hover::after,.ci a.val:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
+.contact-form{grid-column:7 / span 6;align-self:start;padding:44px 40px;background:var(--green-950);border:1px solid var(--rule)}
+.field{margin-bottom:26px}
+.field label{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
+:lang(ko) .field label{letter-spacing:.05em;font-size:13px}
+.field input,.field textarea{
+  width:100%;font:inherit;font-size:17px;color:var(--ivory);background:transparent;
+  border:0;border-bottom:1px solid var(--rule);padding:10px 0;border-radius:0;
+}
+.field textarea{min-height:140px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--brass-hi)}
+.form-note{font-size:14px;color:var(--ivory-soft);margin:6px 0 26px}
+.form-err{font-size:14px;color:#f0c2a8;margin:0 0 18px;min-height:1.4em}
+.contact-form .btn{font-family:inherit;cursor:pointer}
+@media (max-width:900px){
+  .contact-info,.contact-form{grid-column:1 / -1}
+  .contact-form{padding:30px 22px}
+  .ci .val{font-size:22px}
+}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--black);border-top:1px solid var(--rule);padding:44px 0}
+.site-footer .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between}
+.foot-word{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;font-size:15px;color:var(--ivory)}
+.foot-meta{font-size:12.5px;letter-spacing:.12em;color:var(--ivory-soft);display:flex;flex-wrap:wrap;gap:8px 28px}
+:lang(ko) .foot-meta{letter-spacing:.02em;font-size:13px}
+.foot-meta .concept{color:var(--brass)}
+.foot-meta a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.foot-photos{flex-basis:100%;font-size:12px;letter-spacing:.06em;color:var(--ivory-soft);margin:0}
+
+/* ---------- Photographs ---------- */
+.ph{position:relative;overflow:hidden;background:var(--green-800);margin:0}
+.ph img{width:100%;height:100%;object-fit:cover;filter:saturate(.74) sepia(.12) contrast(1.05) brightness(.9);transform:scale(var(--z,1));transition:transform 1.8s cubic-bezier(.16,.84,.24,1)}
+.ph::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(12,33,25,.06) 0%,rgba(8,20,15,.34) 100%);mix-blend-mode:multiply}
+.ph .px{position:absolute;left:0;right:0;top:-9%;bottom:-9%;will-change:transform}
+.ph-frame::before{content:"";position:absolute;inset:12px;border:1px solid rgba(225,200,143,.45);z-index:2;pointer-events:none}
+.about-fig{margin:52px 0 0;aspect-ratio:4/3}
+.area-fig{margin:24px 0 0;aspect-ratio:3/2;max-width:440px}
+.band-full{width:100%;aspect-ratio:21/8;max-height:72vh;background:var(--green-950)}
+.band-full::before{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent,var(--green-900))}
+@media (max-width:700px){
+  .band-full{aspect-ratio:4/3}
+}
+
+/* ---------- Motion: hovers (always on, transform only) ---------- */
+.btn{position:relative;isolation:isolate;overflow:hidden;transition:color .45s ease,border-color .45s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;transform:scaleX(0);transform-origin:100% 50%;transition:transform .7s cubic-bezier(.65,0,.35,1)}
+.btn:hover::before,.btn:focus-visible::before{transform:scaleX(1);transform-origin:0 50%}
+.btn-solid::before{background:var(--brass-hi)}
+.btn-solid:hover{background:var(--brass)}
+.btn-ghost::before{background:rgba(200,169,107,.16)}
+.btn-ghost:hover{background:transparent}
+@media (hover:hover) and (pointer:fine){
+  .ph:hover img,.portrait:hover img{--z:1.045}
+}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:1px;background:linear-gradient(90deg,var(--brass-ink),var(--brass-hi));transform:scaleX(0);transform-origin:0 50%;pointer-events:none}
+.site-header::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--green-950);box-shadow:0 12px 34px rgba(0,0,0,.38);opacity:0;transition:opacity .6s ease;pointer-events:none}
+.site-header.is-condensed::before{opacity:1}
+.brand-word{transition:transform 1.8s cubic-bezier(.16,.84,.24,1),opacity 1.2s ease}
+.site-header.is-condensed .brand-word{transition-duration:.6s}
+.brand-sub{transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.site-header.is-condensed .brand-word{transform:translateY(8px) scale(.94)}
+.site-header.is-condensed .brand-sub{opacity:0;transform:translateY(-6px)}
+main,.site-footer,.nav ul{transition:opacity .28s ease}
+html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,html.is-switching .brand-sub{opacity:0}
+
+/* ---------- Motion: intro and scroll reveals (only with JS and motion allowed) ---------- */
+@media (prefers-reduced-motion:no-preference){
+  @keyframes oa-kenburns{from{transform:scale(1.14)}to{transform:scale(1.02)}}
+  @keyframes oa-fade{from{opacity:0}to{opacity:1}}
+  html.js:not(.no-anim) .hero-bg img{animation:oa-fade 1.8s ease both,oa-kenburns 22s cubic-bezier(.2,.6,.25,1) both}
+  html.js:not(.no-anim):not(.is-loaded) .hero-bg img{animation-play-state:paused}
+
+  html.js:not(.no-anim) .brand-word{opacity:0}
+  html.js.is-loaded:not(.no-anim) .brand-word{opacity:1}
+  @media (min-width:900px){
+    html.js:not(.no-anim):not(.is-loaded) .brand-word{transform:scaleX(1.12)}
+  }
+
+  html.js:not(.no-anim) .hero-kicker,
+  html.js:not(.no-anim) .hero-lead,
+  html.js:not(.no-anim) .hero .btns,
+  html.js:not(.no-anim) .ledger dl > div{opacity:0;transform:translate3d(0,22px,0);transition:opacity 1.2s cubic-bezier(.2,.7,.2,1),transform 1.4s cubic-bezier(.16,.84,.24,1)}
+  html.js:not(.no-anim) .hero-kicker{transition-delay:.3s}
+  html.js:not(.no-anim) .hero-lead{transition-delay:1.05s}
+  html.js:not(.no-anim) .hero .btns{transition-delay:1.25s}
+  html.js:not(.no-anim) .ledger dl > div:nth-child(1){transition-delay:1.45s}
+  html.js:not(.no-anim) .ledger dl > div:nth-child(2){transition-delay:1.55s}
+  html.js:not(.no-anim) .ledger dl > div:nth-child(3){transition-delay:1.65s}
+  html.js:not(.no-anim) .ledger dl > div:nth-child(4){transition-delay:1.75s}
+  html.js:not(.no-anim) .hero h1 .li{transform:translate3d(0,108%,0);transition:transform 1.5s cubic-bezier(.19,1,.22,1)}
+  html.js:not(.no-anim) .hero h1 .line:nth-child(1) .li{transition-delay:.55s}
+  html.js:not(.no-anim) .hero h1 .line:nth-child(2) .li{transition-delay:.75s}
+  html.js:not(.no-anim) .hero-rule,
+  html.js:not(.no-anim) .ledger::before{transform:scaleX(0);transition:transform 1.6s cubic-bezier(.65,0,.35,1) .5s}
+  html.js:not(.no-anim) .ledger::before{transition-duration:2.2s;transition-delay:1.3s}
+  html.js.is-loaded:not(.no-anim) .hero-kicker,
+  html.js.is-loaded:not(.no-anim) .hero-lead,
+  html.js.is-loaded:not(.no-anim) .hero .btns,
+  html.js.is-loaded:not(.no-anim) .ledger dl > div,
+  html.js.is-loaded:not(.no-anim) .hero h1 .li{opacity:1;transform:none}
+  html.js.is-loaded:not(.no-anim) .hero-rule,
+  html.js.is-loaded:not(.no-anim) .ledger::before{transform:scaleX(1)}
+
+  html.js:not(.no-anim) .rv{opacity:0;transform:translate3d(0,26px,0);transition:opacity 1.1s cubic-bezier(.2,.7,.2,1) var(--d,0s),transform 1.4s cubic-bezier(.16,.84,.24,1) var(--d,0s)}
+  html.js:not(.no-anim) .rv.is-in{opacity:1;transform:none}
+  html.js:not(.no-anim) .kicker.rv::after{transform:scaleX(0);transform-origin:0 50%;transition:transform 1.3s cubic-bezier(.65,0,.35,1) calc(var(--d,0s) + .35s)}
+  html.js:not(.no-anim) .bridge .kicker.rv::before{transform:scaleX(0);transform-origin:100% 50%;transition:transform 1.3s cubic-bezier(.65,0,.35,1) .35s}
+  html.js:not(.no-anim) .kicker.rv.is-in::after,
+  html.js:not(.no-anim) .bridge .kicker.rv.is-in::before{transform:none}
+
+  html.js:not(.no-anim) .cur > img{clip-path:inset(100% 0 0 0);transition:clip-path 1.6s cubic-bezier(.77,0,.18,1) var(--d,0s),transform 1.8s cubic-bezier(.16,.84,.24,1)}
+  html.js:not(.no-anim) .cur > .px{clip-path:inset(100% 0 0 0);transition:clip-path 1.6s cubic-bezier(.77,0,.18,1) var(--d,0s)}
+  html.js:not(.no-anim) .cur.is-in > img,
+  html.js:not(.no-anim) .cur.is-in > .px{clip-path:inset(0 0 0 0)}
+  html.js:not(.no-anim) .cur:not(.is-in) img{--z:1.16}
+
+  html.js:not(.no-anim) .arch{clip-path:inset(-4px 100% -4px 0);transition:clip-path 2.6s cubic-bezier(.65,0,.35,1) .2s}
+  html.js:not(.no-anim) .arch.is-in{clip-path:inset(-4px 0 -4px 0)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Przejdź do treści</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ostrowski Arms">
+      <span class="brand-word">OSTROWSKI ARMS</span>
+      <span class="brand-sub" data-i18n="brand_sub">Sp. z o.o. · Warszawa · od 1992</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menu" data-i18n-aria="nav_label">
+      <ul>
+        <li><a href="#o-firmie" data-i18n="nav_about">O firmie</a></li>
+        <li><a href="#zakres" data-i18n="nav_scope">Zakres działalności</a></li>
+        <li><a href="#zarzad" data-i18n="nav_board">Zarząd</a></li>
+        <li><a href="#referencje" data-i18n="nav_refs">Referencje</a></li>
+        <li><a href="#koncesje" data-i18n="nav_lic">Koncesje</a></li>
+        <li><a href="#studio" data-i18n="nav_studio">Studio</a></li>
+        <li><a href="#kontakt" data-i18n="nav_contact">Kontakt</a></li>
+      </ul>
+    </nav>
+    <span class="progress" aria-hidden="true"></span>
+    <div class="lang" role="group" aria-label="Wybór języka" data-i18n-aria="lang_label">
+      <button type="button" data-lang="pl" lang="pl" aria-pressed="true">PL</button>
+      <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
+      <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+    </div>
+    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" data-i18n="menu">Menu</button>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-bg">
+      <div class="px" data-px>
+        <img src="../img/study.webp" width="2688" height="1520" alt="Gabinet nocą — zielone ściany, lampa bankierska, globus i skórzany fotel" data-i18n-alt="img_study" loading="eager" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker" data-i18n="gr_name">Government Relations &amp; Project Management for Strategic Projects</p>
+        <span class="hero-rule" aria-hidden="true"></span>
+        <h1 id="hero-title"><span class="line"><span class="li" data-i18n="hero_title_a">Projekty strategiczne,</span></span> <span class="line"><em class="li" data-i18n="hero_title_b">prowadzone z dyskrecją.</em></span></h1>
+        <p class="hero-lead" data-i18n="hero_lead">Ostrowski Arms reprezentuje firmy polskie i zagraniczne wobec Ministerstwa Obrony Narodowej, prowadzi obrót specjalny na podstawie koncesji Ministra Spraw Wewnętrznych RP i podejmuje się neutralnej mediacji tam, gdzie strony szukają akceptowalnych rozwiązań.</p>
+        <div class="btns">
+          <a class="btn btn-solid" href="#kontakt" data-i18n="hero_cta1">Umów rozmowę</a>
+          <a class="btn btn-ghost" href="#zakres" data-i18n="hero_cta2">Zakres działalności</a>
+        </div>
+      </div>
+    </div>
+    <div class="ledger">
+      <div class="wrap">
+        <dl>
+          <div><dt data-i18n="ledger_1k">Rok założenia</dt><dd>1992</dd></div>
+          <div><dt data-i18n="ledger_2k">Kod NCAGE</dt><dd>2156 H</dd></div>
+          <div><dt data-i18n="ledger_3k">Koncesja MSW</dt><dd data-i18n="ledger_3v">Obrót specjalny w pełnym zakresie</dd></div>
+          <div><dt data-i18n="ledger_4k">Sektory</dt><dd data-i18n="ledger_4v">Cywilne i militarne</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="o-firmie" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-head">
+        <p class="kicker"><span class="num">I.</span><span data-i18n="nav_about">O firmie</span></p>
+        <h2 id="about-title" data-i18n="about_title">Firma prywatna, założona w 1992 roku przez Andrzeja Ostrowskiego.</h2>
+        <figure class="about-fig ph ph-frame">
+          <img src="../img/dossier.webp" width="2336" height="1744" alt="Teczka z lakową pieczęcią i bordową wstążką" data-i18n-alt="img_dossier" loading="lazy" decoding="async">
+        </figure>
+      </div>
+      <div class="about-body">
+        <p class="lede" data-i18n="about_p1">Dzięki koncesji na obrót specjalny Ostrowski Arms może prowadzić działalność i zarządzać projektami z realizacją kontraktów zarówno w sektorach w pełni cywilnych, jak i w sektorze militarnym — w Polsce i za granicą.</p>
+        <p data-i18n="about_p2">Spółka działa jako agencja Government Relations oraz firma handlu zagranicznego: zarządza projektami, reprezentuje firmy i realizuje kontrakty handlowe.</p>
+        <dl class="facts">
+          <div><dt data-i18n="fact_hist_k">Historia</dt><dd data-i18n="fact_hist_v">Założona w 1992 roku przez Andrzeja Ostrowskiego</dd></div>
+          <div><dt data-i18n="fact_status_k">Status</dt><dd data-i18n="fact_status_v">Spółka z ograniczoną odpowiedzialnością, wpisana do rejestru handlowego</dd></div>
+          <div><dt data-i18n="fact_owner_k">Właściciel</dt><dd data-i18n="fact_owner_v">Andrzej Ostrowski — 90% udziałów</dd></div>
+          <div><dt data-i18n="fact_board_k">Zarząd</dt><dd data-i18n="fact_board_v">Andrzej Ostrowski — Prezes Zarządu</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCOPE -->
+  <section class="section scope" id="zakres" aria-labelledby="scope-title">
+    <div class="wrap scope-grid">
+      <div class="scope-aside">
+        <div class="sticky">
+          <p class="kicker"><span class="num">II.</span><span data-i18n="nav_scope">Zakres działalności</span></p>
+          <h2 id="scope-title" data-i18n="scope_title">Od relacji z rządem po realizację kontraktu.</h2>
+          <figure class="scope-figure ph ph-frame">
+            <img src="../img/map-table.webp" width="2688" height="1520" alt="Dawna mapa Europy z mosiężnym kompasem i lupą" data-i18n-alt="img_map" loading="lazy" decoding="async">
+          </figure>
+        </div>
+      </div>
+      <div class="scope-main">
+        <ol class="scope-list">
+          <li class="area">
+            <span class="n" aria-hidden="true">01</span>
+            <div>
+              <h3 data-i18n="gr_name">Government Relations &amp; Project Management for Strategic Projects</h3>
+              <p data-i18n="s1_d">Zarządzanie projektami i reprezentowanie firm w Polsce i za granicą w cywilnych i militarnych sektorach gospodarki.</p>
+            </div>
+          </li>
+          <li class="area">
+            <span class="n" aria-hidden="true">02</span>
+            <div>
+              <h3 data-i18n="s2_t">Reprezentacja wobec Ministerstwa Obrony Narodowej</h3>
+              <p data-i18n="s2_d">Otwieranie procedur i koordynacja projektów oraz ofert dla Sił Zbrojnych RP; opracowanie i organizacja prezentacji firm wobec MON i Sił Zbrojnych RP; doradztwo i project management.</p>
+            </div>
+          </li>
+          <li class="area">
+            <span class="n" aria-hidden="true">03</span>
+            <div>
+              <h3 data-i18n="s3_t">Obrót specjalny</h3>
+              <p data-i18n="s3_d">Uzbrojenie dla wojska, technologie podwójnego zastosowania i wyposażenie specjalne dla wojska i policji — na podstawie koncesji MSW. Jako firma handlu zagranicznego spółka realizuje kontrakty handlowe.</p>
+            </div>
+          </li>
+          <li class="area">
+            <span class="n" aria-hidden="true">04</span>
+            <div>
+              <h3 data-i18n="s4_t">Neutralna mediacja — „Złoty most”</h3>
+              <p data-i18n="s4_d">Aranżowanie i koordynacja rozmów, w których strony szukają akceptowalnych rozwiązań, włącznie z koordynacją wymiany handlowej bezpośrednio lub przez stronę trzecią.</p>
+              <figure class="area-fig ph">
+                <img src="../img/handshake.webp" width="2048" height="1360" alt="Uścisk dłoni dwóch osób w granatowych garniturach" data-i18n-alt="img_handshake" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </li>
+          <li class="area secondary">
+            <span class="n" aria-hidden="true">05</span>
+            <div>
+              <span class="tag" data-i18n="s5_label">Linia uzupełniająca</span>
+              <h3 data-i18n="s5_t">Szkolenie strzeleckie i pozwolenie na broń</h3>
+              <p data-i18n="s5_d">Nauka strzelania z instruktorem Andrzejem Ostrowskim, koordynacja procedury uzyskania pozwolenia na broń, pakiety i vouchery strzeleckie, eventy ze strzelaniem oraz doradztwo przy sprzedaży broni.</p>
+              <figure class="area-fig ph">
+                <img src="../img/range.webp" width="2688" height="1520" alt="Strzelnica: ochronniki słuchu i zamknięta walizka na dębowej ławie" data-i18n-alt="img_range" loading="lazy" decoding="async">
+              </figure>
+            </div>
+          </li>
+        </ol>
+        <aside class="note" aria-labelledby="note-title">
+          <span class="tag" id="note-title" data-i18n="aside_kicker">Project Management bez szyldu</span>
+          <p data-i18n="aside_p">Przy dużych kontraktach, gdy prawo danego państwa wymaga umowy bezpośrednio między strukturą rządową a producentem, Andrzej Ostrowski pracuje jako project manager wewnątrz struktury koncernu — doradza i koordynuje działania handlowe oraz realizację kontraktu, bez nazwy firmy Ostrowski Arms.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRIDGE -->
+  <section class="section bridge" aria-labelledby="bridge-quote">
+    <div class="bridge-bg" aria-hidden="true">
+      <div class="px" data-px>
+        <img src="../img/golden-bridge.webp" width="2688" height="1152" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+    <div class="wrap">
+      <svg class="arch" viewBox="0 0 600 90" aria-hidden="true" focusable="false"><path d="M0 88 H70 Q300 -52 530 88 H600"/></svg>
+      <p class="kicker" data-i18n="bridge_kicker">Neutralny status firmy</p>
+      <blockquote id="bridge-quote" data-i18n="bridge_quote">„Złoty most…”</blockquote>
+      <p data-i18n="bridge_p">Prezes Ostrowski Arms, zwolennik filozofii „Złotego mostu”, jest zapraszany jako neutralny mediator i project manager z doświadczeniem biznesowo-handlowym — do aranżowania i koordynacji rozmów, w których skonfliktowane strony w skomplikowanych obszarach szukają możliwości pozytywnej mediacji.</p>
+      <div class="ornament" aria-hidden="true"><span></span></div>
+    </div>
+  </section>
+
+  <!-- BOARD -->
+  <section class="section board" id="zarzad" aria-labelledby="board-title">
+    <div class="wrap board-grid">
+      <div class="board-media">
+        <figure class="board-figure">
+          <span class="frame" aria-hidden="true"></span>
+          <div class="portrait">
+            <img src="https://ostrowskiarms.pl/wp-content/uploads/2025/08/Andrzej-Ostrowski-i-Pat-Cox-2025-768x976.png" width="768" height="976" alt="Andrzej Ostrowski i Pat Cox, 2025" data-i18n-alt="board_caption" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="board_caption">Andrzej Ostrowski i Pat Cox, 2025</figcaption>
+        </figure>
+        <figure class="board-figure second">
+          <div class="portrait">
+            <img src="https://ostrowskiarms.pl/wp-content/uploads/2025/08/Andrzej-Ostrowski-Headquarters-NATO-768x993.png" width="768" height="993" alt="Andrzej Ostrowski w Kwaterze Głównej NATO" data-i18n-alt="hero_caption" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="hero_caption">Andrzej Ostrowski w Kwaterze Głównej NATO</figcaption>
+        </figure>
+      </div>
+      <div class="board-body">
+        <p class="kicker"><span class="num">III.</span><span data-i18n="nav_board">Zarząd</span></p>
+        <h2 class="board-name" id="board-title" data-i18n="board_name">Andrzej Ostrowski</h2>
+        <p class="board-role" data-i18n="board_role">Prezes Zarządu Ostrowski Arms Sp. z o.o.</p>
+        <div class="cv">
+          <section>
+            <h3 data-i18n="b_exp_h">Specjalizacja</h3>
+            <ul>
+              <li data-i18n="b_exp1">Ekspert Government Relations &amp; Project Management for Strategic Projects</li>
+              <li data-i18n="b_exp2">Ekspert w obrocie specjalnym: uzbrojenie dla armii, technologie podwójnego zastosowania (dual use technology), wyposażenie specjalne dla wojska</li>
+            </ul>
+          </section>
+          <section>
+            <h3 data-i18n="b_fn_h">Pełnione funkcje</h3>
+            <ul>
+              <li data-i18n="b_fn1">Współpracownik i doradca Przewodniczącego Senackiej Komisji Obrony Narodowej i Bezpieczeństwa Publicznego w Senacie RP</li>
+              <li data-i18n="b_fn2">Doradca ds. kontaktów z Rządem i Parlamentem Prezesa Polskiej Izby Producentów na Rzecz Obronności Kraju — oficjalny akt nominacji</li>
+            </ul>
+          </section>
+          <section>
+            <h3 data-i18n="b_edu_h">Wykształcenie i służba</h3>
+            <ul>
+              <li data-i18n="b_edu1">Uczestnik Podyplomowego Studium Bezpieczeństwa Narodowego na Uniwersytecie Warszawskim — program MON, Instytutu Stosunków Międzynarodowych UW, Kancelarii Prezydenta RP i Ambasady USA w RP</li>
+              <li data-i18n="b_edu2">Służba wojskowa: Techniczna Szkoła Wojsk Lotniczych</li>
+            </ul>
+          </section>
+          <section>
+            <h3 data-i18n="b_perm_h">Uprawnienia</h3>
+            <ul>
+              <li data-i18n="b_perm1">Ustawowo wymagane uprawnienia do wykonywania i kierowania działalnością w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym</li>
+              <li data-i18n="b_perm2">Licencje II stopnia pracownika ochrony fizycznej oraz pracownika zabezpieczenia technicznego, uprawniające do kierowania tą działalnością</li>
+              <li data-i18n="b_perm3">Certyfikat szkoleń eksperckich z obrotu specjalnego, zorganizowanych przez Ministerstwo Gospodarki RP (Departament Kontroli Eksportu) i dofinansowanych przez Departament Stanu USA w oparciu o Export Management Systems</li>
+            </ul>
+          </section>
+          <section>
+            <h3 data-i18n="b_shoot_h">Strzelectwo</h3>
+            <ul>
+              <li data-i18n="b_shoot1">Instruktor strzelectwa po kursie byłych żołnierzy Specjalnej Jednostki Wojskowej JW 2305 GROM; licencja instruktora PZSS</li>
+              <li data-i18n="b_shoot2">Były wyczynowy zawodnik — pistolet szybkostrzelny</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section class="section refs" id="referencje" aria-labelledby="refs-title">
+    <div class="wrap">
+      <p class="kicker" id="refs-title"><span class="num">IV.</span><span data-i18n="nav_refs">Referencje</span></p>
+      <figure class="pull">
+        <blockquote data-i18n="refs_quote">Jedność ponad podziałami politycznymi na rzecz obronności Polski.</blockquote>
+        <figcaption data-i18n="refs_quote_src">Z opisu projektu Government Relations &amp; Project Management for Strategic Projects</figcaption>
+      </figure>
+      <div class="refs-grid">
+        <article class="ref-main">
+          <p class="ref-label" data-i18n="r1_k">Projekt</p>
+          <h3 data-i18n="r1_t">F-16 — Government Relations &amp; Project Management for Strategic Projects</h3>
+          <p data-i18n="r1_p1">Projekt osobiście opracowany i zrealizowany z sukcesem przez Andrzeja Ostrowskiego, z osobistą przedmową ówczesnego Prezydenta RP Aleksandra Kwaśniewskiego, w dacie zawarcia kontraktu na zakup przez Polskę samolotów wojskowych F-16 — największego kontraktu zbrojeniowego zawartego przez Rząd Polski i Departament Stanu USA.</p>
+          <p data-i18n="r1_p2">Projekt objął m.in. wystąpienie Bronisława Komorowskiego — późniejszego Prezydenta RP, sprawującego urząd Ministra Obrony Narodowej i Przewodniczącego Sejmowej Komisji Obrony Narodowej — oraz skoordynowane wypowiedzi liderów głównych partii koalicji rządowej i opozycji parlamentarnej, w tym Marka Sawickiego (PSL), Marszałka Seniora powołanego do otwarcia pierwszego posiedzenia X Sejmu RP 13 listopada 2023 r.</p>
+        </article>
+        <aside class="ref-side">
+          <div class="thanks">
+            <p class="ref-label" data-i18n="r2_k">Podziękowanie</p>
+            <h3 data-i18n="r2_t">Chuck Hagel</h3>
+            <p data-i18n="r2_p">Za realizację projektu Andrzejowi Ostrowskiemu osobiście podziękował Chuck Hagel — w latach 2013–2015 24. Sekretarz Obrony USA — podczas osobistego spotkania w Pałacu Prezydenta RP.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- LICENCES -->
+  <section class="section lic" id="koncesje" aria-labelledby="lic-title">
+    <div class="wrap">
+      <div class="lic-head">
+        <div style="grid-column:1 / -1"><p class="kicker"><span class="num">V.</span><span data-i18n="nav_lic">Koncesje</span></p></div>
+        <h2 id="lic-title" data-i18n="lic_title">Uprawnienia, które pozwalają działać w pełnym zakresie.</h2>
+      </div>
+      <div class="lic-cards">
+        <article class="cert first">
+          <p class="k">NATO</p>
+          <h3>NCAGE 2156 H</h3>
+          <p data-i18n="l1_d">Natowski Kod Podmiotu Gospodarki Narodowej</p>
+        </article>
+        <article class="cert">
+          <p class="k" data-i18n="l_mswk">Koncesja Ministra Spraw Wewnętrznych RP</p>
+          <h3 data-i18n="l2_t">Obrót specjalny</h3>
+          <p data-i18n="l2_d">Uzbrojenie, materiały wybuchowe, technologie podwójnego zastosowania, wyposażenie specjalne dla wojska i policji</p>
+        </article>
+        <article class="cert">
+          <p class="k" data-i18n="l_mswk2">Koncesja Ministra Spraw Wewnętrznych RP</p>
+          <h3 data-i18n="l3_t">Ochrona osób i mienia</h3>
+          <p data-i18n="l3_d">Bezpośrednia ochrona fizyczna oraz zabezpieczenie techniczne</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- STUDIO — partner offer: Veles Productions virtual production studio -->
+  <section class="section studio" id="studio" aria-labelledby="studio-title">
+    <div class="wrap">
+      <div class="st-head">
+        <div class="st-title">
+          <p class="kicker"><span class="num">VI.</span><span data-i18n="nav_studio">Studio</span></p>
+          <h2 id="studio-title" data-i18n="st_title">Produkt w pełnej skali, w dowolnym miejscu świata.</h2>
+        </div>
+        <div class="st-intro">
+          <p class="st-lead" data-i18n="st_lead">Ostrowski Arms może poprowadzić producenta sprzętu obronnego do prezentacji nagranej w warszawskim studiu wirtualnej produkcji naszego partnera, Veles Productions. Prezes, inżynier lub dowódca mówi o produkcie w jego naturalnym otoczeniu. Bez transportu sprzętu i bez ryzyka pogody.</p>
+          <p data-i18n="st_explain">Wirtualna produkcja to scenografia zbudowana w komputerze i wyświetlana na ścianie LED za prezenterem. Kamera widzi człowieka tak, jakby naprawdę stał w hangarze, na poligonie albo w siedzibie koncernu. Obok niego staje trójwymiarowy model produktu: można go obracać, przybliżać, rozłożyć na części i pokazać w symulacji.</p>
+        </div>
+      </div>
+
+      <div class="st-compare-wrap">
+        <div class="st-bar">
+          <div class="st-switch" role="tablist" aria-label="Wybór wizualizacji" data-i18n-aria="st_tabs_label">
+            <button type="button" role="tab" id="st-tab-f35" aria-controls="st-panel-f35" aria-selected="true" tabindex="0" data-i18n="st_tab_f35">F-35 w hangarze</button>
+            <button type="button" role="tab" id="st-tab-pat" aria-controls="st-panel-pat" aria-selected="false" tabindex="-1" data-i18n="st_tab_pat">Patriot PAC-2 w pawilonie</button>
+          </div>
+          <p class="st-hint" data-i18n="st_hint">Przesuń suwak, aby zobaczyć prawdziwe studio.</p>
+        </div>
+
+        <div class="st-panel" id="st-panel-f35" role="tabpanel" aria-labelledby="st-tab-f35">
+          <figure class="st-compare">
+            <div class="st-stage">
+              <img src="../img/studio-ptz.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles: łukowa ściana LED i trzy kamery" data-i18n-alt="st_img_ptz" loading="lazy" decoding="async">
+              <!-- SLOT: concept still. Later replace the <img> inside with
+                   <video src="..." poster="../img/vp-f35.webp" autoplay muted loop playsinline></video>
+                   recorded in the Veles studio; keep the .st-top wrapper so the slider keeps working. -->
+              <div class="st-top" data-slot="video">
+                <img src="../img/vp-f35.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w skali 1:1 w rozszerzonej rzeczywistości" data-i18n-alt="st_img_f35" loading="lazy" decoding="async">
+              </div>
+              <span class="st-tag st-tag-a" data-i18n="st_lbl_concept">Wizualizacja koncepcyjna</span>
+              <span class="st-tag st-tag-b" data-i18n="st_lbl_real">Prawdziwe studio Veles</span>
+              <div class="st-handle" role="slider" tabindex="0" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55" aria-valuetext="55%" aria-label="Przesuń, aby porównać wizualizację z prawdziwym studiem" data-i18n-aria="st_slider_label"><span class="st-knob" aria-hidden="true"></span></div>
+            </div>
+            <figcaption data-i18n="st_caption">Wizualizacja koncepcyjna — docelowo nagranie wideo ze studia Veles</figcaption>
+          </figure>
+        </div>
+
+        <div class="st-panel st-off" id="st-panel-pat" role="tabpanel" aria-labelledby="st-tab-pat">
+          <figure class="st-compare">
+            <div class="st-stage">
+              <img src="../img/studio-crane.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles: kran kamerowy i ekipa przy ścianie LED" data-i18n-alt="st_img_crane" loading="lazy" decoding="async">
+              <!-- SLOT: concept still. Later replace the <img> inside with a <video> recorded in the Veles studio (poster="../img/vp-patriot.webp"). -->
+              <div class="st-top" data-slot="video">
+                <img src="../img/vp-patriot.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości" data-i18n-alt="st_img_pat" loading="lazy" decoding="async">
+              </div>
+              <span class="st-tag st-tag-a" data-i18n="st_lbl_concept">Wizualizacja koncepcyjna</span>
+              <span class="st-tag st-tag-b" data-i18n="st_lbl_real">Prawdziwe studio Veles</span>
+              <div class="st-handle" role="slider" tabindex="0" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55" aria-valuetext="55%" aria-label="Przesuń, aby porównać wizualizację z prawdziwym studiem" data-i18n-aria="st_slider_label"><span class="st-knob" aria-hidden="true"></span></div>
+            </div>
+            <figcaption data-i18n="st_caption">Wizualizacja koncepcyjna — docelowo nagranie wideo ze studia Veles</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <h3 class="st-sub" data-i18n="st_uses_t">Co można nagrać</h3>
+      <ul class="st-uses">
+        <li><span class="n" aria-hidden="true">01</span><h4 data-i18n="st_u1_t">Film produktowy</h4><p data-i18n="st_u1_d">Premiera nowego systemu. Scenografia dopasowana do historii: od hali montażowej po miejsce, w którym produkt ma pracować.</p></li>
+        <li><span class="n" aria-hidden="true">02</span><h4 data-i18n="st_u2_t">Prezentacja i wirtualna premiera</h4><p data-i18n="st_u2_d">Jedno wydarzenie, widzowie w wielu krajach. Wersje językowe tła i napisów bez ponownego nagrywania.</p></li>
+        <li><span class="n" aria-hidden="true">03</span><h4 data-i18n="st_u3_t">Symulacja</h4><p data-i18n="st_u3_d">Zasięg, trajektoria, scenariusz użycia. Model obraca się obok prezentera, a infografika tłumaczy, co produkt robi.</p></li>
+        <li><span class="n" aria-hidden="true">04</span><h4 data-i18n="st_u4_t">Wystąpienie prezesa</h4><p data-i18n="st_u4_d">Jeden dzień w studiu. Scenografia z siedziby koncernu albo z miejsca, o którym mówi przemówienie.</p></li>
+        <li><span class="n" aria-hidden="true">05</span><h4 data-i18n="st_u5_t">Pokaz AR dla delegacji</h4><p data-i18n="st_u5_d">AR, czyli rozszerzona rzeczywistość: prawdziwy obraz z dodaną grafiką. W zamkniętym studiu goście oglądają na ekranie model produktu obok prowadzącego.</p></li>
+        <li><span class="n" aria-hidden="true">06</span><h4 data-i18n="st_u6_t">Nomad Stage</h4><p data-i18n="st_u6_d">Mobilne studio LED, które przyjeżdża do klienta: do hali producenta, na stoisko targowe, w teren. Europa, Bliski Wschód, Afryka Północna.</p></li>
+      </ul>
+
+      <div class="st-plate">
+        <figure>
+          <!-- SLOT: concept still; later a <video> from the Veles studio. -->
+          <div class="st-plate-media" data-slot="video">
+            <img src="../img/vp-delegacja.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: delegacja w studiu ogląda rozłożony na części model samolotu w rozszerzonej rzeczywistości" data-i18n-alt="st_img_deleg" loading="lazy" decoding="async">
+          </div>
+          <figcaption data-i18n="st_caption">Wizualizacja koncepcyjna — docelowo nagranie wideo ze studia Veles</figcaption>
+        </figure>
+        <div class="st-plate-body">
+          <p class="ref-label" data-i18n="st_plate_k">Ekspozycja w dedykowanym studiu</p>
+          <h3 data-i18n="st_plate_t">Prywatny pokaz dla delegacji.</h3>
+          <p data-i18n="st_plate_p">Produkt pojawia się w studiu jako model 3D w skali, której potrzebuje klient. Prowadzący rozkłada go na części, podświetla podzespoły i uruchamia symulację. Delegacja ogląda pokaz na żywo, bez wyjazdu na poligon.</p>
+        </div>
+      </div>
+
+      <div class="st-details">
+        <div class="st-facts-wrap">
+          <h3 class="st-sub" data-i18n="st_facts_t">Studio Veles Productions</h3>
+          <dl class="facts st-facts">
+            <div><dt data-i18n="st_f1_k">Studio</dt><dd data-i18n="st_f1_v">Trzy kamery, Warszawa, ul. Jubilerska 10. Nagranie live-to-tape: w jednym ciągu, jak na antenie.</dd></div>
+            <div><dt data-i18n="st_f2_k">Ściana LED</dt><dd data-i18n="st_f2_v">Łukowa, ROE, 7,5 × 4 m, z technologią Ghost Frame: kilka kamer widzi na niej różne obrazy w tym samym momencie.</dd></div>
+            <div><dt data-i18n="st_f3_k">Kamera</dt><dd data-i18n="st_f3_v">Kran kamerowy i tracking Stype: komputer wie, gdzie jest kamera, więc tło porusza się jak prawdziwe.</dd></div>
+            <div><dt data-i18n="st_f4_k">Scenografia</dt><dd data-i18n="st_f4_v">Unreal Engine. Zielone tło jako alternatywa.</dd></div>
+            <div><dt data-i18n="st_f5_k">Doświadczenie</dt><dd data-i18n="st_f5_v">Wieczór Wyborczy TVP 2023: 10 godzin na żywo, ok. 4,5 mln widzów. Superpuchar Arabii Saudyjskiej 2025 w Hongkongu: studio wirtualne i AR na żywo. Scenografia wirtualna dla Canal+ Sport.</dd></div>
+            <div><dt data-i18n="st_f6_k">Dyskrecja</dt><dd data-i18n="st_f6_v">Umowa o poufności (NDA), zamknięte studio, modele uproszczone. Nic nie jest publikowane bez pisemnej zgody klienta.</dd></div>
+          </dl>
+        </div>
+        <div class="st-steps-wrap">
+          <h3 class="st-sub" data-i18n="st_steps_t">Pięć kroków</h3>
+          <ol class="st-steps">
+            <li><span class="n" aria-hidden="true">1</span><span data-i18n="st_s1">Rozmowa i brief: co pokazać, komu i gdzie.</span></li>
+            <li><span class="n" aria-hidden="true">2</span><span data-i18n="st_s2">Koncepcja scenografii i sposobu pokazania produktu.</span></li>
+            <li><span class="n" aria-hidden="true">3</span><span data-i18n="st_s3">Budowa środowiska 3D na podstawie modeli i zdjęć klienta.</span></li>
+            <li><span class="n" aria-hidden="true">4</span><span data-i18n="st_s4">Próba i nagranie w studiu albo z Nomad Stage u klienta.</span></li>
+            <li><span class="n" aria-hidden="true">5</span><span data-i18n="st_s5">Dostawa w uzgodnionych formatach, także w wersjach językowych.</span></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="st-cta">
+        <div>
+          <h3 data-i18n="st_cta_t">Wycena indywidualna, dla każdego projektu.</h3>
+          <p data-i18n="st_cta_p">Rozmowę z producentem prowadzi Ostrowski Arms. Za studio i realizację odpowiada Veles Productions.</p>
+          <p class="st-partner"><span class="st-partner-k" data-i18n="st_partner_k">Partner studyjny</span>Veles Productions — Artur Paprocki · <a href="mailto:apaprocki@velesproductions.com">apaprocki@velesproductions.com</a> · <a href="https://www.velesproductions.com" target="_blank" rel="noopener">www.velesproductions.com</a></p>
+        </div>
+        <a class="btn btn-solid" href="#kontakt" data-i18n="st_cta_btn">Umów rozmowę</a>
+      </div>
+    </div>
+  </section>
+
+  <figure class="band-full ph">
+    <div class="px" data-px>
+      <img src="../img/warsaw-night.webp" width="2688" height="1152" alt="Zamek Królewski i Stare Miasto w Warszawie o zmierzchu, widok zza Wisły" data-i18n-alt="img_warsaw" loading="lazy" decoding="async">
+    </div>
+  </figure>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="kontakt" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <p class="kicker"><span class="num">VII.</span><span data-i18n="nav_contact">Kontakt</span></p>
+        <h2 id="contact-title" data-i18n="contact_title">Zapraszamy do rozmowy.</h2>
+        <address>
+          <div class="ci">
+            <span class="lbl" data-i18n="c_addr_h">Adres</span>
+            <span class="val">Ostrowski Arms Sp. z o.o.<br>ul. Słomińskiego 17/15<br>00-195 Warszawa, <span data-i18n="c_country">Polska</span></span>
+          </div>
+          <div class="ci">
+            <span class="lbl" data-i18n="c_phone_h">Telefon / WhatsApp</span>
+            <a class="val" href="tel:+48601232400">+48 601 232 400</a>
+          </div>
+          <div class="ci">
+            <span class="lbl" data-i18n="c_mail_h">E-mail</span>
+            <a class="val" href="mailto:biuro@ostrowskiarms.pl">biuro@ostrowskiarms.pl</a>
+          </div>
+        </address>
+      </div>
+      <form class="contact-form" id="contact-form" method="dialog" novalidate>
+        <div class="field">
+          <label for="f-name"><span data-i18n="f_name">Imię i nazwisko</span> *</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email"><span data-i18n="f_email">E-mail</span> *</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="f-msg" data-i18n="f_msg">Wiadomość</label>
+          <textarea id="f-msg" name="message"></textarea>
+        </div>
+        <p class="form-note" data-i18n="f_note">Przycisk „Wyślij” otworzy Państwa program pocztowy z gotową wiadomością.</p>
+        <p class="form-err" id="form-err" role="alert"></p>
+        <button class="btn btn-solid" type="submit" data-i18n="f_send">Wyślij</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="foot-word">OSTROWSKI ARMS</span>
+    <div class="foot-meta">
+      <span>© 2026 OSTROWSKI ARMS</span>
+      <span class="concept" data-i18n="footer_note">Koncepcja projektu — propozycja</span>
+      <span data-i18n="footer_concept">Koncepcja „Gabinet”</span>
+      <a href="#top" data-i18n="back_top">Do góry</a>
+    </div>
+    <p class="foot-photos" data-i18n="footer_photos">Zdjęcia poglądowe; fotografie Andrzeja Ostrowskiego pochodzą ze strony ostrowskiarms.pl.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var I18N = {
+    pl:{
+      meta_title:"Ostrowski Arms — Government Relations i obrót specjalny",
+      skip:"Przejdź do treści",
+      nav_label:"Nawigacja główna",
+      nav_about:"O firmie", nav_scope:"Zakres działalności", nav_board:"Zarząd",
+      nav_refs:"Referencje", nav_lic:"Koncesje", nav_contact:"Kontakt",
+      menu:"Menu", lang_label:"Wybór języka",
+      brand_sub:"Sp. z o.o. · Warszawa · od 1992",
+      hero_title_a:"Projekty strategiczne,",
+      hero_title_b:"prowadzone z dyskrecją.",
+      hero_lead:"Ostrowski Arms reprezentuje firmy polskie i zagraniczne wobec Ministerstwa Obrony Narodowej, prowadzi obrót specjalny na podstawie koncesji Ministra Spraw Wewnętrznych RP i podejmuje się neutralnej mediacji tam, gdzie strony szukają akceptowalnych rozwiązań.",
+      hero_cta1:"Umów rozmowę", hero_cta2:"Zakres działalności",
+      hero_caption:"Andrzej Ostrowski w Kwaterze Głównej NATO",
+      ledger_1k:"Rok założenia", ledger_2k:"Kod NCAGE", ledger_3k:"Koncesja MSW",
+      ledger_3v:"Obrót specjalny w pełnym zakresie", ledger_4k:"Sektory", ledger_4v:"Cywilne i militarne",
+      about_title:"Firma prywatna, założona w 1992 roku przez Andrzeja Ostrowskiego.",
+      about_p1:"Dzięki koncesji na obrót specjalny Ostrowski Arms może prowadzić działalność i zarządzać projektami z realizacją kontraktów zarówno w sektorach w pełni cywilnych, jak i w sektorze militarnym — w Polsce i za granicą.",
+      about_p2:"Spółka działa jako agencja Government Relations oraz firma handlu zagranicznego: zarządza projektami, reprezentuje firmy i realizuje kontrakty handlowe.",
+      fact_hist_k:"Historia", fact_hist_v:"Założona w 1992 roku przez Andrzeja Ostrowskiego",
+      fact_status_k:"Status", fact_status_v:"Spółka z ograniczoną odpowiedzialnością, wpisana do rejestru handlowego",
+      fact_owner_k:"Właściciel", fact_owner_v:"Andrzej Ostrowski — 90% udziałów",
+      fact_board_k:"Zarząd", fact_board_v:"Andrzej Ostrowski — Prezes Zarządu",
+      scope_title:"Od relacji z rządem po realizację kontraktu.",
+      s1_d:"Zarządzanie projektami i reprezentowanie firm w Polsce i za granicą w cywilnych i militarnych sektorach gospodarki.",
+      s2_t:"Reprezentacja wobec Ministerstwa Obrony Narodowej",
+      s2_d:"Otwieranie procedur i koordynacja projektów oraz ofert dla Sił Zbrojnych RP; opracowanie i organizacja prezentacji firm wobec MON i Sił Zbrojnych RP; doradztwo i project management.",
+      s3_t:"Obrót specjalny",
+      s3_d:"Uzbrojenie dla wojska, technologie podwójnego zastosowania i wyposażenie specjalne dla wojska i policji — na podstawie koncesji MSW. Jako firma handlu zagranicznego spółka realizuje kontrakty handlowe.",
+      s4_t:"Neutralna mediacja — „Złoty most”",
+      s4_d:"Aranżowanie i koordynacja rozmów, w których strony szukają akceptowalnych rozwiązań, włącznie z koordynacją wymiany handlowej bezpośrednio lub przez stronę trzecią.",
+      s5_label:"Linia uzupełniająca",
+      s5_t:"Szkolenie strzeleckie i pozwolenie na broń",
+      s5_d:"Nauka strzelania z instruktorem Andrzejem Ostrowskim, koordynacja procedury uzyskania pozwolenia na broń, pakiety i vouchery strzeleckie, eventy ze strzelaniem oraz doradztwo przy sprzedaży broni.",
+      aside_kicker:"Project Management bez szyldu",
+      aside_p:"Przy dużych kontraktach, gdy prawo danego państwa wymaga umowy bezpośrednio między strukturą rządową a producentem, Andrzej Ostrowski pracuje jako project manager wewnątrz struktury koncernu — doradza i koordynuje działania handlowe oraz realizację kontraktu, bez nazwy firmy Ostrowski Arms.",
+      bridge_kicker:"Neutralny status firmy",
+      bridge_quote:"„Złoty most…”",
+      bridge_p:"Prezes Ostrowski Arms, zwolennik filozofii „Złotego mostu”, jest zapraszany jako neutralny mediator i project manager z doświadczeniem biznesowo-handlowym — do aranżowania i koordynacji rozmów, w których skonfliktowane strony w skomplikowanych obszarach szukają możliwości pozytywnej mediacji.",
+      board_caption:"Andrzej Ostrowski i Pat Cox, 2025",
+      board_name:"Andrzej Ostrowski",
+      board_role:"Prezes Zarządu Ostrowski Arms Sp. z o.o.",
+      b_exp_h:"Specjalizacja",
+      b_exp1:"Ekspert Government Relations & Project Management for Strategic Projects",
+      b_exp2:"Ekspert w obrocie specjalnym: uzbrojenie dla armii, technologie podwójnego zastosowania (dual use technology), wyposażenie specjalne dla wojska",
+      b_fn_h:"Pełnione funkcje",
+      b_fn1:"Współpracownik i doradca Przewodniczącego Senackiej Komisji Obrony Narodowej i Bezpieczeństwa Publicznego w Senacie RP",
+      b_fn2:"Doradca ds. kontaktów z Rządem i Parlamentem Prezesa Polskiej Izby Producentów na Rzecz Obronności Kraju — oficjalny akt nominacji",
+      b_edu_h:"Wykształcenie i służba",
+      b_edu1:"Uczestnik Podyplomowego Studium Bezpieczeństwa Narodowego na Uniwersytecie Warszawskim — program MON, Instytutu Stosunków Międzynarodowych UW, Kancelarii Prezydenta RP i Ambasady USA w RP",
+      b_edu2:"Służba wojskowa: Techniczna Szkoła Wojsk Lotniczych",
+      b_perm_h:"Uprawnienia",
+      b_perm1:"Ustawowo wymagane uprawnienia do wykonywania lub kierowania działalnością w zakresie wytwarzania i obrotu materiałami wybuchowymi, bronią, amunicją oraz wyrobami i technologią o przeznaczeniu wojskowym lub policyjnym",
+      b_perm2:"Licencje II stopnia pracownika ochrony fizycznej oraz pracownika zabezpieczenia technicznego, uprawniające do kierowania tą działalnością",
+      b_perm3:"Certyfikat szkoleń eksperckich z obrotu specjalnego, zorganizowanych przez Ministerstwo Gospodarki RP (Departament Kontroli Eksportu) i dofinansowanych przez Departament Stanu USA w oparciu o Export Management Systems",
+      b_shoot_h:"Strzelectwo",
+      b_shoot1:"Instruktor strzelectwa po kursie byłych żołnierzy Specjalnej Jednostki Wojskowej JW 2305 GROM; licencja instruktora PZSS",
+      b_shoot2:"Były wyczynowy zawodnik — pistolet szybkostrzelny",
+      refs_quote:"Jedność ponad podziałami politycznymi na rzecz obronności Polski.",
+      refs_quote_src:"Z opisu projektu Government Relations & Project Management for Strategic Projects",
+      r1_k:"Projekt",
+      r1_p1:"Projekt osobiście opracowany i zrealizowany z sukcesem przez Andrzeja Ostrowskiego, z osobistą przedmową ówczesnego Prezydenta RP Aleksandra Kwaśniewskiego, w dacie zawarcia kontraktu na zakup przez Polskę samolotów wojskowych F-16 — największego kontraktu zbrojeniowego zawartego przez Rząd Polski i Departament Stanu USA.",
+      r1_p2:"Projekt objął m.in. wystąpienie Bronisława Komorowskiego — późniejszego Prezydenta RP, sprawującego urząd Ministra Obrony Narodowej i Przewodniczącego Sejmowej Komisji Obrony Narodowej — oraz skoordynowane wypowiedzi liderów głównych partii koalicji rządowej i opozycji parlamentarnej, w tym Marka Sawickiego (PSL), Marszałka Seniora powołanego do otwarcia pierwszego posiedzenia X Sejmu RP 13 listopada 2023 r.",
+      r2_k:"Podziękowanie", r2_t:"Chuck Hagel",
+      r2_p:"Za realizację projektu Andrzejowi Ostrowskiemu osobiście podziękował Chuck Hagel — w latach 2013–2015 24. Sekretarz Obrony USA — podczas osobistego spotkania w Pałacu Prezydenta RP.",
+      lic_title:"Uprawnienia, które pozwalają działać w pełnym zakresie.",
+      l1_d:"Natowski Kod Podmiotu Gospodarki Narodowej",
+      l_mswk:"Koncesja Ministra Spraw Wewnętrznych RP",
+      l_mswk2:"Koncesja Ministra Spraw Wewnętrznych RP",
+      l2_t:"Obrót specjalny",
+      l2_d:"Uzbrojenie, materiały wybuchowe, technologie podwójnego zastosowania, wyposażenie specjalne dla wojska i policji",
+      l3_t:"Ochrona osób i mienia",
+      l3_d:"Bezpośrednia ochrona fizyczna oraz zabezpieczenie techniczne",
+      contact_title:"Zapraszamy do rozmowy.",
+      c_addr_h:"Adres", c_country:"Polska", c_phone_h:"Telefon / WhatsApp", c_mail_h:"E-mail",
+      f_name:"Imię i nazwisko", f_email:"E-mail", f_msg:"Wiadomość", f_send:"Wyślij",
+      f_note:"Przycisk „Wyślij” otworzy Państwa program pocztowy z gotową wiadomością.",
+      f_err:"Prosimy podać imię i nazwisko oraz poprawny adres e-mail.",
+      mail_subject:"Zapytanie ze strony Ostrowski Arms",
+      footer_note:"Koncepcja projektu — propozycja",
+      footer_concept:"Koncepcja „Gabinet”",
+      back_top:"Do góry",
+      gr_name:"Government Relations & Project Management for Strategic Projects",
+      r1_t:"F-16 — Government Relations & Project Management for Strategic Projects",
+      img_study:"Gabinet nocą — zielone ściany, lampa bankierska, globus i skórzany fotel",
+      img_dossier:"Teczka z lakową pieczęcią i bordową wstążką",
+      img_map:"Dawna mapa Europy z mosiężnym kompasem i lupą",
+      img_handshake:"Uścisk dłoni dwóch osób w granatowych garniturach",
+      img_range:"Strzelnica: ochronniki słuchu i zamknięta walizka na dębowej ławie",
+      img_warsaw:"Zamek Królewski i Stare Miasto w Warszawie o zmierzchu, widok zza Wisły",
+      footer_photos:"Zdjęcia poglądowe; fotografie Andrzeja Ostrowskiego pochodzą ze strony ostrowskiarms.pl.",
+      nav_studio:"Studio",
+      st_title:"Produkt w pełnej skali, w dowolnym miejscu świata.",
+      st_lead:"Ostrowski Arms może poprowadzić producenta sprzętu obronnego do prezentacji nagranej w warszawskim studiu wirtualnej produkcji naszego partnera, Veles Productions. Prezes, inżynier lub dowódca mówi o produkcie w jego naturalnym otoczeniu. Bez transportu sprzętu i bez ryzyka pogody.",
+      st_explain:"Wirtualna produkcja to scenografia zbudowana w komputerze i wyświetlana na ścianie LED za prezenterem. Kamera widzi człowieka tak, jakby naprawdę stał w hangarze, na poligonie albo w siedzibie koncernu. Obok niego staje trójwymiarowy model produktu: można go obracać, przybliżać, rozłożyć na części i pokazać w symulacji.",
+      st_tabs_label:"Wybór wizualizacji",
+      st_tab_f35:"F-35 w hangarze",
+      st_tab_pat:"Patriot PAC-2 w pawilonie",
+      st_hint:"Przesuń suwak, aby zobaczyć prawdziwe studio.",
+      st_lbl_concept:"Wizualizacja koncepcyjna",
+      st_lbl_real:"Prawdziwe studio Veles",
+      st_slider_label:"Przesuń, aby porównać wizualizację z prawdziwym studiem",
+      st_caption:"Wizualizacja koncepcyjna — docelowo nagranie wideo ze studia Veles",
+      st_img_f35:"Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w skali 1:1 w rozszerzonej rzeczywistości",
+      st_img_ptz:"Prawdziwe studio Veles: łukowa ściana LED i trzy kamery",
+      st_img_pat:"Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości",
+      st_img_crane:"Prawdziwe studio Veles: kran kamerowy i ekipa przy ścianie LED",
+      st_img_deleg:"Wizualizacja koncepcyjna: delegacja w studiu ogląda rozłożony na części model samolotu w rozszerzonej rzeczywistości",
+      st_uses_t:"Co można nagrać",
+      st_u1_t:"Film produktowy",
+      st_u1_d:"Premiera nowego systemu. Scenografia dopasowana do historii: od hali montażowej po miejsce, w którym produkt ma pracować.",
+      st_u2_t:"Prezentacja i wirtualna premiera",
+      st_u2_d:"Jedno wydarzenie, widzowie w wielu krajach. Wersje językowe tła i napisów bez ponownego nagrywania.",
+      st_u3_t:"Symulacja",
+      st_u3_d:"Zasięg, trajektoria, scenariusz użycia. Model obraca się obok prezentera, a infografika tłumaczy, co produkt robi.",
+      st_u4_t:"Wystąpienie prezesa",
+      st_u4_d:"Jeden dzień w studiu. Scenografia z siedziby koncernu albo z miejsca, o którym mówi przemówienie.",
+      st_u5_t:"Pokaz AR dla delegacji",
+      st_u5_d:"AR, czyli rozszerzona rzeczywistość: prawdziwy obraz z dodaną grafiką. W zamkniętym studiu goście oglądają na ekranie model produktu obok prowadzącego.",
+      st_u6_t:"Nomad Stage",
+      st_u6_d:"Mobilne studio LED, które przyjeżdża do klienta: do hali producenta, na stoisko targowe, w teren. Europa, Bliski Wschód, Afryka Północna.",
+      st_plate_k:"Ekspozycja w dedykowanym studiu",
+      st_plate_t:"Prywatny pokaz dla delegacji.",
+      st_plate_p:"Produkt pojawia się w studiu jako model 3D w skali, której potrzebuje klient. Prowadzący rozkłada go na części, podświetla podzespoły i uruchamia symulację. Delegacja ogląda pokaz na żywo, bez wyjazdu na poligon.",
+      st_facts_t:"Studio Veles Productions",
+      st_f1_k:"Studio", st_f1_v:"Trzy kamery, Warszawa, ul. Jubilerska 10. Nagranie live-to-tape: w jednym ciągu, jak na antenie.",
+      st_f2_k:"Ściana LED", st_f2_v:"Łukowa, ROE, 7,5 × 4 m, z technologią Ghost Frame: kilka kamer widzi na niej różne obrazy w tym samym momencie.",
+      st_f3_k:"Kamera", st_f3_v:"Kran kamerowy i tracking Stype: komputer wie, gdzie jest kamera, więc tło porusza się jak prawdziwe.",
+      st_f4_k:"Scenografia", st_f4_v:"Unreal Engine. Zielone tło jako alternatywa.",
+      st_f5_k:"Doświadczenie", st_f5_v:"Wieczór Wyborczy TVP 2023: 10 godzin na żywo, ok. 4,5 mln widzów. Superpuchar Arabii Saudyjskiej 2025 w Hongkongu: studio wirtualne i AR na żywo. Scenografia wirtualna dla Canal+ Sport.",
+      st_f6_k:"Dyskrecja", st_f6_v:"Umowa o poufności (NDA), zamknięte studio, modele uproszczone. Nic nie jest publikowane bez pisemnej zgody klienta.",
+      st_steps_t:"Pięć kroków",
+      st_s1:"Rozmowa i brief: co pokazać, komu i gdzie.",
+      st_s2:"Koncepcja scenografii i sposobu pokazania produktu.",
+      st_s3:"Budowa środowiska 3D na podstawie modeli i zdjęć klienta.",
+      st_s4:"Próba i nagranie w studiu albo z Nomad Stage u klienta.",
+      st_s5:"Dostawa w uzgodnionych formatach, także w wersjach językowych.",
+      st_cta_t:"Wycena indywidualna, dla każdego projektu.",
+      st_cta_p:"Rozmowę z producentem prowadzi Ostrowski Arms. Za studio i realizację odpowiada Veles Productions.",
+      st_partner_k:"Partner studyjny",
+      st_cta_btn:"Umów rozmowę"
+    },
+    en:{
+      meta_title:"Ostrowski Arms — Government Relations and Special Trade",
+      skip:"Skip to content",
+      nav_label:"Main navigation",
+      nav_about:"The Company", nav_scope:"Areas of Activity", nav_board:"Management",
+      nav_refs:"References", nav_lic:"Licences", nav_contact:"Contact",
+      menu:"Menu", lang_label:"Language selection",
+      brand_sub:"Sp. z o.o. · Warsaw · since 1992",
+      hero_title_a:"Strategic projects,",
+      hero_title_b:"conducted with discretion.",
+      hero_lead:"Ostrowski Arms represents Polish and foreign companies before the Polish Ministry of National Defence, conducts special trade under a licence of the Minister of Internal Affairs of the Republic of Poland, and acts as a neutral mediator where parties seek acceptable solutions.",
+      hero_cta1:"Arrange a conversation", hero_cta2:"Areas of activity",
+      hero_caption:"Andrzej Ostrowski at NATO Headquarters",
+      ledger_1k:"Established", ledger_2k:"NCAGE code", ledger_3k:"Interior Ministry licence",
+      ledger_3v:"Special trade in full scope", ledger_4k:"Sectors", ledger_4v:"Civil and military",
+      about_title:"A private company, founded by Andrzej Ostrowski in 1992.",
+      about_p1:"Holding a licence for special trade, Ostrowski Arms may operate and manage projects, including the execution of contracts, in entirely civil sectors as well as in the military sector — in Poland and abroad.",
+      about_p2:"The company acts as a Government Relations agency and a foreign trade enterprise: it manages projects, represents companies and executes commercial contracts.",
+      fact_hist_k:"History", fact_hist_v:"Founded by Andrzej Ostrowski in 1992",
+      fact_status_k:"Legal form", fact_status_v:"Limited liability company entered in the commercial register",
+      fact_owner_k:"Owner", fact_owner_v:"Andrzej Ostrowski — 90% of shares",
+      fact_board_k:"Management", fact_board_v:"Andrzej Ostrowski — President of the Management Board",
+      scope_title:"From government relations to contract execution.",
+      s1_d:"Project management and representation of companies in Poland and abroad, across civil and military economic sectors.",
+      s2_t:"Representation before the Ministry of National Defence",
+      s2_d:"Opening procedures for, and coordinating, projects and offers for the Polish Armed Forces; preparing and organising company presentations before the Ministry and the Armed Forces; advisory and project management.",
+      s3_t:"Special trade",
+      s3_d:"Military armament, dual-use technologies and special equipment for the armed forces and police — under the Interior Ministry licence. As a foreign trade enterprise, the company executes commercial contracts.",
+      s4_t:"Neutral mediation — the “Golden Bridge”",
+      s4_d:"Arranging and coordinating talks in which parties seek acceptable solutions, including the coordination of trade exchange, directly or through a third party.",
+      s5_label:"Complementary line",
+      s5_t:"Shooting instruction and firearms permits",
+      s5_d:"Shooting lessons with instructor Andrzej Ostrowski, coordination of the firearms permit procedure, shooting packages and vouchers, shooting events, and firearms sales with advisory.",
+      aside_kicker:"Project management without a name plate",
+      aside_p:"On major contracts where the law of a given state requires the agreement to be concluded directly between a government entity and the manufacturer, Andrzej Ostrowski works as a project manager within the manufacturer’s own structure — advising on and coordinating commercial activity and contract execution, without the Ostrowski Arms name.",
+      bridge_kicker:"The company’s neutral status",
+      bridge_quote:"“A golden bridge…”",
+      bridge_p:"An advocate of the “golden bridge” philosophy, the President of Ostrowski Arms is invited as a neutral mediator and project manager with business and trade experience — to arrange and coordinate talks in which parties in conflict, in complex areas, seek the possibility of a positive mediation.",
+      board_caption:"Andrzej Ostrowski with Pat Cox, 2025",
+      board_name:"Andrzej Ostrowski",
+      board_role:"President of the Management Board, Ostrowski Arms Sp. z o.o.",
+      b_exp_h:"Expertise",
+      b_exp1:"Expert in Government Relations & Project Management for Strategic Projects",
+      b_exp2:"Expert in special trade: armament for the armed forces, dual-use technology, special military equipment",
+      b_fn_h:"Positions held",
+      b_fn1:"Associate and adviser to the Chairman of the Senate Committee on National Defence and Public Security of the Republic of Poland",
+      b_fn2:"Adviser on Government and Parliamentary Relations to the President of the Polish Chamber of Defence Industry Producers (Polska Izba Producentów na Rzecz Obronności Kraju) — by official act of nomination",
+      b_edu_h:"Education and service",
+      b_edu1:"Participant in the Postgraduate Programme in National Security at the University of Warsaw — a programme of the Ministry of National Defence, the University’s Institute of International Relations, the Chancellery of the President and the U.S. Embassy in Poland",
+      b_edu2:"Military service: Air Force Technical School (Techniczna Szkoła Wojsk Lotniczych)",
+      b_perm_h:"Qualifications",
+      b_perm1:"Statutory qualifications to conduct or direct business in the manufacture of and trade in explosives, weapons, ammunition, and products and technology for military or police use",
+      b_perm2:"Second-degree licences in physical protection and in technical security, qualifying him to direct such operations",
+      b_perm3:"Certificate of expert training in special trade, organised by the Polish Ministry of Economy (Export Control Department) and co-funded by the U.S. Department of State under the Export Management Systems programme",
+      b_shoot_h:"Marksmanship",
+      b_shoot1:"Shooting instructor, trained on a course led by former soldiers of the special forces unit JW 2305 GROM; instructor licence of the Polish Sport Shooting Federation (PZSS)",
+      b_shoot2:"Former competitive shooter — rapid-fire pistol",
+      refs_quote:"Unity above political divisions for the defence of Poland.",
+      refs_quote_src:"From the description of the Government Relations & Project Management for Strategic Projects project",
+      r1_k:"Project",
+      r1_p1:"A project personally conceived and successfully delivered by Andrzej Ostrowski, with a personal foreword by the then President of the Republic of Poland, Aleksander Kwaśniewski, on the date the contract for Poland’s purchase of F-16 military aircraft was concluded — the largest defence contract concluded between the Polish Government and the U.S. Department of State.",
+      r1_p2:"The project included an address by Bronisław Komorowski — subsequently President of the Republic, who had served as Minister of National Defence and Chairman of the Sejm National Defence Committee — and statements, coordinated by Andrzej Ostrowski, from leaders of the main parties of both the governing coalition and the parliamentary opposition, among them Marek Sawicki (PSL), the Senior Marshal appointed to open the inaugural sitting of the 10th-term Sejm on 13 November 2023.",
+      r2_k:"Acknowledgement", r2_t:"Chuck Hagel",
+      r2_p:"For the delivery of the project, Andrzej Ostrowski was thanked in person by Chuck Hagel — the 24th U.S. Secretary of Defense from 2013 to 2015 — during a personal meeting at the Presidential Palace of the Republic of Poland.",
+      lic_title:"Licences that permit operation in full scope.",
+      l1_d:"NATO Commercial and Government Entity code",
+      l_mswk:"Licence of the Minister of Internal Affairs of the Republic of Poland",
+      l_mswk2:"Licence of the Minister of Internal Affairs of the Republic of Poland",
+      l2_t:"Special trade",
+      l2_d:"Armament, explosives, dual-use technologies, special equipment for the armed forces and police",
+      l3_t:"Protection of persons and property",
+      l3_d:"Direct physical protection and technical security",
+      contact_title:"We welcome your enquiry.",
+      c_addr_h:"Address", c_country:"Poland", c_phone_h:"Telephone / WhatsApp", c_mail_h:"E-mail",
+      f_name:"Full name", f_email:"E-mail", f_msg:"Message", f_send:"Send",
+      f_note:"“Send” will open your e-mail application with the message prepared.",
+      f_err:"Please provide your full name and a valid e-mail address.",
+      mail_subject:"Enquiry from the Ostrowski Arms website",
+      footer_note:"Design concept — proposal",
+      footer_concept:"Concept “Gabinet” (The Study)",
+      back_top:"Back to top",
+      gr_name:"Government Relations & Project Management for Strategic Projects",
+      r1_t:"F-16 — Government Relations & Project Management for Strategic Projects",
+      img_study:"A study at night — green walls, a banker’s lamp, a globe and a leather armchair",
+      img_dossier:"A folder with a wax seal and a burgundy ribbon",
+      img_map:"An antique map of Europe with a brass compass and a magnifying glass",
+      img_handshake:"A handshake between two people in navy suits",
+      img_range:"A shooting range: ear protection and a closed case on an oak bench",
+      img_warsaw:"The Royal Castle and the Old Town in Warsaw at dusk, seen across the Vistula",
+      footer_photos:"Illustrative photographs; the photographs of Andrzej Ostrowski are taken from ostrowskiarms.pl.",
+      nav_studio:"Studio",
+      st_title:"The product at full scale, anywhere in the world.",
+      st_lead:"Ostrowski Arms can guide a defence manufacturer to a presentation recorded in the Warsaw virtual production studio of its partner, Veles Productions. A chief executive, an engineer or a commander speaks about the product in its natural setting. No transport of equipment, no risk of weather.",
+      st_explain:"Virtual production means a set built in a computer and shown on an LED wall behind the presenter. The camera sees the person as if they were really standing in a hangar, on a test range or at corporate headquarters. Beside them stands a 3D model of the product: it can be rotated, enlarged, taken apart and shown in simulation.",
+      st_tabs_label:"Choose a visualisation",
+      st_tab_f35:"F-35 in a hangar",
+      st_tab_pat:"Patriot PAC-2 in a pavilion",
+      st_hint:"Drag the handle to see the real studio.",
+      st_lbl_concept:"Concept visualisation",
+      st_lbl_real:"The real Veles studio",
+      st_slider_label:"Drag to compare the visualisation with the real studio",
+      st_caption:"Concept visualisation — final version: video recorded in the Veles studio",
+      st_img_f35:"Concept visualisation: a presenter in a virtual aircraft hangar, beside a full-scale F-35 shown in augmented reality",
+      st_img_ptz:"The real Veles studio: a curved LED wall and three cameras",
+      st_img_pat:"Concept visualisation: a presenter in a virtual exhibition pavilion, beside a Patriot PAC-2 launcher shown in augmented reality",
+      st_img_crane:"The real Veles studio: a camera crane and crew at the LED wall",
+      st_img_deleg:"Concept visualisation: a delegation in the studio views an aircraft model taken apart in augmented reality",
+      st_uses_t:"What can be recorded",
+      st_u1_t:"Product film",
+      st_u1_d:"The launch of a new system. A set that fits the story: from the assembly hall to the place where the product will work.",
+      st_u2_t:"Presentation and virtual launch",
+      st_u2_d:"One event, viewers in many countries. Language versions of the background and captions without re-recording.",
+      st_u3_t:"Simulation",
+      st_u3_d:"Range, trajectory, a scenario of use. The model turns beside the presenter while graphics explain what the product does.",
+      st_u4_t:"Executive address",
+      st_u4_d:"One day in the studio. A set from corporate headquarters, or from the place the speech is about.",
+      st_u5_t:"AR showcase for delegations",
+      st_u5_d:"AR, or augmented reality: a real picture with added graphics. In a closed studio, guests watch the product model beside the presenter on screen.",
+      st_u6_t:"Nomad Stage",
+      st_u6_d:"A mobile LED studio that travels to the client: to the manufacturer’s hall, a trade fair stand, or the field. Europe, the Middle East, North Africa.",
+      st_plate_k:"Exposition in a dedicated studio",
+      st_plate_t:"A private showcase for a delegation.",
+      st_plate_p:"The product appears in the studio as a 3D model, at the scale the client needs. The presenter takes it apart, highlights its components and runs a simulation. The delegation watches live, with no journey to a test range.",
+      st_facts_t:"The Veles Productions studio",
+      st_f1_k:"Studio", st_f1_v:"Three cameras, Warsaw, Jubilerska 10. Live-to-tape recording: in one continuous take, as on air.",
+      st_f2_k:"LED wall", st_f2_v:"Curved, ROE, 7.5 × 4 m, with Ghost Frame technology: several cameras see different images on it at the same moment.",
+      st_f3_k:"Camera", st_f3_v:"Camera crane and Stype tracking: the computer knows where the camera is, so the background moves like a real one.",
+      st_f4_k:"Sets", st_f4_v:"Unreal Engine. Green screen as an alternative.",
+      st_f5_k:"Experience", st_f5_v:"TVP Election Night 2023: 10 hours live, about 4.5 million viewers. Saudi Super Cup 2025 in Hong Kong: virtual studio and live AR. Virtual sets for Canal+ Sport.",
+      st_f6_k:"Discretion", st_f6_v:"Non-disclosure agreement (NDA), closed studio, simplified models. Nothing is published without the client’s written consent.",
+      st_steps_t:"Five steps",
+      st_s1:"Conversation and brief: what to show, to whom and where.",
+      st_s2:"Concept of the set and of how the product is shown.",
+      st_s3:"Building the 3D environment from the client’s models and photographs.",
+      st_s4:"Rehearsal and recording in the studio, or with Nomad Stage at the client’s site.",
+      st_s5:"Delivery in agreed formats, including language versions.",
+      st_cta_t:"Individual pricing for each project.",
+      st_cta_p:"Ostrowski Arms leads the conversation with the manufacturer. Veles Productions is responsible for the studio and the production.",
+      st_partner_k:"Studio partner",
+      st_cta_btn:"Arrange a conversation"
+    },
+    ko:{
+      meta_title:"오스트로프스키 암스 — 정부 관계 및 특수 거래",
+      skip:"본문으로 바로가기",
+      nav_label:"주 메뉴",
+      nav_about:"회사 소개", nav_scope:"사업 분야", nav_board:"경영진",
+      nav_refs:"실적", nav_lic:"허가", nav_contact:"연락처",
+      menu:"메뉴", lang_label:"언어 선택",
+      brand_sub:"유한책임회사 · 바르샤바 · 1992년 설립",
+      hero_title_a:"전략 프로젝트를",
+      hero_title_b:"신중하게 수행합니다.",
+      hero_lead:"오스트로프스키 암스(Ostrowski Arms)는 폴란드 국방부를 상대로 국내외 기업을 대리하고, 폴란드 내무부 장관의 허가에 따라 특수 거래를 수행하며, 당사자들이 수용 가능한 해법을 모색하는 자리에서 중립적 중재를 맡습니다.",
+      hero_cta1:"상담 요청", hero_cta2:"사업 분야 보기",
+      hero_caption:"NATO 본부의 안드제이 오스트로프스키(Andrzej Ostrowski)",
+      ledger_1k:"설립 연도", ledger_2k:"NCAGE 코드", ledger_3k:"내무부 허가",
+      ledger_3v:"전 범위 특수 거래", ledger_4k:"사업 부문", ledger_4v:"민간 및 방위",
+      about_title:"1992년 안드제이 오스트로프스키가 설립한 민간 기업입니다.",
+      about_p1:"특수 거래 허가를 보유한 오스트로프스키 암스는 순수 민간 부문과 방위 부문 모두에서 사업을 수행하고, 계약 이행을 포함한 프로젝트를 폴란드 국내외에서 관리할 수 있습니다.",
+      about_p2:"당사는 정부 관계(Government Relations) 에이전시이자 대외무역 회사로서 프로젝트를 관리하고, 기업을 대리하며, 상업 계약을 이행합니다.",
+      fact_hist_k:"연혁", fact_hist_v:"1992년 안드제이 오스트로프스키 설립",
+      fact_status_k:"법적 형태", fact_status_v:"상업등기부에 등재된 유한책임회사",
+      fact_owner_k:"소유주", fact_owner_v:"안드제이 오스트로프스키 — 지분 90%",
+      fact_board_k:"경영진", fact_board_v:"안드제이 오스트로프스키 — 대표이사",
+      scope_title:"정부 관계에서 계약 이행까지.",
+      s1_d:"민간 및 방위 경제 부문에서 폴란드 국내외 프로젝트를 관리하고 기업을 대리합니다.",
+      s2_t:"폴란드 국방부 대상 대리 업무",
+      s2_d:"폴란드군을 위한 프로젝트와 제안의 절차 개시 및 조정, 국방부와 폴란드군을 대상으로 한 기업 프레젠테이션의 준비와 개최, 자문 및 프로젝트 관리를 수행합니다.",
+      s3_t:"특수 거래",
+      s3_d:"내무부 허가에 따라 군용 무기, 이중 용도 기술, 군·경찰용 특수 장비를 취급합니다. 대외무역 회사로서 상업 계약을 이행합니다.",
+      s4_t:"중립적 중재 — ‘황금 다리’",
+      s4_d:"당사자들이 수용 가능한 해법을 찾는 대화를 주선하고 조정하며, 직접 또는 제3자를 통한 교역 이행의 조정까지 담당합니다.",
+      s5_label:"부가 서비스",
+      s5_t:"사격 교육 및 총기 소지 허가",
+      s5_d:"안드제이 오스트로프스키 교관의 사격 교육, 총기 소지 허가 절차 조정, 사격 패키지 및 바우처, 사격 행사, 총기 판매 및 자문을 제공합니다.",
+      aside_kicker:"회사명을 드러내지 않는 프로젝트 관리",
+      aside_p:"대형 계약에서 해당 국가의 법률이 정부 산하 기관과 제조사 간의 직접 계약을 요구하는 경우, 안드제이 오스트로프스키는 오스트로프스키 암스라는 회사명 없이 제조사 조직 내부의 프로젝트 매니저로서 영업 활동과 계약 이행을 자문하고 조정합니다.",
+      bridge_kicker:"회사의 중립적 지위",
+      bridge_quote:"‘황금 다리…’",
+      bridge_p:"‘황금 다리’ 철학을 지지하는 오스트로프스키 암스 대표이사는 중립적 중재자이자 비즈니스·무역 경험을 갖춘 프로젝트 매니저로 초빙되어, 복잡한 영역에서 갈등 중인 당사자들이 긍정적인 중재의 가능성을 모색하는 대화를 주선하고 조정합니다.",
+      board_caption:"안드제이 오스트로프스키와 팻 콕스(Pat Cox), 2025년",
+      board_name:"안드제이 오스트로프스키",
+      board_role:"오스트로프스키 암스 유한책임회사 대표이사",
+      b_exp_h:"전문 분야",
+      b_exp1:"전략 프로젝트를 위한 정부 관계 및 프로젝트 관리(Government Relations & Project Management) 전문가",
+      b_exp2:"특수 거래 전문가: 군용 무기, 이중 용도 기술(dual use technology), 군용 특수 장비",
+      b_fn_h:"역임 직책",
+      b_fn1:"폴란드 상원 국방·공공안전위원회 위원장의 협력자 겸 자문역",
+      b_fn2:"폴란드 방위산업생산자협회(Polska Izba Producentów na Rzecz Obronności Kraju) 회장의 정부·의회 관계 자문역 — 공식 임명",
+      b_edu_h:"학력 및 병역",
+      b_edu1:"바르샤바 대학교 국가안보 대학원 과정 참가 — 폴란드 국방부, 바르샤바 대학교 국제관계연구소, 폴란드 대통령실, 주폴란드 미국 대사관 공동 프로그램",
+      b_edu2:"병역: 공군 기술학교(Techniczna Szkoła Wojsk Lotniczych)",
+      b_perm_h:"자격",
+      b_perm1:"폭발물, 무기, 탄약 및 군·경찰용 제품과 기술의 제조·거래 사업을 수행하거나 지휘하기 위한 법정 자격",
+      b_perm2:"물리적 경호 요원 및 기술 보안 요원 2급 자격(해당 사업의 지휘 자격 포함)",
+      b_perm3:"폴란드 경제부 수출통제국이 주관하고 미국 국무부가 Export Management Systems에 기반하여 지원한 특수 거래 전문 교육 수료증",
+      b_shoot_h:"사격",
+      b_shoot1:"JW 2305 GROM 특수부대 출신 교관들이 진행한 과정을 이수한 사격 교관, 폴란드 스포츠사격연맹(PZSS) 교관 자격 보유",
+      b_shoot2:"전 사격 경기 선수 — 속사권총",
+      refs_quote:"폴란드 국방을 위해 정치적 차이를 넘어선 단결.",
+      refs_quote_src:"‘전략 프로젝트를 위한 정부 관계 및 프로젝트 관리’ 프로젝트 설명 중에서",
+      r1_k:"프로젝트",
+      r1_p1:"안드제이 오스트로프스키가 직접 기획하고 성공적으로 수행한 프로젝트로, 폴란드의 F-16 군용기 구매 계약 체결일에 맞추어 당시 폴란드 대통령 알렉산데르 크바시니에프스키(Aleksander Kwaśniewski)의 서문이 수록되었습니다. 이 계약은 폴란드 정부와 미국 국무부 사이에 체결된 최대 규모의 방위 계약입니다.",
+      r1_p2:"이 프로젝트에는 국방부 장관과 하원 국방위원회 위원장을 역임하고 이후 대통령이 된 브로니스와프 코모로프스키(Bronisław Komorowski)의 연설과 함께, 여당 연합과 야당을 아우르는 주요 정당 지도자들의 발언이 수록되었습니다. 그중에는 2023년 11월 13일 제10대 하원 개원 회의를 연 최고령 임시의장(Marszałek Senior) 마레크 사비츠키(Marek Sawicki, 폴란드 인민당 PSL)의 발언도 포함됩니다.",
+      r2_k:"감사", r2_t:"척 헤이글 (Chuck Hagel)",
+      r2_p:"2013–2015년 제24대 미국 국방장관을 지낸 척 헤이글은 폴란드 대통령궁에서의 개인 면담 자리에서 이 프로젝트의 수행에 대해 안드제이 오스트로프스키에게 직접 감사를 표했습니다.",
+      lic_title:"전 범위의 사업 수행을 뒷받침하는 허가.",
+      l1_d:"NATO 사업자 식별 코드",
+      l_mswk:"폴란드 내무부 장관 허가",
+      l_mswk2:"폴란드 내무부 장관 허가",
+      l2_t:"특수 거래",
+      l2_d:"무기, 폭발물, 이중 용도 기술, 군·경찰용 특수 장비",
+      l3_t:"신변 및 재산 보호",
+      l3_d:"직접적인 물리적 경호 및 기술적 보안",
+      contact_title:"문의를 환영합니다.",
+      c_addr_h:"주소", c_country:"폴란드", c_phone_h:"전화 / WhatsApp", c_mail_h:"이메일",
+      f_name:"성명", f_email:"이메일", f_msg:"메시지", f_send:"보내기",
+      f_note:"‘보내기’를 누르시면 작성하신 메시지가 이메일 프로그램에서 열립니다.",
+      f_err:"성명과 올바른 이메일 주소를 입력해 주십시오.",
+      mail_subject:"Ostrowski Arms 웹사이트 문의",
+      footer_note:"디자인 콘셉트 — 제안",
+      footer_concept:"콘셉트 ‘집무실(Gabinet)’",
+      back_top:"맨 위로",
+      gr_name:"전략 프로젝트를 위한 정부 관계 및 프로젝트 관리",
+      r1_t:"F-16 — 전략 프로젝트를 위한 정부 관계 및 프로젝트 관리",
+      img_study:"밤의 집무실 — 녹색 벽, 뱅커스 램프, 지구본과 가죽 의자",
+      img_dossier:"밀랍 인장과 버건디 리본이 달린 서류철",
+      img_map:"황동 나침반과 돋보기가 놓인 옛 유럽 지도",
+      img_handshake:"감색 정장을 입은 두 사람의 악수",
+      img_range:"사격장: 오크 벤치 위의 청력 보호구와 닫힌 케이스",
+      img_warsaw:"비스와강 건너편에서 바라본 해 질 녘의 바르샤바 왕궁과 구시가지",
+      footer_photos:"사진은 예시용이며, 안드제이 오스트로프스키의 사진은 ostrowskiarms.pl에서 가져왔습니다.",
+      nav_studio:"스튜디오",
+      st_title:"실물 크기의 제품을, 세계 어느 곳에서나.",
+      st_lead:"오스트로프스키 암스는 방위산업 제조사가 협력사 벨레스 프로덕션(Veles Productions)의 바르샤바 버추얼 프로덕션 스튜디오에서 프레젠테이션을 녹화하도록 이끌 수 있습니다. 대표이사, 엔지니어 또는 지휘관이 제품 본연의 환경 속에서 제품을 설명합니다. 장비를 운송할 필요도, 날씨를 걱정할 필요도 없습니다.",
+      st_explain:"버추얼 프로덕션은 컴퓨터로 만든 무대를 진행자 뒤의 LED 월에 띄우는 방식입니다. 카메라에는 진행자가 실제로 격납고나 시험장, 기업 본사에 서 있는 것처럼 보입니다. 진행자 옆에는 제품의 3D 모델이 놓입니다. 이 모델은 회전하고, 확대하고, 부품별로 분해하고, 시뮬레이션으로 보여 드릴 수 있습니다.",
+      st_tabs_label:"시각화 선택",
+      st_tab_f35:"격납고 속 F-35",
+      st_tab_pat:"전시관 속 패트리엇 PAC-2",
+      st_hint:"핸들을 움직이시면 실제 스튜디오를 보실 수 있습니다.",
+      st_lbl_concept:"콘셉트 시각화",
+      st_lbl_real:"실제 벨레스 스튜디오",
+      st_slider_label:"핸들을 움직여 시각화와 실제 스튜디오를 비교하십시오",
+      st_caption:"콘셉트 시각화 — 최종본은 벨레스 스튜디오에서 녹화한 영상입니다",
+      st_img_f35:"콘셉트 시각화: 가상 항공기 격납고 속 진행자와 증강현실(AR)로 구현한 실물 크기 F-35",
+      st_img_ptz:"실제 벨레스 스튜디오: 곡면 LED 월과 카메라 세 대",
+      st_img_pat:"콘셉트 시각화: 가상 전시관 속 진행자와 증강현실(AR)로 구현한 패트리엇 PAC-2 발사대",
+      st_img_crane:"실제 벨레스 스튜디오: 카메라 크레인과 LED 월 앞의 제작진",
+      st_img_deleg:"콘셉트 시각화: 스튜디오의 대표단이 증강현실(AR)로 분해된 항공기 모델을 살펴보는 장면",
+      st_uses_t:"녹화할 수 있는 콘텐츠",
+      st_u1_t:"제품 영상",
+      st_u1_d:"신규 시스템 출시 영상입니다. 조립 공장에서 제품이 실제로 운용될 장소까지, 이야기에 맞춘 무대를 구성합니다.",
+      st_u2_t:"프레젠테이션 및 가상 출시 행사",
+      st_u2_d:"하나의 행사를 여러 나라의 시청자가 함께 봅니다. 배경과 자막의 언어 버전은 다시 녹화하지 않고 만듭니다.",
+      st_u3_t:"시뮬레이션",
+      st_u3_d:"사거리, 궤적, 운용 시나리오를 보여 줍니다. 진행자 옆에서 모델이 회전하고, 인포그래픽이 제품의 기능을 설명합니다.",
+      st_u4_t:"경영진 연설",
+      st_u4_d:"스튜디오에서 하루면 충분합니다. 기업 본사나 연설 주제와 관련된 장소를 무대로 재현합니다.",
+      st_u5_t:"대표단을 위한 AR 시연",
+      st_u5_d:"증강현실(AR)은 실제 화면에 그래픽을 더하는 기술입니다. 방문객은 비공개 스튜디오에서 진행자 옆에 놓인 제품 모델을 화면으로 보십니다.",
+      st_u6_t:"노마드 스테이지(Nomad Stage)",
+      st_u6_d:"고객을 찾아가는 이동식 LED 스튜디오입니다. 제조사 공장, 전시회 부스, 야외 현장까지 이동합니다. 유럽, 중동, 북아프리카에서 운영합니다.",
+      st_plate_k:"전용 스튜디오에서의 전시",
+      st_plate_t:"대표단을 위한 비공개 시연.",
+      st_plate_p:"제품은 고객이 원하는 크기의 3D 모델로 스튜디오에 등장합니다. 진행자가 모델을 분해하고, 부품을 강조하고, 시뮬레이션을 실행합니다. 대표단은 시험장에 가지 않고도 시연을 실시간으로 봅니다.",
+      st_facts_t:"벨레스 프로덕션 스튜디오",
+      st_f1_k:"스튜디오", st_f1_v:"카메라 세 대, 바르샤바 유빌레르스카 거리 10번지(Jubilerska 10). 라이브 투 테이프(live-to-tape) 녹화: 방송처럼 한 번에 이어서 녹화합니다.",
+      st_f2_k:"LED 월", st_f2_v:"ROE 곡면 LED 월, 7.5 × 4 m, 고스트 프레임(Ghost Frame) 기술 적용: 여러 카메라가 같은 순간 서로 다른 화면을 봅니다.",
+      st_f3_k:"카메라", st_f3_v:"카메라 크레인과 Stype 트래킹: 컴퓨터가 카메라의 위치를 알기 때문에 배경이 실제처럼 움직입니다.",
+      st_f4_k:"무대", st_f4_v:"언리얼 엔진(Unreal Engine). 대안으로 그린 스크린도 제공합니다.",
+      st_f5_k:"실적", st_f5_v:"폴란드 공영방송 TVP 2023년 선거 개표 방송: 10시간 생방송, 시청자 약 450만 명. 2025 사우디 슈퍼컵(홍콩): 가상 스튜디오와 실시간 AR. Canal+ Sport 가상 세트.",
+      st_f6_k:"보안", st_f6_v:"비밀유지계약(NDA), 비공개 스튜디오, 간소화 모델. 고객의 서면 동의 없이는 어떤 것도 공개하지 않습니다.",
+      st_steps_t:"다섯 단계",
+      st_s1:"상담 및 브리프: 무엇을, 누구에게, 어디서 보여 줄지 정합니다.",
+      st_s2:"무대 콘셉트와 제품 연출 방식을 제안합니다.",
+      st_s3:"고객이 제공한 모델과 사진으로 3D 환경을 구축합니다.",
+      st_s4:"스튜디오에서, 또는 고객 현장의 노마드 스테이지에서 리허설과 녹화를 진행합니다.",
+      st_s5:"합의한 형식으로 결과물을 전달합니다. 언어 버전도 포함됩니다.",
+      st_cta_t:"프로젝트별 개별 견적.",
+      st_cta_p:"제조사와의 협의는 오스트로프스키 암스가 이끕니다. 스튜디오와 제작은 벨레스 프로덕션이 담당합니다.",
+      st_partner_k:"스튜디오 파트너",
+      st_cta_btn:"상담 요청"
+    }
+  };
+
+  // Key-set parity check (development aid)
+  (function(){
+    var base = Object.keys(I18N.pl).sort().join("|");
+    ["en","ko"].forEach(function(l){
+      if(Object.keys(I18N[l]).sort().join("|") !== base){ console.warn("i18n key mismatch:", l); }
+    });
+  })();
+
+  var root = document.documentElement;
+  var reduceMQ = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+  if(reduceMQ && reduceMQ.matches) root.classList.add("no-anim");
+  function motionOn(){ return !(reduceMQ && reduceMQ.matches) && !root.classList.contains("no-anim"); }
+
+  var SUPPORTED = ["pl","en","ko"];
+  var STORE = "oa-gabinet-lang";
+  var current = "pl";
+
+  function apply(lang){
+    if(SUPPORTED.indexOf(lang) === -1) lang = "pl";
+    current = lang;
+    var d = I18N[lang];
+    document.documentElement.lang = lang;
+    document.title = d.meta_title;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var k = el.getAttribute("data-i18n");
+      if(d[k] != null) el.textContent = d[k];
+    });
+    document.querySelectorAll("[data-i18n-aria]").forEach(function(el){
+      var k = el.getAttribute("data-i18n-aria");
+      if(d[k] != null) el.setAttribute("aria-label", d[k]);
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function(el){
+      var k = el.getAttribute("data-i18n-alt");
+      if(d[k] != null) el.setAttribute("alt", d[k]);
+    });
+    document.querySelectorAll(".lang button").forEach(function(b){
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+    var err = document.getElementById("form-err");
+    if(err) err.textContent = "";
+    try{ localStorage.setItem(STORE, lang); }catch(e){}
+  }
+
+  var initial = "pl";
+  try{
+    var q = new URLSearchParams(window.location.search).get("lang");
+    if(q && SUPPORTED.indexOf(q) > -1){ initial = q; }
+    else{
+      var s = localStorage.getItem(STORE);
+      if(s && SUPPORTED.indexOf(s) > -1) initial = s;
+    }
+  }catch(e){}
+  apply(initial);
+
+  document.querySelectorAll(".lang button").forEach(function(b){
+    b.addEventListener("click", function(){
+      var l = b.getAttribute("data-lang");
+      if(l === current) return;
+      if(!motionOn()){ apply(l); return; }
+      root.classList.add("is-switching");
+      setTimeout(function(){
+        apply(l);
+        requestAnimationFrame(function(){ root.classList.remove("is-switching"); });
+      }, 280);
+    });
+  });
+
+  // Mobile menu
+  var btn = document.querySelector(".menu-btn");
+  var nav = document.getElementById("nav");
+  function setMenu(open){
+    nav.setAttribute("data-open", open ? "true" : "false");
+    btn.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+  btn.addEventListener("click", function(){ setMenu(nav.getAttribute("data-open") !== "true"); });
+  nav.querySelectorAll("a").forEach(function(a){ a.addEventListener("click", function(){ setMenu(false); }); });
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && nav.getAttribute("data-open") === "true"){ setMenu(false); btn.focus(); }
+  });
+
+  // Contact form: opens a prepared e-mail, nothing is submitted to a server
+  var form = document.getElementById("contact-form");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var d = I18N[current];
+    var fName = document.getElementById("f-name");
+    var fEmail = document.getElementById("f-email");
+    var name = fName.value.trim();
+    var email = fEmail.value.trim();
+    var msg = document.getElementById("f-msg").value.trim();
+    var ok = name.length > 1 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    var err = document.getElementById("form-err");
+    if(!ok){ err.textContent = d.f_err; (name.length > 1 ? fEmail : fName).focus(); return; }
+    err.textContent = "";
+    var body = name + "\n" + email + "\n\n" + msg;
+    window.location.href = "mailto:biuro@ostrowskiarms.pl?subject=" +
+      encodeURIComponent(d.mail_subject) + "&body=" + encodeURIComponent(body);
+  });
+
+  // Studio: before/after comparison sliders (mouse, touch, keyboard) and visualisation tabs
+  (function(){
+    var stages = Array.prototype.slice.call(document.querySelectorAll(".st-stage"));
+    stages.forEach(function(stage){
+      var handle = stage.querySelector(".st-handle");
+      var tagA = stage.querySelector(".st-tag-a");
+      var tagB = stage.querySelector(".st-tag-b");
+      var dragging = false, hintRaf = 0, pos = 55;
+      function set(p){
+        pos = Math.max(0, Math.min(100, p));
+        stage.style.setProperty("--pos", pos.toFixed(2) + "%");
+        var v = Math.round(pos);
+        handle.setAttribute("aria-valuenow", String(v));
+        handle.setAttribute("aria-valuetext", v + "%");
+        tagA.style.opacity = pos < 24 ? "0" : "1";
+        tagB.style.opacity = pos > 76 ? "0" : "1";
+      }
+      function stopHint(){
+        stage.hinted = true;
+        if(hintRaf){ cancelAnimationFrame(hintRaf); hintRaf = 0; }
+      }
+      function fromEvent(e){
+        var r = stage.getBoundingClientRect();
+        return r.width ? (e.clientX - r.left) / r.width * 100 : pos;
+      }
+      function end(){ dragging = false; stage.classList.remove("is-drag"); }
+      stage.addEventListener("pointerdown", function(e){
+        if(e.pointerType === "mouse" && e.button !== 0) return;
+        stopHint();
+        dragging = true;
+        stage.classList.add("is-drag");
+        try{ stage.setPointerCapture(e.pointerId); }catch(err){}
+        set(fromEvent(e));
+        try{ handle.focus({ preventScroll:true }); }catch(err){}
+      });
+      stage.addEventListener("pointermove", function(e){ if(dragging) set(fromEvent(e)); });
+      stage.addEventListener("pointerup", end);
+      stage.addEventListener("pointercancel", end);
+      stage.addEventListener("lostpointercapture", end);
+      handle.addEventListener("keydown", function(e){
+        var step = e.shiftKey ? 10 : 2, next = null;
+        switch(e.key){
+          case "ArrowLeft": case "ArrowDown": next = pos - step; break;
+          case "ArrowRight": case "ArrowUp": next = pos + step; break;
+          case "PageDown": next = pos - 10; break;
+          case "PageUp": next = pos + 10; break;
+          case "Home": next = 0; break;
+          case "End": next = 100; break;
+        }
+        if(next === null) return;
+        e.preventDefault();
+        stopHint();
+        set(next);
+      });
+      // One-time gentle hint when the slider first comes into view (never under reduced motion)
+      stage.hint = function(){
+        if(stage.hinted || !motionOn()) return;
+        stage.hinted = true;
+        var pts = [55, 38, 67, 55], seg = 620, t0 = performance.now();
+        function step(now){
+          var t = (now - t0) / seg, i = Math.floor(t);
+          if(i >= pts.length - 1){ hintRaf = 0; set(55); return; }
+          var f = t - i, k = f < .5 ? 2 * f * f : 1 - Math.pow(-2 * f + 2, 2) / 2;
+          set(pts[i] + (pts[i + 1] - pts[i]) * k);
+          hintRaf = requestAnimationFrame(step);
+        }
+        hintRaf = requestAnimationFrame(step);
+      };
+      set(55);
+    });
+    if("IntersectionObserver" in window && motionOn()){
+      var hio = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){
+            var st = en.target; hio.unobserve(st);
+            setTimeout(function(){ st.hint(); }, 500);
+          }
+        });
+      }, { threshold:0.55 });
+      stages.forEach(function(st){ hio.observe(st); });
+    }
+
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('.st-switch [role="tab"]'));
+    function selectTab(tab, focus){
+      tabs.forEach(function(t){
+        var on = t === tab;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        var panel = document.getElementById(t.getAttribute("aria-controls"));
+        if(panel){ panel.hidden = !on; panel.classList.remove("st-off"); }
+      });
+      if(focus) tab.focus();
+    }
+    tabs.forEach(function(tab, i){
+      tab.addEventListener("click", function(){ selectTab(tab, false); });
+      tab.addEventListener("keydown", function(e){
+        var j = null;
+        if(e.key === "ArrowRight") j = (i + 1) % tabs.length;
+        else if(e.key === "ArrowLeft") j = (i - 1 + tabs.length) % tabs.length;
+        else if(e.key === "Home") j = 0;
+        else if(e.key === "End") j = tabs.length - 1;
+        if(j === null) return;
+        e.preventDefault();
+        selectTab(tabs[j], true);
+      });
+    });
+  })();
+
+  // ---------- Motion ----------
+  // Intro choreography: starts once the hero photograph is ready (or after a short timeout)
+  var heroImg = document.querySelector(".hero-bg img");
+  var started = false;
+  function startIntro(){
+    if(started) return; started = true;
+    requestAnimationFrame(function(){ requestAnimationFrame(function(){ root.classList.add("is-loaded"); }); });
+  }
+  if(heroImg && !heroImg.complete){
+    heroImg.addEventListener("load", startIntro);
+    heroImg.addEventListener("error", startIntro);
+    setTimeout(startIntro, 1400);
+  } else { startIntro(); }
+
+  // Scroll reveals
+  var single = ".section .kicker, .section h2, .about-body > p, .board-role, .note, .bridge blockquote, .bridge .wrap > p, .ornament, .pull blockquote, .pull figcaption, .ref-main > *, .thanks, .contact-form, .st-intro > p, .st-compare-wrap, .st-sub, .st-plate > figure, .st-plate-body, .st-cta";
+  var staggered = [".facts > div", ".scope-list > li", ".cv > section", ".lic-cards > .cert", ".contact-info address > .ci", ".st-uses > li", ".st-steps > li"];
+  var curtains = ".ph, .board-figure .portrait";
+  var watched = [];
+  document.querySelectorAll(single).forEach(function(el){ el.classList.add("rv"); watched.push(el); });
+  staggered.forEach(function(sel){
+    document.querySelectorAll(sel).forEach(function(el, i){
+      el.classList.add("rv"); el.style.setProperty("--d", (Math.min(i, 6) * 0.09).toFixed(2) + "s"); watched.push(el);
+    });
+  });
+  document.querySelectorAll(curtains).forEach(function(el){
+    el.classList.add("cur");
+    if(el.closest(".second")) el.style.setProperty("--d", ".25s");
+    watched.push(el);
+  });
+  document.querySelectorAll(".arch").forEach(function(el){ watched.push(el); });
+
+  if("IntersectionObserver" in window && motionOn()){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("is-in"); io.unobserve(en.target); }
+      });
+    }, { rootMargin:"0px 0px -8% 0px", threshold:0.12 });
+    watched.forEach(function(el){ io.observe(el); });
+  } else {
+    watched.forEach(function(el){ el.classList.add("is-in"); });
+  }
+
+  // Scroll-driven: header condense, gold progress line, parallax (transform only, one rAF per frame)
+  var header = document.querySelector(".site-header");
+  var bar = document.querySelector(".progress");
+  var pxEls = Array.prototype.slice.call(document.querySelectorAll("[data-px]"));
+  var ticking = false;
+  function frame(){
+    ticking = false;
+    var y = window.pageYOffset || document.documentElement.scrollTop;
+    var vh = window.innerHeight;
+    var max = Math.max(1, document.documentElement.scrollHeight - vh);
+    header.classList.toggle("is-condensed", y > 40);
+    if(bar) bar.style.transform = "scaleX(" + Math.min(1, y / max).toFixed(4) + ")";
+    if(!motionOn()) return;
+    pxEls.forEach(function(el){
+      var box = el.parentNode.getBoundingClientRect();
+      if(box.bottom < -50 || box.top > vh + 50) return;
+      var p = ((box.top + box.height / 2) - vh / 2) / (vh / 2 + box.height / 2);
+      p = Math.max(-1, Math.min(1, p));
+      el.style.transform = "translate3d(0," + (-p * box.height * 0.075).toFixed(1) + "px,0)";
+    });
+  }
+  function onScroll(){ if(!ticking){ ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener("scroll", onScroll, { passive:true });
+  window.addEventListener("resize", onScroll, { passive:true });
+  frame();
+
+  // Smooth anchor scrolling with header offset (eased, interruptible)
+  var scrollAnim = 0;
+  function cancelScroll(){ if(scrollAnim){ cancelAnimationFrame(scrollAnim); scrollAnim = 0; root.style.scrollBehavior = ""; } }
+  window.addEventListener("wheel", cancelScroll, { passive:true });
+  window.addEventListener("touchstart", cancelScroll, { passive:true });
+  document.addEventListener("click", function(e){
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if(!a) return;
+    var hash = a.getAttribute("href");
+    if(hash.length < 2) return;
+    var target = document.getElementById(hash.slice(1));
+    if(!target) return;
+    e.preventDefault();
+    var offset = header.offsetHeight + 8;
+    var to = hash === "#top" ? 0 : Math.max(0, target.getBoundingClientRect().top + window.pageYOffset - offset);
+    var from = window.pageYOffset;
+    function done(){
+      root.style.scrollBehavior = "";
+      if(history.pushState) history.pushState(null, "", hash);
+      if(!target.hasAttribute("tabindex") && !/^(A|BUTTON|INPUT|TEXTAREA|SELECT)$/.test(target.tagName)) target.setAttribute("tabindex", "-1");
+      try{ target.focus({ preventScroll:true }); }catch(err){}
+    }
+    cancelScroll();
+    root.style.scrollBehavior = "auto";
+    if(!motionOn() || Math.abs(to - from) < 2){ window.scrollTo(0, to); done(); return; }
+    var dur = Math.max(600, Math.min(1400, Math.abs(to - from) * 0.4));
+    var t0 = performance.now();
+    function step(now){
+      var t = Math.min(1, (now - t0) / dur);
+      var k = t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      window.scrollTo(0, from + (to - from) * k);
+      if(t < 1){ scrollAnim = requestAnimationFrame(step); } else { scrollAnim = 0; done(); }
+    }
+    scrollAnim = requestAnimationFrame(step);
+  });
+
+  // Subtle magnetic pull on primary buttons (fine pointers only)
+  if(window.matchMedia && window.matchMedia("(pointer: fine)").matches && motionOn()){
+    document.querySelectorAll(".btn-solid").forEach(function(btnEl){
+      var raf = 0, mx = 0, my = 0;
+      btnEl.addEventListener("pointermove", function(e){
+        var r = btnEl.getBoundingClientRect();
+        mx = ((e.clientX - r.left) / r.width - .5) * 10;
+        my = ((e.clientY - r.top) / r.height - .5) * 8;
+        if(!raf) raf = requestAnimationFrame(function(){ raf = 0; btnEl.style.transform = "translate3d(" + mx.toFixed(1) + "px," + my.toFixed(1) + "px,0)"; });
+      });
+      btnEl.addEventListener("pointerleave", function(){ btnEl.style.transform = ""; });
+    });
+  }
+
+  window.__oaMotion = true;
+})();
+</script>
+</body>
+</html>

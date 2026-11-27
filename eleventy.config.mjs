@@ -64,6 +64,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/canal");
+  // Propozycje stron dla Ostrowski Arms: gotowe pliki HTML, bez szablonów.
+  eleventyConfig.ignores.add("src/ostrowski-arms/**");
+  eleventyConfig.addPassthroughCopy("src/ostrowski-arms");
   // Klucz IndexNow (lib/indexnow.mjs): plik musi leżeć w korzeniu domeny.
   // Weryfikacja Google Search Console (prefiks https://arturpaprocki.com/).
   eleventyConfig.ignores.add("src/googlebf8fa0a14dc958df.html");
