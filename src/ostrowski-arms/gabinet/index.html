@@ -10,7 +10,7 @@
 <link rel="preload" as="image" href="../img/study.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Noto+Sans+SC:wght@300;400;500&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --green-950:#08140f;
@@ -29,14 +29,14 @@
   --brass-ink:#7a5c26;
   --rule:rgba(200,169,107,.38);
   --rule-ink:rgba(122,92,38,.35);
-  --serif:"Cormorant Garamond", "Noto Serif KR", Georgia, serif;
-  --sans:"Jost", "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+  --serif:"Cormorant Garamond", Georgia, serif;
+  --sans:"Jost", "Helvetica Neue", Arial, sans-serif;
   --gutter:clamp(16px, 4vw, 64px);
   --maxw:1320px;
 }
-:lang(ko){
-  --serif:"Noto Serif KR", "Cormorant Garamond", serif;
-  --sans:"Noto Sans KR", "Jost", sans-serif;
+:lang(zh){
+  --serif:"Noto Serif SC", "Cormorant Garamond", serif;
+  --sans:"Noto Sans SC", "Jost", sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
@@ -47,8 +47,8 @@ body{
   text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
   overflow-x:hidden;
 }
-:lang(ko) body, body:lang(ko){word-break:keep-all;line-break:strict;font-weight:300;line-height:1.85}
-:lang(ko) h1, :lang(ko) h2, :lang(ko) h3, :lang(ko) blockquote{word-break:keep-all;letter-spacing:-.01em}
+:lang(zh) body, body:lang(zh){word-break:normal;line-break:strict;font-weight:300;line-height:1.9}
+:lang(zh) h1, :lang(zh) h2, :lang(zh) h3, :lang(zh) blockquote{line-break:strict;letter-spacing:.01em}
 img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 :focus-visible{outline:1px solid var(--brass-hi);outline-offset:4px}
@@ -66,11 +66,11 @@ a{color:inherit}
 .brand{text-decoration:none;display:flex;flex-direction:column;line-height:1.1;margin-right:auto}
 .brand-word{--ls:.34em;font-family:"Cormorant Garamond",serif;font-weight:500;font-size:21px;letter-spacing:var(--ls);color:var(--ivory);white-space:nowrap;transform-origin:0 50%}
 .brand-sub{font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-top:5px}
-:lang(ko) .brand-sub{letter-spacing:.08em;font-size:11px}
+:lang(zh) .brand-sub{letter-spacing:.08em;font-size:11px}
 .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:26px}
 .nav a{position:relative;text-decoration:none;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ivory-soft);padding:6px 0;transition:color .4s ease}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--brass);transform:scaleX(0);transform-origin:100% 50%;transition:transform .6s cubic-bezier(.65,0,.35,1)}
-:lang(ko) .nav a{letter-spacing:.04em;font-size:14px}
+:lang(zh) .nav a{letter-spacing:.04em;font-size:14px}
 .nav a:hover,.nav a:focus-visible{color:var(--brass-hi)}
 .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
 .lang{display:flex;border:1px solid var(--rule)}
@@ -81,7 +81,7 @@ a{color:inherit}
 .lang button + button{border-left:1px solid var(--rule)}
 .lang button[aria-pressed="true"]{background:var(--brass);color:var(--black);font-weight:500}
 .lang button:hover:not([aria-pressed="true"]){color:var(--brass-hi)}
-.lang button[data-lang="ko"]{font-family:"Noto Sans KR",sans-serif;letter-spacing:0}
+.lang button[data-lang="zh"]{font-family:"Noto Sans SC",sans-serif;letter-spacing:0}
 .menu-btn{display:none;font:inherit;font-size:12px;letter-spacing:.18em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--ivory);padding:9px 14px;cursor:pointer;min-height:36px}
 @media (max-width:1080px){
   .menu-btn{display:block}
@@ -110,14 +110,14 @@ a{color:inherit}
 
 /* ---------- Shared type ---------- */
 .kicker{display:flex;align-items:baseline;gap:14px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--brass);margin:0 0 28px}
-:lang(ko) .kicker{letter-spacing:.08em;font-size:13px}
+:lang(zh) .kicker{letter-spacing:.08em;font-size:13px}
 .kicker .num{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none}
 .kicker::after{content:"";flex:0 0 56px;height:1px;background:currentColor;opacity:.6;align-self:center}
 h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.08;letter-spacing:-.005em}
 h2{font-size:clamp(34px,4.6vw,60px)}
-:lang(ko) h2{font-size:clamp(28px,3.6vw,46px);line-height:1.3}
+:lang(zh) h2{font-size:clamp(28px,3.6vw,46px);line-height:1.3}
 h3{font-size:clamp(23px,2.2vw,29px);line-height:1.2}
-:lang(ko) h3{font-size:clamp(19px,1.8vw,23px);line-height:1.45}
+:lang(zh) h3{font-size:clamp(19px,1.8vw,23px);line-height:1.45}
 p{margin:0 0 1.1em}
 .section{padding:clamp(80px,11vw,150px) 0;position:relative}
 .ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:var(--brass);margin:0 auto}
@@ -135,14 +135,14 @@ p{margin:0 0 1.1em}
 .hero-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:0 var(--gutter);align-items:center;min-height:min(84vh,860px);padding-top:clamp(64px,9vw,120px);padding-bottom:clamp(56px,7vw,100px)}
 .hero-copy{grid-column:1 / span 7}
 .hero-kicker{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0 0 22px;max-width:34em;line-height:1.8}
-:lang(ko) .hero-kicker{letter-spacing:.06em}
+:lang(zh) .hero-kicker{letter-spacing:.06em}
 .hero-rule{display:block;width:88px;height:1px;background:var(--brass);margin:0 0 34px;transform-origin:0 50%}
 .hero h1{font-size:clamp(46px,7.2vw,104px);line-height:.98;font-weight:400;letter-spacing:-.015em}
 .hero h1 .line{display:block;overflow:hidden;padding:0 .14em .08em 0;margin:0 -.14em -.08em 0}
 .hero h1 .li{display:block}
 .hero h1 em{display:block;font-style:italic;color:var(--brass-hi);font-weight:400}
-:lang(ko) .hero h1{font-size:clamp(34px,5.2vw,68px);line-height:1.25;letter-spacing:-.02em}
-:lang(ko) .hero h1 em{font-style:normal}
+:lang(zh) .hero h1{font-size:clamp(34px,5.2vw,68px);line-height:1.25;letter-spacing:-.02em}
+:lang(zh) .hero h1 em{font-style:normal}
 .hero-lead{max-width:36em;margin:38px 0 44px;font-size:18px;color:var(--ivory-soft)}
 .btns{display:flex;flex-wrap:wrap;gap:14px}
 .btn{
@@ -150,7 +150,7 @@ p{margin:0 0 1.1em}
   font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;padding:16px 26px;min-height:48px;
   border:1px solid var(--brass);transition:background .25s,color .25s
 }
-:lang(ko) .btn{letter-spacing:.06em;font-size:14px}
+:lang(zh) .btn{letter-spacing:.06em;font-size:14px}
 .btn-solid{background:var(--brass);color:var(--black);font-weight:500}
 .btn-solid:hover{background:var(--brass-hi)}
 .btn-ghost{color:var(--brass-hi)}
@@ -162,7 +162,7 @@ p{margin:0 0 1.1em}
 .portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.06) brightness(.96);mix-blend-mode:luminosity;transform:scale(var(--z,1));transition:transform 1.8s cubic-bezier(.16,.84,.24,1)}
 .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(8,20,15,.75) 100%);pointer-events:none}
 figcaption{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ivory-soft);margin-top:14px;display:flex;gap:10px;align-items:center}
-:lang(ko) figcaption{letter-spacing:.03em;font-size:13px}
+:lang(zh) figcaption{letter-spacing:.03em;font-size:13px}
 figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .ledger{
   position:relative;border-top:1px solid var(--rule);margin-top:0;background:var(--green-950);
@@ -172,9 +172,9 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .ledger div{padding:28px 28px 30px 0}
 .ledger div + div{padding-left:28px;border-left:1px solid var(--rule)}
 .ledger dt{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
-:lang(ko) .ledger dt{letter-spacing:.06em;font-size:12.5px}
+:lang(zh) .ledger dt{letter-spacing:.06em;font-size:12.5px}
 .ledger dd{margin:0;font-family:var(--serif);font-size:clamp(20px,2vw,27px);line-height:1.2;color:var(--ivory)}
-:lang(ko) .ledger dd{font-size:clamp(17px,1.6vw,21px);line-height:1.45}
+:lang(zh) .ledger dd{font-size:clamp(17px,1.6vw,21px);line-height:1.45}
 @media (max-width:900px){
   .hero-copy{grid-column:1 / -1}
   .hero-grid{min-height:0}
@@ -200,14 +200,14 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
   font-family:"Cormorant Garamond",serif;float:left;font-size:88px;line-height:.82;
   padding:8px 14px 0 0;color:var(--brass-hi)
 }
-:lang(ko) .about-body .lede::first-letter{font-family:inherit;float:none;font-size:inherit;padding:0;line-height:inherit;color:inherit}
+:lang(zh) .about-body .lede::first-letter{font-family:inherit;float:none;font-size:inherit;padding:0;line-height:inherit;color:inherit}
 .about-body p{color:var(--ivory-soft)}
 .facts{margin:44px 0 0;border-top:1px solid var(--rule)}
 .facts div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
 .facts dt{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);padding-top:5px}
-:lang(ko) .facts dt{letter-spacing:.05em;font-size:13px}
+:lang(zh) .facts dt{letter-spacing:.05em;font-size:13px}
 .facts dd{margin:0;font-family:var(--serif);font-size:21px;line-height:1.35;color:var(--ivory)}
-:lang(ko) .facts dd{font-size:17px;line-height:1.6}
+:lang(zh) .facts dd{font-size:17px;line-height:1.6}
 @media (max-width:900px){
   .about-head,.about-body{grid-column:1 / -1}
   .facts div{grid-template-columns:1fr;gap:4px}
@@ -230,17 +230,17 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .area p{color:var(--ink-soft);margin:0;max-width:40em}
 .area.secondary{grid-template-columns:72px 1fr;padding:30px 0}
 .area.secondary h3{font-size:21px}
-:lang(ko) .area.secondary h3{font-size:18px}
+:lang(zh) .area.secondary h3{font-size:18px}
 .area.secondary .n{font-size:30px;opacity:.75}
 .tag{display:inline-block;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass-ink);border:1px solid var(--rule-ink);padding:3px 9px;margin-bottom:12px}
-:lang(ko) .tag{letter-spacing:.04em;font-size:12px}
+:lang(zh) .tag{letter-spacing:.04em;font-size:12px}
 .note{
   margin:52px 0 0;padding:34px 34px 30px;background:var(--paper-2);
   border-left:2px solid var(--brass-ink);position:relative
 }
 .note .tag{border:0;padding:0}
 .note p{font-family:var(--serif);font-size:22px;line-height:1.45;color:var(--ink);margin:0}
-:lang(ko) .note p{font-size:17px;line-height:1.8}
+:lang(zh) .note p{font-size:17px;line-height:1.8}
 @media (max-width:900px){
   .scope-aside,.scope-main{grid-column:1 / -1}
   .scope-aside .sticky{position:static}
@@ -270,7 +270,7 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
   margin:0 0 36px;font-family:var(--serif);font-style:italic;font-weight:400;
   font-size:clamp(56px,10vw,140px);line-height:1;color:var(--brass-hi);letter-spacing:-.02em
 }
-:lang(ko) .bridge blockquote{font-style:normal;font-size:clamp(40px,7vw,90px);line-height:1.2}
+:lang(zh) .bridge blockquote{font-style:normal;font-size:clamp(40px,7vw,90px);line-height:1.2}
 .bridge p{max-width:46em;margin:0 auto 44px;color:var(--ivory-soft);font-size:18px}
 
 /* ---------- Board ---------- */
@@ -286,13 +286,13 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .board-figure.second .portrait{aspect-ratio:768/993}
 .board-body{grid-column:7 / span 6}
 .board-name{font-size:clamp(46px,6vw,82px);line-height:1;margin-bottom:14px}
-:lang(ko) .board-name{font-size:clamp(32px,4.4vw,54px);line-height:1.25}
+:lang(zh) .board-name{font-size:clamp(32px,4.4vw,54px);line-height:1.25}
 .board-role{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 48px}
-:lang(ko) .board-role{letter-spacing:.04em;font-size:15px}
+:lang(zh) .board-role{letter-spacing:.04em;font-size:15px}
 .cv{border-top:1px solid var(--rule)}
 .cv section{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--rule)}
 .cv h3{font-family:var(--sans);font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:400;line-height:1.6;padding-top:3px}
-:lang(ko) .cv h3{letter-spacing:.05em;font-size:13px}
+:lang(zh) .cv h3{letter-spacing:.05em;font-size:13px}
 .cv ul{list-style:none;margin:0;padding:0}
 .cv li{position:relative;padding-left:22px;color:var(--ivory);margin-bottom:12px}
 .cv li:last-child{margin-bottom:0}
@@ -315,21 +315,21 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 }
 .pull blockquote::before{content:"“";color:var(--brass)}
 .pull blockquote::after{content:"”";color:var(--brass)}
-:lang(ko) .pull blockquote{font-style:normal;font-size:clamp(28px,4vw,52px);line-height:1.4;text-indent:0}
-:lang(ko) .pull blockquote::before{content:"“"}
+:lang(zh) .pull blockquote{font-style:normal;font-size:clamp(28px,4vw,52px);line-height:1.4;text-indent:0}
+:lang(zh) .pull blockquote::before{content:"“"}
 .pull figcaption{margin-top:28px}
 .refs-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:48px var(--gutter)}
 .ref-main{grid-column:1 / span 7}
 .ref-side{grid-column:9 / span 4}
 .ref-label{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin:0 0 16px}
-:lang(ko) .ref-label{letter-spacing:.06em;font-size:13px}
+:lang(zh) .ref-label{letter-spacing:.06em;font-size:13px}
 .ref-main h3{margin-bottom:26px;font-size:clamp(26px,2.6vw,36px)}
-:lang(ko) .ref-main h3{font-size:clamp(20px,2vw,26px)}
+:lang(zh) .ref-main h3{font-size:clamp(20px,2vw,26px)}
 .ref-main p{color:var(--ivory-soft)}
 .thanks{border:1px solid var(--rule);padding:34px 30px;position:relative;background:linear-gradient(180deg,rgba(18,48,42,.55),rgba(8,20,15,0))}
 .thanks::before{content:"";position:absolute;inset:6px;border:1px solid rgba(200,169,107,.16);pointer-events:none}
 .thanks h3{font-size:34px;margin-bottom:18px;color:var(--brass-hi)}
-:lang(ko) .thanks h3{font-size:24px}
+:lang(zh) .thanks h3{font-size:24px}
 .thanks p{color:var(--ivory-soft);margin:0}
 @media (max-width:900px){
   .ref-main,.ref-side{grid-column:1 / -1}
@@ -352,9 +352,9 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 }
 .cert > *{position:relative}
 .cert .k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-ink);margin:0 0 auto;padding-bottom:40px;line-height:1.6}
-:lang(ko) .cert .k{letter-spacing:.04em;font-size:12.5px}
+:lang(zh) .cert .k{letter-spacing:.04em;font-size:12.5px}
 .cert h3{color:var(--ink);font-size:clamp(28px,2.6vw,38px);margin-bottom:14px}
-:lang(ko) .cert h3{font-size:clamp(21px,2vw,26px)}
+:lang(zh) .cert h3{font-size:clamp(21px,2vw,26px)}
 .cert p{margin:0;color:var(--ink-soft)}
 .cert.first{background:var(--green-900);color:var(--ivory);border-color:var(--rule)}
 .cert.first::before{border-color:rgba(200,169,107,.25);background:repeating-radial-gradient(circle at 100% 0%, rgba(200,169,107,.07) 0 1px, transparent 1px 9px)}
@@ -387,7 +387,7 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .st-switch button + button{border-left:1px solid var(--rule)}
 .st-switch button[aria-selected="true"]{background:var(--brass);color:var(--black);font-weight:500}
 .st-switch button:hover:not([aria-selected="true"]){color:var(--brass-hi)}
-:lang(ko) .st-switch button{letter-spacing:.04em;font-size:14px}
+:lang(zh) .st-switch button{letter-spacing:.04em;font-size:14px}
 .st-hint{font-size:13.5px;color:var(--ivory-soft);margin:0}
 .st-compare{margin:0}
 .st-stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--green-950);border:1px solid var(--rule);touch-action:pan-y;-webkit-user-select:none;user-select:none;cursor:ew-resize;--pos:55%}
@@ -396,7 +396,7 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .st-tag{position:absolute;top:14px;z-index:3;max-width:42%;font-size:11px;line-height:1.4;letter-spacing:.18em;text-transform:uppercase;color:var(--ivory);background:rgba(7,9,8,.78);border:1px solid var(--rule);padding:6px 10px;pointer-events:none;transition:opacity .3s ease}
 .st-tag-a{left:14px}
 .st-tag-b{right:14px;text-align:right}
-:lang(ko) .st-tag{letter-spacing:.03em;font-size:12px}
+:lang(zh) .st-tag{letter-spacing:.03em;font-size:12px}
 .st-handle{position:absolute;top:0;bottom:0;left:var(--pos);width:48px;margin-left:-24px;z-index:4;display:flex;align-items:center;justify-content:center;cursor:ew-resize;outline:none}
 .st-handle::before{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;margin-left:-.5px;background:var(--brass-hi);box-shadow:0 0 14px rgba(0,0,0,.55)}
 .st-knob{position:relative;width:46px;height:46px;border-radius:50%;background:rgba(7,9,8,.8);border:1px solid var(--brass-hi);display:flex;align-items:center;justify-content:center;gap:9px;transition:transform .4s cubic-bezier(.2,.7,.2,1),background .3s ease}
@@ -406,13 +406,13 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .st-handle:focus-visible .st-knob{outline:1px solid var(--brass-hi);outline-offset:4px}
 .st-stage:hover .st-knob,.st-stage.is-drag .st-knob{transform:scale(1.08);background:rgba(18,48,42,.92)}
 .st-sub{font-size:clamp(26px,2.6vw,36px);margin:clamp(64px,8vw,104px) 0 30px}
-:lang(ko) .st-sub{font-size:clamp(20px,2vw,26px)}
+:lang(zh) .st-sub{font-size:clamp(20px,2vw,26px)}
 .st-uses{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--rule)}
 .st-uses li{padding:30px 28px 32px 0;border-bottom:1px solid var(--rule)}
 .st-uses li:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--rule)}
 .st-uses .n{display:block;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:24px;line-height:1;color:var(--brass);margin-bottom:14px}
 .st-uses h4{font-family:var(--serif);font-weight:400;font-size:clamp(21px,1.9vw,25px);line-height:1.2;margin:0 0 10px;color:var(--ivory)}
-:lang(ko) .st-uses h4{font-size:clamp(18px,1.6vw,20px);line-height:1.45}
+:lang(zh) .st-uses h4{font-size:clamp(18px,1.6vw,20px);line-height:1.45}
 .st-uses p{margin:0;color:var(--ivory-soft);font-size:16px}
 .st-plate{display:grid;grid-template-columns:repeat(12,1fr);gap:40px var(--gutter);align-items:center;margin-top:clamp(64px,8vw,110px)}
 .st-plate figure{grid-column:1 / span 7;margin:0}
@@ -437,7 +437,7 @@ figcaption::before{content:"";width:28px;height:1px;background:var(--brass)}
 .st-cta p{color:var(--ivory-soft);margin:0 0 14px}
 .st-cta .st-partner{margin:0;font-size:15px;overflow-wrap:anywhere}
 .st-partner-k{display:block;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:4px}
-:lang(ko) .st-partner-k{letter-spacing:.05em;font-size:12.5px}
+:lang(zh) .st-partner-k{letter-spacing:.05em;font-size:12.5px}
 .st-partner a{color:var(--ivory);text-decoration:none;border-bottom:1px solid var(--rule)}
 .st-partner a:hover,.st-partner a:focus-visible{color:var(--brass-hi)}
 @media (max-width:900px){
@@ -474,7 +474,7 @@ html:not(.js) .st-stage{cursor:auto}
 .ci{padding:22px 0;border-top:1px solid var(--rule)}
 .ci:last-child{border-bottom:1px solid var(--rule)}
 .ci .lbl{display:block;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--brass);margin-bottom:6px}
-:lang(ko) .ci .lbl{letter-spacing:.05em;font-size:12.5px}
+:lang(zh) .ci .lbl{letter-spacing:.05em;font-size:12.5px}
 .ci .val{font-family:var(--serif);font-size:25px;line-height:1.35;color:var(--ivory)}
 .ci a.val{position:relative;text-decoration:none;border-bottom:1px solid var(--rule);transition:color .4s ease}
 .ci a.val::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--brass-hi);transform:scaleX(0);transform-origin:100% 50%;transition:transform .7s cubic-bezier(.65,0,.35,1)}
@@ -483,7 +483,7 @@ html:not(.js) .st-stage{cursor:auto}
 .contact-form{grid-column:7 / span 6;align-self:start;padding:44px 40px;background:var(--green-950);border:1px solid var(--rule)}
 .field{margin-bottom:26px}
 .field label{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);margin-bottom:8px}
-:lang(ko) .field label{letter-spacing:.05em;font-size:13px}
+:lang(zh) .field label{letter-spacing:.05em;font-size:13px}
 .field input,.field textarea{
   width:100%;font:inherit;font-size:17px;color:var(--ivory);background:transparent;
   border:0;border-bottom:1px solid var(--rule);padding:10px 0;border-radius:0;
@@ -504,7 +504,7 @@ html:not(.js) .st-stage{cursor:auto}
 .site-footer .wrap{display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between}
 .foot-word{font-family:"Cormorant Garamond",serif;letter-spacing:.3em;font-size:15px;color:var(--ivory)}
 .foot-meta{font-size:12.5px;letter-spacing:.12em;color:var(--ivory-soft);display:flex;flex-wrap:wrap;gap:8px 28px}
-:lang(ko) .foot-meta{letter-spacing:.02em;font-size:13px}
+:lang(zh) .foot-meta{letter-spacing:.02em;font-size:13px}
 .foot-meta .concept{color:var(--brass)}
 .foot-meta a{text-decoration:none;border-bottom:1px solid var(--rule)}
 .foot-photos{flex-basis:100%;font-size:12px;letter-spacing:.06em;color:var(--ivory-soft);margin:0}
@@ -625,7 +625,7 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
     <div class="lang" role="group" aria-label="Wybór języka" data-i18n-aria="lang_label">
       <button type="button" data-lang="pl" lang="pl" aria-pressed="true">PL</button>
       <button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button>
-      <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+      <button type="button" data-lang="zh" lang="zh-Hans" aria-pressed="false">中文</button>
     </div>
     <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" data-i18n="menu">Menu</button>
   </div>
@@ -904,18 +904,18 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
             <button type="button" role="tab" id="st-tab-f35" aria-controls="st-panel-f35" aria-selected="true" tabindex="0" data-i18n="st_tab_f35">F-35 w hangarze</button>
             <button type="button" role="tab" id="st-tab-pat" aria-controls="st-panel-pat" aria-selected="false" tabindex="-1" data-i18n="st_tab_pat">Patriot PAC-2 w pawilonie</button>
           </div>
-          <p class="st-hint" data-i18n="st_hint">Przesuń suwak, aby zobaczyć prawdziwe studio.</p>
+          <p class="st-hint" data-i18n="st_hint">Przesuń suwak, aby zobaczyć prawdziwe, puste studio.</p>
         </div>
 
         <div class="st-panel" id="st-panel-f35" role="tabpanel" aria-labelledby="st-tab-f35">
           <figure class="st-compare">
             <div class="st-stage">
-              <img src="../img/studio-ptz.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles: łukowa ściana LED i trzy kamery" data-i18n-alt="st_img_ptz" loading="lazy" decoding="async">
+              <img src="../img/studio-wide.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles, puste, w szerokim planie: łukowa ściana LED z obrazem ulicy miasta, kratownice oświetleniowe i kamera na statywie" data-i18n-alt="st_img_studio" loading="lazy" decoding="async">
               <!-- SLOT: concept still. Later replace the <img> inside with
                    <video src="..." poster="../img/vp-f35.webp" autoplay muted loop playsinline></video>
                    recorded in the Veles studio; keep the .st-top wrapper so the slider keeps working. -->
               <div class="st-top" data-slot="video">
-                <img src="../img/vp-f35.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w skali 1:1 w rozszerzonej rzeczywistości" data-i18n-alt="st_img_f35" loading="lazy" decoding="async">
+                <img src="../img/vp-f35.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w rozszerzonej rzeczywistości; ten sam wysoki punkt kamery co na zdjęciu studia" data-i18n-alt="st_img_f35" loading="lazy" decoding="async">
               </div>
               <span class="st-tag st-tag-a" data-i18n="st_lbl_concept">Wizualizacja koncepcyjna</span>
               <span class="st-tag st-tag-b" data-i18n="st_lbl_real">Prawdziwe studio Veles</span>
@@ -928,10 +928,10 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
         <div class="st-panel st-off" id="st-panel-pat" role="tabpanel" aria-labelledby="st-tab-pat">
           <figure class="st-compare">
             <div class="st-stage">
-              <img src="../img/studio-crane.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles: kran kamerowy i ekipa przy ścianie LED" data-i18n-alt="st_img_crane" loading="lazy" decoding="async">
+              <img src="../img/studio-wide.jpg" width="1920" height="1080" alt="Prawdziwe studio Veles, puste, w szerokim planie: łukowa ściana LED z obrazem ulicy miasta, kratownice oświetleniowe i kamera na statywie" data-i18n-alt="st_img_studio" loading="lazy" decoding="async">
               <!-- SLOT: concept still. Later replace the <img> inside with a <video> recorded in the Veles studio (poster="../img/vp-patriot.webp"). -->
               <div class="st-top" data-slot="video">
-                <img src="../img/vp-patriot.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości" data-i18n-alt="st_img_pat" loading="lazy" decoding="async">
+                <img src="../img/vp-patriot.webp" width="2688" height="1520" alt="Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości; ten sam wysoki punkt kamery co na zdjęciu studia" data-i18n-alt="st_img_pat" loading="lazy" decoding="async">
               </div>
               <span class="st-tag st-tag-a" data-i18n="st_lbl_concept">Wizualizacja koncepcyjna</span>
               <span class="st-tag st-tag-b" data-i18n="st_lbl_real">Prawdziwe studio Veles</span>
@@ -1163,15 +1163,14 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
       st_tabs_label:"Wybór wizualizacji",
       st_tab_f35:"F-35 w hangarze",
       st_tab_pat:"Patriot PAC-2 w pawilonie",
-      st_hint:"Przesuń suwak, aby zobaczyć prawdziwe studio.",
+      st_hint:"Przesuń suwak, aby zobaczyć prawdziwe, puste studio.",
       st_lbl_concept:"Wizualizacja koncepcyjna",
       st_lbl_real:"Prawdziwe studio Veles",
       st_slider_label:"Przesuń, aby porównać wizualizację z prawdziwym studiem",
       st_caption:"Wizualizacja koncepcyjna — docelowo nagranie wideo ze studia Veles",
-      st_img_f35:"Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w skali 1:1 w rozszerzonej rzeczywistości",
-      st_img_ptz:"Prawdziwe studio Veles: łukowa ściana LED i trzy kamery",
-      st_img_pat:"Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości",
-      st_img_crane:"Prawdziwe studio Veles: kran kamerowy i ekipa przy ścianie LED",
+      st_img_f35:"Wizualizacja koncepcyjna: prezenter w wirtualnym hangarze lotniczym, obok model F-35 w rozszerzonej rzeczywistości; ten sam wysoki punkt kamery co na zdjęciu studia",
+      st_img_studio:"Prawdziwe studio Veles, puste, w szerokim planie: łukowa ściana LED z obrazem ulicy miasta, kratownice oświetleniowe i kamera na statywie",
+      st_img_pat:"Wizualizacja koncepcyjna: prezenter w wirtualnym pawilonie wystawowym, obok wyrzutnia Patriot PAC-2 w rozszerzonej rzeczywistości; ten sam wysoki punkt kamery co na zdjęciu studia",
       st_img_deleg:"Wizualizacja koncepcyjna: delegacja w studiu ogląda rozłożony na części model samolotu w rozszerzonej rzeczywistości",
       st_uses_t:"Co można nagrać",
       st_u1_t:"Film produktowy",
@@ -1304,15 +1303,14 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
       st_tabs_label:"Choose a visualisation",
       st_tab_f35:"F-35 in a hangar",
       st_tab_pat:"Patriot PAC-2 in a pavilion",
-      st_hint:"Drag the handle to see the real studio.",
+      st_hint:"Drag the handle to see the real, empty studio.",
       st_lbl_concept:"Concept visualisation",
       st_lbl_real:"The real Veles studio",
       st_slider_label:"Drag to compare the visualisation with the real studio",
       st_caption:"Concept visualisation — final version: video recorded in the Veles studio",
-      st_img_f35:"Concept visualisation: a presenter in a virtual aircraft hangar, beside a full-scale F-35 shown in augmented reality",
-      st_img_ptz:"The real Veles studio: a curved LED wall and three cameras",
-      st_img_pat:"Concept visualisation: a presenter in a virtual exhibition pavilion, beside a Patriot PAC-2 launcher shown in augmented reality",
-      st_img_crane:"The real Veles studio: a camera crane and crew at the LED wall",
+      st_img_f35:"Concept visualisation: a presenter in a virtual aircraft hangar, beside an F-35 shown in augmented reality; the same high camera position as in the studio photograph",
+      st_img_studio:"The real Veles studio, empty, in a wide shot: a curved LED wall showing a city street, lighting trusses and a camera on a tripod",
+      st_img_pat:"Concept visualisation: a presenter in a virtual exhibition pavilion, beside a Patriot PAC-2 launcher shown in augmented reality; the same high camera position as in the studio photograph",
       st_img_deleg:"Concept visualisation: a delegation in the studio views an aircraft model taken apart in augmented reality",
       st_uses_t:"What can be recorded",
       st_u1_t:"Product film",
@@ -1348,153 +1346,152 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
       st_partner_k:"Studio partner",
       st_cta_btn:"Arrange a conversation"
     },
-    ko:{
-      meta_title:"오스트로프스키 암스 — 정부 관계 및 특수 거래",
-      skip:"본문으로 바로가기",
-      nav_label:"주 메뉴",
-      nav_about:"회사 소개", nav_scope:"사업 분야", nav_board:"경영진",
-      nav_refs:"실적", nav_lic:"허가", nav_contact:"연락처",
-      menu:"메뉴", lang_label:"언어 선택",
-      brand_sub:"유한책임회사 · 바르샤바 · 1992년 설립",
-      hero_title_a:"전략 프로젝트를",
-      hero_title_b:"신중하게 수행합니다.",
-      hero_lead:"오스트로프스키 암스(Ostrowski Arms)는 폴란드 국방부를 상대로 국내외 기업을 대리하고, 폴란드 내무부 장관의 허가에 따라 특수 거래를 수행하며, 당사자들이 수용 가능한 해법을 모색하는 자리에서 중립적 중재를 맡습니다.",
-      hero_cta1:"상담 요청", hero_cta2:"사업 분야 보기",
-      hero_caption:"NATO 본부의 안드제이 오스트로프스키(Andrzej Ostrowski)",
-      ledger_1k:"설립 연도", ledger_2k:"NCAGE 코드", ledger_3k:"내무부 허가",
-      ledger_3v:"전 범위 특수 거래", ledger_4k:"사업 부문", ledger_4v:"민간 및 방위",
-      about_title:"1992년 안드제이 오스트로프스키가 설립한 민간 기업입니다.",
-      about_p1:"특수 거래 허가를 보유한 오스트로프스키 암스는 순수 민간 부문과 방위 부문 모두에서 사업을 수행하고, 계약 이행을 포함한 프로젝트를 폴란드 국내외에서 관리할 수 있습니다.",
-      about_p2:"당사는 정부 관계(Government Relations) 에이전시이자 대외무역 회사로서 프로젝트를 관리하고, 기업을 대리하며, 상업 계약을 이행합니다.",
-      fact_hist_k:"연혁", fact_hist_v:"1992년 안드제이 오스트로프스키 설립",
-      fact_status_k:"법적 형태", fact_status_v:"상업등기부에 등재된 유한책임회사",
-      fact_owner_k:"소유주", fact_owner_v:"안드제이 오스트로프스키 — 지분 90%",
-      fact_board_k:"경영진", fact_board_v:"안드제이 오스트로프스키 — 대표이사",
-      scope_title:"정부 관계에서 계약 이행까지.",
-      s1_d:"민간 및 방위 경제 부문에서 폴란드 국내외 프로젝트를 관리하고 기업을 대리합니다.",
-      s2_t:"폴란드 국방부 대상 대리 업무",
-      s2_d:"폴란드군을 위한 프로젝트와 제안의 절차 개시 및 조정, 국방부와 폴란드군을 대상으로 한 기업 프레젠테이션의 준비와 개최, 자문 및 프로젝트 관리를 수행합니다.",
-      s3_t:"특수 거래",
-      s3_d:"내무부 허가에 따라 군용 무기, 이중 용도 기술, 군·경찰용 특수 장비를 취급합니다. 대외무역 회사로서 상업 계약을 이행합니다.",
-      s4_t:"중립적 중재 — ‘황금 다리’",
-      s4_d:"당사자들이 수용 가능한 해법을 찾는 대화를 주선하고 조정하며, 직접 또는 제3자를 통한 교역 이행의 조정까지 담당합니다.",
-      s5_label:"부가 서비스",
-      s5_t:"사격 교육 및 총기 소지 허가",
-      s5_d:"안드제이 오스트로프스키 교관의 사격 교육, 총기 소지 허가 절차 조정, 사격 패키지 및 바우처, 사격 행사, 총기 판매 및 자문을 제공합니다.",
-      aside_kicker:"회사명을 드러내지 않는 프로젝트 관리",
-      aside_p:"대형 계약에서 해당 국가의 법률이 정부 산하 기관과 제조사 간의 직접 계약을 요구하는 경우, 안드제이 오스트로프스키는 오스트로프스키 암스라는 회사명 없이 제조사 조직 내부의 프로젝트 매니저로서 영업 활동과 계약 이행을 자문하고 조정합니다.",
-      bridge_kicker:"회사의 중립적 지위",
-      bridge_quote:"‘황금 다리…’",
-      bridge_p:"‘황금 다리’ 철학을 지지하는 오스트로프스키 암스 대표이사는 중립적 중재자이자 비즈니스·무역 경험을 갖춘 프로젝트 매니저로 초빙되어, 복잡한 영역에서 갈등 중인 당사자들이 긍정적인 중재의 가능성을 모색하는 대화를 주선하고 조정합니다.",
-      board_caption:"안드제이 오스트로프스키와 팻 콕스(Pat Cox), 2025년",
-      board_name:"안드제이 오스트로프스키",
-      board_role:"오스트로프스키 암스 유한책임회사 대표이사",
-      b_exp_h:"전문 분야",
-      b_exp1:"전략 프로젝트를 위한 정부 관계 및 프로젝트 관리(Government Relations & Project Management) 전문가",
-      b_exp2:"특수 거래 전문가: 군용 무기, 이중 용도 기술(dual use technology), 군용 특수 장비",
-      b_fn_h:"역임 직책",
-      b_fn1:"폴란드 상원 국방·공공안전위원회 위원장의 협력자 겸 자문역",
-      b_fn2:"폴란드 방위산업생산자협회(Polska Izba Producentów na Rzecz Obronności Kraju) 회장의 정부·의회 관계 자문역 — 공식 임명",
-      b_edu_h:"학력 및 병역",
-      b_edu1:"바르샤바 대학교 국가안보 대학원 과정 참가 — 폴란드 국방부, 바르샤바 대학교 국제관계연구소, 폴란드 대통령실, 주폴란드 미국 대사관 공동 프로그램",
-      b_edu2:"병역: 공군 기술학교(Techniczna Szkoła Wojsk Lotniczych)",
-      b_perm_h:"자격",
-      b_perm1:"폭발물, 무기, 탄약 및 군·경찰용 제품과 기술의 제조·거래 사업을 수행하거나 지휘하기 위한 법정 자격",
-      b_perm2:"물리적 경호 요원 및 기술 보안 요원 2급 자격(해당 사업의 지휘 자격 포함)",
-      b_perm3:"폴란드 경제부 수출통제국이 주관하고 미국 국무부가 Export Management Systems에 기반하여 지원한 특수 거래 전문 교육 수료증",
-      b_shoot_h:"사격",
-      b_shoot1:"JW 2305 GROM 특수부대 출신 교관들이 진행한 과정을 이수한 사격 교관, 폴란드 스포츠사격연맹(PZSS) 교관 자격 보유",
-      b_shoot2:"전 사격 경기 선수 — 속사권총",
-      refs_quote:"폴란드 국방을 위해 정치적 차이를 넘어선 단결.",
-      refs_quote_src:"‘전략 프로젝트를 위한 정부 관계 및 프로젝트 관리’ 프로젝트 설명 중에서",
-      r1_k:"프로젝트",
-      r1_p1:"안드제이 오스트로프스키가 직접 기획하고 성공적으로 수행한 프로젝트로, 폴란드의 F-16 군용기 구매 계약 체결일에 맞추어 당시 폴란드 대통령 알렉산데르 크바시니에프스키(Aleksander Kwaśniewski)의 서문이 수록되었습니다. 이 계약은 폴란드 정부와 미국 국무부 사이에 체결된 최대 규모의 방위 계약입니다.",
-      r1_p2:"이 프로젝트에는 국방부 장관과 하원 국방위원회 위원장을 역임하고 이후 대통령이 된 브로니스와프 코모로프스키(Bronisław Komorowski)의 연설과 함께, 여당 연합과 야당을 아우르는 주요 정당 지도자들의 발언이 수록되었습니다. 그중에는 2023년 11월 13일 제10대 하원 개원 회의를 연 최고령 임시의장(Marszałek Senior) 마레크 사비츠키(Marek Sawicki, 폴란드 인민당 PSL)의 발언도 포함됩니다.",
-      r2_k:"감사", r2_t:"척 헤이글 (Chuck Hagel)",
-      r2_p:"2013–2015년 제24대 미국 국방장관을 지낸 척 헤이글은 폴란드 대통령궁에서의 개인 면담 자리에서 이 프로젝트의 수행에 대해 안드제이 오스트로프스키에게 직접 감사를 표했습니다.",
-      lic_title:"전 범위의 사업 수행을 뒷받침하는 허가.",
-      l1_d:"NATO 사업자 식별 코드",
-      l_mswk:"폴란드 내무부 장관 허가",
-      l_mswk2:"폴란드 내무부 장관 허가",
-      l2_t:"특수 거래",
-      l2_d:"무기, 폭발물, 이중 용도 기술, 군·경찰용 특수 장비",
-      l3_t:"신변 및 재산 보호",
-      l3_d:"직접적인 물리적 경호 및 기술적 보안",
-      contact_title:"문의를 환영합니다.",
-      c_addr_h:"주소", c_country:"폴란드", c_phone_h:"전화 / WhatsApp", c_mail_h:"이메일",
-      f_name:"성명", f_email:"이메일", f_msg:"메시지", f_send:"보내기",
-      f_note:"‘보내기’를 누르시면 작성하신 메시지가 이메일 프로그램에서 열립니다.",
-      f_err:"성명과 올바른 이메일 주소를 입력해 주십시오.",
-      mail_subject:"Ostrowski Arms 웹사이트 문의",
-      footer_note:"디자인 콘셉트 — 제안",
-      footer_concept:"콘셉트 ‘집무실(Gabinet)’",
-      back_top:"맨 위로",
-      gr_name:"전략 프로젝트를 위한 정부 관계 및 프로젝트 관리",
-      r1_t:"F-16 — 전략 프로젝트를 위한 정부 관계 및 프로젝트 관리",
-      img_study:"밤의 집무실 — 녹색 벽, 뱅커스 램프, 지구본과 가죽 의자",
-      img_dossier:"밀랍 인장과 버건디 리본이 달린 서류철",
-      img_map:"황동 나침반과 돋보기가 놓인 옛 유럽 지도",
-      img_handshake:"감색 정장을 입은 두 사람의 악수",
-      img_range:"사격장: 오크 벤치 위의 청력 보호구와 닫힌 케이스",
-      img_warsaw:"비스와강 건너편에서 바라본 해 질 녘의 바르샤바 왕궁과 구시가지",
-      footer_photos:"사진은 예시용이며, 안드제이 오스트로프스키의 사진은 ostrowskiarms.pl에서 가져왔습니다.",
-      nav_studio:"스튜디오",
-      st_title:"실물 크기의 제품을, 세계 어느 곳에서나.",
-      st_lead:"오스트로프스키 암스는 방위산업 제조사가 협력사 벨레스 프로덕션(Veles Productions)의 바르샤바 버추얼 프로덕션 스튜디오에서 프레젠테이션을 녹화하도록 이끌 수 있습니다. 대표이사, 엔지니어 또는 지휘관이 제품 본연의 환경 속에서 제품을 설명합니다. 장비를 운송할 필요도, 날씨를 걱정할 필요도 없습니다.",
-      st_explain:"버추얼 프로덕션은 컴퓨터로 만든 무대를 진행자 뒤의 LED 월에 띄우는 방식입니다. 카메라에는 진행자가 실제로 격납고나 시험장, 기업 본사에 서 있는 것처럼 보입니다. 진행자 옆에는 제품의 3D 모델이 놓입니다. 이 모델은 회전하고, 확대하고, 부품별로 분해하고, 시뮬레이션으로 보여 드릴 수 있습니다.",
-      st_tabs_label:"시각화 선택",
-      st_tab_f35:"격납고 속 F-35",
-      st_tab_pat:"전시관 속 패트리엇 PAC-2",
-      st_hint:"핸들을 움직이시면 실제 스튜디오를 보실 수 있습니다.",
-      st_lbl_concept:"콘셉트 시각화",
-      st_lbl_real:"실제 벨레스 스튜디오",
-      st_slider_label:"핸들을 움직여 시각화와 실제 스튜디오를 비교하십시오",
-      st_caption:"콘셉트 시각화 — 최종본은 벨레스 스튜디오에서 녹화한 영상입니다",
-      st_img_f35:"콘셉트 시각화: 가상 항공기 격납고 속 진행자와 증강현실(AR)로 구현한 실물 크기 F-35",
-      st_img_ptz:"실제 벨레스 스튜디오: 곡면 LED 월과 카메라 세 대",
-      st_img_pat:"콘셉트 시각화: 가상 전시관 속 진행자와 증강현실(AR)로 구현한 패트리엇 PAC-2 발사대",
-      st_img_crane:"실제 벨레스 스튜디오: 카메라 크레인과 LED 월 앞의 제작진",
-      st_img_deleg:"콘셉트 시각화: 스튜디오의 대표단이 증강현실(AR)로 분해된 항공기 모델을 살펴보는 장면",
-      st_uses_t:"녹화할 수 있는 콘텐츠",
-      st_u1_t:"제품 영상",
-      st_u1_d:"신규 시스템 출시 영상입니다. 조립 공장에서 제품이 실제로 운용될 장소까지, 이야기에 맞춘 무대를 구성합니다.",
-      st_u2_t:"프레젠테이션 및 가상 출시 행사",
-      st_u2_d:"하나의 행사를 여러 나라의 시청자가 함께 봅니다. 배경과 자막의 언어 버전은 다시 녹화하지 않고 만듭니다.",
-      st_u3_t:"시뮬레이션",
-      st_u3_d:"사거리, 궤적, 운용 시나리오를 보여 줍니다. 진행자 옆에서 모델이 회전하고, 인포그래픽이 제품의 기능을 설명합니다.",
-      st_u4_t:"경영진 연설",
-      st_u4_d:"스튜디오에서 하루면 충분합니다. 기업 본사나 연설 주제와 관련된 장소를 무대로 재현합니다.",
-      st_u5_t:"대표단을 위한 AR 시연",
-      st_u5_d:"증강현실(AR)은 실제 화면에 그래픽을 더하는 기술입니다. 방문객은 비공개 스튜디오에서 진행자 옆에 놓인 제품 모델을 화면으로 보십니다.",
-      st_u6_t:"노마드 스테이지(Nomad Stage)",
-      st_u6_d:"고객을 찾아가는 이동식 LED 스튜디오입니다. 제조사 공장, 전시회 부스, 야외 현장까지 이동합니다. 유럽, 중동, 북아프리카에서 운영합니다.",
-      st_plate_k:"전용 스튜디오에서의 전시",
-      st_plate_t:"대표단을 위한 비공개 시연.",
-      st_plate_p:"제품은 고객이 원하는 크기의 3D 모델로 스튜디오에 등장합니다. 진행자가 모델을 분해하고, 부품을 강조하고, 시뮬레이션을 실행합니다. 대표단은 시험장에 가지 않고도 시연을 실시간으로 봅니다.",
-      st_facts_t:"벨레스 프로덕션 스튜디오",
-      st_f1_k:"스튜디오", st_f1_v:"카메라 세 대, 바르샤바 유빌레르스카 거리 10번지(Jubilerska 10). 라이브 투 테이프(live-to-tape) 녹화: 방송처럼 한 번에 이어서 녹화합니다.",
-      st_f2_k:"LED 월", st_f2_v:"ROE 곡면 LED 월, 7.5 × 4 m, 고스트 프레임(Ghost Frame) 기술 적용: 여러 카메라가 같은 순간 서로 다른 화면을 봅니다.",
-      st_f3_k:"카메라", st_f3_v:"카메라 크레인과 Stype 트래킹: 컴퓨터가 카메라의 위치를 알기 때문에 배경이 실제처럼 움직입니다.",
-      st_f4_k:"무대", st_f4_v:"언리얼 엔진(Unreal Engine). 대안으로 그린 스크린도 제공합니다.",
-      st_f5_k:"실적", st_f5_v:"폴란드 공영방송 TVP 2023년 선거 개표 방송: 10시간 생방송, 시청자 약 450만 명. 2025 사우디 슈퍼컵(홍콩): 가상 스튜디오와 실시간 AR. Canal+ Sport 가상 세트.",
-      st_f6_k:"보안", st_f6_v:"비밀유지계약(NDA), 비공개 스튜디오, 간소화 모델. 고객의 서면 동의 없이는 어떤 것도 공개하지 않습니다.",
-      st_steps_t:"다섯 단계",
-      st_s1:"상담 및 브리프: 무엇을, 누구에게, 어디서 보여 줄지 정합니다.",
-      st_s2:"무대 콘셉트와 제품 연출 방식을 제안합니다.",
-      st_s3:"고객이 제공한 모델과 사진으로 3D 환경을 구축합니다.",
-      st_s4:"스튜디오에서, 또는 고객 현장의 노마드 스테이지에서 리허설과 녹화를 진행합니다.",
-      st_s5:"합의한 형식으로 결과물을 전달합니다. 언어 버전도 포함됩니다.",
-      st_cta_t:"프로젝트별 개별 견적.",
-      st_cta_p:"제조사와의 협의는 오스트로프스키 암스가 이끕니다. 스튜디오와 제작은 벨레스 프로덕션이 담당합니다.",
-      st_partner_k:"스튜디오 파트너",
-      st_cta_btn:"상담 요청"
+    zh:{
+      meta_title:"Ostrowski Arms — 政府关系与军品及特种物资贸易",
+      skip:"跳至正文",
+      nav_label:"主导航",
+      nav_about:"公司简介", nav_scope:"业务范围", nav_board:"管理层",
+      nav_refs:"业绩与推荐", nav_lic:"许可资质", nav_contact:"联系我们",
+      menu:"菜单", lang_label:"语言选择",
+      brand_sub:"有限责任公司 · 华沙 · 始于1992年",
+      hero_title_a:"战略项目，",
+      hero_title_b:"以审慎之道推进。",
+      hero_lead:"Ostrowski Arms代表波兰及外国企业与波兰国防部开展沟通，依据波兰共和国内政部长颁发的许可从事军品及特种物资贸易，并在各方寻求可接受的解决方案时担任中立调解人。",
+      hero_cta1:"预约洽谈", hero_cta2:"业务范围",
+      hero_caption:"安杰伊·奥斯特罗夫斯基（Andrzej Ostrowski）在北约总部",
+      ledger_1k:"成立年份", ledger_2k:"NCAGE代码", ledger_3k:"内政部许可",
+      ledger_3v:"全范围军品及特种物资贸易", ledger_4k:"业务领域", ledger_4v:"民用与军用",
+      about_title:"一家私营企业，由安杰伊·奥斯特罗夫斯基（Andrzej Ostrowski）于1992年创立。",
+      about_p1:"凭借军品及特种物资贸易许可，Ostrowski Arms可在纯民用领域和军用领域开展业务、管理项目并履行合同，业务覆盖波兰及海外。",
+      about_p2:"公司既是政府关系机构，也是对外贸易企业：管理项目、代表企业并履行商业合同。",
+      fact_hist_k:"历史", fact_hist_v:"由安杰伊·奥斯特罗夫斯基于1992年创立",
+      fact_status_k:"法律形式", fact_status_v:"已在商业登记册登记的有限责任公司",
+      fact_owner_k:"所有者", fact_owner_v:"安杰伊·奥斯特罗夫斯基——持股90%",
+      fact_board_k:"管理层", fact_board_v:"安杰伊·奥斯特罗夫斯基——总裁",
+      scope_title:"从政府关系到合同履行。",
+      s1_d:"在波兰及海外的民用和军用经济领域管理项目并代表企业。",
+      s2_t:"面向波兰国防部的代表业务",
+      s2_d:"为波兰武装部队相关项目和报价启动程序并进行协调；筹备并组织企业面向国防部及波兰武装部队的展示；提供咨询及项目管理服务。",
+      s3_t:"军品及特种物资贸易",
+      s3_d:"依据内政部许可，经营军用武器装备、军民两用技术以及军队和警察专用特种装备。作为对外贸易企业，公司履行商业合同。",
+      s4_t:"中立调解——“金桥”",
+      s4_d:"安排并协调各方寻求可接受解决方案的会谈，包括直接或通过第三方协调贸易往来。",
+      s5_label:"补充业务",
+      s5_t:"射击培训与持枪许可",
+      s5_d:"由教官安杰伊·奥斯特罗夫斯基亲自授课的射击培训、持枪许可申请程序协调、射击套餐与代金券、射击活动，以及枪支销售咨询。",
+      aside_kicker:"不具名的项目管理",
+      aside_p:"在大型合同中，若相关国家法律要求合同必须由政府机构与制造商直接签订，安杰伊·奥斯特罗夫斯基将以项目经理身份在制造商内部开展工作，不以Ostrowski Arms的名义出现，负责商务活动及合同履行的咨询与协调。",
+      bridge_kicker:"公司的中立地位",
+      bridge_quote:"“金桥……”",
+      bridge_p:"Ostrowski Arms总裁秉持“金桥”理念，常受邀担任中立调解人及具有商贸经验的项目经理，在复杂领域中为冲突各方安排并协调会谈，帮助其寻求积极调解的可能。",
+      board_caption:"安杰伊·奥斯特罗夫斯基与帕特·考克斯（Pat Cox），2025年",
+      board_name:"安杰伊·奥斯特罗夫斯基",
+      board_role:"Ostrowski Arms有限责任公司总裁",
+      b_exp_h:"专业领域",
+      b_exp1:"战略项目政府关系与项目管理（Government Relations & Project Management for Strategic Projects）专家",
+      b_exp2:"军品及特种物资贸易专家：军队武器装备、军民两用技术（dual use technology）、军用特种装备",
+      b_fn_h:"所任职务",
+      b_fn1:"波兰共和国参议院国防与公共安全委员会主席的合作者兼顾问",
+      b_fn2:"波兰国防工业生产商协会（Polska Izba Producentów na Rzecz Obronności Kraju）会长的政府与议会关系顾问——经正式任命",
+      b_edu_h:"教育与服役",
+      b_edu1:"参加华沙大学国家安全研究生课程——该课程由波兰国防部、华沙大学国际关系研究所、波兰共和国总统府及美国驻波兰大使馆联合举办",
+      b_edu2:"服役经历：空军技术学校（Techniczna Szkoła Wojsk Lotniczych）",
+      b_perm_h:"资质",
+      b_perm1:"具备法定资质，可从事或领导爆炸物、武器、弹药以及军用或警用产品与技术的生产和贸易业务",
+      b_perm2:"人身安全保卫及技术安防人员二级执照，具备领导此类业务的资格",
+      b_perm3:"军品及特种物资贸易专家培训证书，该培训由波兰经济部（出口管制司）组织，并由美国国务院依托出口管理体系（Export Management Systems）项目资助",
+      b_shoot_h:"射击",
+      b_shoot1:"射击教官，完成由JW 2305 GROM特种部队退役军人主讲的课程；持有波兰运动射击联合会（PZSS）教官执照",
+      b_shoot2:"前竞技射击运动员——手枪速射",
+      refs_quote:"超越政治分歧，团结一致，共护波兰国防。",
+      refs_quote_src:"摘自“战略项目政府关系与项目管理”项目介绍",
+      r1_k:"项目",
+      r1_p1:"该项目由安杰伊·奥斯特罗夫斯基亲自策划并成功实施，时任波兰共和国总统亚历山大·克瓦希涅夫斯基（Aleksander Kwaśniewski）亲自为其作序，时值波兰购买F-16军用飞机合同签署之日——这是波兰政府与美国国务院签订的规模最大的国防合同。",
+      r1_p2:"该项目收录了布罗尼斯瓦夫·科莫罗夫斯基（Bronisław Komorowski）的讲话——他曾任国防部长及众议院国防委员会主席，后当选波兰共和国总统；项目还收录了经协调的执政联盟与议会反对派主要政党领导人的发言，其中包括波兰人民党（PSL）的马雷克·萨维茨基（Marek Sawicki），他作为元老议长于2023年11月13日主持了第十届众议院首次会议的开幕。",
+      r2_k:"致谢", r2_t:"查克·哈格尔（Chuck Hagel）",
+      r2_p:"2013年至2015年任第24任美国国防部长的查克·哈格尔，在波兰共和国总统府的一次私人会面中，就该项目的实施向安杰伊·奥斯特罗夫斯基当面致谢。",
+      lic_title:"支撑全方位业务的资质许可。",
+      l1_d:"北约商业与政府实体代码",
+      l_mswk:"波兰共和国内政部长许可",
+      l_mswk2:"波兰共和国内政部长许可",
+      l2_t:"军品及特种物资贸易",
+      l2_d:"武器装备、爆炸物、军民两用技术、军队和警察专用特种装备",
+      l3_t:"人身与财产保护",
+      l3_d:"直接人身安全保卫及技术安防",
+      contact_title:"诚邀洽谈。",
+      c_addr_h:"地址", c_country:"波兰", c_phone_h:"电话 / WhatsApp", c_mail_h:"电子邮件",
+      f_name:"姓名", f_email:"电子邮件", f_msg:"留言", f_send:"发送",
+      f_note:"点击“发送”后，您的电子邮件程序将打开一封已拟好的邮件。",
+      f_err:"请填写您的姓名及有效的电子邮件地址。",
+      mail_subject:"来自Ostrowski Arms网站的咨询",
+      footer_note:"设计概念——方案提案",
+      footer_concept:"概念方案“书房”（Gabinet）",
+      back_top:"返回顶部",
+      gr_name:"战略项目政府关系与项目管理",
+      r1_t:"F-16——战略项目政府关系与项目管理",
+      img_study:"夜色中的书房——绿色墙面、银行家台灯、地球仪与皮质扶手椅",
+      img_dossier:"带火漆印章和酒红色缎带的文件夹",
+      img_map:"古老的欧洲地图，旁置黄铜罗盘与放大镜",
+      img_handshake:"两位身着藏青色西装的人士握手",
+      img_range:"射击场：橡木长凳上的护耳器与一只合上的枪箱",
+      img_warsaw:"黄昏时分从维斯瓦河对岸眺望华沙王宫与老城",
+      footer_photos:"图片仅供示意；安杰伊·奥斯特罗夫斯基的照片取自ostrowskiarms.pl。",
+      nav_studio:"演播室",
+      st_title:"全尺寸呈现产品，场景遍及全球。",
+      st_lead:"Ostrowski Arms可引荐国防装备制造商，在合作伙伴Veles Productions位于华沙的虚拟制作演播室录制产品展示。总裁、工程师或指挥官可在产品的真实使用环境中介绍产品，无需运输装备，也不受天气影响。",
+      st_explain:"虚拟制作是指在计算机中搭建场景，并将其显示在主持人身后的LED屏上。在摄像机中，主持人仿佛真的站在机库、试验场或企业总部。主持人身旁呈现产品的三维模型：可以旋转、放大、分解展示，并进行模拟演示。",
+      st_tabs_label:"选择可视化方案",
+      st_tab_f35:"机库中的F-35",
+      st_tab_pat:"展馆中的“爱国者”PAC-2",
+      st_hint:"拖动滑块，查看真实的空演播室。",
+      st_lbl_concept:"概念可视化",
+      st_lbl_real:"真实的Veles演播室",
+      st_slider_label:"拖动以对比可视化效果与真实演播室",
+      st_caption:"概念可视化——最终版本将为在Veles演播室录制的视频",
+      st_img_f35:"概念可视化：主持人置身虚拟机库，身旁是以增强现实（AR）呈现的F-35，机位与演播室照片相同，为高位俯拍",
+      st_img_studio:"真实的Veles演播室，空场全景：弧形LED屏显示城市街景，上方为灯光桁架，三脚架上架有一台摄像机",
+      st_img_pat:"概念可视化：主持人置身虚拟展馆，身旁是以增强现实（AR）呈现的“爱国者”PAC-2发射装置，机位与演播室照片相同，为高位俯拍",
+      st_img_deleg:"概念可视化：代表团在演播室观看以增强现实（AR）分解展示的飞机模型",
+      st_uses_t:"可录制的内容",
+      st_u1_t:"产品影片",
+      st_u1_d:"新系统发布。场景贴合故事：从总装车间到产品实际运行的地点。",
+      st_u2_t:"展示与虚拟发布会",
+      st_u2_d:"一场活动，多国观众同步观看。背景与字幕的多语种版本无需重新录制。",
+      st_u3_t:"模拟演示",
+      st_u3_d:"射程、弹道、使用场景。模型在主持人身旁旋转，信息图解说产品功能。",
+      st_u4_t:"总裁致辞",
+      st_u4_d:"只需在演播室录制一天。场景可再现企业总部，或讲话所涉及的地点。",
+      st_u5_t:"面向代表团的AR展示",
+      st_u5_d:"AR即增强现实：在真实画面上叠加图形。在封闭的演播室中，来宾通过屏幕观看主持人身旁的产品模型。",
+      st_u6_t:"Nomad Stage移动演播室",
+      st_u6_d:"可前往客户现场的移动式LED演播室：制造商厂房、展会展位或野外现场均可。服务范围覆盖欧洲、中东和北非。",
+      st_plate_k:"专属演播室展示",
+      st_plate_t:"面向代表团的专场展示。",
+      st_plate_p:"产品以客户所需比例的三维模型出现在演播室中。主持人将其分解，突出显示各部件，并启动模拟演示。代表团可现场实时观看，无需前往试验场。",
+      st_facts_t:"Veles Productions演播室",
+      st_f1_k:"演播室", st_f1_v:"三机位，华沙，ul. Jubilerska 10。直录（live-to-tape）：如直播般一气呵成。",
+      st_f2_k:"LED屏", st_f2_v:"弧形ROE LED屏，7.5 × 4米，采用Ghost Frame技术：多台摄像机可在同一时刻在屏上看到不同画面。",
+      st_f3_k:"摄像机", st_f3_v:"摄像摇臂与Stype跟踪系统：计算机掌握摄像机的位置，因此背景如真实场景般随之移动。",
+      st_f4_k:"场景", st_f4_v:"虚幻引擎（Unreal Engine）。亦可选用绿幕。",
+      st_f5_k:"经验", st_f5_v:"波兰电视台TVP 2023年大选之夜：10小时直播，约450万观众。2025年沙特超级杯（香港）：虚拟演播室与实时AR。为Canal+ Sport制作虚拟场景。",
+      st_f6_k:"保密", st_f6_v:"保密协议（NDA）、封闭演播室、简化模型。未经客户书面同意，不发布任何内容。",
+      st_steps_t:"五个步骤",
+      st_s1:"沟通与需求简报：展示什么、面向谁、在何处展示。",
+      st_s2:"场景构思及产品呈现方式。",
+      st_s3:"依据客户提供的模型和照片搭建三维环境。",
+      st_s4:"在演播室或通过Nomad Stage在客户现场进行彩排与录制。",
+      st_s5:"按约定格式交付成品，包括多语种版本。",
+      st_cta_t:"按项目单独报价。",
+      st_cta_p:"与制造商的洽谈由Ostrowski Arms主导，演播室及制作由Veles Productions负责。",
+      st_partner_k:"演播室合作伙伴",
+      st_cta_btn:"预约洽谈"
     }
   };
 
   // Key-set parity check (development aid)
   (function(){
     var base = Object.keys(I18N.pl).sort().join("|");
-    ["en","ko"].forEach(function(l){
+    ["en","zh"].forEach(function(l){
       if(Object.keys(I18N[l]).sort().join("|") !== base){ console.warn("i18n key mismatch:", l); }
     });
   })();
@@ -1504,7 +1501,9 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
   if(reduceMQ && reduceMQ.matches) root.classList.add("no-anim");
   function motionOn(){ return !(reduceMQ && reduceMQ.matches) && !root.classList.contains("no-anim"); }
 
-  var SUPPORTED = ["pl","en","ko"];
+  var SUPPORTED = ["pl","en","zh"];
+  var HTML_LANG = { pl:"pl", en:"en", zh:"zh-Hans" };
+  function norm(l){ return l === "ko" ? "zh" : l; }
   var STORE = "oa-gabinet-lang";
   var current = "pl";
 
@@ -1512,7 +1511,7 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
     if(SUPPORTED.indexOf(lang) === -1) lang = "pl";
     current = lang;
     var d = I18N[lang];
-    document.documentElement.lang = lang;
+    document.documentElement.lang = HTML_LANG[lang];
     document.title = d.meta_title;
     document.querySelectorAll("[data-i18n]").forEach(function(el){
       var k = el.getAttribute("data-i18n");
@@ -1536,10 +1535,10 @@ html.is-switching main,html.is-switching .site-footer,html.is-switching .nav ul,
 
   var initial = "pl";
   try{
-    var q = new URLSearchParams(window.location.search).get("lang");
+    var q = norm(new URLSearchParams(window.location.search).get("lang"));
     if(q && SUPPORTED.indexOf(q) > -1){ initial = q; }
     else{
-      var s = localStorage.getItem(STORE);
+      var s = norm(localStorage.getItem(STORE));
       if(s && SUPPORTED.indexOf(s) > -1) initial = s;
     }
   }catch(e){}
